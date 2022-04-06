@@ -8,13 +8,11 @@
 
 * Location/sharing alternatives: 
 
-  ![F2 locations and sharing options](./images/F2 locations and sharing options.png)
+![F2 locations and sharing options](./images/F2 locations and sharing options.png)
 
 ### Framework Architecture
 
 The Mee framework provides core services to support Context Services. A Mee App with UI is also supported.
-
- 
 
 ![architecture](./images/architecture v3.png)
 
