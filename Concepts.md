@@ -1,10 +1,10 @@
 # Concepts
 
-### Personal data locations and sharing options
+### Personal data
 
 * [Exclusive Self-Ownership article](https://medium.com/meefound/exclusive-self-ownership-9917cb6bdd8c) - introduction to user-owned data
 
-* [Categories of personal data](https://docs.google.com/spreadsheets/d/11F-V793seAon7xqFX2HEqeFhHvxttEUMkKSOrbM0ptc/edit#gid=0) - a spreadsheet with examples of user-owned and app-managed data
+* [Categories of personal data](https://docs.google.com/spreadsheets/d/11F-V793seAon7xqFX2HEqeFhHvxttEUMkKSOrbM0ptc/edit#gid=0) - examples of user-owned and app-managed data
 
 * Location/sharing alternatives: 
 
