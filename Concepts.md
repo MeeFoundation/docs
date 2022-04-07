@@ -8,13 +8,13 @@
 
 * Location/sharing alternatives: 
 
-![F2 locations and sharing options](./images/F2 locations and sharing options.png)
+![F2 locations and sharing options](./images/F2_locations_and_sharing_options.png)
 
 ### Framework Architecture
 
 The Mee framework provides core services to support Context Services. A Mee App with UI is also supported.
 
-![architecture](./images/architecture v3.png)
+![architecture](./images/architecture_v3.png)
 
 ##### IApp
 
@@ -49,7 +49,7 @@ The Mee framework can be drawn as three concentric rings containing PDS, PDS “
 * **Ring 1** contains highly trusted apps that comply with the Ring 1 agreement. They read/write data from/to “context” containers managed by the PDS.
 * **Ring 2** contains less trusted apps that comply with the Ring 2 agreement. They store copies of the user’s personal information and synchronize these copies with the copy in the user’s personal data store.
 
-![3 rings v17](./images/3 rings v17.png)
+![3 rings v17](./images/3_rings_v17.png)
 
 ### Data Types
 
