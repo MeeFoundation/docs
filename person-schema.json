@@ -9,7 +9,7 @@
          "type": "object",
          "properties": {
             "seedPhrase" : {
-               "description": "A unique set of 12 words defined/chosen by the user from which key pairs can be generated",
+               "description": "A set of 12 words defined/chosen by the user from which key pairs can be generated",
                "type": "string"
             }
          }
