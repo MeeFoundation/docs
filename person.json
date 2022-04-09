@@ -1,17 +1,86 @@
 {
-    "$schema": "https://raw.githubusercontent.com/MeeFoundation/design-notes/main/person-schema.json?token=GHSAT0AAAAAABQ22PCT3AU3A2LZSSBDSO2KYSRU2FQ",
-    "$id": "https://gitbhub.com/MeeFoundation/design-notes/person.json",
-    "rootContext" : {
-        "seedPhrase": "the very quick brown fox landed on the full moon extremely gracefully"
-    },
-    "contexts": [
-        {
-            "ContextID": "0x234584632346254323245409fa8",
-            "contextURL": "https//facebook.com",
-            "appID": "Mobile-Safari",
-            "appHelperID": "Mee-password-service",
-            "userID": "ptrevithick@gmail.com",
-            "password": "1234"
-        }
-    ]
+	"root": {
+		"$schema": "https://raw.githubusercontent.com/MeeFoundation/design-notes/main/person-schema.json?token=GHSAT0AAAAAABQ22PCTDWDQTNAY2BGE3VGAYSRP7BA",
+		"$id": "https://gitbhub.com/MeeFoundation/design-notes/alex1",
+		"refs": [
+			{
+				"uuid": "????",
+				"encryptionKey": "base64:jfjsda;fjsa;kfjsak",
+				"appId": "UUIDV4:passwor-manager-app-id",
+				"type": "",
+				"domain": [
+					"github.com",
+					"aws.amazon.com"
+				]
+			},
+			{
+				"uuid": "UUIDV4:password-manager-app-id;shared",
+				"appID": "Mee-passwor-manager-app-id"
+			},
+			{
+				"uuid": "UUIDV4:form-filler-app-id;private",
+				"appID": "Mee-form-filler-app-id"
+			}
+		]
+	},
+	"contexts": [
+		{
+			"contextId": "UUIDV4:passwor-manager-app-id;private",
+			"owner": "mee:alexijljkli",
+			"accessMode": "RW",
+			"vaultServer": {
+				"connec": "urieo:jdfkldk"
+			},
+			"groups": [
+				{
+					"name": "SwiftInvetnion",
+					"note": "Save all swift creds here",
+					"items": [
+						{
+							"domain": "github.com",
+							"id": "UUIDV4:credId1",
+							"name": "Swift Github Account",
+							"username": "alex-swift",
+							"secret": "mySecretPassword",
+							"url": "https://auth.github.com",
+							"created": "20120101",
+							"updated": "20120101"
+						},
+						{
+							"domain": "cloud.oracle.com",
+							"id": "UUIDV4:credId2",
+							"name": "OCI Account",
+							"username": "devops@mee.foundation",
+							"secret": "mySecretPassword23232",
+							"url": "https://auth.oracle.com",
+							"created": "20220402"
+						}
+					]
+				}
+			]
+		},
+		{
+			"contextId": "UUIDV4:passwor-manager-app-id:shared",
+			"appId": "UUIDV4:appidentifier",
+			"encryptionKey": "base64:jslkjfdlsfjdlskjfjsda;fjsa;kfjsak",
+			"owner": "alexijljkli",
+			"accessMode": "RO",
+			"groups": [
+				{
+					"name": "DevOps-SwiftInvetnion",
+					"items": [
+						{
+							"domain": "aws.amazon.com",
+							"id": "UUIDV4:credId4dsf3",
+							"name": "AWS DevOps Swift",
+							"username": "devops@swiftinvention.com",
+							"secret": "mySecretPasswordsfjlsjf",
+							"url": "https://account.aws.amazon.com",
+							"created": "20120101"
+						}
+					]
+				}
+			]
+		}
+	]
 }
