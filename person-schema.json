@@ -5,6 +5,36 @@
    "description": "Schema for the Mee personal data store",
    "type": "object",
    "properties": {
-
+      "contexts": {
+         "type": "array",
+         "items": {
+            "type": "object",
+            "properties": {
+               "ContextID": {
+                  "description": "A unique identifier of a context. An example would be a website URL. E.g. 'amazon.com' ",
+                  "type": "string",
+                  "comment": "need to type this more strongly than a string"
+               },
+               "AppID": {
+                  "description": "A unique indentifier for a mobile, desktop or webapp app that is used to access the context. E.g. 'Mobile-Safari' ",
+                  "type": "string",
+                  "comment": "need to type this more strongly than a string"
+               },
+               "AppHelperID": {
+                  "description": "A unique identifier for an optional 'helper' add-on, plug-in, service. e.g. Password manager service registered to Mobile Safari",
+                  "type": "string",
+                  "comment": "need to type this more strongly than a string"
+               },
+               "UserID": {
+                  "description": "A unique identifier for the user within this context. E.g. 'ptrevithick@gmail.com' ",
+                  "type": "string"
+               },
+               "Password": {
+                  "description": "password for UserID",
+                  "type":"string"
+               }
+            }
+         }
+      }
    }
 }
