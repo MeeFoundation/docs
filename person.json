@@ -1,86 +1,83 @@
 {
-	"root": {
-		"$schema": "https://raw.githubusercontent.com/MeeFoundation/design-notes/main/person-schema.json?token=GHSAT0AAAAAABQ22PCTDWDQTNAY2BGE3VGAYSRP7BA",
-		"$id": "https://gitbhub.com/MeeFoundation/design-notes/alex1",
-		"refs": [
-			{
-				"uuid": "????",
-				"encryptionKey": "base64:jfjsda;fjsa;kfjsak",
-				"appId": "UUIDV4:passwor-manager-app-id",
-				"type": "",
-				"domain": [
-					"github.com",
-					"aws.amazon.com"
-				]
-			},
-			{
-				"uuid": "UUIDV4:password-manager-app-id;shared",
-				"appID": "Mee-passwor-manager-app-id"
-			},
-			{
-				"uuid": "UUIDV4:form-filler-app-id;private",
-				"appID": "Mee-form-filler-app-id"
-			}
-		]
-	},
-	"contexts": [
-		{
-			"contextId": "UUIDV4:passwor-manager-app-id;private",
-			"owner": "mee:alexijljkli",
-			"accessMode": "RW",
-			"vaultServer": {
-				"connec": "urieo:jdfkldk"
-			},
-			"groups": [
-				{
-					"name": "SwiftInvetnion",
-					"note": "Save all swift creds here",
-					"items": [
-						{
-							"domain": "github.com",
-							"id": "UUIDV4:credId1",
-							"name": "Swift Github Account",
-							"username": "alex-swift",
-							"secret": "mySecretPassword",
-							"url": "https://auth.github.com",
-							"created": "20120101",
-							"updated": "20120101"
-						},
-						{
-							"domain": "cloud.oracle.com",
-							"id": "UUIDV4:credId2",
-							"name": "OCI Account",
-							"username": "devops@mee.foundation",
-							"secret": "mySecretPassword23232",
-							"url": "https://auth.oracle.com",
-							"created": "20220402"
-						}
-					]
-				}
-			]
-		},
-		{
-			"contextId": "UUIDV4:passwor-manager-app-id:shared",
-			"appId": "UUIDV4:appidentifier",
-			"encryptionKey": "base64:jslkjfdlsfjdlskjfjsda;fjsa;kfjsak",
-			"owner": "alexijljkli",
-			"accessMode": "RO",
-			"groups": [
-				{
-					"name": "DevOps-SwiftInvetnion",
-					"items": [
-						{
-							"domain": "aws.amazon.com",
-							"id": "UUIDV4:credId4dsf3",
-							"name": "AWS DevOps Swift",
-							"username": "devops@swiftinvention.com",
-							"secret": "mySecretPasswordsfjlsjf",
-							"url": "https://account.aws.amazon.com",
-							"created": "20120101"
-						}
-					]
-				}
-			]
-		}
-	]
+    "root": {
+        "$schema": "https://raw.githubusercontent.com/MeeFoundation/design-notes/main/person-schema.json?token=GHSAT0AAAAAABQ22PCTDWDQTNAY2BGE3VGAYSRP7BA",
+        "$id": "https://gitbhub.com/MeeFoundation/design-notes/alex1",
+        "seedPhrase": "the very quick brown fox landed extremely softly on the moon's surface",
+        "currentPersonaId" : "work",
+        "contextMetadata": [
+            {
+                "contextId": "0x399523465243",
+                "encryptionKey": "base64:jfjsda;fjsa;kfjsak",
+                "appId": "UUIDV4:password-manager-app-id",
+                "domain": "github.com",
+                "groupId": [ "0xw0983542" ],
+                "personaId": [ "0x23948173453"]
+            },
+            {
+                "contextID": "UUIDV4:password-manager-app-id;shared",
+                "encryptionKey": "base64:sdsd;fjsa;kfjsak",
+                "appID": "Mee-password-manager-app-id",
+                "domain": "github.com"
+            },
+            {
+                "contextID": "UUIDV4:form-filler-app-id;private",
+                "encryptionKey": "base64:jfjsda;d;kfjsak",
+                "appID": "Mee-form-filler-app-id",
+                "domain": "github.com"
+            }
+        ]
+    },
+    "personas": [
+        {
+            "personaId": "UUIDV4:4234235737",
+            "meeUserId": "did:alexijljkli",
+            "accessMode": "RW",
+            "contextIds": [ "UUIDV4:4399523465243", "0x239857234856"],
+            "comment": "...starting here: user attributes common to all contextIds listed above"
+        }
+    ],
+    "groups": [
+        {
+            "id": "0xw0983542",
+            "name": "Work-related"
+        }
+    ],
+    "contexts": [
+        {
+            "contextId": "UUIDV4:4399523465243",
+            "meeUserId": "did:alexijljkli",
+            "accessMode": "RW",
+            "vaultServer": {
+                "connect": "urieo:jdfkldk"
+            },
+            "domain": "github.com",
+            "usernamePasswordCredential": [
+                {
+                    "url": "https://auth.github.com",
+                    "name": "Swift Github Account",
+                    "username": "alex-swift",
+                    "secret": "mySecretPassword"
+                }
+            ],
+            "created": "20120101",
+            "updated": "20130101",
+           "comment": "starting here: user attributes..."
+        },
+        {
+            "contextId": "UUIDV4:3249523234245234",
+            "meeUserId": "did:paulijljkli",
+            "accessMode": "RO",
+            "domain": "aws.amazon.com",
+            "usernamePasswordCredential": [
+                {
+                    "url": "https://account.aws.amazon.com",
+                    "name": "AWS DevOps Swift",
+                    "username": "devops@swiftinvention.com",
+                    "secret": "mySecretPasswordsfjlsjf"
+                }
+            ],
+            "created": "20170101",
+            "comment": "starting here: user attributes..."
+        }
+    ]
 }

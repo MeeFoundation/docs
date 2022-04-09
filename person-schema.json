@@ -2,15 +2,43 @@
    "$schema": "http://json-schema.org/draft-07/schema",
    "$id": "https://github.com/MeeFoundation/design-notes/person-schema.json",
    "title": "Personal data schema",
-   "description": "Schema for the Mee personal data store",
+   "description": "Schema for the Mee personal data store. For simplicity context array is embeded in a single file. In practice different contexts would live in different storage mechanisms",
    "type": "object",
    "properties": {
-      "rootContext": {
+      "root": {
          "type": "object",
          "properties": {
             "seedPhrase" : {
                "description": "A set of 12 words defined/chosen by the user from which key pairs can be generated",
                "type": "string"
+            },
+            "refs": {
+               "type": "array",
+               "items": {
+                  "type":"object",
+                  "properties": {
+                     "uuid": {
+                        "description": "id of one of the Mee user's Context objects",
+                        "type":"string"
+                     },
+                     "encryptionKey" : {
+                        "description": "a key used to encrypt the contents of the Context",
+                        "type": "string",
+                        "comment": "need to more strongly type/specify this"
+                     },
+                     "appID": {
+                        "description": "A unique indentifier for a mobile, desktop or webapp app that is used to access the context. E.g. 'Mobile-Safari' ",
+                        "type": "string",
+                        "comment": "need to type this more strongly than a string"
+                     },
+                     "domain": {
+                        "type": "array",
+                        "items": {
+                           "type":"string"
+                        }
+                     } 
+                  }
+               }
             }
          }
       },
@@ -28,16 +56,7 @@
                   "type": "string",
                   "comment": "need to type this more strongly than a string"
                },
-               "appID": {
-                  "description": "A unique indentifier for a mobile, desktop or webapp app that is used to access the context. E.g. 'Mobile-Safari' ",
-                  "type": "string",
-                  "comment": "need to type this more strongly than a string"
-               },
-               "appHelperID": {
-                  "description": "A unique identifier for an optional 'helper' add-on, plug-in, service. e.g. Password manager service registered to Mobile Safari",
-                  "type": "string",
-                  "comment": "need to type this more strongly than a string"
-               },
+
                "userID": {
                   "description": "A unique identifier for the user within this context. E.g. 'ptrevithick@gmail.com' ",
                   "type": "string"
