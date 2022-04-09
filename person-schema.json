@@ -19,7 +19,11 @@
          "items": {
             "type": "object",
             "properties": {
-               "contextID": {
+               "ContextID": {
+                  "description": "Unique identifier of this context object",
+                  "type":"string"
+               },
+               "contextURL": {
                   "description": "A unique identifier of a context. An example would be a website URL. E.g. 'amazon.com' ",
                   "type": "string",
                   "comment": "need to type this more strongly than a string"

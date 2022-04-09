@@ -1,12 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/MeeFoundation/design-notes/main/person-schema.json?token=GHSAT0AAAAAABQ22PCTDWDQTNAY2BGE3VGAYSRP7BA",
     "$id": "https://gitbhub.com/MeeFoundation/design-notes/person.json",
-    "rootContext" {
+    "rootContext" : {
         "seedPhrase": "the quick brown fox landed on the moon gracefull as I stated"
-    }
+    },
     "contexts": [
         {
-            "contextID": "https//facebook.com",
+            "ContextID": "0x234584632346254323245409fa8",
+            "contextURL": "https//facebook.com",
             "appID": "Mobile-Safari",
             "appHelperID": "Mee-password-service",
             "userID": "ptrevithick@gmail.com",
