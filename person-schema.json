@@ -5,35 +5,45 @@
    "description": "Schema for the Mee personal data store",
    "type": "object",
    "properties": {
+      "rootContext": {
+         "type": "object",
+         "properties": {
+            "seedPhrase" : {
+               "description": "A unique set of 12 words defined/chosen by the user from which key pairs can be generated",
+               "type": "string"
+            }
+         }
+      },
       "contexts": {
          "type": "array",
          "items": {
             "type": "object",
             "properties": {
-               "ContextID": {
+               "contextID": {
                   "description": "A unique identifier of a context. An example would be a website URL. E.g. 'amazon.com' ",
                   "type": "string",
                   "comment": "need to type this more strongly than a string"
                },
-               "AppID": {
+               "appID": {
                   "description": "A unique indentifier for a mobile, desktop or webapp app that is used to access the context. E.g. 'Mobile-Safari' ",
                   "type": "string",
                   "comment": "need to type this more strongly than a string"
                },
-               "AppHelperID": {
+               "appHelperID": {
                   "description": "A unique identifier for an optional 'helper' add-on, plug-in, service. e.g. Password manager service registered to Mobile Safari",
                   "type": "string",
                   "comment": "need to type this more strongly than a string"
                },
-               "UserID": {
+               "userID": {
                   "description": "A unique identifier for the user within this context. E.g. 'ptrevithick@gmail.com' ",
                   "type": "string"
                },
-               "Password": {
+               "password": {
                   "description": "password for UserID",
                   "type":"string"
                }
-            }
+            },
+            "required": [ "ContextID", "AppID", "UserID" ]
          }
       }
    }

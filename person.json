@@ -1,13 +1,13 @@
 {
     "$schema": "https://raw.githubusercontent.com/MeeFoundation/design-notes/main/person-schema.json?token=GHSAT0AAAAAABQ22PCTDWDQTNAY2BGE3VGAYSRP7BA",
     "$id": "https://gitbhub.com/MeeFoundation/design-notes/person.json",
-     "contexts" : [ 
-         {
-             "ContextID": "https//facebook.com",
-             "AppID": "Mobile-Safari",
-             "AppHelperID": "Mee-password-service",
-             "UserID": "ptrevithick@gmail.com",
-             "Password": "1234"
-         }
-     ]   
+    "contexts": [
+        {
+            "contextID": "https//facebook.com",
+            "appID": "Mobile-Safari",
+            "appHelperID": "Mee-password-service",
+            "userID": "ptrevithick@gmail.com",
+            "password": "1234"
+        }
+    ]
 }
