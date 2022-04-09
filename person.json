@@ -3,15 +3,19 @@
         "$schema": "https://raw.githubusercontent.com/MeeFoundation/design-notes/main/person-schema.json?token=GHSAT0AAAAAABQ22PCTDWDQTNAY2BGE3VGAYSRP7BA",
         "$id": "https://gitbhub.com/MeeFoundation/design-notes/alex1",
         "seedPhrase": "the very quick brown fox landed extremely softly on the moon's surface",
-        "currentPersonaId" : "work",
+        "currentPersonaId": "work",
         "contextMetadata": [
             {
                 "contextId": "0x399523465243",
                 "encryptionKey": "base64:jfjsda;fjsa;kfjsak",
                 "appId": "UUIDV4:password-manager-app-id",
                 "domain": "github.com",
-                "groupId": [ "0xw0983542" ],
-                "personaId": [ "0x23948173453"]
+                "groupId": [
+                    "0xw0983542"
+                ],
+                "personaId": [
+                    "0x23948173453"
+                ]
             },
             {
                 "contextID": "UUIDV4:password-manager-app-id;shared",
@@ -32,7 +36,10 @@
             "personaId": "UUIDV4:4234235737",
             "meeUserId": "did:alexijljkli",
             "accessMode": "RW",
-            "contextIds": [ "UUIDV4:4399523465243", "0x239857234856"],
+            "contextIds": [
+                "UUIDV4:4399523465243",
+                "0x239857234856"
+            ],
             "comment": "...starting here: user attributes common to all contextIds listed above"
         }
     ],
@@ -61,7 +68,7 @@
             ],
             "created": "20120101",
             "updated": "20130101",
-           "comment": "starting here: user attributes..."
+            "comment": "starting here: user attributes..."
         },
         {
             "contextId": "UUIDV4:3249523234245234",
