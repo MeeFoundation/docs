@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/MeeFoundation/design-notes/main/person.json?token=GHSAT0AAAAAABQ22PCTLOZMIVDS7Y646VMYYSRUQMA",
+    "$schema": "https://raw.githubusercontent.com/MeeFoundation/design-notes/main/person-schema.json?token=GHSAT0AAAAAABQ22PCSN4QZG2X4P3Y7YTDQYSRUSQQ",
     "$id": "https://gitbhub.com/MeeFoundation/design-notes/person.json",
     "rootContext" : {
         "seedPhrase": "the very quick brown fox landed on the full moon extremely gracefully"
