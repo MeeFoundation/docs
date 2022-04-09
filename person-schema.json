@@ -1,4 +1,5 @@
 {
+   "comment": "This file is out of date. It needs to be updated to track recent changes in the person.json example"
    "$schema": "http://json-schema.org/draft-07/schema",
    "$id": "https://github.com/MeeFoundation/design-notes/person-schema.json",
    "title": "Personal data schema",
