@@ -6,53 +6,49 @@
         "currentPersonaId": "work",
         "contextMetadata": [
             {
-                "contextId": "0x399523465243",
-                "encryptionKey": "base64:jfjsda;fjsa;kfjsak",
+                "contextId": "0xA",
+                "encryptionKey": "base64:blah...",
                 "appId": "UUIDV4:password-manager-app-id",
                 "domain": "github.com",
                 "groupId": [
                     "0xw0983542"
-                ],
-                "personaId": [
-                    "0x23948173453"
                 ]
             },
             {
-                "contextID": "UUIDV4:password-manager-app-id;shared",
-                "encryptionKey": "base64:sdsd;fjsa;kfjsak",
-                "appID": "Mee-password-manager-app-id",
-                "domain": "github.com"
-            },
+                "contextId": "0xB",
+                "encryptionKey": "base64:blah...",
+                "appID": "UUIDV4:Mee-form-filler-app-id",
+                "domain": "amazon.com"
+            }
+        ],
+        "personaMetadata": [
             {
-                "contextID": "UUIDV4:form-filler-app-id;private",
-                "encryptionKey": "base64:jfjsda;d;kfjsak",
-                "appID": "Mee-form-filler-app-id",
-                "domain": "github.com"
+                "personaId": "0x1",
+                "encryptionKey": "base64:blah..."
             }
         ]
     },
     "personas": [
         {
-            "personaId": "UUIDV4:4234235737",
-            "meeUserId": "did:alexijljkli",
+            "personaId": "0x1",
+            "meeUserId": "did:alex...",
             "accessMode": "RW",
             "contextIds": [
-                "UUIDV4:4399523465243",
-                "0x239857234856"
+                "0x00B"
             ],
-            "comment": "...starting here: user attributes common to all contextIds listed above"
+            "comment": "...starting here: user attributes common to all contextIds listed in contextIds"
         }
     ],
     "groups": [
         {
-            "id": "0xw0983542",
+            "id": "0x0001",
             "name": "Work-related"
         }
     ],
     "contexts": [
         {
-            "contextId": "UUIDV4:4399523465243",
-            "meeUserId": "did:alexijljkli",
+            "contextId": "0xA",
+            "meeUserId": "did:alex...",
             "accessMode": "RW",
             "vaultServer": {
                 "connect": "urieo:jdfkldk"
@@ -63,16 +59,15 @@
                     "url": "https://auth.github.com",
                     "name": "Swift Github Account",
                     "username": "alex-swift",
-                    "secret": "mySecretPassword"
+                    "secret": "NotAGoodPassword"
                 }
             ],
-            "created": "20120101",
-            "updated": "20130101",
-            "comment": "starting here: user attributes..."
+            "created": "2012-01-01",
+            "updated": "2013-04-07"
         },
         {
-            "contextId": "UUIDV4:3249523234245234",
-            "meeUserId": "did:paulijljkli",
+            "contextId": "0xB",
+            "meeUserId": "did:paul...",
             "accessMode": "RO",
             "domain": "aws.amazon.com",
             "usernamePasswordCredential": [
@@ -80,10 +75,13 @@
                     "url": "https://account.aws.amazon.com",
                     "name": "AWS DevOps Swift",
                     "username": "devops@swiftinvention.com",
-                    "secret": "mySecretPasswordsfjlsjf"
+                    "secret": "PrettyBadPassword"
                 }
             ],
-            "created": "20170101",
+            "created": "2017-04-09",
+            "groupIds": [
+                "0x0001"
+            ],
             "comment": "starting here: user attributes..."
         }
     ]
