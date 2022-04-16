@@ -6,9 +6,9 @@
         "currentPersonaId": "work",
         "contextMetadata": [
             {
-                "contextId": "0xA",
+                "context": "C1",
                 "encryptionKey": "base64:blah...",
-                "appId": "UUIDV4:password-manager-app-id",
+                "app": "UUIDV4:password-manager-app-id",
                 "contextProvider": {
                     "url": "github.com"
                 },
@@ -17,7 +17,7 @@
                 ]
             },
             {
-                "contextId": "0xB",
+                "context": "C2",
                 "encryptionKey": "base64:blah...",
                 "appID": "UUIDV4:Mee-form-filler-app-id",
                 "contextProvider": {
@@ -27,17 +27,16 @@
         ],
         "personaMetadata": [
             {
-                "personaId": "0x1",
+                "persona": "P1",
                 "encryptionKey": "base64:blah..."
             }
         ]
     },
     "personas": [
         {
-            "personaId": "0x1",
-            "meeUserId": "did:alex...",
+            "personaId": "P1",
             "accessMode": "RW",
-            "contextIds": [
+            "context": [
                 "0x00B"
             ],
             "subject": [
@@ -50,19 +49,29 @@
     ],
     "groups": [
         {
-            "id": "0x0001",
+            "groupId": "G1",
             "name": "Work-related"
         }
     ],
     "contexts": [
         {
-            "contextId": "0xA",
+            "ContextId": "root",
+            "subject": [
+                {
+                    "name": "Swift Invention",
+                    "correlation": "S1"
+                }
+            ]
+        },
+        {
+            "contextId": "C1",
             "accessMode": "RW",
             "vaultServer": {
                 "connect": "urieo:jdfkldk"
             },
             "subject": [
                 {
+                    "subjectId": "S1",
                     "name": "Swift Github Account",
                     "account": {
                         "loginURL": "https://auth.github.com",
@@ -76,11 +85,11 @@
             "updated": "2013-04-07"
         },
         {
-            "contextId": "0xB",
+            "contextId": "C2",
             "accessMode": "RO",
             "subject": [
                 {
-                    "name": "AWS Devops Swift",
+                    "name": "Swift AWS Account",
                     "account": {
                         "LoginURL": "https://account.aws.amazon.com",
                         "username": "devops@swiftinvention.com",
@@ -90,8 +99,8 @@
                 }
             ],
             "created": "2017-04-09",
-            "groupIds": [
-                "0x0001"
+            "group": [
+                "G1"
             ]
         }
     ]
