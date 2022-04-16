@@ -59,7 +59,9 @@
             "subject": [
                 {
                     "name": "Swift Invention",
-                    "correlation": "S1"
+                    "correlation": [
+                        "S1"
+                    ]
                 }
             ]
         },
