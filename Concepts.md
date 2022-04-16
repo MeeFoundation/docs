@@ -51,6 +51,10 @@ The Mee framework can be drawn as three concentric rings containing PDS, PDS “
 
 ![3 rings v17](./images/3_rings_v17.png)
 
+### Data Model
+
+![person-classes](person-classes.png)
+
 ### Data Types
 
 - **Seed Phrase** - a 12-word textual phrase that the user creates. It is used to generate cryptographic keys that in turn are used to encrypt the user’s personal data whether it is stored locally on their device or in a backup location**.** It can be used to generate keys to digitally sign transactions (e.g., for crypto currency transactions). It should never be shared with anyone or any service provider. If the user loses this phrase, they lose the ability to decrypt their data. 
