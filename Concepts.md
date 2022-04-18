@@ -53,11 +53,11 @@ The Mee framework can be drawn as three concentric rings containing PDS, PDS “
 
 ### Data Model
 
-![context-classes](context-classes.png)
+![framework-classes](framework-classes.png)
 
 ##### Sample Data
 
-[context.json](context.json)
+[framework.json](framework.json)
 
 ### Data Types
 
