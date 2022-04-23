@@ -1,6 +1,6 @@
 # Concepts
 
-### Framework Architecture
+### Mee Framework
 
 The Mee framework supports the Mee App and 3rd party  apps. The heart of the framework is the Resource Server which is a database of the user's personal data. The user is represented as entities (see blue circles below) within mulitple contexts arranged in a hieararchy under a root context. A context represents the user's interaction in some computer mediated realm with one or more other parties. Authorization of access to the Resource Server is controlled by the GNAP Authorization Server.
 
