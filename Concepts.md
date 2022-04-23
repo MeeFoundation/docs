@@ -1,47 +1,12 @@
 # Concepts
 
-### Personal data
-
-* [Exclusive Self-Ownership article](https://medium.com/meefound/exclusive-self-ownership-9917cb6bdd8c) - introduction to user-owned data
-
-* [Categories of personal data](https://docs.google.com/spreadsheets/d/11F-V793seAon7xqFX2HEqeFhHvxttEUMkKSOrbM0ptc/edit#gid=0) - examples of user-owned and app-managed data
-
-* Location/sharing alternatives: 
-
-![F2 locations and sharing options](./images/F2_locations_and_sharing_options.png)
-
 ### Framework Architecture
 
-The Mee framework supports the Mee App and 3rd party  apps. The heart of the framework is the Resource Server which is a database of the user's personal data.  It also includes a GNAP Authorization Service to manage access to the RS. 
-
-At the right is a separate cloud-based component called the Secret Storage Service which can be used by the Mee user to store encrypted, partial fragments of their seed phrase as an optional mechanism to help the user recover all of their data in the event that all of the user's devices have been lost, stolen, damaged, etc.
+The Mee framework supports the Mee App and 3rd party  apps. The heart of the framework is the Resource Server which is a database of the user's personal data. The user is represented as entities (see blue circles below) within mulitple contexts arranged in a hieararchy under a root context. A context represents the user's interaction in some computer mediated realm with one or more other parties. Authorization of access to the Resource Server is controlled by the GNAP Authorization Server.
 
 ![architecture](./images/architecture.png)
 
-##### IApp
-
-Responsibility: an app provides some service to the user. If it acts as a credential issuer it must support this interface. Methods: 
-
-- getVerifiableCredential
-
-##### IContextService
-
-Responsibility: act as an adaptor adapting an app to the Mee Core API. Methods:
-
-- GetVerifiableCredential - called by a Context
-
-##### IContext
-
-Responsibilities: manage context data storage (as a graphQL server?), replication and backup. Methods:
-
-- CRUD attribute data - graphQL?
-
-##### IRootContext
-
-Manage root context data storage, replication and backup. Methods:
-
-- getAuthMaterials - get return un/pw to login to a website
-- openContext(CID) - open (or create) a context, given a ContextID (CID)
+At the right is a separate cloud-based component called the Secret Storage Service which can be used by the Mee user to store encrypted, partial fragments of their seed phrase as an optional mechanism to help the user recover all of their data in the event that all of the user's devices have been lost, stolen, damaged, etc.
 
 ### Framework Data Model
 
@@ -74,6 +39,16 @@ The Mee framework can be drawn as three concentric rings containing PDS, PDS “
 ![3 rings v17](./images/3_rings_v17.png)
 
 
+
+### Personal data
+
+* [Exclusive Self-Ownership article](https://medium.com/meefound/exclusive-self-ownership-9917cb6bdd8c) - introduction to user-owned data
+
+* [Categories of personal data](https://docs.google.com/spreadsheets/d/11F-V793seAon7xqFX2HEqeFhHvxttEUMkKSOrbM0ptc/edit#gid=0) - examples of user-owned and app-managed data
+
+* Location/sharing alternatives: 
+
+![F2 locations and sharing options](./images/F2_locations_and_sharing_options.png)
 
 ### Data Sharing Agreements
 
