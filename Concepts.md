@@ -12,7 +12,7 @@
 
 ### Framework Architecture
 
-The Mee framework supports the Mee App and 3rd party  apps. The heart of the framework is the Resource Server which is a database of the user's personal data. It also includes a GNAP Authorization Service to manage access to the RS. 
+The Mee framework supports the Mee App and 3rd party  apps. The heart of the framework is the Resource Server which is a database of the user's personal data.  It also includes a GNAP Authorization Service to manage access to the RS. 
 
 At the right is a separate cloud-based component called the Secret Storage Service which can be used by the Mee user to store encrypted, partial fragments of their seed phrase as an optional mechanism to help the user recover all of their data in the event that all of the user's devices have been lost, stolen, damaged, etc.
 
