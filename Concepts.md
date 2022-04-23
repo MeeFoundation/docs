@@ -12,7 +12,9 @@
 
 ### Framework Architecture
 
-The Mee framework consists of a simple UI (see "App UI") layered over a combination of core and 3rd party services. The diagram below shows the user using this "Mee" app to interact with an external app (e.g. a website or other mobile app, etc.) at the upper right. At the right is a separate cloud-based component called the Secret Storage Service which can be used by the Mee user to store encrypted, partial fragments of their seed phrase as an optional mechanism to help the user recover all of their data in the event that all of the user's devices have been lost, stolen, damaged, etc.
+The Mee framework supports the Mee App and 3rd party  apps. The heart of the framework is the Resource Server which is a database of the user's personal data. It also includes a GNAP Authorization Service to manage access to the RS. 
+
+At the right is a separate cloud-based component called the Secret Storage Service which can be used by the Mee user to store encrypted, partial fragments of their seed phrase as an optional mechanism to help the user recover all of their data in the event that all of the user's devices have been lost, stolen, damaged, etc.
 
 ![architecture](./images/architecture.png)
 
