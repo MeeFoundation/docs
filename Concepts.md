@@ -6,6 +6,12 @@ The Mee framework supports the Mee App and 3rd party  apps. The heart of the fra
 
 ![architecture](./images/architecture.png)
 
+#### Root Context
+
+The root context is the most abstract concept and possibly the hardest to understand. The Mee framework can be thought of as supporting a digital twin of the user. As such it needs to represent the very abstract notion that the human user, when using various digital systems exists as many partial identities in different contexts. For example in an email context the user might have one or more email address identifiers. While on Twitter they might have a twitter handle. And in a game they might play under a pseudon devilspawn666. The user is the single point of integration across these contexts and in a privacy-first design the only entity who knows that they are all digital embodiments of the same human being. We represent the human person as a entity within the root context, and we represent their identities in each of these other 3 example contexts as other entities. We add a directed "correlation" link pointing from the entity in the root context (that represents the human user) to each of its embodiment entities in each context. This "root context" abstraction is what enables the Mee Framwork be a meta-identity system, not an identity system. Each context can define its own identifier namespace, schemas, etc. independently. Each can implement its own stage management, communications protocols, etc.
+
+#### Secret Storage Service
+
 At the right is a separate cloud-based component called the Secret Storage Service which can be used by the Mee user to store encrypted, partial fragments of their seed phrase as an optional mechanism to help the user recover all of their data in the event that all of the user's devices have been lost, stolen, damaged, etc.
 
 ### Framework Data Model
@@ -42,10 +48,8 @@ The Mee framework can be drawn as three concentric rings containing PDS, PDS “
 
 ### Personal data
 
-* [User-exclusive Data article](https://medium.com/meefound/exclusive-self-ownership-9917cb6bdd8c) - introduction to user-owned data
-
+* [User-exclusive Data article](https://medium.com/meefound/exclusive-self-ownership-9917cb6bdd8c) - introduction to exclusive-to-the-user data
 * [Categories of personal data](https://docs.google.com/spreadsheets/d/11F-V793seAon7xqFX2HEqeFhHvxttEUMkKSOrbM0ptc/edit#gid=0) - examples of user-owned and app-managed data
-
 * Location/sharing alternatives: 
 
 ![F4_location_sharing_and_exclusivity](/Users/paul/Documents/GitHub/design-notes/images/F4_location_sharing_and_exclusivity.png)
