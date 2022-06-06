@@ -42,13 +42,13 @@ The Mee framework can be drawn as three concentric rings containing PDS, PDS “
 
 ### Personal data
 
-* [Exclusive Self-Ownership article](https://medium.com/meefound/exclusive-self-ownership-9917cb6bdd8c) - introduction to user-owned data
+* [User-exclusive Data article](https://medium.com/meefound/exclusive-self-ownership-9917cb6bdd8c) - introduction to user-owned data
 
 * [Categories of personal data](https://docs.google.com/spreadsheets/d/11F-V793seAon7xqFX2HEqeFhHvxttEUMkKSOrbM0ptc/edit#gid=0) - examples of user-owned and app-managed data
 
 * Location/sharing alternatives: 
 
-![F2 locations and sharing options](./images/F2_locations_and_sharing_options.png)
+![F4_location_sharing_and_exclusivity](/Users/paul/Documents/GitHub/design-notes/images/F4_location_sharing_and_exclusivity.png)
 
 ### Data Sharing Agreements
 
