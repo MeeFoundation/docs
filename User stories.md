@@ -6,7 +6,8 @@
 | **user** | have as much of my data as possible be *user-held*           | I can easily and directly disclose it with others when I interact with them |
 | **user** | disclose my data to others (people and apps)                 | I can interact with them                                     |
 | **user** | be able to trust the recipients of my disclosures            | I feel comfortable disclosing information to them            |
-| **user** | be able to trust that what I disclose to others (people and apps) will not be sold to others (or shared with others unnecessarily) | my data isn't exploited by others and I'm not vulnerable to malicious actors |
+| **user** | be able to trust that what I disclose to others (people and apps) will not be disclosed by them to 3rd parties beyond the minimal amount necessary to implement the interaction/transaction with me | my data doesn't spread further than necessary to other actors and increase my vulnerability to exploitation |
+| **user** | be able to know how the recipient of my disclosure will handle my personal data | I feel comfortable disclosing information to them            |
 
 ### Personal data management 
 
