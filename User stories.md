@@ -15,7 +15,7 @@
 | AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
 | :------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
 | **user** | run the Mee app on mobile and desktop devices                | I can access it from any of my devices                       |
-| **user** | have my data replicated/synced on all my devices             | I can decide at any time which device to use and have consistent results |
+| **user** | have my data replicated/synced on all my devices             | I can decide at any time which device to use and have a consistent user experience |
 | **user** | be able to recover my Mee app data from catastrophic disaster where I loose all of my devices (and I loose access to my device backups) | I don't loose all of the personal data that I've already collected and the investment I've made in assembling it |
 
 Note: the above this advice: https://www.mountaingoatsoftware.com/blog/advantages-of-the-as-a-user-i-want-user-story-template  
