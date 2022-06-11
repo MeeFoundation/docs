@@ -6,11 +6,15 @@ The Mee framework supports the Mee App and 3rd party  apps. The heart of the fra
 
 ![architecture](./images/architecture.png)
 
+#### Secret Storage Service
+
+The Secret Storage Service is a cloud-based which can (optionally) be used by the Mee app user to store an encrypted, partial fragments of their seed phrase to help the user recover their data in the event that all of the user's devices have been lost, stolen, damaged, etc. and their cloud-based backups of their devices are unavailable.
+
 #### Root Context
 
 The Mee framework can be thought of as providing a [digital twin](https://en.wikipedia.org/wiki/Digital_twin) of the user. It represents the user, as they use various digital systems (apps, websites, etc.) as a set of multiple, partial identities within different contexts. The user is the sole point of integration across these contexts. That is, in a privacy-first design, the only person who needs to know that in reality these are are all digital embodiments of the same user is *that* user. 
 
-The root context is the data container that contains the entity that represents this user, and we represent their identities in other non-root  contexts as other entities. We add a directed "correlation" link pointing from the entity in the root context that represents the person to each of its embodiment entities in each context. This "root context" abstraction is at the heart of what enables the Mee Framework be a *meta*-identity system, not an identity system. Each context defines its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. independently. 
+The root context (shown in the diagram above) is a data container that contains the entity that represents this user, and we represent their identities in other non-root  contexts as other entities. We add a directed "correlation" link pointing from the entity in the root context that represents the person to each of its embodiment entities in each context. This "root context" abstraction is at the heart of what enables the Mee Framework be a *meta*-identity system, not an identity system. Each context defines its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. independently. 
 
 As an example, a user might have a couple email addresses, a Twitter handle, and in some game they play have the handle DevilSpawn666. Here's how this is represented:
 
@@ -18,9 +22,7 @@ As an example, a user might have a couple email addresses, a Twitter handle, and
 
 
 
-#### Secret Storage Service
 
-At the right is a separate cloud-based component called the Secret Storage Service which can be used by the Mee user to store encrypted, partial fragments of their seed phrase as an optional mechanism to help the user recover all of their data in the event that all of the user's devices have been lost, stolen, damaged, etc.
 
 ### Framework Data Model
 
