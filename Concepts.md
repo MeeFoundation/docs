@@ -8,7 +8,7 @@ The Mee framework supports the Mee App and 3rd party  apps. The heart of the fra
 
 #### Root Context
 
-The root context is the most abstract concept and possibly the hardest to understand. The Mee framework can be thought of as supporting a digital twin of the user. As such it needs to represent the very abstract notion that the human user, when using various digital systems exists as many partial identities in different contexts. 
+The root context is a very abstract concept, and possibly the hardest to understand. The Mee framework can be thought of as supporting a digital twin of the user. As such it needs to represent the very abstract notion that the human user, when using various digital systems exists as many partial identities in different contexts. 
 
 The user is the single point of integration across these contexts, and in in privacy-first design the only entity who needs to know that these are are all digital embodiments of the same person is that person. We represent the person as a entity within the root context, and we represent their identities in other non-root  contexts as other entities. We add a directed "correlation" link pointing from the entity in the root context that represents the person to each of its embodiment entities in each context. This "root context" abstraction is at the heart of what enables the Mee Framwork be a meta-identity system, not an identity system. Each context can define its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. independently. 
 
