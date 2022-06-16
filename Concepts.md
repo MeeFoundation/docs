@@ -16,13 +16,9 @@ The Mee framework can be thought of as providing a [digital twin](https://en.wik
 
 The root context (shown in the diagram above) is the data container that contains the entity that represents this user, and we represent their identities in other non-root  contexts as other entities. We add a directed "correlation" link pointing from the entity in the root context that represents the person to each of its embodiment entities in each context. This "root context" abstraction is at the heart of what enables the Mee Framework be a *meta*-identity system, not an identity system. Each context defines its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. independently. 
 
-As an example, a user might have a couple email addresses, a Twitter handle, and in some game they play have the handle DevilSpawn666. Here's how this is represented:
+As an example, a user might have a gmail address, a Twitter handle, and in some game they play have the handle DevilSpawn666. Here's how this is represented:
 
-![root_context_example](./images/root_context_example.png)
-
-
-
-
+![root_context_example](/Users/paul/Dropbox/Mee Tech/design-notes (additional files)/images/root_context_example.png)
 
 ### Framework Data Model
 
