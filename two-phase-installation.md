@@ -2,7 +2,7 @@
 
 **Solution**: break the installation process into two phases. The second phase would only be triggered if/when the user was involved in a transaction that involved storing personal data. 
 
-**Use Case 1 First time user clicks on "no data" Mee-compatible website (e.g. nytimes.com)**
+**Use Case 1: First time user clicks on "no data" Mee-compatible website (e.g. nytimes.com)**
 
 *Preconditions*
 
