@@ -1,26 +1,39 @@
 # Concepts
 
+
+
+#### Selfness vs. Whoness
+
+The late [Kim Cameron](https://en.wikipedia.org/wiki/Kim_Cameron_(computer_scientist)) in his [last public speech](https://www.youtube.com/watch?v=9DExNTY3QAk) introduced two useful definitions:
+
+- **Selfness**: The sameness of a person or thing at all times or in all circumstances. The condition of being a single individual. The fact that a person or thing is itself and not something else. Individuality, personality. 
+- **Whoness**: Who or what a person or thing is. A distinct impression of a single person or thing presented to or perceived by others. A set of characteristics or a description that distinguishes a person or thing from others. 
+
+The following diagram illustrates these concepts and introduces the notion of context:
+
+ ![selfness-and-whoness](/Users/paul/Documents/GitHub/design-notes/images/selfness-and-whoness.png)
+
+
+
+#### The Self and Contexts
+
+The Mee framework is a [digital twin](https://en.wikipedia.org/wiki/Digital_twin) of the user and represents both their selfness and whonesses.
+
+The selfness of the user is represented by a data container called the *Self*. The contents of the Self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. This Self abstraction is at the heart of what enables the Mee Framework be what is called a ""*meta*-identity system," as opposed to an identity system. The user's Self is the point of integration across contexts each of which may be from differing identity systems. 
+
+Each context is represented by a *Context* data container. A directed *correlation* link points from the Self entity to the entity representing the self in each context. The only person who must know that in reality these contexts contain representations of the same self/user is *that* user. Each context may define its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. 
+
+We can illustrate all of these concepts with a simple example. A user might have a gmail address, a Twitter handle, and in a game they play have the handle DevilSpawn666. Here's how this is represented:
+
+![self_and_contexts_example](/Users/paul/Documents/GitHub/design-notes/images/self_and_contexts_example.png)
+
 ### Mee Framework
 
-The Mee framework supports the Mee App and 3rd party  apps. The heart of the framework is the Resource Server which is a database of the user's personal data. The user is represented as entities (see blue circles below) within mulitple contexts arranged in a hieararchy under a root context. A context represents the user's interaction in some computer mediated realm with one or more other parties. Authorization of access to the Resource Server is controlled by the GNAP Authorization Server.
+The Mee framework supports the Mee App as well as 3rd party apps. The heart of the framework is the Resource Server which is a database of the user's personal data, often called a personal datastore. The user is represented as entities (see blue circles below) within mulitple contexts linked to the Self. A context represents the user's interaction in some computer mediated realm with one or more other parties. Authorization of access to the Resource Server is controlled by the GNAP Authorization Server.
 
 ![architecture](./images/architecture.png)
 
-#### Secret Storage Service
-
-The Secret Storage Service is a cloud-based which can (optionally) be used by the Mee app user to store an encrypted, partial fragments of their seed phrase to help the user recover their data in the event that all of the user's devices have been lost, stolen, damaged, etc. and their cloud-based backups of their devices are unavailable.
-
-#### Root Context
-
-The Mee framework can be thought of as providing a [digital twin](https://en.wikipedia.org/wiki/Digital_twin) of the user. It represents the user, as they use various digital systems (apps, websites, etc.) as a set of multiple, partial identities within different contexts. The user is the sole point of integration across these contexts. That is, in a privacy-first design, the only person who needs to know that in reality these are are all digital embodiments of the same user is *that* user. 
-
-The root context (shown in the diagram above) is the data container that contains the entity that represents this user, and we represent their identities in other non-root  contexts as other entities. We add a directed "correlation" link pointing from the entity in the root context that represents the person to each of its embodiment entities in each context. This "root context" abstraction is at the heart of what enables the Mee Framework be a *meta*-identity system, not an identity system. Each context defines its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. independently. 
-
-As an example, a user might have a gmail address, a Twitter handle, and in some game they play have the handle DevilSpawn666. Here's how this is represented:
-
-![root_context_example](./images/root_context_example.png)
-
-### Framework Data Model
+### Data Model
 
 ![framework-classes](framework-classes.png)
 
