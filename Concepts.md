@@ -11,7 +11,7 @@ The late [Kim Cameron](https://en.wikipedia.org/wiki/Kim_Cameron_(computer_scien
 
 The following diagram illustrates these concepts and introduces the notion of context:
 
- ![selfness-and-whoness](/Users/paul/Documents/GitHub/design-notes/images/selfness-and-whoness.png)
+ ![selfness-and-whoness](./images/selfness-and-whoness.png)
 
 
 
@@ -25,7 +25,7 @@ Each context is represented by a *Context* data container. A directed *correlati
 
 We can illustrate all of these concepts with a simple example. A user might have a gmail address, a Twitter handle, and in a game they play have the handle DevilSpawn666. Here's how this is represented:
 
-![self_and_contexts_example](/Users/paul/Documents/GitHub/design-notes/images/self_and_contexts_example.png)
+![self_and_contexts_example](./images/self_and_contexts_example.png)
 
 ### Mee Framework
 
