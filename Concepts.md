@@ -35,7 +35,7 @@ The Mee framework supports the Mee App as well as 3rd party apps. The heart of t
 
 ### Data Model
 
-![framework-classes](framework-classes.png)
+![framework-classes](./images/framework-classes.png)
 
 #### Sample Data
 
