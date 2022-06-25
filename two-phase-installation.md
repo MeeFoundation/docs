@@ -31,7 +31,7 @@
 
 *Preconditions*
 
-- User is browsing on thier iPhone
+- User is browsing on their iPhone
 - User is a phase 1 user [has iphone, has completed phase 1 of installation on it]
 
 *Flow*
