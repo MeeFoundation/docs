@@ -57,7 +57,7 @@ The Mee framework supports the Mee App as well as 3rd party apps. The heart of t
 
 The Mee framework can be drawn as three concentric rings containing PDS, PDS “contexts”, and apps that hold the user’s personal data.
 
-* **Ring 0:** The most sensitive information about a user consists of the linkages between the user and their multiple partial digital identities across different interaction contexts. This linkage information is stored in the innermost ring, ring 0 in what’s called the “root context” within the personal data store itself.
+* **Ring 0:** The most sensitive information about a user consists of the linkages between the user and their multiple partial digital identities across different interaction contexts. This linkage information is stored in the innermost ring, ring 0 in what’s called the Self within the personal datastore itself.
 * **Ring 1** contains highly trusted apps that comply with the Ring 1 agreement. They read/write data from/to “context” containers managed by the PDS.
 * **Ring 2** contains less trusted apps that comply with the Ring 2 agreement. They store copies of the user’s personal information and synchronize these copies with the copy in the user’s personal data store.
 
