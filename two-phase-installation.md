@@ -11,15 +11,18 @@
 
 *Flow*
 
-- user clicks Connect with Mee on a website/app that only wants to sign in the user (no personal data storage)
+- user clicks Connect with Mee on a website (e.g. nytimes.com) that only wants to sign in the user (no personal data storage)
 - browser is redirected to [getmee.org/download](http://getmee.org/download)
-- if user is on a desktop, they will have to switch to their phone & go to the App Store, find the "Mee" app
-- user downloads/installs Mee app from the App Store
-- user enters Secret Recovery Phrase [yes, I know, even if there is no data to "recover"]
-- user is given the option to print this out [and told to share it with no one, etc]
-- a "[nytimes.com](http://nytimes.com)" context is created containing an a nytimes-specific ID
-- user goes back to the [getmee.org/download](http://getmee.org/download) page 
-- ?? do they click "return to [nytimes.com](http://nytimes.com)" button?? and they signed in?
+- user learns about Mee and decides they want to install it. They read where to go on the iPhone app store, etc.
+- user picks up their phone and go to the App Store, find the "Mee" app
+- user downloads/installs Mee app from the App Store onto their phone
+- Mee app starts up
+  - a progress bar appears...
+  - a "[nytimes.com](http://nytimes.com)" context is created containing an a nytimes-specific ID (probably a pairwise DID)
+  - a login token is sent from the phone to either (a) a proxy service or (b) ?? FastFed implementation on the website??
+  - ...done. User is told to go back to the website
+
+- user sees that they are signed in on website!
 - User is now a "phase 1" user
 
 
