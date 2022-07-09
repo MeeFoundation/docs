@@ -45,8 +45,8 @@ The Mee framework supports the Mee App as well as 3rd party apps. The heart of t
 
 ![framework-datatypes](./images/framework-datatypes.png)
 
-- ContextID - The digital space/realm/domain within which the user is interacting. It may contain Digital Subjects other than the user
-- AppID - The app that created and manages the contents of a ContextContainer
+- **ContextID** - The digital space/realm/domain within which the user is interacting. It may contain Digital Subjects other than the user
+- **AppID** - The app that created and manages the contents of a ContextContainer
 
 - **Secret Recovery Phrase** - a 12-word textual phrase that the user creates. It is used to generate cryptographic keys that in turn are used to encrypt the user’s personal data whether it is stored locally on their device or in a backup location. It can be used to generate keys to digitally sign transactions (e.g., for crypto currency transactions). It should never be shared with anyone or any service provider. If the user loses this phrase, they lose the ability to decrypt their data. 
 
