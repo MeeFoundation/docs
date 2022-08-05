@@ -38,7 +38,7 @@ A privacy agent is an end-user app that, on behalf of the user collects, organiz
 
 ### Architecture
 
-The Mee architecture supports the privacy agent and its interactions with third-party apps and websites. The top, Apps, layer includes both the agent itself as well as local and remote apps and websites that the user, shown below as "Alice" interacts with. The authorization layer handles requests for access to data from Alice's agent UI, local apps and other user's privacy agents. The replication layer implements a logical resource server that is supported by one or more physical data stores containing replicas of the users data on their various devices and web services.
+The Mee architecture shown below supports the privacy agent and its interactions with third-party apps and websites. The application layer includes local and remote apps and websites that the user, Alice, interacts with. Note that each person's agent appears to others an an app. The agent layer acts on behalf of Alice giving her control over her human data. The authorization layer handles requests for access to data from Alice's agent, local apps, and other user's privacy agents. The replication layer provides a resource server that is implemented by one or more physical data stores containing replicas of Alice's data following a [local-first](https://www.inkandswitch.com/local-first/) pattern.
 
 ![architecture](./images/architecture.png)
 
