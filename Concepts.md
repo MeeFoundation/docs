@@ -17,9 +17,9 @@ The following diagram illustrates these concepts and introduces the notion of co
 
 #### The Self and Contexts
 
-The Mee framework is a [digital twin](https://en.wikipedia.org/wiki/Digital_twin) of the user and represents both their selfness and whonesses.
+The Mee privacy agent is a [digital twin](https://en.wikipedia.org/wiki/Digital_twin) of the user and represents both their selfness and whonesses.
 
-The selfness of the user is represented by a data container called the *Self*. The contents of the Self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. This Self abstraction is at the heart of what enables the Mee Framework be what is called a ""*meta*-identity system," as opposed to an identity system. The user's Self is the point of integration across contexts each of which may be from differing identity systems. 
+The selfness of the user is represented by a data container called the *Self*. The contents of the Self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. This Self abstraction is at the heart of what enables the Mee architecture to be a ""*meta*-identity system," as opposed to an identity system. The user's Self is the point of integration across contexts each of which may be from differing identity systems. 
 
 Each context is represented by a *Context* data container. A directed *correlation* link points from the Self entity to the entity representing the self in each context. The only person who must know that in reality these contexts contain representations of the same self/user is *that* user. Each context may define its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. 
 
@@ -27,9 +27,18 @@ We can illustrate all of these concepts with a simple example. A user might have
 
 ![self_and_contexts_example](./images/self_and_contexts_example.png)
 
-### Mee Framework
+### Privacy Agent
 
-The Mee framework supports the Mee App as well as 3rd party apps. The heart of the framework is the Resource Server which is a database of the user's personal data, often called a personal datastore. The user is represented as entities (see blue circles below) within mulitple contexts linked to the Self. A context represents the user's interaction in some computer mediated realm with one or more other parties. Authorization of access to the Resource Server is controlled by the GNAP Authorization Server.
+A privacy agent is an end-user app that, on behalf of the user collects, organizes, manages and shares their personal data with others. An agent can request access to portions of another user's data or, conversely, grant a request to portions of their own data. The agent provides a user interface to support these functions but the data being accessed may or not be co-located on the same device or computer. Here is an overview of the main agent functions:
+
+- Authenticate the user (e.g. via facial recognition, etc.)
+- Allow the user to review, and in some cases edit, their personal data
+- Request access to data from another person or grant/authorize a request from another person to data
+- Manage the storage (including backup and recovery) of the user's data and replicate it across the user's devices
+
+### Architecture
+
+The Mee architecture supports the privacy agent and its interactions with third-party apps and websites. The top, Apps, layer includes both the Privacy Agent itself as well as local and remote apps and websites that the user, shown below as "Alice" interacts with. The authorization layer handles requests for access to data. Alice's Privacy Agent, local apps and other user's privacy agents. The replication layer implements a resource server that is supported by one or more data stores containing replicas of the users data on their variouls devices and web services.
 
 ![architecture](./images/architecture.png)
 
@@ -58,18 +67,6 @@ The Mee framework supports the Mee App as well as 3rd party apps. The heart of t
 * **Client key pair** is key pair to identify client app or website
 * **Context key** is a key to encrypt user data in the context.
 
-### Rings
-
-The Mee framework can be drawn as three concentric rings containing PDS, PDS “contexts”, and apps that hold the user’s personal data.
-
-* **Ring 0:** The most sensitive information about a user consists of the linkages between the user and their multiple partial digital identities across different interaction contexts. This linkage information is stored in the innermost ring, ring 0 in what’s called the Self within the personal datastore itself.
-* **Ring 1** contains highly trusted apps that comply with the Ring 1 agreement. They read/write data from/to “context” containers managed by the PDS.
-* **Ring 2** contains less trusted apps that comply with the Ring 2 agreement. They store copies of the user’s personal information and synchronize these copies with the copy in the user’s personal data store.
-
-![3 rings v17](./images/3_rings_v17.png)
-
-
-
 ### Personal data
 
 * [User-exclusive Data article](https://medium.com/meefound/exclusive-self-ownership-9917cb6bdd8c) - introduction to exclusive-to-the-user data
@@ -78,11 +75,4 @@ The Mee framework can be drawn as three concentric rings containing PDS, PDS “
 
 ![F4_location_sharing_and_exclusivity](./images/F4_location_sharing_and_exclusivity.png)
 
-### Data Sharing Agreements
-
-Developers of Mee-compatible mobile apps and websites may choose to sign an agreement that includes limits on what they may do with the user’s data:
-
-* *Ring 1 agreement:* compels the firm’s app(s) to not store copies of user-owned data nor sharing any user  user’s data with any other entity. [user benefits: privacy and control]
-* *Ring 2 agreement:* a weaker agreement than above that allows the firm’s app(s) to store copies of user data, such that the latest values of app-asserted attributes about the user are always written to the user’s personal data store and the user may choose to update the app’s copy with the latest user-asserted attributes from the user’s personal data store. [user benefits: control]
-
-If they agree to neither of the above then the user gains no additional guarantees WRT data handling beyond what existing laws provide.
+.
