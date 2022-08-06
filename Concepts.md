@@ -33,25 +33,33 @@ A privacy agent as we envision it is a minimalist, occasional use, “administra
 
 An agent can request access to portions of another user's data or, conversely, grant a request to portions of their own data. The agent provides a user interface to support management of the user's personal data which is typically, although not necessarily exclusively co-located on the device running the agent. 
 
-Here is an overview of the functionality planned for MVP1:
+Here is an overview of the functionality planned for MVP1 (iOS only):
 
-- Authenticate the user (e.g. via facial recognition, etc.)
-- SIOP identity provider
+- Authenticate the user (e.g. via biometrics)
+- OpenId Connect SIOP identity provider
 
-MVP2 functionality:
+MVP2: TBD:
 
-- Allow the user to review, and in some cases edit, their personal data
-- Request access to data from another person or grant/authorize a request from another person to data
-- Manage the storage (including backup and restoration) of the user's data and replicate it across the user's devices
-- Generates crtypographic keys and key-pairs to encrypt data and digitally sign documents
-- Create and hold a Secret Recovery Phrase (SRP) that is used as entropy for key generation.
-- For disaster recovery purposes the agent supports sharding the SRP and storing it with friends and secure locations. It also supports recovery of the agent's state by recovering a subset of these shards. 
-- Verifiable Credential wallet functions
+- iOS and Android support
 
 MVP3:
 
-- Password manager
-- Maintains backups of all personal data and related agent state
+- Verifiable Credential wallet 
+- Integrated P2P text messaging
+- Review/edit personal data
+- Request access to another person's data, or authorize access to your data by another person
+- Manage the storage (including backup/restore) of user's data
+- Replicate user's data across the their devices
+- Create a Secret Recovery Phrase (SRP)
+- Generate cryptographic keys
+- Support SRP sharding and transmission to friends and secure locations
+- Social/other SRP recovery
+
+MVP4:
+
+- MacOS and Windows support
+- Integrated & standalone password manager
+- SDK to allow apps to read/write data
 
 ### Architecture
 
