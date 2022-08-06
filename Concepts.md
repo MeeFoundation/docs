@@ -4,7 +4,7 @@
 
 #### Selfness vs. Whoness
 
-The late [Kim Cameron](https://en.wikipedia.org/wiki/Kim_Cameron_(computer_scientist)) in his [last public speech](https://www.youtube.com/watch?v=9DExNTY3QAk) introduced two useful definitions:
+In his [last public speech](https://www.youtube.com/watch?v=9DExNTY3QAk) [Kim Cameron](https://en.wikipedia.org/wiki/Kim_Cameron_(computer_scientist))introduced two useful definitions:
 
 - **Selfness**: The sameness of a person or thing at all times or in all circumstances. The condition of being a single individual. The fact that a person or thing is itself and not something else. Individuality, personality. 
 - **Whoness**: Who or what a person or thing is. A distinct impression of a single person or thing presented to or perceived by others. A set of characteristics or a description that distinguishes a person or thing from others. 
