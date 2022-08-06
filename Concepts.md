@@ -33,33 +33,34 @@ A privacy agent as we envision it is a minimalist, occasional use, “administra
 
 An agent can request access to portions of another user's data or, conversely, grant a request to portions of their own data. The agent provides a user interface to support management of the user's personal data which is typically, although not necessarily exclusively co-located on the device running the agent. 
 
-Here is an overview of the functionality planned for MVP1 (iOS only):
+Here is an overview of the functionality planned for v1 (iOS only):
 
 - Authenticate the user (e.g. via biometrics)
-- OpenId Connect SIOP identity provider
+- One tap, surveillance free, sign-up & sign-in (OpenId Connect SIOP identity provider)
 
-MVP2: TBD:
+v2 - TBD, 2022:
 
 - iOS and Android support
 
-MVP3:
+v3 - Feb, 2023
+
+- Create a Secret Recovery Phrase (SRP)
+- Support social/other SRP sharding and recovery
+
+v4 - April 2023
 
 - Verifiable Credential wallet 
 - Integrated P2P text messaging
-- Review/edit personal data
-- Request access to another person's data, or authorize access to your data by another person
-- Manage the storage (including backup/restore) of user's data
 - Replicate user's data across the their devices
-- Create a Secret Recovery Phrase (SRP)
-- Generate cryptographic keys
-- Support SRP sharding and transmission to friends and secure locations
-- Social/other SRP recovery
+- Review some kinds of context data
+- Request access to another person's data
+- Authorize access to your data by another
+- Manage backup/restore of user's data
 
-MVP4:
+v5 - October 2023
 
 - MacOS and Windows support
 - Integrated & standalone password manager
-- SDK to allow apps to read/write data
 
 ### Architecture
 
