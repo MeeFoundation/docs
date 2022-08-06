@@ -69,9 +69,11 @@ As mentioned, the privacy agent is designed to stay out of the way of the user's
 
 ![framework-classes](./images/framework-classes.png)
 
+![framework-classes2](./images/framework-classes2.png)
+
 #### Sample Data
 
-[framework.json](framework.json)
+[framework.json](framework.json) <-- needs updating
 
 ### Data Types
 
