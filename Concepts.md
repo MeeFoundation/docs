@@ -29,12 +29,29 @@ We can illustrate all of these concepts with a simple example. A user might have
 
 ### Privacy Agent
 
-A privacy agent is an end-user app that, on behalf of the user collects, organizes, manages and shares their personal data with others. An agent can request access to portions of another user's data or, conversely, grant a request to portions of their own data. The agent provides a user interface to support these functions but the data being accessed may or not be co-located on the same device or computer. Here is an overview of the main agent functions:
+A privacy agent as we envision it is a minimalist, occasional use, “administrative” application designed to handle administrative tasks related to managing the user’s personal data. It preserves the user's privacy when they are interacting with Mee-compatible apps and websites that have licensed the user's data according to the terms of the Mee Human Information License. 
+
+An agent can request access to portions of another user's data or, conversely, grant a request to portions of their own data. The agent provides a user interface to support management of the user's personal data which is typically, although not necessarily exclusively co-located on the device running the agent. 
+
+Here is an overview of the functionality planned for MVP1:
 
 - Authenticate the user (e.g. via facial recognition, etc.)
+- SIOP identity provider
+
+MVP2 functionality:
+
 - Allow the user to review, and in some cases edit, their personal data
 - Request access to data from another person or grant/authorize a request from another person to data
-- Manage the storage (including backup and recovery) of the user's data and replicate it across the user's devices
+- Manage the storage (including backup and restoration) of the user's data and replicate it across the user's devices
+- Generates crtypographic keys and key-pairs to encrypt data and digitally sign documents
+- Create and hold a Secret Recovery Phrase (SRP) that is used as entropy for key generation.
+- For disaster recovery purposes the agent supports sharding the SRP and storing it with friends and secure locations. It also supports recovery of the agent's state by recovering a subset of these shards. 
+- Verifiable Credential wallet functions
+
+MVP3:
+
+- Password manager
+- Maintains backups of all personal data and related agent state
 
 ### Architecture
 
@@ -42,7 +59,11 @@ The Mee architecture shown below supports the privacy agent and its interactions
 
 ![architecture](./images/architecture.png)
 
+An agent is configured with a Secret Recovery Phrase (SRP) created by the user, and never shared. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends, in files and optionally in a Shared Secret Store shown in the lower left above hosted by a service provider the user trusts.
 
+### Apps
+
+As mentioned, the privacy agent is designed to stay out of the way of the user's main interactions with Mee-compatible apps and digital services. Operating mostly in the background, it shares human information about the user with apps according to the user's information sharing preferences. This information can be used for many purposes from simplifying sign-in/sign-up, to providing contact information, payment methods, as well as preferences, interests, etc. with which apps can provide personalization, recommendations, and tailored offers. 
 
 ### Framework classes
 
