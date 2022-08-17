@@ -33,10 +33,12 @@ A privacy agent as we envision it is a minimalist, occasional use, “administra
 
 An agent can request access to portions of another user's data or, conversely, grant a request to portions of their own data. The agent provides a user interface to support management of the user's personal data which is typically, although not necessarily exclusively co-located on the device running the agent. 
 
-Here is an overview of the functionality planned for v1 (iOS only):
+#### Roadmap
+
+v1 (iOS only) - October, 2022:
 
 - Authenticate the user (e.g. via biometrics)
-- One tap, surveillance free, sign-up & sign-in (OpenId Connect SIOP identity provider)
+- One tap, "surveillance-free", sign-up & sign-in (OpenId Connect SIOP identity provider)
 
 v2 - TBD, 2022:
 
