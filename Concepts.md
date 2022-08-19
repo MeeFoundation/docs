@@ -33,7 +33,7 @@ A privacy agent as we envision it is a minimalist, occasional use, “administra
 
 An agent can request access to portions of another user's data or, conversely, grant a request to portions of their own data. The agent provides a user interface to support management of the user's personal data which is typically, although not necessarily exclusively co-located on the device running the agent. 
 
-See also [Roadmap.md](Roadmap.md)
+See also [Roadmap.md](Roadmap.md).
 
 ### Architecture
 
