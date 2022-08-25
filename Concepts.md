@@ -23,7 +23,7 @@ The selfness of the user is represented by a data container called the *Self*. T
 
 Each context is represented by a *Context* data container. A directed *correlation* link points from the Self entity to the entity representing the self in each context. The only person who must know that in reality these contexts contain representations of the same self/user is *that* user. Each context may define its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. 
 
-We can illustrate all of these concepts with a simple example. A user might have a gmail address, a Twitter handle, and in a game they play have the handle DevilSpawn666. Here's how this is represented:
+We can illustrate all of these concepts with a simple example. A user might have a gmail address, a Twitter handle, and in a game they play have the handle DevilSpawn666. Here's a simplified view of how this is represented:
 
 ![self_and_contexts_example](./images/self_and_contexts_example.png)
 
@@ -50,6 +50,10 @@ As mentioned, the privacy agent is designed to stay out of the way of the user's
 ### Framework classes
 
 ![framework-classes2](./images/framework-classes2.png)
+
+#### Detailed Sample Data![example1](./images/example1.png)
+
+
 
 #### Key Usage Analysis
 
