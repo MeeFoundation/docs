@@ -37,7 +37,13 @@ See also [Roadmap.md](Roadmap.md).
 
 ### Architecture
 
-The Mee architecture shown below supports the privacy agent and its interactions with third-party apps and websites. The application layer includes local and remote apps and websites that the user, Alice, interacts with. Note that each person's agent appears to others an an app. The agent layer acts on behalf of Alice giving her control over her human data. The authorization layer handles requests for access to data from Alice's agent, local apps, and other user's privacy agents. The replication layer provides a resource server that is implemented by one or more physical data stores containing replicas of Alice's data following a [local-first](https://www.inkandswitch.com/local-first/) pattern. All (long-term) state of the agent and the authorization server is maintained in the storage layer.
+The Mee architecture has 5 layers as shown in the diagram below:
+
+- The **application** layer consists of Mee-compatible apps. Shown in the diagram are 4 example apps that Alice might interact with. These include, one local app, one app that is a facade for Bob's agent, a  newpaper website app (NYTimes), and a medical lab app. Each person's agent appears to others an an app called the *agent facade*. 
+- The **agent** layer acts on behalf of Alice giving her control over her human data.
+- The **request and authorization** layer handles requests for access to data from Alice's agent, local apps, remote apps, and other user's privacy agents. 
+- The **data access and replication** layer provides data access to the Person object in each of Alice's contexts and manages the replication of changes to this data following a [local-first](https://www.inkandswitch.com/local-first/) pattern.
+- The **context data storage** layer holds a contextualized representation of Alice in each of the 4 apps mentioned above
 
 ![architecture](./images/architecture.png)
 
