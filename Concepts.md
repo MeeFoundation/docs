@@ -39,11 +39,11 @@ See also [Roadmap.md](Roadmap.md).
 
 The Mee architecture has 5 layers as shown in the diagram below:
 
-- The **application** layer consists of Mee-compatible apps. Shown in the diagram are 4 example apps that Alice might interact with. These include, one local app, one app that is a facade for Bob's agent, a  newpaper website app (NYTimes), and a medical lab app. Each person's agent appears to others an an app called the *agent facade*. 
-- The **agent** layer acts on behalf of Alice giving her control over her human data.
-- The **request and authorization** layer handles requests for access to data from Alice's agent, local apps, remote apps, and other user's privacy agents. 
-- The **data access and replication** layer provides data access to the Person object in each of Alice's contexts and manages the replication of changes to this data following a [local-first](https://www.inkandswitch.com/local-first/) pattern.
-- The **context data storage** layer holds a contextualized representation of Alice in each of the 4 apps mentioned above
+- The **application** layer consists of Mee-compatible apps. The diagram shows 4 sample apps that Alice might interact with. These include, a local app, an app that is a facade for Bob's agent, a newpaper website app (NYTimes), and a medical lab app. Note: each person's agent appears to others an an app called the *agent facade*. 
+- The **agent** layer acts on behalf of Alice giving her control over her human data. The agent allows Alice to inspect and in some cases edit each of the partial representations of her in each distinct context. 
+- The **request and authorization** layer handles requests for access to data from Alice's agent, local apps, remote apps, and other user's privacy agents. Alice's authorization server grants or revokes access by apps to their corresponding context storage. 
+- The **data access and replication** layer provides data access (as controlled by tha authorization layer above) to the data in each of Alice's contexts. It manages the replication of changes to the data in one of Alices contexts both (i) between the corresponding app and Alice's agent as well as (ii) among Alice's edge devices (phone, tablet, laptop, etc.).
+- The **context data storage** layer holds a contextualized representation of Alice as defined by an app. For the 4 sample apps we're discussing here, you'll see that there are 4 corresponding context data stores on Alice's device.
 
 ![architecture](./images/architecture.png)
 
