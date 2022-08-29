@@ -47,7 +47,7 @@ The Mee architecture has 5 layers as shown in the diagram below:
 
 ![architecture](./images/architecture.png)
 
-An agent is configured with a Secret Recovery Phrase (SRP) created by the user, and never shared. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends, in files and optionally in a Shared Secret Store shown in the lower left above hosted by a service provider the user trusts.
+An agent is configured with a Secret Recovery Phrase (SRP) created by the user, and never shared. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends, in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
 
 ### Apps
 
