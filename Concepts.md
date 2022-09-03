@@ -39,7 +39,7 @@ Agent functionality:
 - View, and in some cases edit, personal data (irrespective of the location of that data). This data can range from attribute/value pairs, to structure objects (e.g. addresses, payment cards) and Verifiable Credentials (VCs).
 - Store some of the user's personal data locally. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
 - Backup/restore personal data stored on the user's device(s).
-- During installation the user is asked create a Secret Recovery Phrase (SRP) which is never shared. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends, in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
+- During installation the user is asked create a Secret Recovery Phrase (SRP) which is never shared. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends (for "social recovery"), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
 - Request access to portions of another user's data or, conversely, grant a request to portions of their own data. 
 
 See also [Roadmap.md](Roadmap.md).
