@@ -15,10 +15,12 @@
 
 | AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
 | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **user** | Know that apps adhere to the maximum provisions of (ADPPA, CCPA, GDPR) | I have a minimum, baseline level of privacy as dictated by the best enacted and proposed privacy laws |
-| **user** | Know that by signing the HIL apps are held to a standard higher than the best of proposed and enacted laws | My privacy is maximized                                      |
-| **user** | Require apps to request explicit permission to transfer data to Data Processor and write an audit log of all such transfers | My privacy is maximized. I can have transparency to these transfers and evidence for recourse if the HIL terms are violated |
-| **user** | Prohibit the sale of my human information                    | I cannot be exploited and my privacy is maximized            |
+| **user** | know that apps adhere to the maximum provisions of (ADPPA, CCPA, GDPR) | I have a minimum, baseline level of privacy as dictated by the best enacted and proposed privacy laws |
+| **user** | know that by signing the HIL apps are held to a standard higher than the best of proposed and enacted laws | my privacy is maximized                                      |
+| **user** | require apps to request explicit permission to transfer data to Data Processor and write an audit log of all such transfers | my privacy is maximized. I can have transparency to these transfers and evidence for recourse if the HIL terms are violated |
+| **user** | prohibit the sale of my human information                    | I cannot be exploited and my privacy is maximized            |
+| **user** | be able to erase all context data stored by the app (and that no backups exist). Note: inferred | my privacy is maximized                                      |
+| **user** | prevent apps from creating backup copies of my human information | my privacy is maximized                                      |
 
 ### Sign-in/Sign-up
 
