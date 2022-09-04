@@ -1,4 +1,4 @@
-### Privacy
+### Privacy 
 
 | AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
 | :------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -11,12 +11,23 @@
 | **user** | be able to trust that what I disclose to others (people and apps) will not be disclosed by them to 3rd parties beyond the minimal amount necessary to implement the interaction/transaction with me | my data doesn't spread further than necessary to other actors and increase my vulnerability to exploitation |
 | **user** | be able to know how the recipient of my disclosure will handle my personal data | I feel comfortable disclosing information to them            |
 
-### Data sharing
+### Privacy and the HIL
 
-| AS A/AN  | I WANT TO…                               | SO THAT…                                                     |
-| -------- | ---------------------------------------- | ------------------------------------------------------------ |
-| **user** | Sign in (SIOP)                           | I can access services from SIOP-compatible websites [whether or not they are Mee-certified] |
-| **user** | Sign in (SIOP) to Mee-certified site/app | I can access services from SIOP-compatible websites that are also Mee-certified |
+| AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **user** | Know that apps adhere to the maximum provisions of (ADPPA, CCPA, GDPR) | I have a minimum, baseline level of privacy as dictated by the best enacted and proposed privacy laws |
+| **user** | Know that by signing the HIL apps are held to a standard higher than the best of proposed and enacted laws | My privacy is maximized                                      |
+| **user** | Require apps to request explicit permission to transfer data to Data Processor and write an audit log of all such transfers | My privacy is maximized. I can have transparency to these transfers and evidence for recourse if the HIL terms are violated |
+| **user** | Prohibit the sale of my human information                    | I cannot be exploited and my privacy is maximized            |
+
+### Sign-in/Sign-up
+
+| AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **user** | Be able to signing/signup to new apps without passwords      | I have a easier and friendlier UX without the hassle of remembering and reseting passwords |
+| **user** | Sign in (SIOP)                                               | I can access services from SIOP-compatible websites [whether or not they are Mee-certified] |
+| **user** | Sign in (SIOP) to Mee-certified site/app                     | I can access services from SIOP-compatible websites that are also Mee-certified |
+
 
 ### Data management 
 
