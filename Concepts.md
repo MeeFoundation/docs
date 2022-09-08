@@ -42,7 +42,7 @@ Agent functionality:
 - **Chat**. Person to person chat messaging.
 - During installation the user is asked create a Secret Recovery Phrase (SRP) that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends (for "social recovery"), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
 - **Backup/restore** personal data stored on the user's device(s).
-- Built-in support for one-tap sign-in to Mee-compatible website using the OpenID SIOP specification.
+- Built-in support for one-tap **"Connect with Mee"** sign-in to Mee-compatible website using the OpenID SIOP specification.
 
 See also [Roadmap.md](Roadmap.md).
 
@@ -74,7 +74,7 @@ The Mee 5 layer architecture is shown in the diagram below.
 
 #### Sample Data
 
-[framework.json](framework.json) <-- needs updating 
+[framework.json](framework.json) <-- needs updating (5+months old)
 
 ### Data Types
 
