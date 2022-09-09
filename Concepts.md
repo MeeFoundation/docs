@@ -25,7 +25,7 @@ Each context is represented by a *Context* data container. A directed *correlati
 
 We can illustrate all of these concepts with a simple example. A user might have a gmail address, a Twitter handle, and in a game they play have the handle DevilSpawn666. Here's a simplified view of how this is represented:
 
-![self_and_contexts_example](./images/self_and_contexts_example.png)
+![self_and_contexts_example](./images/example0.png)
 
 ### Privacy Agent
 
