@@ -99,6 +99,6 @@ The Mee 5 layer architecture is shown in the diagram below.
 * [Categories of personal data](https://docs.google.com/spreadsheets/d/11F-V793seAon7xqFX2HEqeFhHvxttEUMkKSOrbM0ptc/edit#gid=477806070) - four main categories of user data (user input, app sensed, app generated and app inferred) and how examples of these categories are managed in different ways (user-exclusive, user-shared, user-replicated, app-shared, app-replicated or app-shared)
 * Location/sharing alternatives: 
 
-![F4_location_sharing_and_exclusivity](./images/F4_location_sharing_and_exclusivity.png)
+![F5_locations_exclusive_and_replicated](./images/F5_locations_exclusive_and_replicated.png)
 
 .
