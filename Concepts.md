@@ -67,7 +67,7 @@ The Mee 5 layer architecture is shown in the diagram below.
 
 #### Sample Data
 
-In the sample data shown below, a user, Alice, has two groups. The first represents her role as a Journalist. It contains two contexts: the context of her relationship with Gmail and with Twitter. She plays a game for which there is a context (without being within a Group). The second groups, entitled "News" contains only one context, her relationship with the New York Times news site.
+In the sample data shown below, a user, Alice, has two groups. The first group represents her role as a Journalist. It contains two contexts: the context of her relationship with Gmail and with Twitter. She plays a game for which there is a context (without being within a Group). The second group, entitled "News" contains only one context, her relationship with the New York Times news site.
 
 #### ![example1](./images/example1.png)
 
