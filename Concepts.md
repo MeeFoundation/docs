@@ -33,7 +33,7 @@ A privacy agent is a minimalist, occasional use application designed to handle a
 
 Although a privacy agent has a UI an agent is intended to stay out of the way of the user's main interactions with Mee-compatible apps and services. Operating mostly in the background, it shares human information about the user with apps according to the user's information sharing preferences and the terms of the Human Information License. The user's information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as preferences, interests, etc. with which apps can provide personalization, recommendations, and tailored offers. 
 
-As shown below, an agent can be thought of as a three layer cake with each layer building on the previous. The bottom layer is about authenticating the user. This authentication can be leveraged to log the user into apps. The next layer up is the emerging consensus about what a "VC wallet" is. The top layer builds on both of these.![agent-cake](./images/agent-cake.png)
+As shown below, an agent can be thought of as a three layer cake with each layer building on the previous one. The bottom layer is about authenticating the user and leveraging this to log the user into apps. The next layer up captures the emerging consensus about what a "VC wallet" is. The top layer builds on both of these.![agent-cake](./images/agent-cake.png)
 
 **Agent functionality:**
 
