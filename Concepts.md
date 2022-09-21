@@ -33,16 +33,33 @@ A privacy agent is a minimalist, occasional use application designed to handle a
 
 Although a privacy agent has a UI an agent is intended to stay out of the way of the user's main interactions with Mee-compatible apps and services. Operating mostly in the background, it shares human information about the user with apps according to the user's information sharing preferences and the terms of the Human Information License. The user's information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as preferences, interests, etc. with which apps can provide personalization, recommendations, and tailored offers. 
 
-Agent functionality:
+As shown below, an agent can be thought of as a three layer cake with each layer building on the previous. The bottom layer is about authenticating the user. This authentication can be leveraged to log the user into apps. The next layer up is the emerging consensus about what a "VC wallet" is. The top layer builds on both of these.![agent-cake](/Users/paul/Documents/GitHub/design-notes/images/agent-cake.png)
 
-- **View** (almost always in clear form), and in some cases **edit**, personal data (irrespective of the location of that data). This data can range from attribute/value pairs, to structure objects (e.g. addresses, payment cards) and Verifiable Credentials (VCs).
-- **Store** some of the user's personal data locally. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
-- **Request** access to portions (e.g. a context) of another user's data
-- **Grant** a request to portions (e.g a context) of their own data. 
-- **Messaging**. Multiple transports. Initially LibP2P and TCP/IP. 
-- **Chat**. Person-to-person chat messaging.
-- During installation the user is asked create a **Secret Recovery Phrase (SRP)** that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends (for "social recovery"), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
-- **Backup/restore** personal data on the user's device(s).
+**Agent functionality:**
+
+- **View** (local/remote) context data
+- **Edit** (local/remote) self-asserted context data. 
+  - This data can range from attribute/value pairs, to structure objects (e.g. addresses, payment cards) and Verifiable Credentials (VCs).
+
+- **Store** local user data contexts. Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
+  - During installation the user is asked create a **Secret Recovery Phrase (SRP)** that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends (for "social recovery"), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
+
+- **Backup/restore** local context data
+- **Share** data bi-directionally with apps
+- **Replicate** user's data accross their devices
+- **Chat**: Person-to-person and agent-to-person chat messaging.
+- **Request** access to a data context managed by others
+- **Grant** access to a (local or remote) data context managed by the user
+- **App-to-Agent Messaging**. Ability for apps to communicate with the agent using alternative transports (Initially LibP2P and TCP/IP).
+
+**VC Wallet functionality:**
+
+- **Import** VC from issuer
+- **Present** VC to verifier 
+- **Store** VCs locally
+
+**Authenticator functionality:**
+
 - Built-in support for one-tap **"Connect with Mee"** sign-in to Mee-compatible websites/apps using the OpenID SIOP specification.
 
 See also [Roadmap.md](Roadmap.md).
