@@ -33,35 +33,38 @@ A privacy agent is a minimalist, occasional use application designed to handle a
 
 Although a privacy agent has a UI, an agent is intended to stay out of the way of the user's main interactions with Mee-compatible apps and services. Operating mostly in the background, it shares human information about the user with apps according to the user's information sharing preferences and the terms of the Human Information License. The user's information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc.  which apps can use to provide personalization, recommendations, and tailored offers. 
 
-As shown below, an agent can be thought of as a three layer cake with each layer building on the previous one. The bottom layer is about authenticating the user and leveraging this to log the user into apps. The next layer up captures the emerging consensus about what a "VC wallet" is. The top layer builds on both of these.![agent-cake](./images/agent-cake.png)
+As shown below, an agent can be thought of as a three layer cake with each layer building on the previous one. The bottom layer is about authenticating the user and leveraging this to log the user into apps. The next layer up captures "VC wallet" functionality. The top layer builds on both of these.![agent-cake](./images/agent-cake.png)
 
 **Agent functionality:**
 
+- **Edit **data in self-asserted contexts
+- **Chat**: Person-to-person and agent-to-person chat
 - **View** (local/remote) context data
-- **Edit** (local/remote) data in self-asserted contexts
-- **Store** local user data contexts
+- **App-to-Agent Messaging**. Ability for apps to communicate with the agent using alternative transports (Initially LibP2P and TCP/IP).
+- **View** data in contexts
+- **Share** data bi-directionally with apps
+- **Replicate** contexts across users's devices and to apps
+
+**VC Wallet functionality**
+
+- **View** VCs in contexts
+- **Import** VCs from issuer apps
+- **Present** VCs to verifier apps
+
+- **Request** access to a context managed by others
+- **Grant** access to a (local or remote) data context managed by the user
+- **Replicate** user's data accross their devices
+- **Backup/restore** local context data
+
+- **Store** data in local contexts
   - Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
   - During installation the user is asked create a **Secret Recovery Phrase (SRP)** that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends (for "social recovery"), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
 
-- **Backup/restore** local context data
-- **Share** data bi-directionally with apps
-- **Replicate** user's data accross their devices
-- **Chat**: Person-to-person and agent-to-person chat
-- **Request** access to a data context managed by others
-- **Grant** access to a user's (local or remote) data context
-- **App-to-Agent Messaging**. Ability for apps to communicate with the agent using alternative transports (Initially LibP2P and TCP/IP).
-
-**VC Wallet functionality:**
-
-- **Import** VC from issuer
-- **Present** VC to verifier 
-- **View** VCs stored locally
-- **Store** VCs locally
 
 **Authenticator functionality:**
 
-- **Authenticate** user (e.g. using facial recognition, etc.)
 - **Login** with Connnect-with-Mee, OpenID SIOP, SIWE, etc.
+- **Authenticate** user (e.g. using facial recognition, etc.)
 
 See also [Roadmap.md](Roadmap.md).
 
