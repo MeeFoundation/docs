@@ -37,7 +37,7 @@ As shown below, an agent can be thought of as a three layer cake with each layer
 
 **Agent functionality:**
 
-- **Edit **data in self-asserted contexts
+- **Edit** data in self-asserted contexts
 - **Chat**: Person-to-person and agent-to-person chat
 - **View** (local/remote) context data
 - **App-to-Agent Messaging**. Ability for apps to communicate with the agent using alternative transports (Initially LibP2P and TCP/IP).
