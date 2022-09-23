@@ -27,29 +27,36 @@ We can illustrate all of these concepts with a simple example. A user might have
 
 ![self_and_contexts_example](./images/example0.png)
 
-### Privacy Agent
+### Privacy Agent - the end-user perspective
 
 A privacy agent is a minimalist, occasional use application designed to handle administrative tasks related to managing the user’s personal data. It preserves the user's privacy when they are interacting with Mee-compatible apps and websites that have licensed the user's data according to the terms of the Mee Human Information License. 
 
 Although a privacy agent has a UI, an agent is intended to stay out of the way of the user's main interactions with Mee-compatible apps and services. Operating mostly in the background, it shares human information about the user with apps according to the user's information sharing preferences and the terms of the Human Information License. The user's information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc.  which apps can use to provide personalization, recommendations, and tailored offers. 
 
-As shown below, an agent can be thought of as a three layer cake with each layer building on the previous one. The bottom layer is about authenticating the user and leveraging this to log the user into apps. The next layer up captures "VC wallet" functionality. The top layer builds on both of these.![agent-cake](./images/agent-cake.png)
+To help understand what a privacy agent is, it might be helpful to discuss how it relates to two popular kinds of identity-related app/agents, namely, Authenticators and VC Wallets. Of the three, the simplest is an authenticator (e.g. [Microsoft Authenticator](https://www.microsoft.com/en-us/security/mobile-authenticator-app)) that authenticates the user. Building on that functionality is a VC wallet app. It adds the ability to import and present VCs to other apps. Finally, at the top we have a privacy agent that adds **private sharing** of data — wherein dynamic data (in addition to static VCs) can be shared with an app under the terms of a human information license.![agent-cake](./images/agent-cake-functional-pov.png)
 
-**Agent functionality:**
+### Privacy Agent - architectural perspective
+
+When looked at from an architectural point of view the resulting layer cake is quite different. In this perspective both VC Wallets and Authenticators are considered to be “apps” layered on top of the privacy agent. They leverage the privacy agent for data management and concern themselves with input/output (e.g. importing a VC, presentation of a VC, login, etc.) to other apps (e.g. issuers, verifiers, etc.) as well as a UI for the user.
+
+![agent-cake-architectural-pov](./images/agent-cake-architectural-pov.png)
+
+**Authenticator App**
+
+Allows the user to login to apps and sites using Connect with Mee, OpenID SIOP, SIWE, etc.
+
+**VC Wallet App**
+
+Allows the user to import VCs, view them, and present them to other apps.
+
+**Privacy agent**
 
 - **Edit** data in self-asserted contexts
 - **Chat**: Person-to-person and agent-to-person chat
-- **View** (local/remote) context data
 - **App-to-Agent Messaging**. Ability for apps to communicate with the agent using alternative transports (Initially LibP2P and TCP/IP).
 - **View** data in contexts
 - **Share** data bi-directionally with apps
 - **Replicate** contexts across users's devices and to apps
-
-**VC Wallet functionality**
-
-- **View** VCs in contexts
-- **Import** VCs from issuer apps
-- **Present** VCs to verifier apps
 
 - **Request** access to a context managed by others
 - **Grant** access to a (local or remote) data context managed by the user
@@ -58,13 +65,11 @@ As shown below, an agent can be thought of as a three layer cake with each layer
 
 - **Store** data in local contexts
   - Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
-  - During installation the user is asked create a **Secret Recovery Phrase (SRP)** that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends (for "social recovery"), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
 
-
-**Authenticator functionality:**
-
-- **Login** with Connnect-with-Mee, OpenID SIOP, SIWE, etc.
 - **Authenticate** user (e.g. using facial recognition, etc.)
+
+- **Manage** a Secret Recovery Phrase
+  - During installation the user is asked create a **Secret Recovery Phrase (SRP)** that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends (for "social recovery"), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
 
 See also [Roadmap.md](Roadmap.md).
 
