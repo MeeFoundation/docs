@@ -27,7 +27,7 @@ We can illustrate all of these concepts with a simple example. A user might have
 
 ![self_and_contexts_example](./images/example0.png)
 
-### Privacy Agent - the end-user perspective
+### Privacy Agent - end-user perspective
 
 A privacy agent is a minimalist, occasional use application designed to handle administrative tasks related to managing the user’s personal data. It preserves the user's privacy when they are interacting with Mee-compatible apps and websites that have licensed the user's data according to the terms of the Mee Human Information License. 
 
