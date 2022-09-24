@@ -11,7 +11,7 @@ In his [last public speech](https://www.youtube.com/watch?v=9DExNTY3QAk) [Kim Ca
 
 The following diagram illustrates these concepts and introduces the notion of context:
 
- ![selfness-and-whoness](./images/selfness-and-whoness.png)
+ <img src="./images/selfness-and-whoness-larger.png" alt="selfness-and-whoness" style="zoom:50%;" />
 
 ### Privacy Agent - end-user perspective
 
