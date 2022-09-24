@@ -35,26 +35,32 @@ We can illustrate all of these concepts with a simple example. A user might have
 
 ![agent-cake-architectural-pov](./images/agent-functionality.png)
 
+**End-user functionality from built-in apps:**
+
+- **VC Wallet:** import, store, view, and present Verifiable Credentials (VCs)
+- **Login**: login with Connect-with-Mee or OpenID SIOP
+
 **End-user functionality:**
 
 - **Edit** data in self-asserted contexts
-- **Chat**: Person-to-person and agent-to-person chat
-- **App-to-Agent Messaging**. Ability for apps to communicate with the agent using alternative transports (Initially LibP2P and TCP/IP).
-- **View** data in contexts
-- **Share** data bi-directionally with apps
-- **Replicate** contexts across users's devices and to apps
+- **Chat**: Person-to-person and agent-to-person messaging
 
+- **View** data in contexts
+- **Share** (bi-directionally) data in an app contxt with the app
 - **Request** access to a context managed by others
+
 - **Grant** access to a (local or remote) data context managed by the user
-- **Replicate** user's data accross their devices
-- **Backup/restore** local context data
+- **Sync** contexts across user's devices
+- **Backup** local contexts
+
+- **Restore**: recover all data using SRP and backups
 
 - **Store** data in local contexts
   - Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
 
-- **Authenticate** user (e.g. using facial recognition, etc.)
+- **Recognize** user (e.g. using facial recognition, etc.)
 
-- **Manage** a Secret Recovery Phrase
+- **Secret Recovery Phrase**: Create and store (in fragments)
   - During installation the user is asked create a **Secret Recovery Phrase (SRP)** that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends (for "social recovery"), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
 
 See also [Roadmap.md](Roadmap.md).
