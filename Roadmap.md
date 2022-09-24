@@ -1,9 +1,20 @@
 ### Roadmap
 
-v1 (iOS only) - October, 2022:
+![roadmap](./images/roadmap.png)
 
-- Authenticate the user (e.g. via biometrics)
-- One tap, "surveillance-free", sign-up & sign-in (OpenId Connect SIOP identity provider)
+Nov-15 (iOS only)
+
+- Mee SDK
+- Login with Connect-with-Mee (mobile app/browser only)
+- Store very simple context data (userid only!) in a context
+- Recognize the user using faceID
+
+v1 - TBD, 2022
+
+- Login with Connect-with-Mee (mobile app/browser or desktop browser)
+- Backup local contexts
+- Restore
+- SRP
 
 v2 - TBD, 2022:
 
@@ -11,7 +22,6 @@ v2 - TBD, 2022:
 
 v3 - Feb, 2023
 
-- Create a Secret Recovery Phrase (SRP)
 - Support social/other SRP sharding and recovery
 
 v4 - April 2023
