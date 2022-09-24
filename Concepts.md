@@ -37,7 +37,7 @@ The following table provides an overview of the functionality of an agent:
 
 ![agent-cake-architectural-pov](./images/agent-functionality.png)
 
-**End-user functionality from built-in apps:**
+**End-user functionality provided by built-in apps:**
 
 - **VC Wallet:** import, store, view, and present Verifiable Credentials (VCs)
 - **Login**: login with Connect-with-Mee or OpenID SIOP
