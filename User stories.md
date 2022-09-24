@@ -22,16 +22,49 @@
 | **user** | be able to erase all context data stored by the app (and that no backups exist). Note: inferred | my privacy is maximized                                      |
 | **user** | prevent apps from creating backup copies of my human information | my privacy is maximized                                      |
 
-### Sign-in/Sign-up
+### Chat
 
-| AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
-| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **user** | Be able to signing/signup to new apps without passwords      | I have a easier and friendlier UX without the hassle of remembering and reseting passwords |
-| **user** | Sign in (SIOP)                                               | I can access services from SIOP-compatible websites [whether or not they are Mee-certified] |
-| **user** | Sign in (SIOP) to Mee-certified site/app                     | I can access services from SIOP-compatible websites that are also Mee-certified |
+<to be written>
 
+### View
 
-### Data management 
+<to be written> 
+
+### Share
+
+<to be written> 
+
+### Request
+
+<to be written> 
+
+### Grant
+
+<to be written> 
+
+### Replicate
+
+<to be written> 
+
+### Backup/Restore
+
+<to be written> 
+
+### Store
+
+<to be written> 
+
+### Authenticate
+
+| AS A/AN  | I WANT TO…                                                   | SO THAT…                               |
+| -------- | ------------------------------------------------------------ | -------------------------------------- |
+| **user** | be able to authenticate myself to the agent (e.g. using facial recognition on a phone) | so that it recognizes me (and only me) |
+
+### Manage SRP
+
+<to be written>
+
+### Data management [refactor into the above]
 
 | AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
 | :------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
@@ -39,6 +72,14 @@
 | **user** | run the Mee app on mobile and desktop devices                | I can access it from any of my devices                       |
 | **user** | have my data replicated/synced on all my devices             | I can decide at any time which device to use and have a consistent user experience |
 | **user** | be able to recover my Mee app data from catastrophic disaster where I loose all of my devices (and I loose access to my device backups) | I don't loose all of the personal data that I've already collected and the investment I've made in assembling it |
+
+### Login/Sign-in/Sign-up [Integrated Connect-with-Mee app]
+
+| AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
+| -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **user** | Be able to signing/signup to new apps without passwords      | I have a easier and friendlier UX without the hassle of remembering and reseting passwords |
+| **user** | Sign in (SIOP)                                               | I can access services from SIOP-compatible websites [whether or not they are Mee-certified] |
+| **user** | Sign in (SIOP) to Mee-certified site/app                     | I can access services from SIOP-compatible websites that are also Mee-certified |
 
 Note: the above this advice: https://www.mountaingoatsoftware.com/blog/advantages-of-the-as-a-user-i-want-user-story-template  
 
