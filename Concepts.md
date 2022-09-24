@@ -2,7 +2,7 @@
 
 
 
-#### Selfness vs. Whoness
+### Selfness vs. Whoness
 
 In his [last public speech](https://www.youtube.com/watch?v=9DExNTY3QAk) [Kim Cameron](https://en.wikipedia.org/wiki/Kim_Cameron_(computer_scientist)) introduced two useful definitions based on archaic English:
 
@@ -13,9 +13,13 @@ The following diagram illustrates these concepts and introduces the notion of co
 
  ![selfness-and-whoness](./images/selfness-and-whoness.png)
 
+### Privacy Agent - end-user perspective
 
+A privacy agent is a minimalist, occasional use application that manages a Personal Digital Twin of the user's self and its expression in different contexts. It preserves the user's privacy when they are interacting with Mee-compatible apps and websites that have licensed the user's data according to the terms of the Mee Human Information License. 
 
-#### The Self and Contexts
+Although a privacy agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. The user's information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc.  which apps can use to provide personalization, recommendations, and tailored offers. 
+
+### Privacy Agent - self and contexts
 
 The Mee privacy agent is a [digital twin](https://en.wikipedia.org/wiki/Digital_twin) of the user and represents both their selfness and whonesses.
 
@@ -27,31 +31,11 @@ We can illustrate all of these concepts with a simple example. A user might have
 
 ![self_and_contexts_example](./images/example0.png)
 
-### Privacy Agent - end-user perspective
+### Privacy Agent - end user functionality
 
-A privacy agent is a minimalist, occasional use application that manages a Personal Digital Twin of the user's self and its expression in different contexts. It preserves the user's privacy when they are interacting with Mee-compatible apps and websites that have licensed the user's data according to the terms of the Mee Human Information License. 
+![agent-cake-architectural-pov](./images/agent-functionality.png)
 
-Although a privacy agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. The user's information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc.  which apps can use to provide personalization, recommendations, and tailored offers. 
-
-**Privacy Agents, Authenticators and VC Wallets**
-
-To help understand what a privacy agent is, we compare it to two popular kinds of identity-related apps, namely, Authenticators and Verifiable Credential (VC) Wallets. Of the three, the simplest is an authenticator (e.g. [Microsoft Authenticator](https://www.microsoft.com/en-us/security/mobile-authenticator-app)) that authenticates the user and generates unique identifiers for them in various contexts. Building on that functionality is a VC wallet which adds the ability to import and present VCs to other apps. Finally, at the top we have a privacy agent that adds **private sharing** of data — wherein dynamic data (in addition to static VCs) can be shared with an app under the terms of a human information license.![agent-cake](./images/agent-cake-functional-pov.png)
-
-### Privacy Agent - architectural perspective
-
-When looked at from an architectural point of view the resulting layer cake is quite different. In this perspective both VC Wallets and Authenticators are considered to be “apps” layered on top of the privacy agent. They leverage the privacy agent for data management and concern themselves with input/output (e.g. importing a VC, presentation of a VC, login, etc.) to other apps (e.g. issuers, verifiers, etc.) as well as a UI for the user.
-
-![agent-cake-architectural-pov](./images/agent-cake-architectural-pov.png)
-
-**Authenticator App**
-
-Allows the user to login to apps and sites using Connect with Mee, OpenID SIOP, SIWE, etc.
-
-**VC Wallet App**
-
-Allows the user to import VCs, view them, and present them to other apps.
-
-**Privacy agent**
+**End-user functionality:**
 
 - **Edit** data in self-asserted contexts
 - **Chat**: Person-to-person and agent-to-person chat
@@ -77,15 +61,29 @@ See also [Roadmap.md](Roadmap.md).
 
 ### Architecture
 
-The Mee 5 layer architecture is shown in the diagram below.
+The Mee multi-layer architecture is shown below:
 
 ![architecture](./images/architecture.png)
 
-- The **application** layer consists of Mee-compatible apps. The diagram shows 4 sample apps that Alice might interact with. These include, a local app, an app that is a facade for Bob's agent, a newpaper website app (NYTimes), and a medical lab app. Note: each person's agent appears to other users' agents as an an app called the *agent facade*. 
-- The **agent** layer consists of a privacy agent app with a UI that gives the user (Alice or Bob) control over the management of their data. The agent's UI allows Alice to inspect and in some cases edit each of the partial representations of her in each context. 
-- The **request and authorization** layer handles requests for access to data from Alice's agent as well as from local apps, remote apps, and other user's privacy agents. Alice's authorization server grants or revokes access by these requests to data in the context data storage layer. 
-- The **data access and replication** layer provides data access (as controlled by tha authorization layer above) to the data in each of Alice's contexts. It manages the replication of changes to the data in one of Alice's contexts both (i) between the corresponding app and Alice's agent as well as (ii) among Alice's edge devices (phone, tablet, laptop, etc.).
-- The **context data storage** layer holds a set of contextualized representation of the user as defined by an app. For the 4 sample apps we're discussing here, 3 corresponding context data stores stored on Alice's device--the Med Lab app's context data store is not replicated on Alice's local device (perhaps as a hypothetical example because the medical data set is too large for Alice's device)
+**Application layer**
+
+The application layer consists of Mee-compatible apps. The diagram shows 4 sample apps that Alice might interact with. These include, a local app, an app that is a facade for Bob's agent, a newpaper website app (NYTimes), and a medical lab app. Note: each person's agent appears to other users' agents as an an app called the *agent facade*. 
+
+**Agent layer**
+
+The agent layer consists of a privacy agent app with a UI that gives the user (Alice or Bob) control over the management of their data. The agent's UI allows Alice to inspect and in some cases edit each of the partial representations of her in each context. 
+
+**Request & Authorization layer**
+
+The request and authorization layer handles requests for access to data from Alice's agent as well as from local apps, remote apps, and other user's privacy agents. Alice's authorization server grants or revokes access by these requests to data in the context data storage layer. 
+
+**Data Access & Replication layer**
+
+The data access and replication layer provides data access (as controlled by tha authorization layer above) to the data in each of Alice's contexts. It manages the replication of changes to the data in one of Alice's contexts both (i) between the corresponding app and Alice's agent as well as (ii) among Alice's edge devices (phone, tablet, laptop, etc.).
+
+**Context Data Storage layer**
+
+The context data storage layer holds a set of contextualized representation of the user as defined by an app. For the 4 sample apps we're discussing here, 3 corresponding context data stores stored on Alice's device--the Med Lab app's context data store is not replicated on Alice's local device (perhaps as a hypothetical example because the medical data set is too large for Alice's device)
 
 
 
