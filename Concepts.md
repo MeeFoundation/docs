@@ -85,9 +85,7 @@ The data access and replication layer provides data access (as controlled by tha
 
 The context data storage layer holds a set of contextualized representation of the user as defined by an app. For the 4 sample apps we're discussing here, 3 corresponding context data stores stored on Alice's device--the Med Lab app's context data store is not replicated on Alice's local device (perhaps as a hypothetical example because the medical data set is too large for Alice's device)
 
-
-
-### Framework classes
+### Classes
 
 ![framework-classes2](./images/framework-classes2.png)
 
