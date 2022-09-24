@@ -17,7 +17,7 @@ The following diagram illustrates these concepts and introduces the notion of co
 
 A privacy agent is a minimalist, occasional use application that manages a Personal Digital Twin of the user's self and its expression in different contexts. It preserves the user's privacy when they are interacting with Mee-compatible apps and websites that have licensed the user's data according to the terms of the Mee Human Information License. 
 
-Although a privacy agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. The user's information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc.  which apps can use to provide personalization, recommendations, and tailored offers. 
+Although a privacy agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. 
 
 ### Privacy Agent - self and contexts
 
@@ -32,6 +32,8 @@ We can illustrate all of these concepts with a simple example. A user might have
 ![self_and_contexts_example](./images/example0.png)
 
 ### Privacy Agent - end user functionality
+
+The following table provides an overview of the functionality of an agent:
 
 ![agent-cake-architectural-pov](./images/agent-functionality.png)
 
