@@ -30,11 +30,12 @@
 
 ### Login
 
-| AS A/AN  | I WANT TO…                                              | SO THAT…                                                     |
-| -------- | ------------------------------------------------------- | ------------------------------------------------------------ |
-| **user** | be able to signing/signup to new apps without passwords | I have a easier and friendlier UX without the hassle of remembering and reseting passwords |
-| **user** | login with SIOP                                         | I can access services from SIOP-compatible websites [whether or not they are Mee-certified] |
-| **user** | login with SIOP to Mee-certified site/app               | I can access services from SIOP-compatible websites that are also Mee-certified |
+| AS A/AN  | I WANT TO…                                                 | SO THAT…                                                     |
+| -------- | ---------------------------------------------------------- | ------------------------------------------------------------ |
+| **user** | be able to signing/signup to new apps without passwords    | I have a easier and friendlier UX without the hassle of remembering and reseting passwords |
+| **user** | login with Connect-with-Mee to mobile app or mobile Safari | I can access apps/sites on the same mobile device as my agent |
+| **user** | login with SIOP                                            | I can access SIOP-compatible sites on my desktop browser  [whether or not they are Mee-certified] |
+| **user** | know if the app/site is Mee-certified                      | trust that the protections of the HIL are in place           |
 
 ### Edit
 | AS A/AN  | I WANT TO…                                                   | SO THAT…                           |
