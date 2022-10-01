@@ -14,13 +14,13 @@ Each context is represented by a *context* data container. A directed *correlati
 
 We can illustrate all of these concepts with a simple example. A user might have a gmail address, a Twitter handle, and in a game they play have the handle DevilSpawn666. Here's a simplified view of how this is represented:
 
-![self_and_contexts_example](/Users/paul/Documents/GitHub/design-notes/images/example0.png)
+![self_and_contexts_example](./images/example0.png)
 
 ### Functionality
 
 The following table provides an overview of the functionality of an agent:
 
-![agent-cake-architectural-pov](/Users/paul/Documents/GitHub/design-notes/images/agent-functionality.png)
+![agent-cake-architectural-pov](./images/agent-functionality.png)
 
 **End-user functionality provided by built-in apps:**
 
