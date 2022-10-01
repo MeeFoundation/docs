@@ -6,11 +6,7 @@
 
 [Roadmap](Roadmap.md) 
 
-[User stories](https://github.com/MeeProject/design-notes/blob/main/User stories.md)
-
-
-
-
+[User stories](User stories.md) 
 
 
 
