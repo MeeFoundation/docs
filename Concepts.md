@@ -13,85 +13,11 @@ The following diagram illustrates these concepts and introduces the notion of co
 
  <img src="./images/selfness-and-whoness-larger.png" alt="selfness-and-whoness" style="zoom:50%;" />
 
-### Privacy Agent - end-user perspective
-
-A privacy agent is a minimalist, occasional use application that manages a Personal Digital Twin of the user's self and its expression in different contexts. It preserves the user's privacy when they are interacting with Mee-compatible apps and websites that have licensed the user's data according to the terms of the Mee Human Information License. 
-
-Although a privacy agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. 
-
-### Privacy Agent - self and contexts
-
-The Mee privacy agent is a [digital twin](https://en.wikipedia.org/wiki/Digital_twin) of the user and represents both their selfness and whonesses.
-
-The selfness of the user is represented by a data container called the *Self*. The contents of the Self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. This Self abstraction is at the heart of what enables the Mee architecture to be a ""*meta*-identity system," as opposed to an identity system. The user's Self is the point of integration across contexts each of which may be from differing identity systems. 
-
-Each context is represented by a *Context* data container. A directed *correlation* link points from the Self entity to the entity representing the self in each context. The only person who must know that in reality these contexts contain representations of the same self/user is *that* user. Each context may define its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. 
-
-We can illustrate all of these concepts with a simple example. A user might have a gmail address, a Twitter handle, and in a game they play have the handle DevilSpawn666. Here's a simplified view of how this is represented:
-
-![self_and_contexts_example](./images/example0.png)
-
-### Privacy Agent - end user functionality
-
-The following table provides an overview of the functionality of an agent:
-
-![agent-cake-architectural-pov](./images/agent-functionality.png)
-
-**End-user functionality provided by built-in apps:**
-
-- **VC Wallet:** import, store, view, and present Verifiable Credentials (VCs)
-- **Login**: login with Connect-with-Mee or OpenID SIOP
-
-**End-user functionality:**
-
-- **Edit** data in self-asserted contexts
-- **Chat**: Person-to-person and agent-to-person messaging
-
-- **View** data in contexts
-- **Share** (bi-directionally) data in an app contxt with the app
-- **Request** access to a context managed by others
-
-- **Grant** access to a (local or remote) data context managed by the user
-- **Sync** contexts across user's devices
-- **Backup** local contexts
-
-- **Restore**: recover all data using SRP and backups
-
-- **Store** data in local contexts
-  - Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
-
-- **Recognize** user (e.g. using facial recognition, etc.)
-
-- **Secret Recovery Phrase**: Create and store (in fragments)
-  - During installation the user is asked create a **Secret Recovery Phrase (SRP)** that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends (for "social recovery"), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
+- - 
 
 See also [Roadmap.md](Roadmap.md).
 
-### Architecture
 
-The Mee multi-layer architecture is shown below:
-
-![architecture](./images/architecture.png)
-
-**Application layer**
-
-The application layer consists of Mee-compatible apps. The diagram shows 4 sample apps that Alice might interact with. These include, a local app, an app that is a facade for Bob's agent, a newpaper website app (NYTimes), and a medical lab app. Note: each person's agent appears to other users' agents as an app called the *agent facade*. 
-
-**Agent layer**
-
-The agent layer consists of a privacy agent app with a UI that gives the user (Alice or Bob) control over the management of their data. The agent's UI allows Alice to inspect and in some cases edit each of the partial representations of her in each context. 
-
-**Request & Authorization layer**
-
-The request and authorization layer handles requests for access to data from Alice's agent as well as from local apps, remote apps, and other user's privacy agents. Alice's authorization server grants or revokes access by these requests to data in the context data storage layer. 
-
-**Data Access & Replication layer**
-
-The data access and replication layer provides data access (as controlled by tha authorization layer above) to the data in each of Alice's contexts. It manages the replication of changes to the data in one of Alice's contexts both (i) between the corresponding app and Alice's agent as well as (ii) among Alice's edge devices (phone, tablet, laptop, etc.).
-
-**Context Data Storage layer**
-
-The context data storage layer holds a set of contextualized representation of the user as defined by an app. For the 4 sample apps we're discussing here, 3 corresponding context data stores stored on Alice's device--the Med Lab app's context data store is not replicated on Alice's local device (perhaps as a hypothetical example because the medical data set is too large for Alice's device)
 
 ### Classes
 
