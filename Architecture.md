@@ -6,7 +6,7 @@ The Mee multi-layer architecture is shown below:
 
 **Application layer**
 
-The application layer consists of Mee-compatible apps. The diagram shows 4 sample apps that Alice might interact with. These include, a local app, an app that is a facade for Bob's agent, a newpaper website app (NYTimes), and a medical lab app. Note: each person's agent appears to other users' agents as an app called the *agent facade*. 
+The application layer consists of Mee-compatible apps. The diagram shows four sample apps that Alice might interact with. These include, a local app, an app that is a facade for Bob's agent, a news site app (NYTimes), and a medical lab app. Note: each person's agent appears to other users' agents as an app called the *agent facade*. 
 
 **Agent layer**
 
@@ -22,4 +22,4 @@ The data access and replication layer provides data access (as controlled by tha
 
 **Context Data Storage layer**
 
-The context data storage layer holds a set of contextualized representation of the user as defined by an app. For the 4 sample apps we're discussing here, 3 corresponding context data stores stored on Alice's device--the Med Lab app's context data store is not replicated on Alice's local device (perhaps as a hypothetical example because the medical data set is too large for Alice's device)
+The context data storage layer holds a set of contextualized representation of the user as defined by an app. For the four sample apps we're discussing here, three corresponding context data stores stored on Alice's device--the Med Lab app's context data store is not replicated on Alice's local device (perhaps as a hypothetical example because the medical data set is too large for Alice's device)
