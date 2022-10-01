@@ -12,6 +12,8 @@ To be written: instructions for building the iOS version of the agent
 
 [Architecture](Architecture.md) 
 
+[Data](Data.md) 
+
 [Roadmap](Roadmap.md) 
 
 [User stories](User_stories.md) 
