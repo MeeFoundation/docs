@@ -1,14 +1,14 @@
 ### End-user perspective
 
-A privacy agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-compatible apps and websites that have licensed your data according to the terms of the Mee Human Information License. 
+A privacy agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-compatible apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. 
 
 Although a privacy agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. 
 
 ### Self and contexts
 
-The agent represents both the user's *selfness* and *whonesses* (see [Concepts](Concepts.md) for more about these concepts)
+The agent represents both the user's *selfness* and *whonesses* (see [Concepts](Concepts.md) for details about these two concepts)
 
-The selfness of the user is held in a data container called the *Self*. The contents of the Self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. This self abstraction is at the heart of what enables the Mee architecture to be a ""*meta*-identity system," as opposed to an identity system. The user's self is the point of integration across contexts each of which may be from differing identity systems. 
+The selfness of the user is held in a data container called the *self*. The contents of the self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. This self is at the heart of what enables the Mee architecture to be a "*meta*-identity system," as opposed to an identity system. The user's self is the point of integration across contexts each of which may be from differing identity systems. 
 
 Each context is represented by a *context* data container. A directed *correlation* link points from an entity in the self to the entities representing the user in each context. For privacy reasons only the user should know that each of these separate contexts contain representations of the same individual. Each context may define its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. 
 
@@ -18,7 +18,7 @@ We can illustrate all of these concepts with a simple example. A user might have
 
 ### Functionality
 
-The following table provides an overview of the functionality of an agent:
+Here's a quick overview of the functionality of a privacy agent:
 
 ![agent-cake-architectural-pov](./images/agent-functionality.png)
 
