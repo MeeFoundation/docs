@@ -1,6 +1,6 @@
 ### End-user perspective
 
-A privacy agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-compatible apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. 
+A privacy agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-certified apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. 
 
 Although a privacy agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. 
 
