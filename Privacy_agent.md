@@ -25,7 +25,9 @@ Here's a quick overview of the functionality of a privacy agent:
 **End-user functionality provided by built-in apps:**
 
 - **VC Wallet:** import, store, view, and present Verifiable Credentials (VCs)
-- **Login**: login with Connect-with-Mee or OpenID SIOP
+- **Login** with username/password (password manager)
+- **Login** with Connect-with-Mee (leverages OpenID SIOP)
+- **Login** with PassKeeys (WebAuthn)
 
 **End-user functionality:**
 
