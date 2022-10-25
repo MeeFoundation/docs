@@ -8,9 +8,10 @@
 * Recognize user (e.g. using facial recognition, etc.)
 * SIOP?  -> Sasha will work on the interfaces and helper method that will allow us to integrate the demo shown in the call; support SIOP in 2-3 weeks before the demo. Username -> SIOP discovery -> return info about Mee auth endpoint and RP will use this auth endpoint to use Mee to auth user account. Domain (meeproject.org) is the endpoint to make a discovery request. Possibly to find 3d party RP to prove that it works properly. 
 
-**Mee SDK**
+- Mee SDK
 
-* v0.2 - Dec, 2022 Demo (iOS only)
+**v0.2 - Dec, 2022 Demo (iOS only)**
+
 * *Rebuild the iOS hard-coded demo (to use a SQLite database+...)* 
 * Users can subscribe for NYT using different options and upgrade (not only signin/signup) 
   * Attributes: email, credit card (4 fields)
