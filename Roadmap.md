@@ -1,40 +1,51 @@
 ### Roadmap
 
-![roadmap](./images/roadmap.png)
+**v0.1 - Nov-14 hard-coded IIW35 Demo (iOS only)** 
 
-Nov-15 (iOS only)
+* Login with Connect-with-Mee (iOS mobile app/browser only) + NYT mobile app? 
+* Recognize user (e.g. using facial recognition, etc.)
+* SIOP?  -> Sasha will work on the interfaces and helper method that will allow us to integrate the demo shown in the call; support SIOP in 2-3 weeks before the demo. Username -> SIOP discovery -> return info about Mee auth endpoint and RP will use this auth endpoint to use Mee to auth user account. Domain (meeproject.org) is the endpoint to make a discovery request. Possibly to find 3d party RP to prove that it works properly. 
 
-- Mee SDK
-- Login with Connect-with-Mee (mobile app/browser only)
-- Store very simple context data (userid only!) in a context
-- Recognize the user using faceID
+**Mee SDK**
 
-v1 - TBD, 2022
+* v0.2 - Dec, 2022 Demo (iOS only)
+* Rebuild the iOS hard-coded demo (to use a SQLite database+...) 
+* Users can subscribe for NYT using different options and upgrade (not only signin/signup) 
+  * Attributes: email, credit card (4 fields)
 
-- Login with Connect-with-Mee (mobile app/browser or desktop browser)
-- Backup local contexts
-- Restore
-- SRP
+**v1 - March, 2023 MVP (iOS only)** 
 
-v2 - TBD, 2022:
+* UI is data-driven
+* Login with Connect-with-Mee, OpenID SIOP (mobile app/browser or desktop browser)
+* Open-source code and docs published on github
+* Docs in github also published to meeproject.org/docs
+* Store data in local contexts
+* Restore data from context backups
+* Backup local data contexts
+* Login with PassKeys (WebAuthn, FIDO)? 
+* No SQLite for MVP? -> TBD with Sasha
 
-- iOS and Android support
+**v1.1 - April 18th, 2023 (IIW36):**
 
-v3 - Feb, 2023
+* iOS and Android support
+* Login with PassKeys (WebAuthn, FIDO)? 
 
-- Support social/other SRP sharding and recovery
+**v1.2 - ?, 2023**
 
-v4 - April 2023
+* Social/other data backup and recovery
 
-- Verifiable Credential wallet 
-- Integrated P2P text messaging
-- Replicate user's data across the their devices
-- Review some kinds of context data
-- Request access to another person's data
-- Authorize access to your data by another
-- Manage backup/restore of user's data
+**v2 - ?, 2023**
 
-v5 - October 2023
+* Verifiable Credential wallet
+* Integrated P2P text messaging
+* Migrate data from v1 format to v2 format
+* Sync contexts across user’s devices (no replication possible with SQLite?)
+* Replicate data to provider using Mee SDK
+* Review some kinds of context data
+* Request access to a context managed by others
+* Grant access to a (local/remote) data context managed by the user
 
-- MacOS and Windows support
-- Integrated & standalone password manager
+**v3 - October 2023**
+
+* MacOS and Windows support
+* Integrated & standalone password manager
