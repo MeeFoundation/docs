@@ -1,5 +1,7 @@
 ### Roadmap
 
+*Note: Non-functional items are in italics below.*
+
 **v0.1 - Nov-14 hard-coded IIW35 Demo (iOS only)** 
 
 * Login with Connect-with-Mee (iOS mobile app/browser only) + NYT mobile app? 
@@ -9,16 +11,16 @@
 **Mee SDK**
 
 * v0.2 - Dec, 2022 Demo (iOS only)
-* Rebuild the iOS hard-coded demo (to use a SQLite database+...) 
+* *Rebuild the iOS hard-coded demo (to use a SQLite database+...)* 
 * Users can subscribe for NYT using different options and upgrade (not only signin/signup) 
   * Attributes: email, credit card (4 fields)
 
 **v1 - March, 2023 MVP (iOS only)** 
 
-* UI is data-driven
-* Login with Connect-with-Mee, OpenID SIOP (mobile app/browser or desktop browser)
-* Open-source code and docs published on github
-* Docs in github also published to meeproject.org/docs
+* *UI is data-driven*
+* *Login with Connect-with-Mee, OpenID SIOP (mobile app/browser or desktop browser)*
+* *Open-source code and docs published on github*
+* *Docs in github also published to meeproject.org/docs*
 * Store data in local contexts
 * Restore data from context backups
 * Backup local data contexts
@@ -27,7 +29,7 @@
 
 **v1.1 - April 18th, 2023 (IIW36):**
 
-* iOS and Android support
+* *iOS and Android support*
 * Login with PassKeys (WebAuthn, FIDO)? 
 
 **v1.2 - ?, 2023**
