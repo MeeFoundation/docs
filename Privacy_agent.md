@@ -25,6 +25,8 @@ Overview of the long-term, planned functionality the agent:
 **End-user functionality provided by built-in apps:**
 
 - **VC Wallet:** import, store, view, and present Verifiable Credentials (VCs)
+  - Note: the [OWF conceptual architecture](https://github.com/openwallet-foundation/architecture-task-force/blob/main/docs/architecture/conceptual-architecture.md) adds Burn, Receive, Send, Transfer, Refund, Purchase Withdrawal,  Deposit
+
 - **Login** with username/password (password manager)
 - **Login** with Connect-with-Mee (leverages OpenID SIOP)
 - **Login** with PassKeeys (WebAuthn)
@@ -58,7 +60,31 @@ Overview of the long-term, planned functionality the agent:
 
 - **Recognize** user (e.g. using facial recognition, etc.)
 
-**Misc:**
+### Kinds of Information
 
-- **Secret Recovery Phrase**: Create and store (in fragments)
-  - During installation the user is asked create a **Secret Recovery Phrase (SRP)** that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's [How to share a secret](https://dl.acm.org/doi/10.1145/359168.359176). The agent presents the user with a choice of options for where to store these fragments including with friends (for "social recovery"), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.
+**Human information:**
+
+Data co-generated with providers or sensed
+
+- Consents
+- Interests
+- Medical records
+- Heart rate
+- Friends
+- Affiliations
+- Income
+- Location
+- Marital status
+- ...
+
+**Digital objects:**
+
+Types of objects often associated with digital wallets:
+
+- Identity credentials: VCs, Mobile ID
+- Financial Instruments: Credit Card, Debit Card, Loyalty Points
+- Digital Assets: Fungible Tokens, Non-Fungible Tokens
+- Digital Keys: Hotel Keys, Automobile Keys
+- Cryptographic Keys: Key Share
+- Tickets: Event Ticket, Transit Ticket, Plane Ticket
+
