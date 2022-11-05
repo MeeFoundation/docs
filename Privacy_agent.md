@@ -25,7 +25,7 @@ Overview of the long-term, planned functionality the agent:
 **End-user functionality provided by built-in apps:**
 
 - **VC Wallet:** import, store, view, and present Verifiable Credentials (VCs)
-  - Note: the [OWF conceptual architecture](https://github.com/openwallet-foundation/architecture-task-force/blob/main/docs/architecture/conceptual-architecture.md) adds Burn, Receive, Send, Transfer, Refund, Purchase Withdrawal,  Deposit
+  - Note: the [OWF conceptual architecture](https://github.com/openwallet-foundation/architecture-task-force/blob/main/docs/architecture/conceptual-architecture.md) adds Burn, Receive, Send, Transfer, Refund, Purchase, Withdrawal, Deposit
 
 - **Login** with username/password (password manager)
 - **Login** with Connect-with-Mee (leverages OpenID SIOP)
