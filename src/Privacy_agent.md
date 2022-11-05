@@ -54,4 +54,4 @@ Here's a quick overview of the functionality of a privacy agent:
 
 
 #
-[<p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p>](https://github.com/MeeProject/docs/edit/mdBook/src/Privacy_agent.md)
+[<p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p>](https://github.com/MeeProject/docs/edit/develop/src/Privacy_agent.md)
