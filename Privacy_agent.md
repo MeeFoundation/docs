@@ -34,7 +34,6 @@ Overview of the long-term, planned functionality the agent:
 - **Consent** to share required/optional data with a service provider
 - **Edit** data in self-asserted contexts
 - **Chat**: Person-to-person and agent-to-person messaging
-
 - **View** data in contexts
 - **Request** access to a context managed by others
 - **Grant** access to a (local or remote) data context managed by the user
@@ -46,15 +45,14 @@ Overview of the long-term, planned functionality the agent:
 - **Share** (bi-directionally) data in an app contxt with the app
 - **Sync** contexts across user's devices
 - **Replication** service (agent-to-agent and agent-to-provider)
-
 - **Messaging** services based on libP2P
-
 - **Store** data in local contexts
   - Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
 
 **APIs**
 
 - **KERI** DID support functions
+- **Encryption:** key pair generation and signing services
 
 **OS-Provided:**
 
