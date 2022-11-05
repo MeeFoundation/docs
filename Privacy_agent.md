@@ -47,7 +47,7 @@ Overview of the long-term, planned functionality the agent:
 - **Sync** contexts across user's devices
 - **Replication** service (agent-to-agent and agent-to-provider)
 
--  **Messaging** services based on libP2P
+- **Messaging** services based on libP2P
 
 - **Store** data in local contexts
   - Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
