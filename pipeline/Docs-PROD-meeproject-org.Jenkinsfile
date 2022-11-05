@@ -21,7 +21,7 @@ pipeline {
                     echo 'Publish gh-pages'
                     sshagent (credentials: ['mee-ci']) {
                     sh """
-                    	git config --global user.email "devops@getmee.org"
+                        git config --global user.email "devops@getmee.org"
                         git config --global user.name "Devops"
 
                         git worktree add ../pages gh-pages
