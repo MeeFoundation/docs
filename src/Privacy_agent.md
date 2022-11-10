@@ -35,7 +35,7 @@ Here's a quick overview of the functionality of a privacy agent:
 - **Chat**: Person-to-person and agent-to-person messaging
 
 - **View** data in contexts
-- **Share** (bi-directionally) data in an app contxt with the app
+- **Share** (bi-directionally) data in an app context with the app
 - **Request** access to a context managed by others
 
 - **Grant** access to a (local or remote) data context managed by the user
