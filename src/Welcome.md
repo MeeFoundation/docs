@@ -1,6 +1,6 @@
 # Welcome to Mee
 
-The goal of Mee is to bring your data back to you. 
+The goal of Mee is to represent you and protect your interests online.
 
 Our mission is to enable human-centered, high-trust, private relationships between internet users and service providers (e.g., apps, websites, etc.). The Mee Project is developing the governance and decentralized, human-centered software technology necessary to support these relationships.
 
