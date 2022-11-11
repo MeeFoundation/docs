@@ -25,6 +25,14 @@ The following diagram illustrates these concepts and introduces the notion of co
 
 .
 
+### Mee-compatible apps
+
+The apps or websites offered by service providers that are interoperable with the Mee agent software. Note: the Mee user’s information involved in data sharing connections is not subject to the terms of a valid Human Information License agreement.
+
+### Mee-certified apps
+
+The apps or websites offered by service providers that are interoperable with the Mee agent software. In addition, the Mee user’s information involved in data sharing connections is subject to the terms of a valid Human Information License agreement.
+
 
 #
 [<p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p>](https://github.com/MeeProject/docs/edit/develop/src/Concepts.md)
