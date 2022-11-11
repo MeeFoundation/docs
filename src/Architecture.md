@@ -10,11 +10,11 @@ The application layer consists of Mee-compatible apps. The diagram shows four sa
 
 **Agent layer**
 
-The agent layer consists of a privacy agent app with a UI that gives the user (Alice or Bob) control over the management of their data. The agent's UI allows Alice to inspect and in some cases edit each of the partial representations of her in each context. 
+The agent layer consists of a Mee agent app with a UI that gives the user (Alice or Bob) control over the management of their data. The agent's UI allows Alice to inspect and in some cases edit each of the partial representations of her in each context. 
 
 **Request & Authorization layer**
 
-The request and authorization layer handles requests for access to data from Alice's agent as well as from local apps, remote apps, and other user's privacy agents. Alice's authorization server grants or revokes access by these requests to data in the context data storage layer. 
+The request and authorization layer handles requests for access to data from Alice's agent as well as from local apps, remote apps, and other users' Mee agents. Alice's authorization server grants or revokes access by these requests to data in the context data storage layer. 
 
 **Data Access & Replication layer**
 
