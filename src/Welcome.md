@@ -6,7 +6,7 @@ Our mission is to enable human-centered, high-trust, private relationships betwe
 
 The core part of Mee is the [Privacy Agent](Privacy_agent.md). The [Architecture](Architecture.md) gives a larger picture of how the Privacy Agent interoperates with the world. The detailed data model used by Mee is described on the [Data](Data.md) page. You may also find helpful the [vocabulary](Concepts.md) that contains the definitions of the terms used throughout this documentation.
 
-Mee is by no means done; the future directions and milestones are available [here](Roadmap.md). Finally, here's the list of [deliverables](Products.md).
+Mee is by no means done; the future directions and milestones are available [here](Roadmap.md). Finally, the [Products](Products.md) page lists the deliverables available at the moment.
 
 #
 [<p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p>](https://github.com/MeeProject/docs/edit/develop/src/Welcome.md)
