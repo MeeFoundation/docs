@@ -8,4 +8,5 @@ The core part of Mee is the [Privacy Agent](Privacy_agent.md). The [Architecture
 
 Mee is by no means done; the future directions and milestones are available [here](Roadmap.md). Finally, here's the list of [deliverables](Products.md).
 
+#
 [<p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p>](https://github.com/MeeProject/docs/edit/develop/src/Welcome.md)
