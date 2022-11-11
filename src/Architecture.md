@@ -2,7 +2,7 @@
 
 The Mee multi-layer architecture is shown below:
 
-![architecture](/Users/paul/Documents/GitHub/design-notes/images/architecture.png)
+![architecture](./images/architecture.png)
 
 **Application layer**
 
