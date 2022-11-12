@@ -13,8 +13,8 @@
 
 * Docs in GitHub also published to docs.meeproject.org.
 * UI is data-driven
-* New The Mee Project website (designed by Ashton Design)
-* *Sample handoff page template (designed by Ashton Design)*
+* New The Mee Project website
+* *Sample handoff page template*
 * *AppStore and Google Play buttons on the The Mee Project home page*
 * Android support
 * SIOP support
