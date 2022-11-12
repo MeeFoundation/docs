@@ -1,0 +1,12 @@
+[book]
+authors = ["Mee Foundation"]
+language = "en"
+multilingual = false
+src = "src"
+title = ""
+[output.html]
+theme = "src/theme"
+no-section-label = true
+additional-js = ["src/theme/logo.js"]
+git-repository-url = "https://github.com/MeeProject/docs/tree/mdBook"
+fold.enable = true

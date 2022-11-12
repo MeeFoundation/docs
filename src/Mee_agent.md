@@ -1,0 +1,90 @@
+### End-user perspective
+
+A Mee agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-certified apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. 
+
+Although a Mee agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. 
+
+### Self and contexts
+
+The agent represents both the user's *selfness* and *whonesses* (see [Concepts](Concepts.md) for details about these two concepts)
+
+The selfness of the user is held in a data container called the *self*. The contents of the self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. The user's self is the point of integration across contexts each of which may be from differing identity systems. 
+
+Each context is represented by a *context* data container. A directed *correlation* link points from an entity in the self to the entities representing the user in each context. For privacy reasons only the user should know that each of these separate contexts contain representations of the same individual. Each context may define its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. 
+
+We can illustrate all of these concepts with a simple example. A user might have a gmail address, a Twitter handle, and in a game they play have the handle DevilSpawn666. Here's a simplified view of how this is represented:
+
+![self_and_contexts_example](./images/example0.png)
+
+### Functionality
+
+Overview of the long-term, planned functionality the agent:
+
+![agent-cake-architectural-pov](./images/agent-functionality.png)
+
+- **VC Wallet:** import, store, view, and present Verifiable Credentials (VCs)
+  - Note: the [OWF conceptual architecture](https://github.com/openwallet-foundation/architecture-task-force/blob/main/docs/architecture/conceptual-architecture.md) adds Burn, Receive, Send, Transfer, Refund, Purchase, Withdrawal, Deposit
+
+- **Login** with username/password (password manager)
+- **Login** with Connect-with-Mee (leverages OpenID SIOP)
+- **Login** with PassKeeys (WebAuthn)
+
+**User-visible agent functions:**
+
+- **Consent** to share required/optional data with a service provider
+- **Edit** data in self-asserted contexts
+- **Chat**: Person-to-person and agent-to-person messaging
+- **View** data in contexts
+- **Request** access to a context managed by others
+- **Grant** access to a (local or remote) data context managed by the user
+- **Backup** local contexts
+- **Restore**: recover all data using SRP and backups
+
+**Data storage and communications**:
+
+- **Share** (bi-directionally) data in an app contxt with the app
+- **Sync** contexts across user's devices
+- **Replication** service (agent-to-agent and agent-to-provider)
+- **Messaging** services based on libP2P
+- **Store** data in local contexts
+  - Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
+
+**APIs**
+
+- **KERI** DID support functions
+- **Encryption:** key pair generation and signing services
+
+**OS-Provided:**
+
+- **Recognize** user (e.g. using facial recognition, etc.)
+
+### Kinds of Information
+
+**Human information:**
+
+Data co-generated with providers or sensed
+
+- Consents
+- Interests
+- Medical records
+- Heart rate
+- Friends
+- Affiliations
+- Income
+- Location
+- Marital status
+- ...
+
+**Digital objects:**
+
+Types of objects often associated with digital wallets:
+
+- Identity credentials: VCs, Mobile ID
+- Financial Instruments: Credit Card, Debit Card, Loyalty Points
+- Digital Assets: Fungible Tokens, Non-Fungible Tokens
+- Digital Keys: Hotel Keys, Automobile Keys
+- Cryptographic Keys: Key Share
+- Tickets: Event Ticket, Transit Ticket, Plane Ticket
+
+#
+[<p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p>](https://github.com/MeeProject/docs/edit/develop/src/Mee_agent.md)
