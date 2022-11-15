@@ -1,8 +1,10 @@
 ### Architecture
 
-The Mee multi-layer architecture is shown below:
+**Overview**
 
-![architecture](./images/architecture.png)
+The Mee architecture follows a decentralized, layered architecture. At the highest level we have applications (apps or websites) that interact with the agent. The agent provides a UI to the user. This layer is insulated from the two lower storage layers by the intermediate Request and Authorization layer which controls access data in the storage layer.
+
+![architecture](./images/architecture-layer-1+2.png)
 
 **Application layer**
 
