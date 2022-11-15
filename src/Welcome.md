@@ -1,10 +1,8 @@
 # Welcome to Mee
 
-The goal of Mee is to represent you and protect your interests online.
+Central to our mission is the development of a [Mee agent](Mee_agent.md) that represents users and protects their interests online. This agent will enable users to enter into high-trust, private data sharing relationships with service providers (e.g., apps, websites, etc.). 
 
-Our mission is to enable human-centered, high-trust, private relationships between internet users and service providers (e.g., apps, websites, etc.). The Mee Project is developing the governance and decentralized, human-centered software technology necessary to support these relationships.
-
-The core part of Mee is the [Mee agent](Mee_agent.md). The [Architecture](Architecture.md) gives a larger picture of how the Privacy Agent interoperates with the world. The detailed data model used by Mee is described on the [Data](Data.md) page. You may also find helpful the [vocabulary](Concepts.md) that contains the definitions of the concepts used throughout this documentation.
+The [Architecture](Architecture.md) gives a larger picture of how this agent interoperates with the world. The detailed data model used by Mee is described on the [Data](Data.md) page. You may also find helpful the [vocabulary](Concepts.md) that contains the definitions of the concepts used throughout this documentation.
 
 Mee is by no means done; the future directions and milestones are available [here](Roadmap.md). Finally, the [Products](Products.md) page lists the deliverables available at the moment.
 
