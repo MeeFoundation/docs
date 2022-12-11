@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="Welcome.html">Welcome to Mee</a></li><li class="chapter-item "><a href="Privacy_agent.html">Privacy agent</a></li><li class="chapter-item "><a href="Architecture.html">Architecture</a></li><li class="chapter-item "><a href="Data.html">Data</a></li><li class="chapter-item expanded "><a href="Roadmap.html" class="active">Roadmap</a></li><li class="chapter-item "><a href="User_stories.html">User stories</a></li><li class="chapter-item "><a href="Concepts.html">Concepts</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="Welcome.html">Welcome to Mee</a></li><li class="chapter-item "><a href="Mee_agent.html">Mee agent</a></li><li class="chapter-item "><a href="Architecture.html">Architecture</a></li><li class="chapter-item "><a href="Connect_with_Mee.html">Connect with Mee</a></li><li class="chapter-item "><a href="Data.html">Data</a></li><li class="chapter-item expanded "><a href="Roadmap.html" class="active">Roadmap</a></li><li class="chapter-item "><a href="User_stories.html">User stories</a></li><li class="chapter-item "><a href="Concepts.html">Concepts</a></li><li class="chapter-item "><a href="Products.html">Products</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -139,60 +139,38 @@
                     <main>
                         <h3 id="roadmap"><a class="header" href="#roadmap">Roadmap</a></h3>
 <p><em>Note: Non-functional items are in italics below.</em></p>
-<p><strong>v0.1 - Nov-14 hard-coded IIW35 Demo (iOS only)</strong> </p>
+<p><strong>v0.9 - Nov-14 IIW35 Demo (iOS only)</strong> </p>
 <ul>
-<li>Login with Connect-with-Mee (iOS mobile app/browser only) + NYT mobile app? </li>
+<li>Login with Connect-with-Mee (iOS mobile app/browser only) </li>
+<li>Login with Connect-with-Mee to a provider’s iOS mobile app</li>
 <li>Recognize user (e.g. using facial recognition, etc.)</li>
-<li>SIOP?  -&gt; Sasha will work on the interfaces and helper method that will allow us to integrate the demo shown in the call; support SIOP in 2-3 weeks before the demo. Username -&gt; SIOP discovery -&gt; return info about Mee auth endpoint and RP will use this auth endpoint to use Mee to auth user account. Domain (meeproject.org) is the endpoint to make a discovery request. Possibly to find 3d party RP to prove that it works properly. </li>
+<li>Mee SDK: Web page Javascript</li>
 </ul>
+<p><strong>v1.0 MVP - Jan, 2023</strong> </p>
 <ul>
-<li>Mee SDK</li>
-</ul>
-<p><strong>v0.2 - Dec, 2022 Demo (iOS only)</strong></p>
-<ul>
-<li><em>Rebuild the iOS hard-coded demo (to use a SQLite database+...)</em> </li>
-<li>Users can subscribe for NYT using different options and upgrade (not only signin/signup) 
-<ul>
-<li>Attributes: email, credit card (4 fields)</li>
-</ul>
-</li>
-</ul>
-<p><strong>v1 - March, 2023 MVP (iOS only)</strong> </p>
-<ul>
-<li><em>UI is data-driven</em></li>
-<li><em>Login with Connect-with-Mee, OpenID SIOP (mobile app/browser or desktop browser)</em></li>
-<li><em>Open-source code and docs published on github</em></li>
-<li><em>Docs in github also published to meeproject.org/docs</em></li>
+<li><em>Docs in GitHub also published to docs.meeproject.org.</em></li>
+<li>UI is data-driven</li>
+<li><em>New meeproject.org website</em></li>
+<li><em>Sample handoff page template</em></li>
+<li><em>AppStore and Google Play buttons on the The Mee Project home page</em></li>
+<li>SIOP support</li>
 <li>Store data in local contexts</li>
+<li>Data-sharing protocol: OpenID</li>
+<li>HIL agreement v1.0</li>
+</ul>
+<p><strong>v2.0 - April 18th, 2023 (IIW36)</strong></p>
+<ul>
+<li><em>Open-source code and docs published on GitHub</em></li>
+<li>Replicated and sync data across user’s devices</li>
 <li>Restore data from context backups</li>
 <li>Backup local data contexts</li>
-<li>Login with PassKeys (WebAuthn, FIDO)? </li>
-<li>No SQLite for MVP? -&gt; TBD with Sasha</li>
+<li><em>Android support</em></li>
+<li><em>Data-sharing protocol: Mee</em></li>
 </ul>
-<p><strong>v1.1 - April 18th, 2023 (IIW36):</strong></p>
+<p><strong>v3.0 - July, 2023</strong></p>
 <ul>
-<li><em>iOS and Android support</em></li>
-<li>Login with PassKeys (WebAuthn, FIDO)? </li>
-</ul>
-<p><strong>v1.2 - ?, 2023</strong></p>
-<ul>
-<li>Social/other data backup and recovery</li>
-</ul>
-<p><strong>v2 - ?, 2023</strong></p>
-<ul>
-<li>Verifiable Credential wallet</li>
-<li>Integrated P2P text messaging</li>
-<li>Migrate data from v1 format to v2 format</li>
-<li>Sync contexts across user’s devices (no replication possible with SQLite?)</li>
-<li>Replicate data to provider using Mee SDK</li>
-<li>Review some kinds of context data</li>
-<li>Request access to a context managed by others</li>
-<li>Grant access to a (local/remote) data context managed by the user</li>
-</ul>
-<p><strong>v3 - October 2023</strong></p>
-<ul>
-<li>MacOS and Windows support</li>
-<li>Integrated &amp; standalone password manager</li>
+<li>Login with PassKeys (WebAuthn, FIDO)</li>
+<li>VC Wallet support</li>
 </ul>
 <h1 id=""><a class="header" href="#"></a></h1>
 <p><a href="https://github.com/MeeProject/docs/edit/develop/src/Roadmap.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>

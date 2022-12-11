@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Privacy agent</title>
+        <title>Mee agent</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="Welcome.html">Welcome to Mee</a></li><li class="chapter-item expanded "><a href="Privacy_agent.html" class="active">Privacy agent</a></li><li class="chapter-item "><a href="Architecture.html">Architecture</a></li><li class="chapter-item "><a href="Data.html">Data</a></li><li class="chapter-item "><a href="Roadmap.html">Roadmap</a></li><li class="chapter-item "><a href="User_stories.html">User stories</a></li><li class="chapter-item "><a href="Concepts.html">Concepts</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="Welcome.html">Welcome to Mee</a></li><li class="chapter-item expanded "><a href="Mee_agent.html" class="active">Mee agent</a></li><li class="chapter-item "><a href="Architecture.html">Architecture</a></li><li class="chapter-item "><a href="Connect_with_Mee.html">Connect with Mee</a></li><li class="chapter-item "><a href="Data.html">Data</a></li><li class="chapter-item "><a href="Roadmap.html">Roadmap</a></li><li class="chapter-item "><a href="User_stories.html">User stories</a></li><li class="chapter-item "><a href="Concepts.html">Concepts</a></li><li class="chapter-item "><a href="Products.html">Products</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -138,71 +138,93 @@
                 <div id="content" class="content">
                     <main>
                         <h3 id="end-user-perspective"><a class="header" href="#end-user-perspective">End-user perspective</a></h3>
-<p>A privacy agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-certified apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. </p>
-<p>Although a privacy agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. </p>
+<p>A Mee agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-certified apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. </p>
+<p>Although a Mee agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. </p>
 <h3 id="self-and-contexts"><a class="header" href="#self-and-contexts">Self and contexts</a></h3>
 <p>The agent represents both the user's <em>selfness</em> and <em>whonesses</em> (see <a href="Concepts.html">Concepts</a> for details about these two concepts)</p>
-<p>The selfness of the user is held in a data container called the <em>self</em>. The contents of the self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. This self is at the heart of what enables the Mee architecture to be a &quot;<em>meta</em>-identity system,&quot; as opposed to an identity system. The user's self is the point of integration across contexts each of which may be from differing identity systems. </p>
+<p>The selfness of the user is held in a data container called the <em>self</em>. The contents of the self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. The user's self is the point of integration across contexts each of which may be from differing identity systems. </p>
 <p>Each context is represented by a <em>context</em> data container. A directed <em>correlation</em> link points from an entity in the self to the entities representing the user in each context. For privacy reasons only the user should know that each of these separate contexts contain representations of the same individual. Each context may define its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. </p>
 <p>We can illustrate all of these concepts with a simple example. A user might have a gmail address, a Twitter handle, and in a game they play have the handle DevilSpawn666. Here's a simplified view of how this is represented:</p>
 <p><img src="./images/example0.png" alt="self_and_contexts_example" /></p>
 <h3 id="functionality"><a class="header" href="#functionality">Functionality</a></h3>
-<p>Here's a quick overview of the functionality of a privacy agent:</p>
+<p>Overview of the long-term, planned functionality the agent:</p>
 <p><img src="./images/agent-functionality.png" alt="agent-cake-architectural-pov" /></p>
-<p><strong>End-user functionality provided by built-in apps:</strong></p>
 <ul>
-<li><strong>VC Wallet:</strong> import, store, view, and present Verifiable Credentials (VCs)</li>
-<li><strong>Login</strong> with username/password (password manager)</li>
-<li><strong>Login</strong> with Connect-with-Mee (leverages OpenID SIOP)</li>
-<li><strong>Login</strong> with PassKeeys (WebAuthn)</li>
+<li>
+<p><strong>VC Wallet:</strong> import, store, view, and present Verifiable Credentials (VCs)</p>
+<ul>
+<li>Note: the <a href="https://github.com/openwallet-foundation/architecture-task-force/blob/main/docs/architecture/conceptual-architecture.md">OWF conceptual architecture</a> adds Burn, Receive, Send, Transfer, Refund, Purchase, Withdrawal, Deposit</li>
 </ul>
-<p><strong>End-user functionality:</strong></p>
+</li>
+<li>
+<p><strong>Login</strong> with username/password (password manager)</p>
+</li>
+<li>
+<p><strong>Login</strong> with Connect-with-Mee (leverages OpenID SIOP)</p>
+</li>
+<li>
+<p><strong>Login</strong> with PassKeeys (WebAuthn)</p>
+</li>
+</ul>
+<p><strong>User-visible agent functions:</strong></p>
 <ul>
-<li>
-<p><strong>Edit</strong> data in self-asserted contexts</p>
-</li>
-<li>
-<p><strong>Chat</strong>: Person-to-person and agent-to-person messaging</p>
-</li>
-<li>
-<p><strong>View</strong> data in contexts</p>
-</li>
-<li>
-<p><strong>Share</strong> (bi-directionally) data in an app contxt with the app</p>
-</li>
-<li>
-<p><strong>Request</strong> access to a context managed by others</p>
-</li>
-<li>
-<p><strong>Grant</strong> access to a (local or remote) data context managed by the user</p>
-</li>
-<li>
-<p><strong>Sync</strong> contexts across user's devices</p>
-</li>
-<li>
-<p><strong>Backup</strong> local contexts</p>
-</li>
-<li>
-<p><strong>Restore</strong>: recover all data using SRP and backups</p>
-</li>
-<li>
-<p><strong>Store</strong> data in local contexts</p>
+<li><strong>Consent</strong> to share required/optional data with a service provider</li>
+<li><strong>Edit</strong> data in self-asserted contexts</li>
+<li><strong>Chat</strong>: Person-to-person and agent-to-person messaging</li>
+<li><strong>View</strong> data in contexts</li>
+<li><strong>Request</strong> access to a context managed by others</li>
+<li><strong>Grant</strong> access to a (local or remote) data context managed by the user</li>
+<li><strong>Backup</strong> local contexts</li>
+<li><strong>Restore</strong>: recover all data using SRP and backups</li>
+</ul>
+<p><strong>Data storage and communications</strong>:</p>
+<ul>
+<li><strong>Share</strong> (bi-directionally) data in an app contxt with the app</li>
+<li><strong>Sync</strong> contexts across user's devices</li>
+<li><strong>Replication</strong> service (agent-to-agent and agent-to-provider)</li>
+<li><strong>Messaging</strong> services based on libP2P</li>
+<li><strong>Store</strong> data in local contexts
 <ul>
 <li>Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.</li>
 </ul>
 </li>
-<li>
-<p><strong>Recognize</strong> user (e.g. using facial recognition, etc.)</p>
-</li>
-<li>
-<p><strong>Secret Recovery Phrase</strong>: Create and store (in fragments)</p>
-<ul>
-<li>During installation the user is asked create a <strong>Secret Recovery Phrase (SRP)</strong> that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's <a href="https://dl.acm.org/doi/10.1145/359168.359176">How to share a secret</a>. The agent presents the user with a choice of options for where to store these fragments including with friends (for &quot;social recovery&quot;), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.</li>
 </ul>
-</li>
+<p><strong>APIs</strong></p>
+<ul>
+<li><strong>KERI</strong> DID support functions</li>
+<li><strong>Encryption:</strong> key pair generation and signing services</li>
+</ul>
+<p><strong>OS-Provided:</strong></p>
+<ul>
+<li><strong>Recognize</strong> user (e.g. using facial recognition, etc.)</li>
+</ul>
+<h3 id="kinds-of-information"><a class="header" href="#kinds-of-information">Kinds of Information</a></h3>
+<p><strong>Human information:</strong></p>
+<p>Data co-generated with providers or sensed</p>
+<ul>
+<li>Consents</li>
+<li>Interests</li>
+<li>Medical records</li>
+<li>Heart rate</li>
+<li>Friends</li>
+<li>Affiliations</li>
+<li>Income</li>
+<li>Location</li>
+<li>Marital status</li>
+<li>...</li>
+</ul>
+<p><strong>Digital objects:</strong></p>
+<p>Types of objects often associated with digital wallets:</p>
+<ul>
+<li>Identity credentials: VCs, Mobile ID</li>
+<li>Financial Instruments: Credit Card, Debit Card, Loyalty Points</li>
+<li>Digital Assets: Fungible Tokens, Non-Fungible Tokens</li>
+<li>Digital Keys: Hotel Keys, Automobile Keys</li>
+<li>Cryptographic Keys: Key Share</li>
+<li>Tickets: Event Ticket, Transit Ticket, Plane Ticket</li>
 </ul>
 <h1 id=""><a class="header" href="#"></a></h1>
-<p><a href="https://github.com/MeeProject/docs/edit/develop/src/Privacy_agent.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
+<p><a href="https://github.com/MeeProject/docs/edit/develop/src/Mee_agent.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
 
                     </main>
 

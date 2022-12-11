@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="Welcome.html">Welcome to Mee</a></li><li class="chapter-item "><a href="Privacy_agent.html">Privacy agent</a></li><li class="chapter-item expanded "><a href="Architecture.html" class="active">Architecture</a></li><li class="chapter-item "><a href="Data.html">Data</a></li><li class="chapter-item "><a href="Roadmap.html">Roadmap</a></li><li class="chapter-item "><a href="User_stories.html">User stories</a></li><li class="chapter-item "><a href="Concepts.html">Concepts</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="Welcome.html">Welcome to Mee</a></li><li class="chapter-item "><a href="Mee_agent.html">Mee agent</a></li><li class="chapter-item expanded "><a href="Architecture.html" class="active">Architecture</a></li><li class="chapter-item "><a href="Connect_with_Mee.html">Connect with Mee</a></li><li class="chapter-item "><a href="Data.html">Data</a></li><li class="chapter-item "><a href="Roadmap.html">Roadmap</a></li><li class="chapter-item "><a href="User_stories.html">User stories</a></li><li class="chapter-item "><a href="Concepts.html">Concepts</a></li><li class="chapter-item "><a href="Products.html">Products</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -138,14 +138,15 @@
                 <div id="content" class="content">
                     <main>
                         <h3 id="architecture"><a class="header" href="#architecture">Architecture</a></h3>
-<p>The Mee multi-layer architecture is shown below:</p>
-<p><img src="/Users/paul/Documents/GitHub/design-notes/images/architecture.png" alt="architecture" /></p>
+<p><strong>Overview</strong></p>
+<p>The Mee architecture follows a decentralized, layered architecture. At the highest level we have applications (apps or websites) that interact with the agent. The agent provides a UI to the user. This layer is insulated from the two lower storage layers by the intermediate Request and Authorization layer which controls access data in the storage layer.</p>
+<p><img src="./images/architecture-layer-1+2.png" alt="architecture" /></p>
 <p><strong>Application layer</strong></p>
 <p>The application layer consists of Mee-compatible apps. The diagram shows four sample apps that Alice might interact with. These include, a local app, an app that is a facade for Bob's agent, a news site app (NYTimes), and a medical lab app. Note: each person's agent appears to other users' agents as an app called the <em>agent facade</em>. </p>
 <p><strong>Agent layer</strong></p>
-<p>The agent layer consists of a privacy agent app with a UI that gives the user (Alice or Bob) control over the management of their data. The agent's UI allows Alice to inspect and in some cases edit each of the partial representations of her in each context. </p>
+<p>The agent layer consists of a Mee agent app with a UI that gives the user (Alice or Bob) control over the management of their data. The agent's UI allows Alice to inspect and in some cases edit each of the partial representations of her in each context. </p>
 <p><strong>Request &amp; Authorization layer</strong></p>
-<p>The request and authorization layer handles requests for access to data from Alice's agent as well as from local apps, remote apps, and other user's privacy agents. Alice's authorization server grants or revokes access by these requests to data in the context data storage layer. </p>
+<p>The request and authorization layer handles requests for access to data from Alice's agent as well as from local apps, remote apps, and other users' Mee agents. Alice's authorization server grants or revokes access by these requests to data in the context data storage layer. </p>
 <p><strong>Data Access &amp; Replication layer</strong></p>
 <p>The data access and replication layer provides data access (as controlled by tha authorization layer above) to the data in each of Alice's contexts. It manages the replication of changes to the data in one of Alice's contexts both (i) between the corresponding app and Alice's agent as well as (ii) among Alice's edge devices (phone, tablet, laptop, etc.).</p>
 <p><strong>Context Data Storage layer</strong></p>
@@ -157,10 +158,10 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="Privacy_agent.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="Mee_agent.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-                            <a rel="next" href="Data.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="Connect_with_Mee.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
@@ -169,10 +170,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="Privacy_agent.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="Mee_agent.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-                    <a rel="next" href="Data.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="Connect_with_Mee.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="Welcome.html">Welcome to Mee</a></li><li class="chapter-item "><a href="Privacy_agent.html">Privacy agent</a></li><li class="chapter-item "><a href="Architecture.html">Architecture</a></li><li class="chapter-item "><a href="Data.html">Data</a></li><li class="chapter-item "><a href="Roadmap.html">Roadmap</a></li><li class="chapter-item "><a href="User_stories.html">User stories</a></li><li class="chapter-item "><a href="Concepts.html">Concepts</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="Welcome.html">Welcome to Mee</a></li><li class="chapter-item "><a href="Mee_agent.html">Mee agent</a></li><li class="chapter-item "><a href="Architecture.html">Architecture</a></li><li class="chapter-item "><a href="Connect_with_Mee.html">Connect with Mee</a></li><li class="chapter-item "><a href="Data.html">Data</a></li><li class="chapter-item "><a href="Roadmap.html">Roadmap</a></li><li class="chapter-item "><a href="User_stories.html">User stories</a></li><li class="chapter-item "><a href="Concepts.html">Concepts</a></li><li class="chapter-item "><a href="Products.html">Products</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -138,90 +138,121 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="welcome"><a class="header" href="#welcome">Welcome</a></h1>
+                        <h1 id="welcome-to-mee"><a class="header" href="#welcome-to-mee">Welcome to Mee</a></h1>
+<p>Central to our mission is the development of a <a href="Mee_agent.html">Mee agent</a> that represents users and protects their interests online. This agent will enable users to enter into high-trust, private data sharing relationships with service providers (e.g., apps, websites, etc.). </p>
+<p>The <a href="Architecture.html">Architecture</a> gives a larger picture of how this agent interoperates with the world. The detailed data model used by Mee is described on the <a href="Data.html">Data</a> page. You may also find helpful the <a href="Concepts.html">vocabulary</a> that contains the definitions of the concepts used throughout this documentation.</p>
+<p>Mee is by no means done; the future directions and milestones are available <a href="Roadmap.html">here</a>. Finally, the <a href="Products.html">Products</a> page lists the deliverables available at the moment.</p>
 <h1 id=""><a class="header" href="#"></a></h1>
 <p><a href="https://github.com/MeeProject/docs/edit/develop/src/Welcome.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="end-user-perspective"><a class="header" href="#end-user-perspective">End-user perspective</a></h3>
-<p>A privacy agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-certified apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. </p>
-<p>Although a privacy agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, to providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. </p>
+<p>A Mee agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-certified apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. </p>
+<p>Although a Mee agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. </p>
 <h3 id="self-and-contexts"><a class="header" href="#self-and-contexts">Self and contexts</a></h3>
 <p>The agent represents both the user's <em>selfness</em> and <em>whonesses</em> (see <a href="Concepts.html">Concepts</a> for details about these two concepts)</p>
-<p>The selfness of the user is held in a data container called the <em>self</em>. The contents of the self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. This self is at the heart of what enables the Mee architecture to be a &quot;<em>meta</em>-identity system,&quot; as opposed to an identity system. The user's self is the point of integration across contexts each of which may be from differing identity systems. </p>
+<p>The selfness of the user is held in a data container called the <em>self</em>. The contents of the self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. The user's self is the point of integration across contexts each of which may be from differing identity systems. </p>
 <p>Each context is represented by a <em>context</em> data container. A directed <em>correlation</em> link points from an entity in the self to the entities representing the user in each context. For privacy reasons only the user should know that each of these separate contexts contain representations of the same individual. Each context may define its own identifier namespace, schemas, state management, communications protocols, UI, UX, etc. </p>
 <p>We can illustrate all of these concepts with a simple example. A user might have a gmail address, a Twitter handle, and in a game they play have the handle DevilSpawn666. Here's a simplified view of how this is represented:</p>
 <p><img src="./images/example0.png" alt="self_and_contexts_example" /></p>
 <h3 id="functionality"><a class="header" href="#functionality">Functionality</a></h3>
-<p>Here's a quick overview of the functionality of a privacy agent:</p>
+<p>Overview of the long-term, planned functionality the agent:</p>
 <p><img src="./images/agent-functionality.png" alt="agent-cake-architectural-pov" /></p>
-<p><strong>End-user functionality provided by built-in apps:</strong></p>
 <ul>
-<li><strong>VC Wallet:</strong> import, store, view, and present Verifiable Credentials (VCs)</li>
-<li><strong>Login</strong> with username/password (password manager)</li>
-<li><strong>Login</strong> with Connect-with-Mee (leverages OpenID SIOP)</li>
-<li><strong>Login</strong> with PassKeeys (WebAuthn)</li>
+<li>
+<p><strong>VC Wallet:</strong> import, store, view, and present Verifiable Credentials (VCs)</p>
+<ul>
+<li>Note: the <a href="https://github.com/openwallet-foundation/architecture-task-force/blob/main/docs/architecture/conceptual-architecture.md">OWF conceptual architecture</a> adds Burn, Receive, Send, Transfer, Refund, Purchase, Withdrawal, Deposit</li>
 </ul>
-<p><strong>End-user functionality:</strong></p>
+</li>
+<li>
+<p><strong>Login</strong> with username/password (password manager)</p>
+</li>
+<li>
+<p><strong>Login</strong> with Connect-with-Mee (leverages OpenID SIOP)</p>
+</li>
+<li>
+<p><strong>Login</strong> with PassKeeys (WebAuthn)</p>
+</li>
+</ul>
+<p><strong>User-visible agent functions:</strong></p>
 <ul>
-<li>
-<p><strong>Edit</strong> data in self-asserted contexts</p>
-</li>
-<li>
-<p><strong>Chat</strong>: Person-to-person and agent-to-person messaging</p>
-</li>
-<li>
-<p><strong>View</strong> data in contexts</p>
-</li>
-<li>
-<p><strong>Share</strong> (bi-directionally) data in an app contxt with the app</p>
-</li>
-<li>
-<p><strong>Request</strong> access to a context managed by others</p>
-</li>
-<li>
-<p><strong>Grant</strong> access to a (local or remote) data context managed by the user</p>
-</li>
-<li>
-<p><strong>Sync</strong> contexts across user's devices</p>
-</li>
-<li>
-<p><strong>Backup</strong> local contexts</p>
-</li>
-<li>
-<p><strong>Restore</strong>: recover all data using SRP and backups</p>
-</li>
-<li>
-<p><strong>Store</strong> data in local contexts</p>
+<li><strong>Consent</strong> to share required/optional data with a service provider</li>
+<li><strong>Edit</strong> data in self-asserted contexts</li>
+<li><strong>Chat</strong>: Person-to-person and agent-to-person messaging</li>
+<li><strong>View</strong> data in contexts</li>
+<li><strong>Request</strong> access to a context managed by others</li>
+<li><strong>Grant</strong> access to a (local or remote) data context managed by the user</li>
+<li><strong>Backup</strong> local contexts</li>
+<li><strong>Restore</strong>: recover all data using SRP and backups</li>
+</ul>
+<p><strong>Data storage and communications</strong>:</p>
+<ul>
+<li><strong>Share</strong> (bi-directionally) data in an app contxt with the app</li>
+<li><strong>Sync</strong> contexts across user's devices</li>
+<li><strong>Replication</strong> service (agent-to-agent and agent-to-provider)</li>
+<li><strong>Messaging</strong> services based on libP2P</li>
+<li><strong>Store</strong> data in local contexts
 <ul>
 <li>Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.</li>
 </ul>
 </li>
-<li>
-<p><strong>Recognize</strong> user (e.g. using facial recognition, etc.)</p>
-</li>
-<li>
-<p><strong>Secret Recovery Phrase</strong>: Create and store (in fragments)</p>
-<ul>
-<li>During installation the user is asked create a <strong>Secret Recovery Phrase (SRP)</strong> that is never shared. This SRP is used as a source of entropy for the generation of cryptographic keys and thus acts as a root for a person's identity. Their data is encrypted using keys generated from the SRP. For disaster recovery purposes the user is encouraged to divide the SRP into encrypted fragments according to Shamir's <a href="https://dl.acm.org/doi/10.1145/359168.359176">How to share a secret</a>. The agent presents the user with a choice of options for where to store these fragments including with friends (for &quot;social recovery&quot;), in files and optionally in a Shared Secret Service hosted by a service provider the user trusts.</li>
 </ul>
-</li>
+<p><strong>APIs</strong></p>
+<ul>
+<li><strong>KERI</strong> DID support functions</li>
+<li><strong>Encryption:</strong> key pair generation and signing services</li>
+</ul>
+<p><strong>OS-Provided:</strong></p>
+<ul>
+<li><strong>Recognize</strong> user (e.g. using facial recognition, etc.)</li>
+</ul>
+<h3 id="kinds-of-information"><a class="header" href="#kinds-of-information">Kinds of Information</a></h3>
+<p><strong>Human information:</strong></p>
+<p>Data co-generated with providers or sensed</p>
+<ul>
+<li>Consents</li>
+<li>Interests</li>
+<li>Medical records</li>
+<li>Heart rate</li>
+<li>Friends</li>
+<li>Affiliations</li>
+<li>Income</li>
+<li>Location</li>
+<li>Marital status</li>
+<li>...</li>
+</ul>
+<p><strong>Digital objects:</strong></p>
+<p>Types of objects often associated with digital wallets:</p>
+<ul>
+<li>Identity credentials: VCs, Mobile ID</li>
+<li>Financial Instruments: Credit Card, Debit Card, Loyalty Points</li>
+<li>Digital Assets: Fungible Tokens, Non-Fungible Tokens</li>
+<li>Digital Keys: Hotel Keys, Automobile Keys</li>
+<li>Cryptographic Keys: Key Share</li>
+<li>Tickets: Event Ticket, Transit Ticket, Plane Ticket</li>
 </ul>
 <h1 id="-1"><a class="header" href="#-1"></a></h1>
-<p><a href="https://github.com/MeeProject/docs/edit/develop/src/Privacy_agent.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
+<p><a href="https://github.com/MeeProject/docs/edit/develop/src/Mee_agent.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="architecture"><a class="header" href="#architecture">Architecture</a></h3>
-<p>The Mee multi-layer architecture is shown below:</p>
-<p><img src="/Users/paul/Documents/GitHub/design-notes/images/architecture.png" alt="architecture" /></p>
+<p><strong>Overview</strong></p>
+<p>The Mee architecture follows a decentralized, layered architecture. At the highest level we have applications (apps or websites) that interact with the agent. The agent provides a UI to the user. This layer is insulated from the two lower storage layers by the intermediate Request and Authorization layer which controls access data in the storage layer.</p>
+<p><img src="./images/architecture-layer-1+2.png" alt="architecture" /></p>
 <p><strong>Application layer</strong></p>
 <p>The application layer consists of Mee-compatible apps. The diagram shows four sample apps that Alice might interact with. These include, a local app, an app that is a facade for Bob's agent, a news site app (NYTimes), and a medical lab app. Note: each person's agent appears to other users' agents as an app called the <em>agent facade</em>. </p>
 <p><strong>Agent layer</strong></p>
-<p>The agent layer consists of a privacy agent app with a UI that gives the user (Alice or Bob) control over the management of their data. The agent's UI allows Alice to inspect and in some cases edit each of the partial representations of her in each context. </p>
+<p>The agent layer consists of a Mee agent app with a UI that gives the user (Alice or Bob) control over the management of their data. The agent's UI allows Alice to inspect and in some cases edit each of the partial representations of her in each context. </p>
 <p><strong>Request &amp; Authorization layer</strong></p>
-<p>The request and authorization layer handles requests for access to data from Alice's agent as well as from local apps, remote apps, and other user's privacy agents. Alice's authorization server grants or revokes access by these requests to data in the context data storage layer. </p>
+<p>The request and authorization layer handles requests for access to data from Alice's agent as well as from local apps, remote apps, and other users' Mee agents. Alice's authorization server grants or revokes access by these requests to data in the context data storage layer. </p>
 <p><strong>Data Access &amp; Replication layer</strong></p>
 <p>The data access and replication layer provides data access (as controlled by tha authorization layer above) to the data in each of Alice's contexts. It manages the replication of changes to the data in one of Alice's contexts both (i) between the corresponding app and Alice's agent as well as (ii) among Alice's edge devices (phone, tablet, laptop, etc.).</p>
 <p><strong>Context Data Storage layer</strong></p>
 <p>The context data storage layer holds a set of contextualized representation of the user as defined by an app. For the four sample apps we're discussing here, three corresponding context data stores stored on Alice's device--the Med Lab app's context data store is not replicated on Alice's local device (perhaps as a hypothetical example because the medical data set is too large for Alice's device)</p>
 <h1 id="-2"><a class="header" href="#-2"></a></h1>
 <p><a href="https://github.com/MeeProject/docs/edit/develop/src/Architecture.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="connect-with-mee-example-js-sdk"><a class="header" href="#connect-with-mee-example-js-sdk">Connect with Mee Example: JS SDK</a></h2>
+<p>The agent can connect with a provider using a &quot;Connect with Mee&quot; button on the provider's app or website. Below is a sequnce diagram that shows the flowing involving a hypothetical website (The New York Times) that leverages the Mee JS SDK, and the agent. </p>
+<p><img src="./images/mee-js-sdk.svg" alt="Mee JS SDK" /></p>
+<h2 id="connect-with-mee-example-dynamic-siop"><a class="header" href="#connect-with-mee-example-dynamic-siop">Connect with Mee Example: Dynamic SIOP</a></h2>
+<p><img src="./images/mee-dynamic-SIOP.svg" alt="Mee Dynamic SIOP" /></p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="classes"><a class="header" href="#classes">Classes</a></h3>
 <p><img src="./images/framework-classes2.png" alt="framework-classes2" /></p>
 <h4 id="sample-data"><a class="header" href="#sample-data">Sample Data</a></h4>
@@ -256,60 +287,38 @@
 <p><a href="https://github.com/MeeProject/docs/edit/develop/src/Data.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
 <div style="break-before: page; page-break-before: always;"></div><h3 id="roadmap"><a class="header" href="#roadmap">Roadmap</a></h3>
 <p><em>Note: Non-functional items are in italics below.</em></p>
-<p><strong>v0.1 - Nov-14 hard-coded IIW35 Demo (iOS only)</strong> </p>
+<p><strong>v0.9 - Nov-14 IIW35 Demo (iOS only)</strong> </p>
 <ul>
-<li>Login with Connect-with-Mee (iOS mobile app/browser only) + NYT mobile app? </li>
+<li>Login with Connect-with-Mee (iOS mobile app/browser only) </li>
+<li>Login with Connect-with-Mee to a provider’s iOS mobile app</li>
 <li>Recognize user (e.g. using facial recognition, etc.)</li>
-<li>SIOP?  -&gt; Sasha will work on the interfaces and helper method that will allow us to integrate the demo shown in the call; support SIOP in 2-3 weeks before the demo. Username -&gt; SIOP discovery -&gt; return info about Mee auth endpoint and RP will use this auth endpoint to use Mee to auth user account. Domain (meeproject.org) is the endpoint to make a discovery request. Possibly to find 3d party RP to prove that it works properly. </li>
+<li>Mee SDK: Web page Javascript</li>
 </ul>
+<p><strong>v1.0 MVP - Jan, 2023</strong> </p>
 <ul>
-<li>Mee SDK</li>
-</ul>
-<p><strong>v0.2 - Dec, 2022 Demo (iOS only)</strong></p>
-<ul>
-<li><em>Rebuild the iOS hard-coded demo (to use a SQLite database+...)</em> </li>
-<li>Users can subscribe for NYT using different options and upgrade (not only signin/signup) 
-<ul>
-<li>Attributes: email, credit card (4 fields)</li>
-</ul>
-</li>
-</ul>
-<p><strong>v1 - March, 2023 MVP (iOS only)</strong> </p>
-<ul>
-<li><em>UI is data-driven</em></li>
-<li><em>Login with Connect-with-Mee, OpenID SIOP (mobile app/browser or desktop browser)</em></li>
-<li><em>Open-source code and docs published on github</em></li>
-<li><em>Docs in github also published to meeproject.org/docs</em></li>
+<li><em>Docs in GitHub also published to docs.meeproject.org.</em></li>
+<li>UI is data-driven</li>
+<li><em>New meeproject.org website</em></li>
+<li><em>Sample handoff page template</em></li>
+<li><em>AppStore and Google Play buttons on the The Mee Project home page</em></li>
+<li>SIOP support</li>
 <li>Store data in local contexts</li>
+<li>Data-sharing protocol: OpenID</li>
+<li>HIL agreement v1.0</li>
+</ul>
+<p><strong>v2.0 - April 18th, 2023 (IIW36)</strong></p>
+<ul>
+<li><em>Open-source code and docs published on GitHub</em></li>
+<li>Replicated and sync data across user’s devices</li>
 <li>Restore data from context backups</li>
 <li>Backup local data contexts</li>
-<li>Login with PassKeys (WebAuthn, FIDO)? </li>
-<li>No SQLite for MVP? -&gt; TBD with Sasha</li>
+<li><em>Android support</em></li>
+<li><em>Data-sharing protocol: Mee</em></li>
 </ul>
-<p><strong>v1.1 - April 18th, 2023 (IIW36):</strong></p>
+<p><strong>v3.0 - July, 2023</strong></p>
 <ul>
-<li><em>iOS and Android support</em></li>
-<li>Login with PassKeys (WebAuthn, FIDO)? </li>
-</ul>
-<p><strong>v1.2 - ?, 2023</strong></p>
-<ul>
-<li>Social/other data backup and recovery</li>
-</ul>
-<p><strong>v2 - ?, 2023</strong></p>
-<ul>
-<li>Verifiable Credential wallet</li>
-<li>Integrated P2P text messaging</li>
-<li>Migrate data from v1 format to v2 format</li>
-<li>Sync contexts across user’s devices (no replication possible with SQLite?)</li>
-<li>Replicate data to provider using Mee SDK</li>
-<li>Review some kinds of context data</li>
-<li>Request access to a context managed by others</li>
-<li>Grant access to a (local/remote) data context managed by the user</li>
-</ul>
-<p><strong>v3 - October 2023</strong></p>
-<ul>
-<li>MacOS and Windows support</li>
-<li>Integrated &amp; standalone password manager</li>
+<li>Login with PassKeys (WebAuthn, FIDO)</li>
+<li>VC Wallet support</li>
 </ul>
 <h1 id="-5"><a class="header" href="#-5"></a></h1>
 <p><a href="https://github.com/MeeProject/docs/edit/develop/src/Roadmap.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
@@ -435,8 +444,20 @@
 </ul>
 <p><img src="./images/F5_locations_exclusive_and_replicated.png" alt="F5_locations_exclusive_and_replicated" /></p>
 <p>.</p>
+<h3 id="mee-compatible-apps"><a class="header" href="#mee-compatible-apps">Mee-compatible apps</a></h3>
+<p>The apps or websites offered by service providers that are interoperable with the Mee agent software. Note: the Mee user’s information involved in data sharing connections is not subject to the terms of a valid Human Information License agreement.</p>
+<h3 id="mee-certified-apps"><a class="header" href="#mee-certified-apps">Mee-certified apps</a></h3>
+<p>The apps or websites offered by service providers that are interoperable with the Mee agent software. In addition, the Mee user’s information involved in data sharing connections is subject to the terms of a valid Human Information License agreement.</p>
 <h1 id="-7"><a class="header" href="#-7"></a></h1>
 <p><a href="https://github.com/MeeProject/docs/edit/develop/src/Concepts.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="products"><a class="header" href="#products">Products</a></h1>
+<h2 id="mee-js-sdk"><a class="header" href="#mee-js-sdk">Mee JS SDK</a></h2>
+<h3 id="installation"><a class="header" href="#installation">Installation</a></h3>
+<ul>
+<li>Please use the instructions at <a href="https://github.com/MeeProject/mee-js-sdk/blob/develop/README.md">https://github.com/MeeProject/mee-js-sdk/blob/develop/README.md</a></li>
+</ul>
+<h1 id="-8"><a class="header" href="#-8"></a></h1>
+<p><a href="https://github.com/MeeProject/docs/edit/develop/src/Products.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
 
                     </main>
 

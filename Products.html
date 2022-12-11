@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Data</title>
+        <title>Products</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -75,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item affix "><a href="Welcome.html">Welcome to Mee</a></li><li class="chapter-item "><a href="Mee_agent.html">Mee agent</a></li><li class="chapter-item "><a href="Architecture.html">Architecture</a></li><li class="chapter-item "><a href="Connect_with_Mee.html">Connect with Mee</a></li><li class="chapter-item expanded "><a href="Data.html" class="active">Data</a></li><li class="chapter-item "><a href="Roadmap.html">Roadmap</a></li><li class="chapter-item "><a href="User_stories.html">User stories</a></li><li class="chapter-item "><a href="Concepts.html">Concepts</a></li><li class="chapter-item "><a href="Products.html">Products</a></li></ol>
+                <ol class="chapter"><li class="chapter-item affix "><a href="Welcome.html">Welcome to Mee</a></li><li class="chapter-item "><a href="Mee_agent.html">Mee agent</a></li><li class="chapter-item "><a href="Architecture.html">Architecture</a></li><li class="chapter-item "><a href="Connect_with_Mee.html">Connect with Mee</a></li><li class="chapter-item "><a href="Data.html">Data</a></li><li class="chapter-item "><a href="Roadmap.html">Roadmap</a></li><li class="chapter-item "><a href="User_stories.html">User stories</a></li><li class="chapter-item "><a href="Concepts.html">Concepts</a></li><li class="chapter-item expanded "><a href="Products.html" class="active">Products</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -137,48 +137,21 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h3 id="classes"><a class="header" href="#classes">Classes</a></h3>
-<p><img src="./images/framework-classes2.png" alt="framework-classes2" /></p>
-<h4 id="sample-data"><a class="header" href="#sample-data">Sample Data</a></h4>
-<p>In the sample data shown below, a user, Alice, has two groups. The first group represents her role as a Journalist. It contains two contexts: the context of her relationship with Gmail and with Twitter. She plays a game for which there is a context (without being within a Group). The second group, entitled &quot;News&quot; contains only one context, her relationship with the New York Times news site.</p>
-<h4 id=""><a class="header" href="#"><img src="./images/example1.png" alt="example1" /></a></h4>
-<p><a href="framework.json">framework.json</a> &lt;-- extremely out of date; needs updating (5+months old)</p>
-<h3 id="data-types"><a class="header" href="#data-types">Data Types</a></h3>
-<p><img src="./images/framework-datatypes.png" alt="framework-datatypes" /></p>
+                        <h1 id="products"><a class="header" href="#products">Products</a></h1>
+<h2 id="mee-js-sdk"><a class="header" href="#mee-js-sdk">Mee JS SDK</a></h2>
+<h3 id="installation"><a class="header" href="#installation">Installation</a></h3>
 <ul>
-<li>
-<p><strong>ContextID</strong> - The digital space/realm/domain within which the user is interacting. </p>
-</li>
-<li>
-<p><strong>MeeID</strong> - Identifier of any kind of Digital Subject (i.e. entity) about which data is stored in the agent. </p>
-</li>
-<li>
-<p><strong>MeeAppID</strong> - A specific kind of MeeID. Uniquely identifies an app developer's app. A single, logical, MeeAppID is associated with one or more physical apps (usually on different platforms such as mobile, webapp, etc.) all of which that creates and manages the data contents of an AppData using the same schema. [We have to think through concurrent update issues in the case of N&gt;1 physical apps]</p>
-</li>
-<li>
-<p><strong>Secret Recovery Phrase</strong> - a 12-word textual phrase that the user creates. It is used to generate cryptographic keys that in turn are used to encrypt the user’s personal data whether it is stored locally on their device or in a backup location. It can be used to generate keys to digitally sign transactions (e.g., for crypto currency transactions). It should never be shared with anyone or any service provider. If the user loses this phrase, they lose the ability to decrypt their data. </p>
-</li>
+<li>Please use the instructions at <a href="https://github.com/MeeProject/mee-js-sdk/blob/develop/README.md">https://github.com/MeeProject/mee-js-sdk/blob/develop/README.md</a></li>
 </ul>
-<h5 id="keys"><a class="header" href="#keys">Keys</a></h5>
-<ul>
-<li><strong>Account key pair</strong> is the primary user account key pair.</li>
-<li><strong>PBKDF2 key</strong> is a key generated by using user password. It’s needed to encrypt the user account private key.</li>
-<li><strong>User device key pair</strong> is a key pair is generated and stored on the user device. Device private key can be used to encrypt the user account private key.</li>
-<li><strong>Client key pair</strong> is key pair to identify client app or website</li>
-<li><strong>Context key</strong> is a key to encrypt user data in the context.</li>
-</ul>
-<h1 id="-1"><a class="header" href="#-1"></a></h1>
-<p><a href="https://github.com/MeeProject/docs/edit/develop/src/Data.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
+<h1 id=""><a class="header" href="#"></a></h1>
+<p><a href="https://github.com/MeeProject/docs/edit/develop/src/Products.md"><p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p></a></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="Connect_with_Mee.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="Concepts.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
-                            </a>
-                            <a rel="next" href="Roadmap.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
                             </a>
                         <div style="clear: both"></div>
                     </nav>
@@ -186,11 +159,8 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="Connect_with_Mee.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="Concepts.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
-                    </a>
-                    <a rel="next" href="Roadmap.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
