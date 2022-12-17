@@ -1,8 +1,7 @@
-This page describes the data model of the agent's personal data store (PDS). 
 
 ### Overview
 
-At the highest level, the PDS' data model can be thought of as a 3 level hierarchy of data containers (DSContainer subclass instances):
+This page describes the data model of the agent's personal data store (PDS).  At the highest level, the PDS' data model can be thought of as a 3 level hierarchy of data containers (DSContainer subclass instances):
 * Self
   * Group
     * AppData
