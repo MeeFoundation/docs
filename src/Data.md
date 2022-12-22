@@ -18,7 +18,7 @@ Regular Contexts contain information that is input by the user, sensed or genera
 
 Here are the classes that define the various data containers. 
 
-![framework-classes2](./images/framework-classes2.png)
+![framework-classes2](./images/container-classes.png)
 
 #### Sample Data
 
@@ -30,7 +30,7 @@ Data is read and/or written to these contexts by apps. For example the Game app 
 
 ### Data Types
 
-![framework-datatypes](./images/framework-datatypes.png)
+![framework-datatypes](./images/datatypes.png)
 
 - **ContextID** - The digital space/realm/domain within which the user is interacting. 
 - **MeeID** - Identifier of any kind of Digital Subject (i.e. entity) about which data is stored in the agent. 
