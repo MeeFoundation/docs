@@ -20,7 +20,7 @@ Here are the various data container classes.
 
 ![framework-classes2](./images/container-classes.png)
 
-The Self, Group and ContextCopy instances are entirely managed by the agent itself. Instances of Context are written to, read from and updated by apps/sites. 
+The Self, Group and ContextCopy instances are entirely managed by the agent itself. Instances of Context are written to and read from apps/sites. 
 
 #### Container example #1
 
