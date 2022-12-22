@@ -51,7 +51,7 @@ Overview of the long-term, planned functionality the agent.
 - **Replication**: auto merge of transactions
 - **Messaging**: agent-to-agent and agent-to-provider
 - **Storage**: local context data storage
-  - Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
+  - Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.  
 
 **APIs**
 
