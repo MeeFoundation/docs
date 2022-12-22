@@ -20,13 +20,11 @@ Regular Contexts contain information that is input by the user, sensed or genera
 
 #### Sample Data
 
-In the sample data shown below, a user, Alice, has two groups. The first group represents her role as a Journalist. It contains two contexts: the context of her relationship with Gmail and with Twitter. She plays a game for which there is a context (without being within a Group). The second group, entitled "News" contains only one context, her relationship with the New York Times news site.
+In the sample data shown below, a user, Alice, has two groups. The first group represents her role as a Journalist. It contains two contexts: the context of her relationship with Gmail and with Twitter. She plays a game for which there is a context (without being within a Group). The second group, entitled "News" contains only one context, her relationship with the NYTimes news site.
 
 #### ![example1](./images/example1.png)
 
-
-
-[framework.json](framework.json) <-- extremely out of date; needs updating (5+months old)
+Data is read and/or written to these contexts by apps. For example the Game app reads and writes information about Alice as she plays the game to the Person entity shown in the 3rd context from the left. There may be more than one context associated with the connection (relationship) betwen Alice and a provider. In the example shown above, the NYTimes.com website reads and writes data to and from one context, but two other contexts also store information about Alice's overall connection with the NYTimes. We show a password manager and a form filler--two other apps that write to their corresponding contexts.
 
 ### Data Types
 
