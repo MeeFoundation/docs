@@ -1,4 +1,4 @@
-# Welcome to Mee
+# Welcome to Mee!
 
 We're passionately committed giving people control of their own personal data by fostering a community of Mee-compatible digital service providers. Central to this is the development of a [identity agent](Mee_agent.md) app that runs on your own devices, represents you and protects your interests online. This agent in combination with new law will enable users to enter into high-trust, private data sharing relationships with service providers (e.g., apps, websites, etc.). 
 
