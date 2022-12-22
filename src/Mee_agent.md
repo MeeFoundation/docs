@@ -1,8 +1,8 @@
 ### End-user perspective
 
-A Mee agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-certified apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. 
+A Mee identity agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-certified apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. 
 
-Although a Mee agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. 
+Although the Mee agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. 
 
 ### Self and contexts
 
@@ -18,45 +18,47 @@ We can illustrate all of these concepts with a simple example. A user might have
 
 ### Functionality
 
-Overview of the long-term, planned functionality the agent:
+Overview of the long-term, planned functionality the agent. 
 
 ![agent-cake-architectural-pov](./images/agent-functionality.png)
 
-- **VC Wallet:** import, store, view, and present Verifiable Credentials (VCs)
-  - Note: the [OWF conceptual architecture](https://github.com/openwallet-foundation/architecture-task-force/blob/main/docs/architecture/conceptual-architecture.md) adds Burn, Receive, Send, Transfer, Refund, Purchase, Withdrawal, Deposit
+**Protocols**
 
-- **Login** with username/password (password manager)
-- **Login** with Connect-with-Mee (leverages OpenID SIOP)
-- **Login** with PassKeeys (WebAuthn)
+- Credential Handler API
+- PassKeeys (WebAuthn)
+- Connect-with-Mee v1: a variant on OpenID SIOP that uses a universal link to the Mee agent
+- Connect-with-Mee v2: supports bi-directional data sharing of attributes, implements connection deletion
+- OpenID SIOP
 
-**User-visible agent functions:**
+**UI Features**
 
+- **VC Wallet:** import, store, manage, and present Verifiable Credentials (VCs). Note: the [OWF conceptual architecture](https://github.com/openwallet-foundation/architecture-task-force/blob/main/docs/architecture/conceptual-architecture.md) adds Burn, Receive, Send, Transfer, Refund, Purchase, Withdrawal, Deposit
+- **Recognize** user (e.g. using facial recognition, etc.)
 - **Consent** to share required/optional data with a service provider
 - **Edit** data in self-asserted contexts
 - **Chat**: Person-to-person and agent-to-person messaging
 - **View** data in contexts
+- **Delete** **connection**: delete all data associated with this set of contexts
 - **Request** access to a context managed by others
 - **Grant** access to a (local or remote) data context managed by the user
-- **Backup** local contexts
 - **Restore**: recover all data using SRP and backups
-
-**Data storage and communications**:
-
-- **Share** (bi-directionally) data in an app contxt with the app
+- **Backup** local contexts
 - **Sync** contexts across user's devices
-- **Replication** service (agent-to-agent and agent-to-provider)
-- **Messaging** services based on libP2P
-- **Store** data in local contexts
+
+**Components**
+
+- **Authorization Server**: GNAP AS
+- **Replication**: auto merge of transactions
+- **Messaging**: agent-to-agent and agent-to-provider
+- **Storage**: local context data storage
   - Data is stored according to shared or app-specific schema. In some contexts this local data is authoritative whereas in other cases it is a copy of externally managed context data.
 
 **APIs**
 
+As a convenience for local app developers, these APIs are provided:
+
 - **KERI** DID support functions
 - **Encryption:** key pair generation and signing services
-
-**OS-Provided:**
-
-- **Recognize** user (e.g. using facial recognition, etc.)
 
 ### Kinds of Information
 
