@@ -1,6 +1,6 @@
 # Welcome to Mee
 
-Central to our mission is the development of a [Mee identity agent](Mee_agent.md) app that represents users and protects their interests online. This agent will enable users to enter into high-trust, private data sharing relationships with service providers (e.g., apps, websites, etc.). 
+We are passionately committed giving people control of their human information by fostering a community of Mee-compatible digital service providers. Central to our mission is the development of a [Mee identity agent](Mee_agent.md) app that represents users and protects their interests online. This agent will enable users to enter into high-trust, private data sharing relationships with service providers (e.g., apps, websites, etc.). 
 
 The [Architecture](Architecture.md) gives a larger picture of how this agent interoperates with the world. The detailed data model used by Mee is described on the [Data](Data.md) page. You may also find helpful the [Concepts page](Concepts.md) that contains the definitions of the concepts used throughout this documentation.
 
