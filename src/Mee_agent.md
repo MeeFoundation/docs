@@ -1,8 +1,8 @@
 ### End-user perspective
 
-A Mee identity agent is a personal digital twin that manages your digital self and its expression in different contexts. It preserves your privacy when you are interacting with Mee-certified apps (websites and mobile apps) that have licensed your data according to the terms of the Mee Human Information License. 
+A Mee *identity agent* (a term we invented) is an app that gives you more control over your personal data as you interactive with Mee-compatible mobile apps and sites. It manages a digital twin of you its expression in different contexts. It preserves your privacy when you are interacting with Mee-certified apps/sites--apps/sites offered by providers who have licensed your data according to the terms of the Mee Human Information License. 
 
-Although the Mee agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. 
+Although the agent is an interactive application, it operates mostly in the background, sharing and managing human information about the user with Mee-compatible apps according to the user's information sharing preferences and under the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, providing contact information, payment methods, as well as sharing preferences, interests, etc. that apps can use to provide personalization, recommendations, and tailored offers. 
 
 ### Self and contexts
 
