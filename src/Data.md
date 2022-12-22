@@ -16,9 +16,11 @@ Regular Contexts contain information that is input by the user, sensed or genera
 
 ### Container classes
 
-Here are the classes that define the various data containers. 
+Here are the various data container classes. 
 
 ![framework-classes2](./images/container-classes.png)
+
+The Self, Group and ContextCopy instances are entirely managed by the agent itself. Instances of Context are written to, read from and updated by apps/sites. 
 
 #### Container example #1
 
@@ -33,6 +35,26 @@ Data is read and/or written to these contexts by apps. For example the Game app 
 This next example shows a more complex situation. Alice connected to a government website and from it obtained a set of attributes about herself.  She also connected to NYTimes.com website, which, as part of this connection, requested some information that is attested by this same government website. The agent creates a ContextCopy which points back to its source context. 
 
 ![example2](./images/example2.png)
+
+### Persona classes
+
+The  types of containers that have been introduced (Self, Groups, Contexts, and ContextCopies) all contain information about people (Persons) that is described according to the Persona data model. As mentioned above Context instances are read from and written to by apps/sites. 
+
+**Core**
+
+The mandatory, core part of the model that app/site developers must use is intentionally simple so as to constrain the app/site developer as little as possible. It specifies that people must be represented as instances of Person, that these Person instances are interconnected using *correlation* and *knows* relationships. A PersonalAccount class is also defined. These core classes are shown below. The attributes (e.g. givenName, etc.) shown in blue above are illustrative only and are not part of the core. 
+
+![persona-classes](./images/persona-classes.png)
+
+<to be written:> 
+
+- all attribute types must have globally unique identifiers (and although it is recommended, these identifiers don't have to be resolveable)
+
+<to be written/>
+
+**Recommendations (non-normative)**
+
+<to be written>
 
 ### Datatypes
 
