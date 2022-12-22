@@ -18,7 +18,7 @@ We can illustrate all of these concepts with a simple example. A user might have
 
 ### Functionality
 
-Overview of the long-term, planned functionality the agent. 
+Here is an overview of the long-term, planned functionality of the agent version 1 and 2:
 
 ![agent-cake-architectural-pov](./images/agent-functionality.png)
 
