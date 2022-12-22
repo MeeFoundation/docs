@@ -4,7 +4,7 @@ We're passionately committed giving people control of their own personal data by
 
 The [Architecture](Architecture.md) page gives a larger picture of how this agent interoperates with the world. The data model used by Mee is described on the [Data](Data.md) page. You may also find the [Concepts](Concepts.md) page helpful; it contains  definitions of the concepts used throughout this documentation.
 
-Mee is a work in progress; the future directions and milestones are available [here](Roadmap.md). Finally, the [Products](Products.md) page lists the deliverables available at the moment.
+Mee is a work in progress; the future directions and milestones are available [here](Roadmap.md). Finally, the [Products](Products.md) page lists the deliverables available at the moment. 
 
 #
 [<p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p>](https://github.com/MeeProject/docs/edit/develop/src/Welcome.md)
