@@ -46,15 +46,13 @@ The mandatory, core part of the model that app/site developers must use is inten
 
 ![persona-classes](./images/persona-classes.png)
 
-<to be written:> 
+**Constraints**
 
 - all attribute types must have globally unique identifiers (and although it is recommended, these identifiers don't have to be resolveable)
 
-<to be written/>
+**Extentions to Persona core schema  (non-normative)**
 
-**Recommendations (non-normative)**
-
-<to be written>
+[This section (to be written) will describe extentions to the core Persona schema]
 
 ### Datatypes
 
