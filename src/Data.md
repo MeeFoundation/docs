@@ -48,7 +48,7 @@ The mandatory, core part of the model that app/site developers must use is inten
 
 **Constraints**
 
-- all attribute types must have globally unique identifiers (and although it is recommended, these identifiers don't have to be resolveable)
+- All attribute types must have globally unique identifiers (and although it is recommended, these identifiers don't have to be resolveable)
 
 **Extentions to Persona core schema  (non-normative)**
 
