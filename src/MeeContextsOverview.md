@@ -1,9 +1,9 @@
-# Mee Contexts  
+## Mee Contexts  
 
  ![selfness-and-whoness](./images/MeeContexts.drawio.png)
 
 
-### Use cases: 
+## Use cases: 
 
 #### Install Mee app on the 1st device
 1. Generate Account key pair [kyber-512](https://pq-crystals.org/kyber/index.shtml)
