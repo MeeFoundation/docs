@@ -28,7 +28,7 @@ In the sample container data shown below, a user, Alice, has two groups. The fir
 
 ![example1](./images/example1.png)
 
-Data is read and/or written to these contexts by apps. For example the Game app reads and writes information about Alice as she plays the game to the Person entity shown in the 3rd context from the left. There may be more than one context associated with the connection (relationship) betwen Alice and a provider. In the example shown above, the NYTimes.com website reads and writes data to and from one context, but two other contexts also store information about Alice's overall connection with the NYTimes. We show a password manager and a form filler--two other apps that write to their corresponding contexts.
+Data is read from and/or written to these contexts by apps. For example the Game app reads and writes information about Alice as she plays the game to the Person entity shown in the 3rd RPContext from the left. There may be more than one context associated with a single connection between Alice and a provider's app or site. In the example above, the NYTimes.com website reads date from and writes to an RPContext context, and two other contexts also store information about Alice's overall connection with the NYTimes. One is accessed by a password manager app and the other by a form filler app.
 
 #### Container example #2
 
