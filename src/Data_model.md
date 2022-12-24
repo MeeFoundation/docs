@@ -1,7 +1,5 @@
 # Data Model
 
-## Overview
-
 This page describes the data model of the agent. This model is replicated across all instances of the user's agent running on different devices. At the highest level, the data model can be thought of as a 3 level hierarchy of data containers (DSContainer subclass instances):
 * Self
   * Group
