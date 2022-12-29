@@ -10,10 +10,11 @@ A Javascript SDK to enable developers to add a Connect-with-Mee login support to
 
 ### demo.mee.foundation
 
-This is a mee-compatible demo/test website. 
+This is a mee-certified demo/test website. 
 
-- Supports Connect-with-Mee and OpenID SIOP login (with QR code)
-- Supports all SIOP-defined attributes
+- Supports Connect-with-Mee login
+- Supports all OIDC.Core attributes
+- Supports required/optional attributes
 
 ### NYTimes iOS test app
 
@@ -25,7 +26,7 @@ iOS app that will be published to the AppStore shortly after this release is com
 
 **Functionality**
 
-- Connect-with-mee login from iOS app, from a desktop browser (via QR code) or from a mobile browser
+- Connect-with-mee login from iOS app or from a mobile browser
 - Uses iOS FaceID for user authentication
 
 **Issues and bugs**
@@ -52,7 +53,7 @@ This is a Mee-hosted website listing Mee-certified service provider's app(s)/sit
 
 ### Connect-with-Mee SDK
 
-No updates.
+No updates. (?)
 
 ### demo.mee.foundation
 
@@ -70,14 +71,14 @@ Non-functional
 
 - Add support for Android devices
 - Source code and docs published on GitHub
-- Browser plugin for Chrome and Mobile Safari
+- Browser plugin for Chrome and Mobile Safari (?)
 
 Functionality
 
-* Sync data across user's devices
-* Backup local data 
-* Restore from backup
-* Person-to-person (agent-to-agent) chat
+* Sync data across user's devices (?)
+* Backup local data (?)
+* Restore from backup (?)
+* Person-to-person (agent-to-agent) chat (?)
 
 ### registry.mee.foundation
 
