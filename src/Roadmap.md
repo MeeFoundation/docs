@@ -51,7 +51,7 @@ This is a Mee-hosted website listing Mee-certified service provider's app(s)/sit
 
 ## **v2 April 18th 2023 (IIW36)**
 
-V2 will be our first open source release.
+V2 will be our first open source release. Code will be released under Apache 2.0. 
 
 ### Connect-with-Mee SDK
 
