@@ -27,7 +27,7 @@ The following diagram illustrates these concepts and introduces the notion of co
 
 ### Connection
 
-A relationship between the identity agent user and a relying party. It is represented by one RPContext and zero or more other Contexts.
+A relationship between the identity agent user and an other party. It is represented by one or more other Contexts.
 
 ### Context
 
@@ -41,13 +41,9 @@ An app or website offered by a service provider, the relying party, that is inte
 
 An app or website offered by a service provider, the relying party, that is interoperable with the Mee identity agent.
 
-### Relying party
+### Other party
 
-A person (other than the  user) or a service provider that is the "other" party in a connection.
-
-### RPContext
-
-An RPContext is a kind of Context. It holds information about the user within the context of their relationship with the relying party. This information
+A person (other than the  user) or a service provider that is the other party in a connection.
 
 
 #
