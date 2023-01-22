@@ -32,9 +32,9 @@ Here are the various data container classes.
   - **name** - the name of the group 
   - **icon** - a icon for the group
 - **Context** - a container of one Person node representing the user in a specific aspect of their relationship with some other party. We say "specific aspect" because the relationship between the user a given other, may be represented by more than one context, each representing a different aspect. A context has the following attributes, that taken together uniquely identify the context:
-  - **opNS** - other party name space - a string that indicates the namespace used by the "op" attribute
-  - **op** - other party - a string identifier that unique identifies the other party with which the user has a relationship within the opNS namespace
-  - **dataSchema** - a DID value that identifies the data schema (i.e. the classes of objects and kinds of inter-relationships) used by this context. All apps that manage the data of a context must have a matching dataSchema. The DID can be resolved and the identity of the issuer matched against the opNS:op values
+  - **namespace** - endPoint name space - a string that indicates the namespace used by the "op" attribute
+  - **endpoint** - other party endpoint - a string identifier that unique identifies the other party with which the user has a relationship within the opNS namespace
+  - **schema** - a linke to the data schema (i.e. the classes of objects and kinds of inter-relationships) used by this context. All apps that manage the data of a context must have a matching dataSchema. 
   - **protocol**: a string value that identifies the networking protocol used to communicate with the other party
 
 Instances of Context are managed by apps/sites. The Others, Self, Group and ContextCopy instances are entirely managed by the agent itself.
