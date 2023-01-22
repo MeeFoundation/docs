@@ -40,9 +40,9 @@ Instances of Context are managed by apps/sites. The Others, Self, Group and Cont
 
 ### Container example #1
 
-In the example below, a user, Alice, has two groups. The first group represents her role as a Journalist, and contains two contexts: the context of her relationship with Gmail and with Twitter. The second group, entitled "News" contains only one context, her relationship with the NYTimes news site. She plays a game for which there is a context (without being within a Group). 
+In the example below, our example user, Alice, has two groups. The first group represents her role as a Journalist, and contains two contexts: the context of her relationship with Google Accounts and with Twitter. The second group, entitled "News" contains only one context, her relationship with the NYTimes news site. She plays a game for which there is a context (without being within a Group), and she has a direct relationship with Bob using DIDComm.  
 
-![example1](./images/example1.png)Data is read from and/or written to these contexts by apps. For example the game app reads and writes information about Alice as she plays the game to the Person entity shown in the 3rd RPContext from the left. There may be more than one context associated with a single connection between Alice and a provider's app or site. In the example above, the NYTimes.com website reads date from and writes to an RPContext context, and two other contexts also store information about Alice's overall connection with the NYTimes. One is accessed by a password manager app and the other by a form filler app.
+![example1](./images/example1.png)Data is read from and/or written to these contexts by apps shown at the top. For example the game app reads and writes information about Alice as she plays the game to the person entity shown in the 4th context from the left. There may be more than one context associated with a single connection between Alice and a provider's app or site. 
 
 ### Container example #2
 
