@@ -22,6 +22,8 @@ The information in a context (most importantly person nodes) is managed by an ap
 
 ## Container classes
 
+We describe the data model in two parts. The first part describes the data containers. The second describes the data that is held by those containers.
+
 Here are the various data container classes. 
 
 ![framework-classes2](./images/container-classes.png)
@@ -32,12 +34,20 @@ Here are the various data container classes.
   - **name** - the name of the group 
   - **icon** - a icon for the group
 - **Context** - a container of one Person node representing the user in a specific aspect of their relationship with some other party. We say "specific aspect" because the relationship between the user a given other, may be represented by more than one context, each representing a different aspect. A context has the following attributes, that taken together uniquely identify the context:
-  - **namespace** - endPoint name space - a string that indicates the namespace used by the "op" attribute
-  - **endpoint** - other party endpoint - a string identifier that unique identifies the other party with which the user has a relationship within the opNS namespace
-  - **schema** - a linke to the data schema (i.e. the classes of objects and kinds of inter-relationships) used by this context. All apps that manage the data of a context must have a matching dataSchema. 
-  - **protocol**: a string value that identifies the networking protocol used to communicate with the other party
 
 Instances of Context are managed by apps/sites. The Others, Self, Group and ContextCopy instances are entirely managed by the agent itself.
+
+### Protocols
+
+A Protocol instance represents a capability built into the agent that handles a specific communications protocol used between the agent and and endpoint provided by the other party. We envision subclasses like: SIOPv2, GoogleAccountSync, DIDchat, etc. The protocol used, implies the schema of the data that must be stored in the context. 
+
+Here are the attributes of a protocol:
+
+- **namespace** - endPoint name space - a string that indicates the namespace used by the "op" attribute
+- **endpoint** - other party endpoint - a string identifier that unique identifies the other party with which the user has a relationship within the opNS namespace
+- **schema** - a link to the data schema (i.e. the classes of objects and kinds of inter-relationships) used by this context. All apps that manage the data of a context must have a matching dataSchema. 
+
+Each context usually has one protocol object, although we envision the need for two or perhaps more. 
 
 ### Container example #1
 
