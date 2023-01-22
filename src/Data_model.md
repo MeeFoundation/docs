@@ -43,7 +43,7 @@ One (and in some cases more) instances of a protocol are properties of a Context
 
 - **namespace** - endPoint name space - a string that indicates the namespace used by the "endpoint" attribute
 - **endpoint** - other party endpoint - a string identifier that unique identifies the other party with which the user has a relationship within the namespace attribute
-- **authority** - one of {otherParty, agent, both} - indicates which party (or both) is authoritative over the claims data in the context
+- **authority** - one of {other, agent, both} - indicates which party (or both) is authoritative over the claims data in the context
 
 ### Container example #1
 
