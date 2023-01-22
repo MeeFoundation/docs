@@ -28,7 +28,7 @@ Here are the various data container classes.
 
 ![framework-classes2](./images/container-classes.png)
 
-- **Others** - a container holding a set of Other nodes (a subclass of DigitalSubject). Each Other each of which represents another parties with which the user is interacting via apps and websites. In other words the user has a computer-mediated relationship with each Other node--we call these relationships *Connections*. These Others may be other people or legal entities, often called relying parties, such as a digital service provider legal entity (e.g. Twitter, Inc.). 
+- **Others** - a container holding a set of Other nodes (a subclass of DigitalSubject). Each Other each of which represents another parties with which the user is interacting via apps and websites. In other words the user has a computer-mediated relationship with each Other node. We call these relationships *Connections*. These Others may be other people or legal entities. These legal entities are often called relying parties, such as a digital service provider relying party like Twitter, Inc.
 - **Self** - the single container holding a single Person node that represents the selfness of the user
 - **Group** - an intermediate level container that holds a single Person node that represents a common role or persona that the user plays. A group has these attributes:
   - **name** - the name of the group 
