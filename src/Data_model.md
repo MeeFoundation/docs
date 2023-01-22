@@ -26,22 +26,22 @@ Here are the various data container classes.
 
 ![framework-classes2](./images/container-classes.png)
 
-- Others - a container holding DigitalSubjects that represent other parties with which the user is interacting via apps and websites. These parties may be other people or so-called relying parties such as a digital service provider legal entity (e.g. Twitter, Inc.).
-- Self - the single container holding a single Person node that represents the selfness of the user
-- Group - an intermediate level container that holds a single Person node that represents a common role or persona that the user plays. A group has these attributes:
-  - name - the name of the group 
-  - icon - a icon for the group
-- Context - a container of one Person node representing the user in an app-specific aspect of their relationship with some DigitalSubject. A context has these attributes, that taken together uniquely identify the context:
-  - opNS - other party name space - a string that indicates the namespace used by the "op" attribute
-  - op - other party - a string identifier that unique identifies the other party with which the user has a relationship within the opNS namespace
-  - dataSchema - a DID value that identifies the data schema used by this context. All apps that manage the data of a context must have a matching dataSchema. The DID can be resolved and the identity of the issuer matched against the opNS:op values
-  - protocol: a string value that identifies the networking protocol used to communicate with the other party
+- **Others** - a container holding a set of Other nodes (a subclass of DigitalSubject). Each Other each of which represents another parties with which the user is interacting via apps and websites. In other words the user has a computer-mediated relationship with each Other node--we call these relationships *Connections*. These Others may be other people or legal entities, often called relying parties, such as a digital service provider legal entity (e.g. Twitter, Inc.). 
+- **Self** - the single container holding a single Person node that represents the selfness of the user
+- **Group** - an intermediate level container that holds a single Person node that represents a common role or persona that the user plays. A group has these attributes:
+  - **name** - the name of the group 
+  - **icon** - a icon for the group
+- **Context** - a container of one Person node representing the user in a specific aspect of their relationship with some other party. We say "specific aspect" because the relationship between the user a given other, may be represented by more than one context, each representing a different aspect. A context has the following attributes, that taken together uniquely identify the context:
+  - **opNS** - other party name space - a string that indicates the namespace used by the "op" attribute
+  - **op** - other party - a string identifier that unique identifies the other party with which the user has a relationship within the opNS namespace
+  - **dataSchema** - a DID value that identifies the data schema (i.e. the classes of objects and kinds of inter-relationships) used by this context. All apps that manage the data of a context must have a matching dataSchema. The DID can be resolved and the identity of the issuer matched against the opNS:op values
+  - **protocol**: a string value that identifies the networking protocol used to communicate with the other party
 
 Instances of Context are managed by apps/sites. The Others, Self, Group and ContextCopy instances are entirely managed by the agent itself.
 
 ### Container example #1
 
-In the example below, our example user, Alice, has two groups. The first group represents her role as a Journalist, and contains two contexts: the context of her relationship with Google Accounts and with Twitter. The second group, entitled "News" contains only one context, her relationship with the NYTimes news site. She plays a game for which there is a context (without being within a Group), and she has a direct relationship with Bob using DIDComm.  
+In the example below, and starting at the bottom of the diagram that our example user, Alice, has defined groups for herself. The first group represents her role as a Journalist, and contains two contexts: the context representing her relationship with Google and with Twitter. The second group, entitled "News" contains only one context. It represents her one aspect of relationship with the NYTimes news site. She plays a game for which there is a context (without being within a Group), and she has a direct relationship with Bob using DIDComm.  
 
 ![example1](./images/example1.png)Data is read from and/or written to these contexts by apps shown at the top. For example the game app reads and writes information about Alice as she plays the game to the person entity shown in the 4th context from the left. There may be more than one context associated with a single connection between Alice and a provider's app or site. 
 
@@ -71,9 +71,7 @@ The mandatory, core part of the model that app/site developers must use is inten
 
 ![framework-datatypes](./images/datatypes.png)
 
-- **ContextID** - The digital space/realm/domain within which the user is interacting. 
 - **MeeID** - Identifier of any kind of Digital Subject (i.e. entity) about which data is stored in the agent. 
-
 - **MeeAppID** - A specific kind of MeeID. Uniquely identifies a service provider's site or mobile app. A single, logical, MeeAppID is associated with one or more physical apps (usually on different platforms such as mobile, webapp, etc.) all of which that creates and manages the data contents of a Context a using the same schema. [We have to think through concurrent update issues in the case of N>1 physical apps]
 
 - **Secret Recovery Phrase** - a 12-word textual phrase that the user creates. It is used to generate cryptographic keys that in turn are used to encrypt the user’s personal data whether it is stored locally on their device or in a backup location. It can be used to generate keys to digitally sign transactions (e.g., for crypto currency transactions). It should never be shared with anyone or any service provider. If the user loses this phrase, they lose the ability to decrypt their data. 
