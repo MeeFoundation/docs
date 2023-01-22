@@ -55,17 +55,13 @@ In the example below, and starting at the bottom of the diagram that our example
 
 ![example1](./images/example1.png)Data is read from and/or written to these contexts using a variety of protocols. The protocol instances shown at the top of the diagram above are properties of the contexts in the middle.
 
-### Container example #2
-
-This next example shows a more complex situation. Alice connected to a government website and from it obtained a set of attributes about herself.  She also connected to NYTimes.com website, which, as part of this connection, requested some information that is attested by this same government website. The agent creates a ContextCopy which points back to its source context. 
-
 ## Persona classes
 
-The  types of containers that have been introduced (Self, Groups, Contexts, ContextCopies, and Others) all contain information about DigitalSubjects that are described according to the Persona data model. As mentioned above Context instances are read from and written to by apps/sites. 
+Self, Group, and Context containers all contain information about DigitalSubjects that are described according to schemas based on the Persona classes.
 
 **Core**
 
-The mandatory, core part of the model that app/site developers must use is intentionally simple so as to constrain the app/site developer as little as possible. It specifies that people must be represented as instances of Person, that these Person instances are interconnected using *correlation* and *knows* relationships. A PersonalAccount class is also defined. These core classes are shown below. The attributes (e.g. givenName, etc.) shown in blue above are illustrative only and are not part of the core. 
+The mandatory, core part of the model specifies that people must be represented as instances of Person, that these Person instances are interconnected using *correlation* and *knows* relationships. A PersonalAccount class is also defined. These core classes are shown below. The attributes (e.g. givenName, etc.) shown in blue above are illustrative only and are not part of the core. 
 
 ![persona-classes](./images/persona-classes.png)
 
