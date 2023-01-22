@@ -2,7 +2,7 @@
 
 This page describes the data model of the agent. The user's data that follows this model is replicated across instances of their agent running on different devices. 
 
-At the highest level, the data model can be thought of as a three level hierarchy of data containers (DSContainer subclass instances) each of which holds Person instances representing the user:
+At the highest level, the data model can be thought of as a three level hierarchy of data containers (Container subclass instances) each of which holds Person instances representing the user:
 
 * Self
   * Group (optional)
@@ -37,11 +37,9 @@ Here are the various data container classes.
   - schema - url of the schema of the data held by the context
   - protocols[] - array of Protocol instances
 
-Instances of Context are managed by apps/sites. The Others, Self, and Group instances are entirely managed by the agent itself.
-
 ### Protocols
 
-A Protocol subclass represents a capability built into the agent that handles a specific communications protocol used between the agent and and endpoint provided by the other party. We envision protocol subclasses like: SIOPv2, GoogleAccountSync, DIDchat, etc.  Protocol classes have a class method that returns the data schema used by the protocol when writes to a context (and what it assumes when it reads from the context). This schema value is the same as the "schema" attribute of the a Context instance.
+A Protocol is a communication protocol used to communicate between the agent and an endpoint provided by an Other party. A Protocol subclass represents a capability that handles a specific communications protocol such as SIOPv2, GoogleAccountSync, DIDchat, etc.  Protocol classes have a class method that returns the data schema used by the protocol when writes to a context (and what it assumes when it reads from the context). This schema value is the same as the "schema" attribute of the a Context instance.
 
 One (and in some cases more) instances of a protocol are properties of a Context. Each instance has these attributes:
 
