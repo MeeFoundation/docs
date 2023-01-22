@@ -34,26 +34,26 @@ Here are the various data container classes.
   - **name** - the name of the group 
   - **icon** - a icon for the group
 - **Context** - a container of one Person node representing the user in a specific aspect of their relationship with some other party. We say "specific aspect" because the relationship between the user a given other, may be represented by more than one context, each representing a different aspect. A context has the following attributes, that taken together uniquely identify the context:
+  - schema - url of the schema of the data held by the context
+  - protocols[] - array of Protocol instances
 
-Instances of Context are managed by apps/sites. The Others, Self, Group and ContextCopy instances are entirely managed by the agent itself.
+Instances of Context are managed by apps/sites. The Others, Self, and Group instances are entirely managed by the agent itself.
 
 ### Protocols
 
-A Protocol instance represents a capability built into the agent that handles a specific communications protocol used between the agent and and endpoint provided by the other party. We envision subclasses like: SIOPv2, GoogleAccountSync, DIDchat, etc. The protocol used, implies the schema of the data that must be stored in the context. 
+A Protocol subclass represents a capability built into the agent that handles a specific communications protocol used between the agent and and endpoint provided by the other party. We envision protocol subclasses like: SIOPv2, GoogleAccountSync, DIDchat, etc.  Protocol classes have a class method that returns the data schema used by the protocol when writes to a context (and what it assumes when it reads from the context). This schema value is the same as the "schema" attribute of the a Context instance.
 
-Here are the attributes of a protocol:
+One (and in some cases more) instances of a protocol are properties of a Context. Each instance has these attributes:
 
-- **namespace** - endPoint name space - a string that indicates the namespace used by the "op" attribute
-- **endpoint** - other party endpoint - a string identifier that unique identifies the other party with which the user has a relationship within the opNS namespace
-- **schema** - a link to the data schema (i.e. the classes of objects and kinds of inter-relationships) used by this context. All apps that manage the data of a context must have a matching dataSchema. 
-
-Each context usually has one protocol object, although we envision the need for two or perhaps more. 
+- **namespace** - endPoint name space - a string that indicates the namespace used by the "endpoint" attribute
+- **endpoint** - other party endpoint - a string identifier that unique identifies the other party with which the user has a relationship within the namespace attribute
+- **authority** - one of {otherParty, agent, both} - indicates which party (or both) is authoritative over the claims data in the context
 
 ### Container example #1
 
 In the example below, and starting at the bottom of the diagram that our example user, Alice, has defined groups for herself. The first group represents her role as a Journalist, and contains two contexts: the context representing her relationship with Google and with Twitter. The second group, entitled "News" contains only one context. It represents her one aspect of relationship with the NYTimes news site. She plays a game for which there is a context (without being within a Group), and she has a direct relationship with Bob using DIDComm.  
 
-![example1](./images/example1.png)Data is read from and/or written to these contexts by apps shown at the top. For example the game app reads and writes information about Alice as she plays the game to the person entity shown in the 4th context from the left. There may be more than one context associated with a single connection between Alice and a provider's app or site. 
+![example1](./images/example1.png)Data is read from and/or written to these contexts using a variety of protocols. The protocol instances shown at the top of the diagram above are properties of the contexts in the middle.
 
 ### Container example #2
 
