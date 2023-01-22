@@ -31,7 +31,7 @@ Here are the various data container classes.
 - Group - an intermediate level container that holds a single Person node that represents a common role or persona that the user plays. A group has these attributes:
   - name - the name of the group 
   - icon - a icon for the group
-- Context - a container of one Person node representing the user in an app-specific aspect of their relationship with some DigitalSubject. A context has these attributes:
+- Context - a container of one Person node representing the user in an app-specific aspect of their relationship with some DigitalSubject. A context has these attributes, that taken together uniquely identify the context:
   - opNS - other party name space - a string that indicates the namespace used by the "op" attribute
   - op - other party - a string identifier that unique identifies the other party with which the user has a relationship within the opNS namespace
   - dataSchema - a DID value that identifies the data schema used by this context. All apps that manage the data of a context must have a matching dataSchema. The DID can be resolved and the identity of the issuer matched against the opNS:op values
