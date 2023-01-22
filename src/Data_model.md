@@ -32,11 +32,12 @@ Here are the various data container classes.
   - name - the name of the group 
   - icon - a icon for the group
 - Context - a container of one Person node representing the user in an app-specific aspect of their relationship with some DigitalSubject. A context has these attributes:
-  - opns - @@@@
+  - opNS - other party name space - a string that indicates the namespace used by the "op" attribute
+  - op - other party - a string identifier that unique identifies the other party with which the user has a relationship within the opNS namespace
+  - dataSchema - a DID value that identifies the data schema used by this context. All apps that manage the data of a context must have a matching dataSchema. The DID can be resolved and the identity of the issuer matched against the opNS:op values
+  - protocol: a string value that identifies the networking protocol used to communicate with the other party
 
 Instances of Context are managed by apps/sites. The Others, Self, Group and ContextCopy instances are entirely managed by the agent itself.
-
-
 
 ### Container example #1
 
@@ -47,8 +48,6 @@ In the example below, our example user, Alice, has two groups. The first group r
 ### Container example #2
 
 This next example shows a more complex situation. Alice connected to a government website and from it obtained a set of attributes about herself.  She also connected to NYTimes.com website, which, as part of this connection, requested some information that is attested by this same government website. The agent creates a ContextCopy which points back to its source context. 
-
-![example2](./images/example2.png)
 
 ## Persona classes
 
