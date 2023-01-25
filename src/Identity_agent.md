@@ -26,11 +26,10 @@ Here is an overview of the long-term, planned functionality of the agent version
 
 **Protocols**
 
-- Credential Handler API
-- PassKeeys (WebAuthn)
-- Connect-with-Mee v1: a variant on OpenID SIOP that uses a universal link to the Mee agent
-- Connect-with-Mee v2: supports bi-directional data sharing of attributes, implements connection deletion
+- Credential Handler API (CHAPI)
+- PassKeys (WebAuthn)
 - OpenID SIOP
+- Connect-with-Mee: a variant on OpenID SIOP that uses a universal link to the Mee agent
 
 **UI Features**
 
