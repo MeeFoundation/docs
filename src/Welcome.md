@@ -8,7 +8,7 @@ If you're a service provider and would like to learn how to make your website or
 
 If you'd like to learn about, or contribute to, the development of the Mee identity agent, the following sections are most relevant:
 
--  [Identity agent](./Identity_agent.md) - an overview that describes an agent app that runs on your own devices, represents you and protects your interests online. This agent, in combination with a human information license agreement, will enable users to enter into high-trust, private data sharing relationships with service providers' mobile apps and websites.
+-  [Identity agent](./Identity_agent.md) - an overview that describes an app that runs on your own devices, represents you and protects your interests online. This agent, in combination with a human information license agreement, will enable users to enter into high-trust, private data sharing relationships with service providers' mobile apps and websites.
 - [Architecture](Architecture.md) - a larger picture of how this agent interoperates with relying parties.
 - [Data model](Data_model.md) - describes the agent's data model 
 
