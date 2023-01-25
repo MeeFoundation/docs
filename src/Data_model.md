@@ -86,7 +86,7 @@ Alice takes care of her elderly mother, and helps her mother manage her bank acc
 
 ![example-delegated-context](./images/delegated-contexts.png)
 
-As shown above, Alice has a direct connection with the bank but the context for that connection is linked to a context managed by Alice's mother's agent. 
+As shown above, Alice has a direct connection with the bank (that communicates via the SIOPv2 protocol) but the context for that connection is linked to a context managed by Alice's mother's agent. The MeeTalk data replication/sync protocol is used to ensure that Alice's DelegatedContext is always synchronized with the "original" context on her Mother's agent.
 
 ## Persona classes
 
