@@ -27,7 +27,7 @@ The following diagram illustrates these concepts and introduces the notion of co
 
 #### Claim
 
-An assertion made about a Subject.
+An assertion made about a Subject. 
 
 #### Connection
 
