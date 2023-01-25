@@ -5,18 +5,16 @@ This page describes the data model of the agent. The user's data that follows th
 At the highest level, the data model can be thought of as a three level hierarchy of data containers (Container subclass instances) each of which holds Person instances representing the user:
 
 * Self
-  * Group (optional)
+  * Group
     * Context
 
-These Person instances are connected into a directed graph that spans these three levels of containers. The singleton Self container holds a single Person node that represents the [selfness](https://docs-dev.mee.foundation/Concepts.html#selfness-vs-whoness) of user as a single individual. The Self has a set of Context containers each of which represents how the user is presented to or perceived by an Other Party (e.g. another person's agent or a digital service provider's website or app) (see [whoness](https://docs-dev.mee.foundation/Concepts.html#selfness-vs-whoness)). Note that any number of combinations of communications protocols, local apps and web services may be involved in the connection between the agent and another party. The Person node in the Self container has no scalar attributes but usually contains a set of N correlation links pointing to a corresponding Person node (representing the user) in each of N contexts.
+These Person instances are connected into a directed graph that spans these three levels of containers. The singleton Self container holds a single Person node that represents the [selfness](https://docs-dev.mee.foundation/Concepts.html#selfness-vs-whoness) of user as a single individual. The Self has a set of Context containers each of which represents how the user is presented to or perceived by another party (e.g. another person's agent or a digital service provider's website or app) (see [whoness](https://docs-dev.mee.foundation/Concepts.html#selfness-vs-whoness)). Note that any number of combinations of communications protocols, local apps and web services may be involved in the connection between the agent and another party. The Person node in the Self container has no scalar attributes but usually contains a set of N correlation links pointing to a corresponding Person node (representing the user) in each of N contexts.
 
 Between the Self and the leaf Context containers may exist a set of intermediate level Group containers. These also contain a Person node representing the user. This Person node is linked to "sub" Person nodes in the child containers of the Group container. It may also have attributes of its own. The Person node in a Group container can be used to represent a role the user might play in a set of child contexts. 
 
 In the simplified example below we show a user, Alice, whose selfness is represented by a blue Person node in the Self context. Alice has a relationship with three other parties: a game, Twitter, and the New York Times. Each of these relationships is represented by a context. The whoness, or facet of Alice that she exposes in each context is represented by a Person node in each of these three contexts.
 
-![example1](./images/example1.png)
-
-The information in a context (most importantly person nodes) is read and written to by the agent based on the data flowing through the agent's connection with the other party (or more precisely, with the apps and websites of the other party). We have added these other parties explicitly to the diagram below by introducing a new kind of context called Others within which are objects representing other parties. 
+![example1](./images/example1.png)The information in a context (most importantly person nodes) is read and written to by the agent based on the data flowing through the agent's connection with the other party (or more precisely, with the apps and websites of the other party). We have added these other parties explicitly to the diagram below by introducing a new kind of context called Others within which are objects representing other parties. 
 
 ![example2](./images/example2.png)
 
@@ -107,7 +105,7 @@ This section is largely incomplete, but will eventually describe lower level cla
 ![framework-datatypes](./images/datatypes.png)
 
 - **EndpointId** -  an identifier of an endpoint (e.g. webservice or a local app) supported by an other party.
-- **LocalAppID** - A specific kind of EndpointId. Uniquely identifies a service provider's mobile app. 
+- **LocalAppId** - A specific kind of EndpointId. Uniquely identifies a service provider's mobile app. 
 
 - **Secret Recovery Phrase** - a 12-word textual phrase that the user creates. It is used to generate cryptographic keys that in turn are used to encrypt the user’s personal data whether it is stored locally on their device or in a backup location. It can be used to generate keys to digitally sign transactions (e.g., for crypto currency transactions). It should never be shared with anyone or any service provider. If the user loses this phrase, they lose the ability to decrypt their data. 
 
