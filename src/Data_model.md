@@ -37,7 +37,7 @@ We describe the data model in two parts. The first part describes the data conta
   - **icon** - a icon for the group
 - **Context** - a Container holding a Person node that represents the user in a specific aspect of their relationship with some other party. We say "specific aspect" because the relationship between the user a given other, may be represented by more than one context, each representing a different aspect. 
 
-**More about contexts**
+**More about Contexts**
 
 A context has the following attributes, that taken together uniquely identify the context:
 
@@ -46,25 +46,47 @@ A context has the following attributes, that taken together uniquely identify th
 
 The kinds of data held by a context depends on the communications protocol (using the term loosely) between the agent and the other party. As will be described next, a Protocol class within the agent represents these data conventions using a schema that is an extension of the Persona schema.
 
+There are two subclasses of Context: LinkedContext and Delegated context that are described in their own sections below.
+
 ### Protocols
 
 A Protocol class represents a communication protocol used between the agent and an endpoint provided by an other party. Each protocol subclass represents a different communications protocol such as SIOPv2, GoogleAccountSync, BasicMessage (DIDComm), etc.  Protocol classes have a class method that returns the data schema used when it updates data in that context. These schemas are resolvable from a URL which is written to the *schema* attribute of the Context instance.
 
-A Protocol is an attribute of a Context, and although a less common situation, may have more than one. Each protocol instance has these attributes:
+A Protocol is an attribute of a Context, and although a less common situation, may have more than one. Below is an example of a user Alice who has a (hypothetical) connection with Santander Bank. This connection has a single context that contains the information that Alice shares in with the bank via the OpenID Connect SIOPv2 protocol.
+
+![with-protocol](./images/context-with-protocol.png)
+
+Each protocol instance has these attributes:
 
 - **namespace** - a string that indicates the namespace used by the "endpoint" attribute
 - **endpoint** - a string identifier that unique identifies the other party with which the user has a relationship within the above namespace attribute
 - **dataflow** - one of {to-agent, from-agent, bidirectional} - indicates the direction of data flow between the agent and the endpoint
 
-### Container example #1
+### Multiple connections
 
 In the example below, we expand our story about our user, Alice. She has defined two groups. The first represents her role as a Journalist, and it contains two contexts: the context representing her relationship with Google and with Twitter. The Google context contains her Google account profile which can be updated either using her agent or via the Google website (hence the "bidirectional" dataflow). Her Twitter context contains a snapshot of all of her Twitter account information, lists of who she follows, etc. 
 
-The second group, entitled "News" contains a Person linked to three context all belowing to the New York Times. The first of these three is the context that she uses, via SIOPv2 to login to the NYTimes website. The second is a context that contains the old password she used to use before she started logging in with SIOP. The laste is a context that establishes a bidirectional connection with the NYTimes using a new (an purely hypothetical for now!) bidirectional data synchronization protocol called MeeTalk. She plays a game for which there is a context (without being within an intervening Group), and she has a direct relationship with her friend Bob using the DIDComm BasicMessage protocol.  
+The second group, entitled "News" contains a Person linked to three context all belowing to the New York Times. The first of these three is the context that she uses, via SIOPv2 to login to the NYTimes website. The second is a context that contains the password she used to use before she started logging in with SIOP. The last is a context that establishes a bidirectional connection with the NYTimes using a new (an purely hypothetical for now!) bidirectional data synchronization protocol called MeeTalk. She plays a game for which there is a context (without being within an intervening Group), and she has a direct relationship with her friend Bob using the DIDComm BasicMessage protocol.  
 
-![example1](./images/example5.png)
+![example1](./images/multiple-connections.png)
 
-A relationship between the identity agent and another party is called a *connection*. It is represented by one or more other contexts. In the diagram above, Alice has five connections--one for each of the five Other nodes in her Others container. The right-most connection between Alice and the New York Times involves three different protocols (SIOPv2, SafariPWMgr, and MeeTalk) whereas the others each only involve only one.
+A relationship between the identity agent and another party is called a *connection*. It is represented by one or more other contexts each of which has a protocol (and sometimes more than one). Alice is shown with five connections--one for each of the five Other nodes in her Others container. 
+
+### Linked contexts
+
+Alice can convey claims made about her by one party and present them to another party. For this example we'll assume that the claims are encapsulated within a [Verifiable Credentials](https://www.w3.org/TR/vc-data-model/) document. 
+
+![linked-context](./images/linked-contexts.png)
+
+In this example Alice, presumably having authenticated herself in her connection to a site/app of the "VC Issuing party" is issued a VC containing claims about her which is stored in the leftmost context above. She then goes to another site/app of the "VC Verifying party" and finds that they trust the issuing party and would accept a VC issued by them. In Alice's second connection a VC presenting protocol is used to send the VC to the verifying party. This second connection involved a special class of context, called a LinkedContext. 
+
+### Delegated contexts
+
+Alice takes care of her elderly mother, and helps her mother manage her bank account at Santander Bank. Alice's mother has an agent and has delegated access to Alice a context that contains her mother's OpenID Connect SIOP claims. 
+
+![example-delegated-context](./images/delegated-contexts.png)
+
+As shown above, Alice has a direct connection with the bank but the context for that connection is linked to a context managed by Alice's mother's agent. 
 
 ## Persona classes
 
