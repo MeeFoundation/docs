@@ -2,6 +2,8 @@
 
 This page describes the data model of the agent. The user's data that follows this model is replicated across instances of their agent running on different devices. 
 
+## Introduction
+
 At the highest level, the data model can be thought of as a three level hierarchy of data containers (Container subclass instances) each of which holds Person instances representing the user:
 
 * Self

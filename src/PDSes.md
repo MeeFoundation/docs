@@ -2,7 +2,7 @@
 
 A PDS is a service that lets you store your own personal data in a secure and structured manner. This page lists commercially and open-source PDSes that are under active development. Missing information is displayed in empty cells. Tables are in alphabetic order by the first column. See the Notes section at the bottom for info about column headings.
 
-### Commercial
+## Commercial
 
 | Product                                            | Provider                                  | Description                       | Stage    | MO | E                                                 | A                                                 | D                                               | API |
 | :------------------------------------------------- | :---------------------------------------- | :--------- | :----: | :----------------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- | -------------------------------------------------- |
@@ -17,7 +17,7 @@ A PDS is a service that lets you store your own personal data in a secure and st
 | Prifina                                            | [Prifina.com](http://Prifina.com)         |          |    Beta    |   -    |                                                              |                                                              |                                                              |  |
 | Self             				     | [Self Innovations, Inc](SelfInnovations.ai) | "[T]he first full stack solution for human centric technology." |	      |  yes   |  |  |  |  |
 
-### Open Source
+## Open Source
 
 | Developer                                 | Project                                                      | Provider                         | Description                                                  | Repo                                                         |  MO  | E    | A    | D    | API                                                          | License    |
 | ----------------------------------------- | ------------------------------------------------------------ | -------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | :--: | ---- | ---- | ---- | ------------------------------------------------------------ | ---------- |

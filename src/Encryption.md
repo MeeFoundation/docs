@@ -1,6 +1,6 @@
 # Encryption
 
-### Key Usage Analysis
+## Key Usage Analysis
 
 The following are some rough sketches about what data is encrypted and how. It is not perfectly harmonized with the above "Sample Data"
 

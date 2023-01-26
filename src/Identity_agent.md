@@ -1,14 +1,14 @@
 # Identity Agent
 
-### End-user perspective
+## End-user perspective
 
 The Mee *identity agent* (a term we invented) is an app that gives you more control over your personal data as you interact with digital "others" through their mobile apps and websites or other agents. It maintains a local private copy of your digital identies across connections with these other parties. It respects your privacy when you are interacting with Mee-certified apps/sites--apps/sites offered by providers who have licensed your personal information under to the terms of the Mee Human Information License. 
 
 Although the agent is an interactive application, it operates mostly in the background, sharing and managing personal information about the user with Mee-compatible apps according to the user's sharing preferences and the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, providing contact information, payment methods, as well as sharing preferences, interests, etc. to provide personalization, recommendations, and tailored offers. 
 
-### Self and contexts
+## Self and contexts
 
-The agent represents both the user's *selfness* and *whonesses* (see [Concepts](Concepts.md) for details about these two concepts)
+The agent represents both the user's *selfness* and *whonesses* (see [Concepts](Concepts.md) for details about these two concepts).
 
 The selfness of the user is held in a data container called the *self*. The contents of the self are holistic and therefore quite sensitive. For this reason they would normally not be shared in a direct or comprehensive form with others. The user's self is the point of integration across contexts each of which may be from differing identity systems. 
 
@@ -18,7 +18,7 @@ We can illustrate these concepts with a simple example. A user might play a game
 
 ![self_and_contexts_example](./images/example1.png)
 
-### Functionality
+## Functionality
 
 Here is an overview of the long-term, planned functionality of the agent version 1 and 2:
 
@@ -61,7 +61,7 @@ As a convenience for local app developers, these APIs are provided:
 - **KERI** DID support functions
 - **Encryption:** key pair generation and signing services
 
-### Kinds of Information
+## Kinds of Information
 
 **Human information:**
 
