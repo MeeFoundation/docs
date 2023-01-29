@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="57.5 67.5 687.25 306.25" width="687.25" height="306.25">
+  <defs>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#929292">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_2" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#929292">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_3" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#aaa">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_4" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#011893">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+    <marker orient="auto" overflow="visible" markerUnits="strokeWidth" id="FilledArrow_Marker_5" stroke-linejoin="miter" stroke-miterlimit="10" viewBox="-1 -2 5 4" markerWidth="5" markerHeight="4" color="#011893">
+      <g>
+        <path d="M 2.4 0 L 0 -.9 L 0 .9 Z" fill="currentColor" stroke="currentColor" stroke-width="1"/>
+      </g>
+    </marker>
+  </defs>
+  <g id="ata-workflows" fill-opacity="1" stroke-opacity="1" stroke="none" stroke-dasharray="none" fill="none">
+    <title>ata-workflows</title>
+    <g id="ata-workflows_Layer_1">
+      <title>Layer 1</title>
+      <g id="Graphic_85">
+        <rect x="60.75" y="288" width="225" height="27" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_15">
+        <text transform="translate(63.5 80)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="8.258" y="8">User’s devices + </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="11.842937" y="18">identity agent</tspan>
+        </text>
+      </g>
+      <g id="Group_8">
+        <g id="Graphic_14">
+          <path d="M 157.36538 105.75 L 166.75 105.75 C 169.51142 105.75 171.75 107.98858 171.75 110.75 L 171.75 136.75 C 171.75 139.51142 169.51142 141.75 166.75 141.75 L 157.36538 141.75 C 154.60396 141.75 152.36538 139.51142 152.36538 136.75 L 152.36538 110.75 C 152.36538 107.98858 154.60396 105.75 157.36538 105.75 Z" fill="white"/>
+          <path d="M 157.36538 105.75 L 166.75 105.75 C 169.51142 105.75 171.75 107.98858 171.75 110.75 L 171.75 136.75 C 171.75 139.51142 169.51142 141.75 166.75 141.75 L 157.36538 141.75 C 154.60396 141.75 152.36538 139.51142 152.36538 136.75 L 152.36538 110.75 C 152.36538 107.98858 154.60396 105.75 157.36538 105.75 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+        <g id="Graphic_13">
+          <rect x="156" y="121.5" width="4.5" height="4.5" fill="white"/>
+          <rect x="156" y="121.5" width="4.5" height="4.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+        <g id="Graphic_12">
+          <rect x="162.75" y="114.75" width="4.5" height="4.5" fill="white"/>
+          <rect x="162.75" y="114.75" width="4.5" height="4.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+        <g id="Graphic_11">
+          <rect x="162.75" y="121.5" width="4.5" height="4.5" fill="white"/>
+          <rect x="162.75" y="121.5" width="4.5" height="4.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+        <g id="Graphic_10">
+          <rect x="156" y="128.25" width="4.5" height="4.5" fill="white"/>
+          <rect x="156" y="128.25" width="4.5" height="4.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+        <g id="Graphic_9">
+          <rect x="162.75" y="128.25" width="4.5" height="4.5" fill="white"/>
+          <rect x="162.75" y="128.25" width="4.5" height="4.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+      </g>
+      <g id="Group_4">
+        <g id="Graphic_7">
+          <rect x="97.5" y="105.75" width="40.5" height="27" fill="white"/>
+          <rect x="97.5" y="105.75" width="40.5" height="27" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+        <g id="Graphic_6">
+          <rect x="115.5" y="110.25" width="18" height="18" fill="white"/>
+          <rect x="115.5" y="110.25" width="18" height="18" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+        <g id="Graphic_5">
+          <path d="M 138 132.75 C 142.5 137.25 147 141.75 147 141.75 L 88.5 141.75 L 97.5 132.75 C 97.5 132.75 129 132.75 138 132.75 Z" fill="white"/>
+          <path d="M 138 132.75 C 142.5 137.25 147 141.75 147 141.75 L 88.5 141.75 L 97.5 132.75 C 97.5 132.75 129 132.75 138 132.75 Z" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        </g>
+      </g>
+      <g id="Graphic_3">
+        <path d="M 75.125 120.12588 C 75.125 123.50775 72.38275 126.25088 69 126.25088 C 65.61725 126.25088 62.875 123.50775 62.875 120.12588 C 62.875 116.74225 65.61725 114 69 114 C 72.38275 114 75.125 116.74225 75.125 120.12588 Z M 73.72675 126.40838 C 72.409 127.40325 70.7745 128.00088 69 128.00088 C 67.22375 128.00088 65.588375 127.4015 64.268875 126.40662 C 60.705875 127.9755 58.5 132.86062 58.5 135 L 79.5 135 C 79.5 132.87988 77.225 127.99475 73.72675 126.40838 Z" fill="white"/>
+        <path d="M 75.125 120.12588 C 75.125 123.50775 72.38275 126.25088 69 126.25088 C 65.61725 126.25088 62.875 123.50775 62.875 120.12588 C 62.875 116.74225 65.61725 114 69 114 C 72.38275 114 75.125 116.74225 75.125 120.12588 Z M 73.72675 126.40838 C 72.409 127.40325 70.7745 128.00088 69 128.00088 C 67.22375 128.00088 65.588375 127.4015 64.268875 126.40662 C 60.705875 127.9755 58.5 132.86062 58.5 135 L 79.5 135 C 79.5 132.87988 77.225 127.99475 73.72675 126.40838 Z" stroke="black" stroke-linecap="butt" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Line_17">
+        <path d="M 180.75 126 L 243.75 105.75 L 285.75307 122.93307" marker-end="url(#FilledArrow_Marker)" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_19">
+        <circle cx="242.09716" cy="106.28127" r="9.00001438111708" fill="#929292"/>
+        <circle cx="242.09716" cy="106.28127" r="9.00001438111708" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(236.89716 99.11327)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_20">
+        <rect x="102" y="110.25" width="9" height="18" fill="#ff2600"/>
+      </g>
+      <g id="Graphic_21">
+        <rect x="156" y="110.25" width="4.5" height="6.75" fill="#ff2600"/>
+      </g>
+      <g id="Graphic_22">
+        <path d="M 303.25 90 L 355.25 90 C 360.77285 90 365.25 94.47715 365.25 100 L 365.25 152 C 365.25 157.52285 360.77285 162 355.25 162 L 303.25 162 C 297.72715 162 293.25 157.52285 293.25 152 L 293.25 100 C 293.25 94.47715 297.72715 90 303.25 90 Z" fill="#929292"/>
+        <text transform="translate(302.45 107.58)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="10" fill="white" x="5.964999" y="10">Publisher </tspan>
+          <tspan font-family="Helvetica Neue" font-size="10" fill="white" x="7.079999" y="22.28">web/app </tspan>
+          <tspan font-family="Helvetica Neue" font-size="10" fill="white" x="13.1" y="34.559998">server</tspan>
+        </text>
+      </g>
+      <g id="Graphic_23">
+        <text transform="translate(212.75 72.125)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="1.235875" y="8">User visits site </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="3.178125" y="18">or mobile app</tspan>
+        </text>
+      </g>
+      <g id="Line_25">
+        <path d="M 304.5 162 L 304.5 227.25 L 165 227.25 L 165 154.35" marker-end="url(#FilledArrow_Marker)" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_24">
+        <circle cx="238.76674" cy="227.25" r="9.00001438111707" fill="#929292"/>
+        <circle cx="238.76674" cy="227.25" r="9.00001438111707" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(233.56674 220.082)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_27">
+        <rect x="200.25" y="236.25" width="80.07113" height="33.75" fill="white"/>
+        <text transform="translate(205.25 238.125)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x=".22881442" y="8">Publisher requests </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="6.716002" y="18">fresh ad profile </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="13.542908" y="28">from agent</tspan>
+          <tspan font-family="Public Sans" font-size="5" fill="black" y="25">1</tspan>
+        </text>
+      </g>
+      <g id="Graphic_28">
+        <text transform="translate(77 240.875)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="2.261625" y="8">User consents to </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="2.7987578" y="18">share ad profile</tspan>
+          <tspan font-family="Public Sans" font-size="5" fill="black" y="15">2</tspan>
+        </text>
+      </g>
+      <g id="Line_31">
+        <path d="M 156 146.25 L 144 227.25 L 58.5 227.25 L 146.30541 149.37464" marker-end="url(#FilledArrow_Marker)" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_32">
+        <circle cx="110.70089" cy="227.25" r="9.00001438111707" fill="#929292"/>
+        <circle cx="110.70089" cy="227.25" r="9.00001438111707" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(105.50089 220.082)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">3</tspan>
+        </text>
+      </g>
+      <g id="Line_34">
+        <path d="M 180.75 136.71873 L 243.75 159.21873 L 285.87603 140.07053" marker-end="url(#FilledArrow_Marker_2)" stroke="#929292" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_33">
+        <circle cx="240.742" cy="158.14444" r="9.00001438111707" fill="#929292"/>
+        <circle cx="240.742" cy="158.14444" r="9.00001438111707" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(235.542 150.97644)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_35">
+        <text transform="translate(205.25 170)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="9.014563" y="8">Agent sends ad </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="2.61175" y="18">profile to publisher </tspan>
+        </text>
+      </g>
+      <g id="Graphic_37">
+        <path d="M 441.625 216 L 484.625 216 C 490.14785 216 494.625 220.47715 494.625 226 L 494.625 260 C 494.625 265.52285 490.14785 270 484.625 270 L 441.625 270 C 436.10215 270 431.625 265.52285 431.625 260 L 431.625 226 C 431.625 220.47715 436.10215 216 441.625 216 Z" fill="#929292"/>
+        <text transform="translate(439.925 230.72)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="10" fill="white" x="2.3600008" y="10">Matching </tspan>
+          <tspan font-family="Helvetica Neue" font-size="10" fill="white" x="8.760001" y="22.28">Server</tspan>
+        </text>
+      </g>
+      <g id="Line_38">
+        <path d="M 322.5 162 L 324.75 162 L 324.75 243 L 423.525 243" marker-end="url(#FilledArrow_Marker_3)" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_39">
+        <text transform="translate(335.75 251.625)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="8.490313" y="8">Web/app server </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="3.4589375" y="18">sends ad profile to </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="6.9503125" y="28">Matching Server</tspan>
+        </text>
+      </g>
+      <g id="Graphic_40">
+        <circle cx="372.988" cy="243" r="9.0000143811171" fill="#929292"/>
+        <circle cx="372.988" cy="243" r="9.0000143811171" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(367.788 235.832)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">5</tspan>
+        </text>
+      </g>
+      <g id="Graphic_41">
+        <path d="M 449.5 101.53125 L 476.75 101.53125 C 482.27285 101.53125 486.75 106.0084 486.75 111.53125 L 486.75 140.75 C 486.75 146.27285 482.27285 150.75 476.75 150.75 L 449.5 150.75 C 443.97715 150.75 439.5 146.27285 439.5 140.75 L 439.5 111.53125 C 439.5 106.0084 443.97715 101.53125 449.5 101.53125 Z" fill="#929292"/>
+        <text transform="translate(446.225 120.00063)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="10" fill="white" x="7.18" y="10">SSP</tspan>
+        </text>
+      </g>
+      <g id="Line_42">
+        <path d="M 463.125 216 L 463.125 202.3934 L 347.25 202.3934 L 347.25 170.1" marker-end="url(#FilledArrow_Marker_3)" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_43">
+        <circle cx="370.55424" cy="202.3934" r="9.00001438111708" fill="#929292"/>
+        <circle cx="370.55424" cy="202.3934" r="9.00001438111708" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(365.35424 195.2254)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">6</tspan>
+        </text>
+      </g>
+      <g id="Graphic_44">
+        <text transform="translate(385.25 177.875)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="8">Dynamically generated ad </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="18">profile id token (PID)</tspan>
+        </text>
+      </g>
+      <g id="Line_46">
+        <path d="M 365.25 126 L 376.25 126 L 402.375 126.07031 L 425.4 126.14062 L 431.4 126.14062" marker-end="url(#FilledArrow_Marker_3)" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_45">
+        <circle cx="398.9348" cy="126.06105" r="9.00001438111708" fill="#929292"/>
+        <circle cx="398.9348" cy="126.06105" r="9.00001438111708" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(393.7348 118.89305)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">7</tspan>
+        </text>
+      </g>
+      <g id="Graphic_47">
+        <text transform="translate(371.75 95.75)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="3.4173125" y="8">Send ad slot </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="8.820312" y="18">info + PID</tspan>
+        </text>
+      </g>
+      <g id="Graphic_48">
+        <path d="M 638.1889 92.13526 L 666.5491 112.74017 C 668.3015 114.01339 669.0348 116.27022 668.36545 118.33033 L 657.5329 151.66966 C 656.8635 153.72977 654.9437 155.12458 652.7776 155.12458 L 617.7224 155.12458 C 615.5563 155.12458 613.6365 153.72977 612.9671 151.66966 L 602.13455 118.33033 C 601.4652 116.27022 602.1985 114.01339 603.9509 112.74017 L 632.3111 92.13526 C 634.0635 90.86204 636.4365 90.86204 638.1889 92.13526 Z" fill="#011893"/>
+        <text transform="translate(608.45 119.86)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="10" fill="white" x="1.8849992" y="10">Bid Stream</tspan>
+        </text>
+      </g>
+      <g id="Line_50">
+        <path d="M 486.75 126.14062 L 497.75 126.14062 L 545.6883 126.07031 L 590.5266 126 L 596.5266 126" marker-end="url(#FilledArrow_Marker_3)" stroke="#aaa" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_49">
+        <circle cx="542.38025" cy="126.07516" r="9.00001438111706" fill="#929292"/>
+        <circle cx="542.38025" cy="126.07516" r="9.00001438111706" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(537.18025 118.90717)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">8</tspan>
+        </text>
+      </g>
+      <g id="Graphic_51">
+        <text transform="translate(511.25 93.5)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="14.636063" y="8">Send bid </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="5.3189375" y="18">request +  PID</tspan>
+        </text>
+      </g>
+      <g id="Graphic_52">
+        <rect x="60.75" y="315" width="225" height="58.5" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+      </g>
+      <g id="Graphic_53">
+        <rect x="227.25" y="294.75" width="9" height="9" fill="#011893"/>
+      </g>
+      <g id="Graphic_54">
+        <rect x="101.25" y="294.75" width="9" height="9" fill="#ff2600"/>
+      </g>
+      <g id="Graphic_55">
+        <text transform="translate(63.5 294.25)" fill="black">
+          <tspan font-family="Public Sans" font-weight="bold" font-size="8" fill="black" x="3.572875" y="8">Key</tspan>
+        </text>
+      </g>
+      <g id="Graphic_56">
+        <rect x="150.75" y="294.75" width="9" height="9" fill="#929292"/>
+      </g>
+      <g id="Graphic_57">
+        <text transform="translate(241.25 294.25)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="8">Buy-Side</tspan>
+        </text>
+      </g>
+      <g id="Graphic_58">
+        <text transform="translate(164.75 294.25)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="8">Supply-Side</tspan>
+        </text>
+      </g>
+      <g id="Graphic_59">
+        <text transform="translate(115.25 294.25)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="8">Agent</tspan>
+        </text>
+      </g>
+      <g id="Graphic_60">
+        <path d="M 618.25 216 L 652.25 216 C 657.77285 216 662.25 220.47715 662.25 226 L 662.25 260 C 662.25 265.52285 657.77285 270 652.25 270 L 618.25 270 C 612.72715 270 608.25 265.52285 608.25 260 L 608.25 226 C 608.25 220.47715 612.72715 216 618.25 216 Z" fill="#011893"/>
+        <text transform="translate(615.65 236.86)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="10" fill="white" x="9.6" y="10">DSP</tspan>
+        </text>
+      </g>
+      <g id="Line_62">
+        <line x1="624" y1="156.96873" x2="624" y2="207.9" marker-end="url(#FilledArrow_Marker_4)" stroke="#011893" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_61">
+        <circle cx="624" cy="182.63545" r="9.00001438111708" fill="#011893"/>
+        <circle cx="624" cy="182.63545" r="9.00001438111708" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(618.8 175.46745)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">1</tspan>
+        </text>
+      </g>
+      <g id="Line_67">
+        <path d="M 644.25 272.25 L 646.75 272.25 L 646.75 337.5 L 447.75 337.5 L 447.75 280.35" marker-end="url(#FilledArrow_Marker_5)" stroke="#011893" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_66">
+        <circle cx="543.2659" cy="337.5" r="9.00001438111708" fill="#011893"/>
+        <circle cx="543.2659" cy="337.5" r="9.00001438111708" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(538.0659 330.332)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.3119998" y="11">A</tspan>
+        </text>
+      </g>
+      <g id="Graphic_68">
+        <text transform="translate(511.25 346.625)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="18.869438" y="8">Target </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="8.638688" y="18">audiences []</tspan>
+        </text>
+      </g>
+      <g id="Line_71">
+        <path d="M 475.5 270 L 475.5 297 L 629.7836 297 L 629.7836 278.1" marker-end="url(#FilledArrow_Marker_5)" stroke="#011893" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="2.0,8.0" stroke-width="2"/>
+      </g>
+      <g id="Graphic_70">
+        <circle cx="541.24525" cy="297" r="9.00001438111708" fill="#011893"/>
+        <circle cx="541.24525" cy="297" r="9.00001438111708" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(536.04525 289.832)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.0899998" y="11">B</tspan>
+        </text>
+      </g>
+      <g id="Graphic_72">
+        <text transform="translate(479.75 308.875)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="11.078063" y="8">Target audience ids [] (TIDs)</tspan>
+        </text>
+      </g>
+      <g id="Line_74">
+        <path d="M 608.25 256.5 L 570 256.5 L 503.85 256.5" marker-end="url(#FilledArrow_Marker_5)" stroke="#011893" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_73">
+        <circle cx="552.2168" cy="256.5" r="9.00001438111706" fill="#011893"/>
+        <circle cx="552.2168" cy="256.5" r="9.00001438111706" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(547.0168 249.332)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">2</tspan>
+        </text>
+      </g>
+      <g id="Graphic_75">
+        <text transform="translate(540.5 268.375)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="6.17225" y="8">PID</tspan>
+        </text>
+      </g>
+      <g id="Line_77">
+        <path d="M 497.25 234 L 574.5 234 L 600.15 234" marker-end="url(#FilledArrow_Marker_5)" stroke="#011893" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_76">
+        <circle cx="551.809" cy="234" r="9.00001438111707" fill="#011893"/>
+        <circle cx="551.809" cy="234" r="9.00001438111707" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(546.609 226.832)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">3</tspan>
+        </text>
+      </g>
+      <g id="Graphic_78">
+        <text transform="translate(511.25 211)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="4.008625" y="8">{TID, score} tuples[]</tspan>
+        </text>
+      </g>
+      <g id="Line_81">
+        <line x1="645.75" y1="216" x2="645.75" y2="165.06873" marker-end="url(#FilledArrow_Marker_5)" stroke="#011893" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <g id="Graphic_80">
+        <circle cx="645.75" cy="190.33328" r="9.00001438111706" fill="#011893"/>
+        <circle cx="645.75" cy="190.33328" r="9.00001438111706" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".5"/>
+        <text transform="translate(640.55 183.16528)" fill="white">
+          <tspan font-family="Helvetica Neue" font-size="12" fill="white" x="1.8639998" y="11">4</tspan>
+        </text>
+      </g>
+      <g id="Graphic_82">
+        <text transform="translate(659.75 176.25)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="8">Bid based on score, </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="18">ad budget, frequency </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="28">count, etc.</tspan>
+        </text>
+      </g>
+      <g id="Graphic_83">
+        <text transform="translate(556.25 172.25)" fill="black">
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="20.272125" y="8">Send bid </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="1.637875" y="18">request +  PID</tspan>
+        </text>
+      </g>
+      <g id="Graphic_86">
+        <text transform="translate(65.75 323.5)" fill="black">
+          <tspan font-family="Public Sans" font-weight="bold" font-size="8" fill="black" x=".6505" y="8">Notes:</tspan>
+        </text>
+      </g>
+      <g id="Graphic_87">
+        <text transform="translate(101.75 320)" fill="black">
+          <tspan font-family="Public Sans" font-weight="bold" font-size="8" fill="black" x="0" y="8">1.</tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" y="8"> Publisher can request only if existing profile is </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="18">stale (or they don’t have one at all for this user)</tspan>
+          <tspan font-family="Public Sans" font-weight="bold" font-size="8" fill="black" x="0" y="28">2</tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" y="28">. User has policy options: “Always share my ad </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="38">profile”, or “Ask me every time”, or “Never share </tspan>
+          <tspan font-family="Public Sans" font-size="8" fill="black" x="0" y="48">my ad profile”</tspan>
+        </text>
+      </g>
+    </g>
+  </g>
+</svg>
