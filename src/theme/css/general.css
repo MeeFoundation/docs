@@ -203,14 +203,16 @@ main h1 a {
 
 main h1 {
   font-size: 2em;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid #21262d;
 }
 
 main h2 {
   font-size: 1.5em;
-  border-bottom: 1px solid #21262d;
+}
+
+main h1, main h2 {
+  border-bottom: 1px solid hsla(210,18%,87%,1);
   padding-bottom: 0.3em;
+  
 }
 
 main h3 {
