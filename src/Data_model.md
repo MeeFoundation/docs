@@ -102,7 +102,10 @@ In the Persona schema, people are be represented as instances of Person, A Perso
 
 - **Subject** -  kind of digital subject about which the agent stores information
 - **Person** - a natural person, a subclass of Subject. Each person has the following properties:
-  - A set of zero or more properties (e.g. givenName, etc.), called "claims". Those shown in blue above are illustrative only and not part of the Persona schema. 
+  - **claims** - a set of zero or more properties. Here are a few examples: 
+    - givenName
+    - familyName
+    - phoneticGivenName
   - **account** - an optional PersonalAccount at some other party's site or app
   - **correlation** - zero or more PersonRefs that act as a link to a target Person object representing another whoness of the link's source's person's selfness.
   - **knows** - zero or more PersonRefs that link to a Person representing some other person (other than the user)
