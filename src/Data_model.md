@@ -28,9 +28,11 @@ We describe the data model in two parts. The first part describes the data conta
 
 ![framework-classes2](./images/container-classes.png)
 
-**Classes:**
+### **Classes**
 
-- **Others** - a container holding a set of Other nodes. Each Other represents another party with which the user is interacting via their agent's connections with local apps and websites. These Others may be other people or legal entities. If they are legal entities, they are often called relying parties, such as a digital service provider like Twitter, Inc.
+- **Others** - a container holding a set of Other nodes (see Persona Classes). Each Other node represents a party with the user has a connection. These Others may be other people or legal entities. If they are legal entities, they are often called relying parties, such as a digital service provider like Twitter, Inc. Each other has the following properties:
+  - context - a single Context that captures one aspect of the overall connection
+
 - **Self** - the single Container holding a single Person node that represents the selfness of the user
 - **Group** - an intermediate level container that holds a single Person node that represents a common role or persona that the user plays. A group has these attributes:
   - **name** - the name of the group 
@@ -92,9 +94,22 @@ As shown above, Alice has a direct connection with the bank (that communicates v
 
 Group and Context containers all contain information about subjects (things) that are described according to the persona schema. [We need to decide on the Persona Schema Description Language (SDL) and describe the concepts below using it]. In knowledge representation parlance, the Persona schema would be known as an *upper ontology.*
 
-In the Persona schema, people are be represented as instances of Person, that these Person instances are interconnected using *correlation* and *knows* relationships and stored in the containers mentioned in the previous section. A PersonalAccount class is also defined. These classes are shown below. The attributes (e.g. givenName, etc.) shown in blue below are illustrative only and not part of Persona. 
+In the Persona schema, people are be represented as instances of Person, A PersonalAccount class is also defined. These classes are shown below. 
 
 ![persona-classes](./images/persona-classes.png)
+
+### Classes
+
+- **Subject** -  kind of digital subject about which the agent stores information
+- **Person** - a natural person, a subclass of Subject. Each person has the following properties:
+  - A set of zero or more properties (e.g. givenName, etc.), called "claims". Those shown in blue above are illustrative only and not part of the Persona schema. 
+  - **account** - an optional PersonalAccount at some other party's site or app
+  - **correlation** - zero or more PersonRefs that act as a link to a target Person object representing another whoness of the link's source's person's selfness.
+  - **knows** - zero or more PersonRefs that link to a Person representing some other person (other than the user)
+- **Other** - a Subject representing another person or a legal entity with which the user has a connection. Each Other object has:
+  - **consents** - zero or more Consent objects. Each Consent has 
+    - dateTime - time stamp of when the user consented to share this set of claims
+    - claims[]  - a set of zero or more claims (note: claim types (e.g. "email address") not their values)
 
 **Extensions**
 
