@@ -181,19 +181,60 @@ main {
     overflow-x: auto;
 }
 
+ul li::marker {
+  font-size: 1em;
+}
+
 /* Don't change font size in headers. */
 h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
     font-size: unset;
 }
+
+main h1, main h2, main h3, main h4, main h5, main h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: 1.25
+}
+
+main h1 a {
+  color: #4F868E !important;
+}
+
+main h1 {
+  font-size: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #21262d;
+}
+
+main h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #21262d;
+  padding-bottom: 0.3em;
+}
+
+main h3 {
+  font-size: 1.25em;
+}
+
+main h4 {
+  font-size: 1em;
+}
+
+main h5 {
+  font-size: .875em;
+}
+
+main h6 {
+  font-size: .85em;
+}
+
 
 .left { float: left; }
 .right { float: right; }
 .boring { opacity: 0.6; }
 .hide-boring .boring { display: none; }
 .hidden { display: none !important; }
-
-h2, h3 { margin-top: 2.5em; }
-h4, h5 { margin-top: 2em; }
 
 .header + .header h3,
 .header + .header h4,
