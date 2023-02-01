@@ -68,7 +68,7 @@ Each protocol instance has these attributes:
 
 In the example below, we expand our story about our user, Alice. She has defined two groups. The first represents her role as a Journalist, and it contains two contexts: the context representing her relationship with Google and with Twitter. The Google context contains her Google account profile which can be updated either using her agent or via the Google website (hence the "bidirectional" dataflow). Her Twitter context contains a snapshot of all of her Twitter account information, lists of who she follows, etc. 
 
-The second group, entitled "News" contains a Person linked to three context all belowing to the New York Times. The first of these three is the context that she uses, via SIOPv2 to login to the NYTimes website. The second is a context that contains the password she used to use before she started logging in with SIOP. The last is a context that establishes a bidirectional connection with the NYTimes using a new (an purely hypothetical for now!) bidirectional data synchronization protocol called MeeTalk. She plays a game for which there is a context (without being within an intervening Group), and she has a direct relationship with her friend Bob using the DIDComm BasicMessage protocol.  
+The second group, entitled "News" contains a Person linked to three context all belowing to the New York Times. The first of these three is the context that she uses, via SIOPv2 to login to the NYTimes website. The second is a context that contains data her form filler Safari extension uses. The last is a context that establishes a bidirectional connection with the NYTimes using a new (an purely hypothetical for now!) bidirectional data synchronization protocol called MeeTalk. She plays a game for which there is a context (without being within an intervening Group), and she has a direct relationship with her friend Bob using the DIDComm BasicMessage protocol.  
 
 ![example1](./images/multiple-connections.png)
 
@@ -102,7 +102,7 @@ In the Persona schema, people are be represented as instances of Person, A Perso
 
 - **Subject** -  kind of digital subject about which the agent stores information
 - **Person** - a natural person, a subclass of Subject. Each person has the following properties:
-  - **claims** - a set of zero or more properties. Here are a few examples: 
+  - **claims[]** - a set of zero or more properties. Here are a few examples: 
     - givenName
     - familyName
     - phoneticGivenName
@@ -111,8 +111,8 @@ In the Persona schema, people are be represented as instances of Person, A Perso
   - **knows** - zero or more PersonRefs that link to a Person representing some other person (other than the user)
 - **Other** - a Subject representing another person or a legal entity with which the user has a connection. Each Other object has:
   - **consents** - zero or more Consent objects. Each Consent has 
-    - dateTime - time stamp of when the user consented to share this set of claims
-    - claims[]  - a set of zero or more claims (note: claim types (e.g. "email address") not their values)
+    - **dateTime** - time stamp of when the user consented to share this set of claims
+    - **claims**[]  - a set of zero or more claims (note: claim types (e.g. "email address") not their values)
 
 **Extensions**
 
