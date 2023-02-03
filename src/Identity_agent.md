@@ -2,7 +2,7 @@
 
 ## End-user perspective
 
-The Mee *identity agent* (a term we invented) is an app that offers more privacy and convenience by giving the user more control over their own personal information as they interact with websites, mobile apps, and other user's agents.
+The Mee *identity agent* (a term we invented) is an app that offers privacy and convenience by giving the user more control over their own personal information as they interact with websites, mobile apps, and other user's agents.
 
 **Privacy**. The agent runs on the user's edge devices (mobile phone, laptop, etc.) where it holds, entirely under the user's control, a local, private database of the user's personal information. When an app/site wants to know something about the user, the agent shares as much or as little as the user chooses. If an app/site signs the Mee Human Information License and thereby becomes "Mee-certified", the legal entity behind that app/site becomes obligated to protect whatever information the user shares with them. We envision that someday agents could provide ad profiles to Mee-certified publisher websites that are supported by targeted advertising while eliminating the need for surveillance by third-parties.
 
