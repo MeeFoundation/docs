@@ -2,9 +2,13 @@
 
 ## End-user perspective
 
-The Mee *identity agent* (a term we invented) is an app that gives you more control over your personal data as you interact with digital "others" through their mobile apps and websites or other agents. It maintains a local private copy of your digital identies across connections with these other parties. It respects your privacy when you are interacting with Mee-certified apps/sites--apps/sites offered by providers who have licensed your personal information under to the terms of the Mee Human Information License. 
+The Mee *identity agent* (a term we invented) is an app that offers more privacy and convenience by giving the user more control over their own personal information as they interact with websites, mobile apps, and other user's agents.
 
-Although the agent is an interactive application, it operates mostly in the background, sharing and managing personal information about the user with Mee-compatible apps according to the user's sharing preferences and the terms of the Human Information License. This shared information can be used for many purposes. These include: simplifying sign-in/sign-up, providing contact information, payment methods, as well as sharing preferences, interests, etc. to provide personalization, recommendations, and tailored offers. 
+**Privacy**. The agent runs on the user's edge devices (mobile phone, laptop, etc.) where it holds, entirely under the user's control, a local, private database of the user's personal information. When an app/site wants to know something about the user, the agent shares as much or as little as the user chooses. If an app/site signs the Mee Human Information License and thereby becomes "Mee-certified", the legal entity behind that app/site becomes obligated to protect whatever information the user shares with them. We envision that someday agents could provide ad profiles to Mee-certified publisher websites that are supported by targeted advertising while eliminating the need for surveillance by third-parties.
+
+**Convenience**. Although the agent is an interactive application, it operates quietly in the background most of the time. Always working soley in the user's interest, it collects information from sites that already hold their data, and shares it with other sites that need it. Our vision is that that the user *never has to repeat themself* (nor remember passwords!) as they move from app to app and site to site across the internet.
+
+Here are a few examples. If a site wanted to know the user's email address it might ask for it in a web form. In this case the agent would use it's form-filler "protocol" to fill in the value. If the site supports password-less sign-in (e.g. using OpenID Connect SIOP) the agent acts as the identity provider. If a site needed a digital driver's license credential, the agent acts as a digital wallet and presents this credential that it had presumably downloaded earlier from an issuing site. In these different examples, different protocols for information sharing are required, and in the interest of convenience, the agent should support all of them.
 
 ## Self and contexts
 
