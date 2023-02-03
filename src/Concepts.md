@@ -47,7 +47,7 @@ An app or website offered by a service provider, the relying party, that is inte
 
 #### Mee-compatible
 
-An app, website or agent offered by an Other party that is interoperable with the Mee identity agent.
+An app, website or agent offered by an Other party that is interoperable with the Mee identity agent. That is, there is at least one protocol that both can speak. We make one exception: form filling (and password managers that rely on form filling) don't count as a procotol for the purpose of this definition.
 
 #### Other
 
