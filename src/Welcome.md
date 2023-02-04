@@ -8,7 +8,7 @@ If you're a service provider and would like to learn how to make your website or
 
 If you'd like to learn about, or contribute to, the development of the Mee identity agent, the following sections are most relevant:
 
--  [Identity agent](./Identity_agent.md) - an app that offers privacy and convenience by giving the user more control over their own personal information as they interact with websites, mobile apps, and other user's agents..
+-  [Identity agent](./Identity_agent.md) - an app that offers privacy and convenience by giving the user more control over their own personal information as they interact with websites, mobile apps, and other user's agents.
 - [Architecture](Architecture.md) - a larger picture of how this agent interoperates with relying parties.
 - [Data model](Data_model.md) - describes the agent's data model 
 
