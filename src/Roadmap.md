@@ -37,17 +37,6 @@ iOS app that will be published to the AppStore shortly after this release is com
 - Missing HIL
 - App is not OpenID Connect certified
 
-### registry.mee.foundation
-
-This is a Mee-hosted website listing Mee-certified service provider's app(s)/site(s).
-
-- Home page lists Mee-certified service providers. Fields include: 
-  - domain - text string (e.g. nytimes.com)
-  - TBD
-- Webservice API
-  - TBD
-
-
 
 ## **v2 April 18th 2023 (IIW36)**
 
@@ -84,7 +73,13 @@ Functionality
 
 ### registry.mee.foundation
 
-No updates.
+This is a Mee-hosted website listing Mee-certified service provider's app(s)/site(s).
+
+- Home page lists Mee-certified service providers. Fields include: 
+  - domain - text string (e.g. nytimes.com)
+  - TBD
+- Webservice API
+  - TBD
 
 ## v3 July 2023
 
