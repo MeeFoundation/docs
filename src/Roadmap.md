@@ -22,7 +22,7 @@ This is a fake New York times test iOS app available through TestFlight.
 
 ### Identity agent
 
-iOS app that will be published to the AppStore shortly after this release is completed.
+iOS app that will be published to the App Store shortly after this release is completed.
 
 **Functionality**
 
