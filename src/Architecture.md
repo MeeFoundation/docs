@@ -2,7 +2,7 @@
 
 ## Agent
 
-The Mee architecture follows a decentralized, layered architecture shown below. We describe this archicture by considering a user, Alice, with her own device (e.g. a smart phone) as well a provider's website and a provider's local app:
+The Mee architecture follows a decentralized, layered architecture shown below. We describe this archicture by considering a user, Alice, with her own device (e.g. a smart phone) as well as two other parties (OPs): a provider's website and a provider's local app:
 
 ![architecture](./images/architecture.png)
 
@@ -12,7 +12,7 @@ Mee-compatible applications in the application layer may be service provider web
 
 ### **Identity Agent UI Layer**
 
-Alice's identity agent is deployed as an app on Alice's device. The top of layer of this agent-app is the Identiy agent UI Layer that provides Alice with data management features to manager her data. This UI allows her to inspect and in some cases edit each of the partial representations of her in each context. 
+Alice's identity agent is deployed as an app on Alice's device. The top of layer of the agent is the UI layer that provides Alice with data management features to connect with apps/sites and manage her data. This UI allows her to inspect and in some cases edit each of the partial representations of her in each connection's context(s). 
 
 ### **Delegation layer**
 
@@ -22,11 +22,11 @@ The delegation layer handles requests for access to data from Alice's agent, loc
 
 The data access and replication component provides data access (as controlled by authorization server above it) to the data in each of Alice's contexts. It manages the replication of changes to the data in one of Alice's contexts both (i) between the corresponding app and Alice's agent as well as (ii) among Alice's edge devices (phone, tablet, laptop, etc.).
 
-This layer holds a set of contextualized representations of Alice as defined and created by an app. The diagram above shows three context data stores stored locally on Alice's device and one, the Med Lab app's context data store, which is not replicated on Alice's local device (perhaps because its data set is too large for Alice's device).
+This layer holds a set of contextualized representations of Alice as defined and created by apps/sites. The diagram above shows three local context data containers on Alice's device and one, the Med Lab app's context data container, which is not replicated on Alice's local device (perhaps because its data set is too large for Alice's device).
 
 ## MeeTalk 
 
-Agents interact with other parties (OPs) using protocols defined by open standards (e.g. OpenID Connect SIOPv2, etc.). This project is developing a new protocol called MeeTalk to provide support the human data rights to access, correction (editing), and deletion. An OP must respect these rights in order to become Mee-certified under the terms of the Mee Human Information License. One way to do this is to implement MeeTalk. We discuss MeeTalk here because it extends the architecture into the realm of the OP. MeeTalk is the name for the communication protocols used between the agent and the provider's website shown below. As you can see, the architecture of the website mirrors the agent's architecture:
+Agents interact with OPs using protocols defined by open standards (e.g. OpenID Connect SIOPv2, etc.). This project is developing a new protocol called MeeTalk to provide support the human data rights to access, correction (editing), and deletion. An OP must respect these rights in order to become Mee-certified under the terms of the Mee Human Information License. One way to do this is to implement MeeTalk. We discuss MeeTalk here because it extends the architecture into the realm of the OP. MeeTalk is the name for the communication protocols used between the agent and the provider's website shown below. As you can see, the architecture of the website mirrors the agent's architecture:
 
 ![meetalk](./images/meetalk.png)
 
