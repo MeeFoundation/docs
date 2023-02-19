@@ -1,8 +1,8 @@
 # Architecture
 
-### **Overview**
+## Agent
 
-The Mee architecture follows a decentralized, layered architecture shown below. We describe this archicture by considering a user, Alice, with her own device (e.g. a smart phone) as well as two other example relying parties (RPs) running remotely.
+The Mee architecture follows a decentralized, layered architecture shown below. We describe this archicture by considering a user, Alice, with her own device (e.g. a smart phone) as well as two other example other parties (OPs) running remotely.
 
 ![architecture](./images/architecture.png)
 
@@ -24,6 +24,13 @@ The data access and replication component provides data access (as controlled by
 
 This layer holds a set of contextualized representations of Alice as defined and created by an app. The diagram above shows three context data stores stored locally on Alice's device and one, the Med Lab app's context data store, which is not replicated on Alice's local device (perhaps because its data set is too large for Alice's device).
 
+## MeeTalk 
+
+Agents interact with other parties (OPs) using protocols defined by open standards (e.g. OpenID Connect SIOPv2, etc.). This project is developing a new protocol called MeeTalk to provide support the human data rights to access, correction (editing), and deletion. An OP must respect these rights in order to become Mee-certified under the terms of the Mee Human Information License. One way to do this is to implement MeeTalk. We discuss MeeTalk here because it extends the architecture into the realm of the OP. MeeTalk is the name for the communication protocols used between the agent and the provider's website shown below. As you can see, the architecture of the website mirrors the agent's architecture:
+
+![meetalk](./images/meetalk.png)
+
+ 
 
 #
 [<p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p>](https://github.com/MeeProject/docs/edit/develop/src/Architecture.md)
