@@ -26,7 +26,7 @@ This layer holds a set of contextualized representations of Alice as defined and
 
 ## MeeTalk 
 
-Agents interact with OPs using protocols defined by open standards (e.g. OpenID Connect SIOPv2, etc.). This project is developing a new protocol called MeeTalk to provide support the human data rights to access, correction (editing), and deletion. An OP must respect these rights in order to become Mee-certified under the terms of the Mee Human Information License. One way to do this is to implement MeeTalk. We discuss MeeTalk here because it extends the architecture into the realm of the OP. MeeTalk is the name for the communication protocols used between the agent and the provider's website shown below. As you can see, the architecture of the website mirrors the agent's architecture:
+Agents interact with OPs using protocols defined by open standards (e.g. OpenID Connect SIOPv2, etc.). This project is developing a protocol suite called MeeTalk which provides a technical mechanism to respect the agent user's data rights to access, correct (editing), and delete their information held by the OP. An OP must respect these rights in order to become Mee-certified under the terms of the Mee Human Information License. One way to do this is to implement MeeTalk, although we may add support in the future for other protcols that can achieve the same result. We include a discussion of MeeTalk here on the Architecture page because it's implementation mirrors and re-uses certain components of the agent's architecture on the OP side. Shown below is an example of using MeeTalk to communicate between the agent and a provider's website:
 
 ![meetalk](./images/meetalk.png)
 
