@@ -127,9 +127,11 @@ Allows the user to analyze how they are connected to others across social networ
 
 #### Meta-Account Management
 
+Allows the user to syncronize and update the information that sites/apps have about them. The agent UI would allow the user to create personas to group together connections with apps/sites/others to which the user wishes to expose a relatively consistent set of information. The agent would review what information was stored in the contexts of these connections and personas. It would allow the user to see inconsistencies and, if desired, to correct them. For example there could be a typo in the  user's email address at a particular site, or an old physical address that the user hadn't updated. 
+
 ##### Use case #1
 
-Syncronizes and updates the user's account profile data at websites/apps using existing APIs:
+Allows the user to syncronize information that sites/apps have about them using app/site-specific APIs:
 
 - [Google Account](https://myaccount.google.com) - Google-specific API
 - [Facebook Graph API](https://developers.facebook.com/docs/graph-api) - Facebook-specific API
@@ -137,7 +139,7 @@ Syncronizes and updates the user's account profile data at websites/apps using e
 
 ##### Use case #2
 
-Syncronizes and updates the user's profile at websites/apps using MeeTalk.
+Allows the user to syncronize information that sites/apps have about them using MeeTalk. 
 
 #### Meta-Calendar Management
 
