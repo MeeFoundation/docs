@@ -24,6 +24,10 @@ We plan to implement this use case in v1 of the agent.
 
 Allows the user to signin/up to websites and apps that support the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol. The user can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.). 
 
+##### Use case #3: OpenID prompt for account creation
+
+There is a need, in some circumstances, for the client to explicitly signal to the OpenID Provider that the user desires to create a new account rather than authenticate an existing identity. See the [Initiating User Registration](https://openid.net/specs/openid-connect-prompt-create-1_0.html) specification.
+
 ### P2P Messaging
 
 Allows the user to chat with other agent users peer-to-peer without having to trust or rely on centralized servers. 
