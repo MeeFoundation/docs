@@ -14,7 +14,7 @@ Allows the user to chat with other agent users.
 
 Allows the agent user to automatically signal their intent that website should not sell my data to third-parties using the https://globalprivacycontrol.org standard. 
 
-### Delete Third-party Cookies
+### Third-party Cookies
 
 Allows the user to choose to automatically delete third-party cookies from the user's browser. Requires Mee Browser Extension (MBX).
 
@@ -49,8 +49,6 @@ Allows the user to:
 - Sync passwords across their devices
 - Grant/delegate access to other agent users to some/all passwords
 - Remembers and highlights the last login method used on a given site. 
-
-Requires Mee Browser Extension (MBX).
 
 ### Form Filler
 
