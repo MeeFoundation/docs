@@ -4,11 +4,11 @@
 
 The Mee *identity agent* (a term we invented) is an app that offers privacy and convenience by giving the user more control over their own personal information as they interact with websites, mobile apps, and other user's agents.
 
-**Privacy**. The agent runs on the user's edge devices (mobile phone, laptop, etc.) where it holds, entirely under the user's control, a local, private database of the user's personal information. When an app/site wants to know something about the user, the agent shares as much or as little as the user chooses. If an app/site signs the Mee Human Information License and thereby becomes "Mee-certified", the legal entity behind that app/site becomes obligated to protect whatever information the user shares with them. We envision that someday agents could provide ad profiles to Mee-certified publisher websites that are supported by targeted advertising while eliminating the need for surveillance by third-parties.
+**Privacy and Autonomy**. The agent runs on the user's edge devices (mobile phone, laptop, etc.) where it holds, entirely under the user's control, a local, private database of the user's personal information. When an app/site wants to know something about the user, the agent shares as much or as little as the user chooses. If an app/site signs the Mee Human Information License and thereby becomes "Mee-certified", the legal entity behind that app/site becomes obligated to (a) require explicit consent for collection, processing, storage and sharing of the users data and (b) must implement APIs to exercise the user's rights to access, correct and delete the user's personal information. We envision that someday agents could provide ad profiles to Mee-certified publisher websites that are supported by interest-based advertising while eliminating the need for surveillance by third-parties.
 
-**Convenience**. Although the agent is an interactive application, it operates quietly in the background most of the time. Always working soley in the user's interest, it collects information from sites that already hold their data, and shares it with other sites that need it. Our vision is that that the user *never has to repeat themself* (nor remember passwords!) as they move from app to app and site to site across the internet.
+**Convenience**. Although the agent is an interactive application, it operates in the background most of the time. Always working soley in the user's interest, it collects information from sites that already hold their data, and shares it with other sites that need it. Our vision is that that the user *never has to repeat themself* (nor remember passwords!) as they move from app to app and site to site across the internet.
 
-Here are a few examples. If a site wanted to know the user's email address it might ask for it in a web form. In this case the agent would use it's form-filler "protocol" to fill in the value. If the site supports password-less sign-in (e.g. using OpenID Connect SIOP) the agent acts as the identity provider. If a site needed a digital driver's license credential, the agent acts as a digital wallet and presents this credential that it had presumably downloaded earlier from an issuing site. In these different examples, different protocols for information sharing are required, and in the interest of convenience, the agent should support all of them.
+Here are a few examples. If a site wanted to know the user's email address it might ask for it in a web form. In this case the agent would use it's form-filler "protocol" to fill in the value. If the site supports password-less sign-in (e.g. using OpenID Connect) the agent acts as the identity provider. If a site needed a digital driver's license credential, the agent acts as a digital wallet and presents this credential that it had presumably downloaded earlier from an issuing site. In these different examples, different protocols for information sharing are required, and in the interest of convenience, the agent should support all of them.
 
 ## Self and contexts
 
@@ -32,7 +32,7 @@ Here is an overview of the long-term, planned functionality of the agent version
 
 - Credential Handler API (CHAPI)
 - PassKeys (WebAuthn)
-- OpenID SIOP
+- OpenID SIOPv2
 - Connect-with-Mee: a variant on OpenID SIOP that uses a universal link to the Mee agent
 
 **UI Features**

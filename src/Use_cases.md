@@ -14,7 +14,9 @@ We called this section "login" yet the use cases here support a one click intera
 
 ##### Use case #1: Connect-with-Mee SIOP
 
-Allows the user to signin/up to websites and apps that support a Mee-specific variant of the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol standard. The variation introduces a Mee-specific button on the relying party site/app called "Connect with Mee" that includes a universal link to the agent running on iOS rather than relying on SIOP discovery. The user can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.). Another advantage of Connect-with-Mee is that if the user doesn't have an agent installed, they are automatically redirected to the App Store where they can download it.
+Allows the user to signin/up to websites and apps that support a Mee-specific variant of the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol standard. The user can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.).
+
+The Mee-specific variation introduces a "Connect with Mee" button on the relying party site/app that has a universal (deep) link to the agent running on iOS, rather than relying on SIOP discovery which is weaker from a security point of view. Another advantage of Connect-with-Mee is that if the user doesn't have an agent installed, they are automatically redirected to the App Store where they can download it.
 
 We plan to implement this use case in v1 of the agent.
 
@@ -62,9 +64,9 @@ Scenario:
 
 To implement this the agent could support:
 
-- SD-JWT based VC issuance, according to OpenID VC Issuance spec. 
+- SD-JWT-based VC issuance, according to OpenID VC Issuance spec. 
 
-- SD-JWT based VC presentation according to OpenID VC presentation spec. 
+- SD-JWT-based VC presentation according to OpenID VC presentation spec. 
 
 - Ability to store VCs and select etc. with a friendly UI
 
@@ -125,10 +127,15 @@ Allows the user to analyze how they are connected to others across social networ
 
 #### Meta-Account Management
 
+##### Use case #1
+
 Syncronizes and updates the user's account profile data at websites/apps using existing APIs:
 
 - [Google Account](https://myaccount.google.com) - Google-specific API
 - [Facebook Graph API](https://developers.facebook.com/docs/graph-api) - Facebook-specific API
+- [Twitter Accounts and users](https://help.twitter.com/en/rules-and-policies/twitter-api#:~:text=Our%20API%20platform%20provides%20broad,have%20authorized%20to%20do%20so.) - Twitter-specific API to manage an account's profile and settings
+
+##### Use case #2
 
 Syncronizes and updates the user's profile at websites/apps using MeeTalk.
 
@@ -138,7 +145,7 @@ Integrate the user's calendars on multiple systems. Allow others to create appoi
 
 ### Banking
 
-Leverage the [UK Open Banking API](https://standards.openbanking.org.uk/api-specifications/latest/) to manage the user's banking data.
+Leverage APIs like the [UK Open Banking API](https://standards.openbanking.org.uk/api-specifications/latest/) to manage the user's banking data.
 
 ### Data Collection
 
