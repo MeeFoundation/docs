@@ -1,6 +1,6 @@
 # Use cases
 
-This page describes a set of agent use cases. These use cases apply to the agent irrespective of the platform (e.g. mobile phone or desktop) it is running on. For brevity we write "user", rather than "agent  user".
+This page is a collection of potentially interesting agent use cases. They apply to the agent irrespective of the platform (e.g. mobile phone or desktop) it is running on. Please note that for brevity we write "user", rather than "agent  user".
 
 ## Intrinsic
 
