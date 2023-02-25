@@ -1,6 +1,6 @@
 # Use cases
 
-## Data download
+## Data collection
 
 Use cases involving one-way importing of personal data into the agent
 
