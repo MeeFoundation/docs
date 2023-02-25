@@ -51,7 +51,7 @@ An app, website or agent offered by an Other party that is interoperable with th
 
 #### Other
 
-A kind of Subject that is the other party in a direct communication between the agent and the agent/site/app of this other party.
+A kind of Subject that is the other party in a direct communication between the agent and the agent/site/app of this other party. To follow popular convention we often call this the Relying Party (RP) although this term implies a lack of symmetry that doesn't exist in peer-to-peer interactions, between two people.
 
 #### Person
 

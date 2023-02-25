@@ -4,41 +4,73 @@ This page is a collection of potentially interesting agent use cases. They apply
 
 ## Intrinsic
 
-These use cases would be supported natively by the agent app and its associated browser extension.
+These use cases could be supported natively by the agent app and its associated browser extension. 
+
+### Login
+
+We called this section "login" yet the use cases here support a one click interaction that simultaneously creates a new account (if it doesn't already exist) and logs the user in. So it should be called something like signin/up.
+
+#### OpenID
+
+##### Use case #1: Connect-with-Mee SIOP
+
+Allows the user to signin/up to websites and apps that support a Mee-specific variant of the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol standard. The variation introduces a Mee-specific button on the relying party site/app called "Connect with Mee" that includes a universal link to the agent running on iOS rather than relying on SIOP discovery. The user can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.). Another advantage of Connect-with-Mee is that if the user doesn't have an agent installed, they are automatically redirected to the App Store where they can download it.
+
+We plan to implement this use case in v1 of the agent.
+
+##### Use case #2: Standard SIOPv2
+
+Allows the user to signin/up to websites and apps that support the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol. The user can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.). 
 
 ### P2P Messaging
 
-Allows the user to chat with other agent users. 
+Allows the user to chat with other agent users peer-to-peer without having to trust or rely on centralized servers. 
 
 ### Global Privacy Control
 
-Allows the agent user to automatically signal their intent that website should not sell my data to third-parties using the https://globalprivacycontrol.org standard. 
+Allows the agent user to automatically signal their intent that websites should not sell their data to third-parties using the [GPC](https://globalprivacycontrol.org) standard. 
 
-### Third-party Cookies
+### Third-party Cookie Deletion
 
 Allows the user to choose to automatically delete third-party cookies from the user's browser. Requires Mee Browser Extension (MBX).
 
 ### Browser Privacy Assistant
 
-Looks at the user's browser settings (e.g. Google location tracking, history), makes recommendations on settings changes to enhance privacy and implements these changes. 
+Looks at the user's browser settings (e.g. Google location tracking, history), makes recommendations on settings changes to enhance privacy, and applies these changes. 
 
 ### Digital Wallet
 
-Credit/Debit Card
+#### Credit/Debit Card
 
-Tickets/Boarding Passes
+#### Tickets/Boarding Passes
 
-Travel/Loyalty Cards 
+#### Travel/Loyalty Cards 
 
-Cryptocurrency/NFTs
+#### Cryptocurrency/NFTs
 
-Driver's Licenses
+#### Driver's Licenses
 
-Digital ID Cards
+#### Digital ID Cards
 
-Digital Car and Room Keys
+##### Use case #1
 
-PassKeys
+Scenario:
+
+- A business entity (issuer) in Japan that today makes plastic employer-issued id cards would like to become digital and issue them as VCs into a wallet
+- The employer business entity (verifier) wants to allow the employee to login to enterprise systems using this VC
+- A newspaper entity (another verifier) wishes to rely on this same employee id VC to authorize access to certain pages of a newspaper site with news related to the employer entity OR if there is a corporate subscription, in which case all the pages will be available
+
+To implement this the agent could support:
+
+- SD-JWT based VC issuance, according to OpenID VC Issuance spec. 
+
+- SD-JWT based VC presentation according to OpenID VC presentation spec. 
+
+- Ability to store VCs and select etc. with a friendly UI
+
+#### Digital Car and Room Keys
+
+#### PassKeys
 
 #### Password Manager
 
@@ -68,7 +100,7 @@ Allows the user's search history (outside of Incognito mode) to be collected in 
 
 ## Extrinsic
 
-These use cases would be supported by an external local app or site.
+These use cases could be supported by an independently developed app or site that integrates with the agent (e.g. via Connect with Mee)
 
 ### Auto-updating Contacts
 
@@ -81,26 +113,32 @@ Allows the user to stay in contact with friends, family and colleagues by everyo
 
 ### Delete My Data
 
-Allows the user to exercise their rights and request that their data be deleted by digital service providers. Similar to https://www.permissionslipcr.com/.  
+Allows the user to exercise their rights and request that their data be deleted by digital service providers. Implementation requires a third-party organization to contact sites on your behalf. Similar to [Permission Slip](https://www.permissionslipcr.com/) this app would store the results in the user's agent.
 
-### Meta-Identity Management
+### Meta Identity Management
+
+These "meta" use cases manage the user's identity across two or more external apps, sites or systems using a variety of protocols.
 
 #### Meta-Social Networking
 
-Looks at how the user is connected to other people across social networks and suggests missing links. For example if noticed that the user has contact information for a person but isn't linked to them on LinkedIn, it suggests (and could automate) adding this parallel connection.
+Allows the user to analyze how they are connected to others across social networks with a main goal of suggesting missing links. For example if noticed that the user has contact information for a person but isn't linked to them on LinkedIn, it suggests (and could automate) adding a LinkedIn connection.
 
-#### Meta-Profile Management
+#### Meta-Account Management
 
-Syncronizes and updates the user's profile at websites/apps using existing APIs:
+Syncronizes and updates the user's account profile data at websites/apps using existing APIs:
 
-- myaccount.google.com
-- UK Open Banking APIs
+- [Google Account](https://myaccount.google.com) - Google-specific API
+- [Facebook Graph API](https://developers.facebook.com/docs/graph-api) - Facebook-specific API
 
 Syncronizes and updates the user's profile at websites/apps using MeeTalk.
 
 #### Meta-Calendar Management
 
-Similar to Calendly.com 
+Integrate the user's calendars on multiple systems. Allow others to create appointments according to your availability. Similar to [Calendly](https://calendly.com). 
+
+### Banking
+
+Leverage the [UK Open Banking API](https://standards.openbanking.org.uk/api-specifications/latest/) to manage the user's banking data.
 
 ### Data Collection
 
@@ -131,15 +169,15 @@ Download connections and personal profile.
 
 #### Twitter
 
-Allows the user to download their Twitter followers. Similar to https://rolodex.shovel.company/ except the data would be imported directly into their agent.
+Allows the user to download their Twitter followers. Similar to [Rolodex](https://rolodex.shovel.company/) except the data would be imported directly into their agent.
 
 #### Health
 
-Allows the user to download medical records. E.g. https://bluebutton.cms.gov/
+Allows the user to download medical records. E.g. [BlueButton](https://bluebutton.cms.gov/)
 
 #### GPS Location
 
-Allows the user to collect their location over time.
+Allows the user to collect their GPS location over time.
 
 
 

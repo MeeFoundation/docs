@@ -1,28 +1,23 @@
 # User Stories
 
-### Privacy 
+### Autonomy and Privacy 
 
 | AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
 | :------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
-| **user** | my personal identity/data management app (the Mee app) is not dependent on any external administrative authority | I have self-sovereignty                                      |
-| **user** | have un-correlated interactions with others over unbounded time and space | I have strong privacy                                        |
-| **user** | have as much of my data as possible be *user-held*           | I can easily and directly disclose it to whomever I wish     |
-| **user** | have as much of the data as possible that I share with apps be used only "while using the app" | my data footprint is minimized                               |
-| **user** | share my data to others (people and apps)                    | I can interact with them                                     |
-| **user** | be able to trust the recipients of my disclosures            | I feel comfortable disclosing information to them            |
-| **user** | be able to trust that what I disclose to others (people and apps) will not be disclosed by them to 3rd parties beyond the minimal amount necessary to implement the interaction/transaction with me | my data doesn't spread further than necessary to other actors and increase my vulnerability to exploitation |
-| **user** | be able to know how the recipient of my disclosure will handle my personal data | I feel comfortable disclosing information to them            |
+| **user** | my personal data management app (the Mee identity agent) is not dependent on any external administrative authority | I have user-sovereignty                                      |
+| **user** | have un-correlated interactions with others over unbounded time and space | my privacy rights are respected                              |
+| **user** | have as much of my data as possible be *user-held*           | I am autonomous; I can easily and directly disclose it to whomever I wish |
 
 ### Privacy and the HIL
 
 | AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
 | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **user** | know that apps adhere to the maximum provisions of (ADPPA, CCPA, GDPR) | I have a minimum, baseline level of privacy as dictated by the best enacted and proposed privacy laws |
-| **user** | know that by signing the HIL apps are held to a standard higher than the best of proposed and enacted laws | my privacy is maximized                                      |
-| **user** | require apps to request explicit permission to transfer data to Data Processor as well as to write an audit log of all such transfers | my privacy is maximized. I can have transparency to these transfers and evidence for recourse if the HIL terms are violated |
-| **user** | prohibit the sale of my human information                    | I cannot be exploited and my privacy is maximized            |
-| **user** | be able to erase all context data stored by the app (and that no backups exist). Note: inferred | my privacy is maximized                                      |
-| **user** | prevent apps from creating backup copies of my human information | my privacy is maximized                                      |
+| **user** | know that apps/sites adhere to the HIL                       | I have a minimum, baseline level of privacy since  will only collect, store, process and share my information with my explicit consent. |
+| **user** | have as much of the data as possible that I share with apps/sites be used only "while using the app" | my data footprint is minimized and that data leakage is minimized |
+| **user** | know that apps/sites adhere to the HIL                       | my data rights to access, correction and deletion are implemented immediately and automatically via APIs |
+| **user** | be able to know how the recipient of my disclosure will handle my personal data | I feel comfortable disclosing information to them            |
+| **user** | be able to trust the recipients of my disclosures            | I feel comfortable disclosing information to them            |
+| **user** | be able to trust that what I disclose to others (people and apps/sites) will not be disclosed by them to others without my explicit consent | my data doesn't spread further than necessary to other actors and increase my vulnerability to exploitation |
 
 ### VC Wallet
 
@@ -58,10 +53,10 @@
 
 ### Share
 
-| AS A/AN  | I WANT TO…                                 | SO THAT…                                                     |
-| -------- | ------------------------------------------ | ------------------------------------------------------------ |
-| **user** | share data with apps                       | they have the information they need about me                 |
-| **user** | have apps share app-generated data with me | so that I can leverage this data in other contexts (by other apps) |
+| AS A/AN  | I WANT TO…                                        | SO THAT…                                                     |
+| -------- | ------------------------------------------------- | ------------------------------------------------------------ |
+| **user** | have apps share app-generated data with me        | so that I can leverage this data in other contexts (by other apps) |
+| **user** | share my data with others (people and apps/sites) | I can interact with them and they have the information they need about me |
 
 ### Request
 
