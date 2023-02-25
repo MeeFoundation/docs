@@ -7,5 +7,6 @@
 - [Data model](./Data_model.md)
 - [Roadmap](./Roadmap.md)
 - [User stories](./User_stories.md)
+- [Use_cases](./Use_cases.md)
 - [Concepts](./Concepts.md)
 - [Releases](./Releases.md)
