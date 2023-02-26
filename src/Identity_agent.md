@@ -30,10 +30,11 @@ Here is an overview of the long-term, planned functionality of the agent version
 
 **Protocols**
 
-- Credential Handler API (CHAPI)
+- SD JWT=based VC presentation
+- SD JWT=based VC issuance
 - PassKeys (WebAuthn)
 - OpenID SIOPv2
-- Connect-with-Mee: a variant on OpenID SIOP that uses a universal link to the Mee agent
+- Connect-with-Mee: a variant on OpenID SIOP that uses a universal link to the agent
 
 **UI Features**
 
