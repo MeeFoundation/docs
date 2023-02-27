@@ -8,17 +8,17 @@ This page describes our near term roadmap. Each release includes a set of interr
 
 A Javascript SDK to enable developers to add a Connect-with-Mee login support to their websites. This SDK also supports standard OpenID SIOP.
 
-### demo.mee.foundation
+### Test website
 
-This is a demo/test [website](https://demo.mee.foundation) that:
+[demo.mee.foundation](https://demo.mee.foundation) is a test site that:
 
 - Supports Connect-with-Mee login
 - Supports all OpenID Connect [standard claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims)
 - Supports required/optional attributes
 
-### NYTimes iOS test app
+### Test iOS app
 
-This is a fake New York times test iOS app available through TestFlight.
+This app is a fake New York times test app available through TestFlight. Please send a TestFlight invitation at contact at mee.foundation. 
 
 ### Identity agent
 
