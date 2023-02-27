@@ -31,11 +31,9 @@ iOS app that will be published to the App Store shortly after this release is co
 
 **Issues and bugs**
 
-- App has no built-in backup capability. We rely on the user backing up their iOS device.
-- If the user deletes the app and reinstalls it (intentionally or because they lose their device and its backup) then the user will end up login back into a site/app with a new and different OpenID identifier.
-- All providers are displayed in the app as being Mee-certified, not Mee-compatible (because we’ve not implemented our provider “trust registry” webservice
-- Missing HIL
-- App is not OpenID Connect certified
+- No built-in backup capability. We rely on the user backing up their iOS device.
+- If the user deletes the Mee app and reinstalls it (intentionally or because they lose their device and its backup) then the user will end up logging back into a site/app with a new/different OpenID identifier.
+- Is not OpenID Connect certified by the [OpenID Foundation](https://openid.net/)
 
 
 ## **v2 April 18th 2023 (IIW36)**
