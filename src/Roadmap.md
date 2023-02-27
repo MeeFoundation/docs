@@ -13,7 +13,7 @@ A Javascript SDK to enable developers to add a Connect-with-Mee login support to
 This is a demo/test website that:
 
 - Supports Connect-with-Mee login
-- Supports all OIDC.Core attributes
+- Supports all OpenID Connect [standard claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims)
 - Supports required/optional attributes
 
 ### NYTimes iOS test app
