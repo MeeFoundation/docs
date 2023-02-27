@@ -10,7 +10,7 @@ A Javascript SDK to enable developers to add a Connect-with-Mee login support to
 
 ### demo.mee.foundation
 
-This is a mee-certified demo/test website. 
+This is a demo/test website that:
 
 - Supports Connect-with-Mee login
 - Supports all OIDC.Core attributes
