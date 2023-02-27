@@ -2,7 +2,7 @@
 
 This page describes our near term roadmap. Each release includes a set of interrelated components.
 
-## **v1 February 2023** 
+## **v1: February 2023** 
 
 ### Connect-with-Mee SDK
 
@@ -36,7 +36,7 @@ iOS app that will be published to the App Store shortly after this release is co
 This app is a fake New York times test app available through TestFlight. Please send a TestFlight invitation at contact at mee.foundation. 
 
 
-## **v2 April 18th 2023 (IIW36)**
+## **v2: April 2023**
 
 V2 will be our first open source release. Code will be released under Apache 2.0. 
 
@@ -77,33 +77,6 @@ A website [registry.mee.foundation](https://registry.mee.foundation) listing Mee
   - domain - text string (e.g. nytimes.com)
   - ...
 - Webservice API
-
-## v3 July 2023
-
-### Connect-with-Mee SDK
-
-No updates.
-
-### demo.mee.foundation
-
-No updates.
-
-### NYTimes iOS test app
-
-No updates.
-
-### Identity agent
-
-Functionality
-
-* Login with PassKeys (WebAuthn, FIDO)
-* Import VC
-* Manage VC
-* Present VC
-
-### registry.mee.foundation
-
-No updates
 
 #
 [<p><img src="images/edit.svg" style="width: 15px;margin-right: 6px;text-color: #4F868E;" alt="Edit Page" />Edit this page</p>](https://github.com/MeeProject/docs/edit/develop/src/Roadmap.md)
