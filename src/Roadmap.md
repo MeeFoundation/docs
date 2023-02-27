@@ -26,7 +26,7 @@ iOS app that will be published to the App Store shortly after this release is co
 
 **Functionality**
 
-- Connect-with-mee login from iOS app or from a mobile browser
+- Login to a website on iOS device (i.e. Mobile Safari) using Connect-with-Mee. No password is required and your login event is not tracked by a third-party (e.g. Apple, Google, Facebook, etc.) as is typically the case with traditional social login approaches.
 - Uses iOS FaceID for user authentication
 
 **Issues and bugs**
