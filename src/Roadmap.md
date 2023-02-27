@@ -10,7 +10,7 @@ A Javascript SDK to enable developers to add a Connect-with-Mee login support to
 
 ### demo.mee.foundation
 
-This is a demo/test website that:
+This is a demo/test [website](https://demo.mee.foundation) that:
 
 - Supports Connect-with-Mee login
 - Supports all OpenID Connect [standard claims](https://openid.net/specs/openid-connect-core-1_0.html#StandardClaims)
