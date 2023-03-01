@@ -12,19 +12,17 @@ We called this section "login" yet the use cases here support a one click intera
 
 #### OpenID
 
-##### Use case #1: Connect-with-Mee SIOP
+##### Use case #1: Connect-with-Mee (SIOPv2)
 
-Allows the user to signin/up to websites and apps that support a Mee-specific variant of the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol standard. The user can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.).
+Allows the user to signin/up to websites and apps that support the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol standard. The user can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.).
 
-The Mee-specific variation introduces a "Connect with Mee" button on the relying party site/app that has a universal (deep) link to the agent running on iOS, rather than relying on SIOP discovery which is weaker from a security point of view. Another advantage of Connect-with-Mee is that if the user doesn't have an agent installed, they are automatically redirected to the App Store where they can download it.
+**Single device scenario:** The user has an iOS device and is using a Mee-compatible app (or a Mee-compatible website within a mobile brower. The "Connect with Mee" button on the relying party site/app has a universal (deep) link to the agent app. If the user doesn't have an agent installed, they are automatically redirected to the App Store. 
 
-We plan to implement this use case in v1 of the agent.
+**Cross-device scenario**: The user is using a desktop computer and in their browser clicks on a Mee-compatible website. When the user clicks on Connect-with-Mee they are brought to a QR code that they can scan. This code contains the same deep link mentioned above.
 
-##### Use case #2: Standard SIOPv2
+This use case is implemented in v1 of the agent.
 
-Allows the user to signin/up to websites and apps that support the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol. The user can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.). 
-
-##### Use case #3: OpenID prompt for account creation
+##### Use case #2: OpenID prompt for account creation
 
 There is a need, in some circumstances, for the client to explicitly signal to the OpenID Provider that the user desires to create a new account rather than authenticate an existing identity. See the [Initiating User Registration](https://openid.net/specs/openid-connect-prompt-create-1_0.html) specification.
 
