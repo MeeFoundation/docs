@@ -90,9 +90,11 @@ Allows the user to:
 
 Allows the user to automatically fill in forms in browsers using data managed by the agent across the user's devices. 
 
-### Private Advertising
+### Customer Defined Audience (CDA) Generation
 
-The agent automatically and continuously updates the user's Customer Defined Audience (CDA) advertising profile. The user can view it and delete fields of not interest. This CDA profile can be shared with compatible websites to enable them to earn revenues from advertising while increasing the user's privacy compared to existing solutions that rely on third-party cookies and other forms of tracking and that rely on massive databases of user advertising profiles assemble and managed by third-party adtech firms. 
+Operating in the background, the agent collects data about the user from first-party apps/sites and uses it to continuously synthesize and update the user's Customer Defined Audience (CDA) advertising profile. The user can view it and delete fields not of interest. 
+
+This CDA profile can be shared with compatible websites to enable them to earn revenues from advertising while increasing the user's privacy compared to existing solutions that rely on third-party cookies and other forms of tracking and that rely on massive databases of user advertising profiles assemble and managed by third-party adtech firms. 
 
 ### Browser History
 
@@ -102,9 +104,33 @@ Allows the user's web browsing history (outside of Incognito mode) to be collect
 
 Allows the user's search history (outside of Incognito mode) to be collected in the agent. Requres MBX.
 
-## Extrinsic
+## Extrinsic - Existing apps/sites
 
-These use cases could be supported by an independently developed app or site that integrates with the agent (e.g. via Connect with Mee)
+These use cases can be offered by apps/sites that integrate with the agent via Connect-with-Mee.
+
+### Login
+
+User can login or create an account with one tap (after agent install). User is not tracked by identity provider (e.g. Google, Facebook, Apple, etc.). This can enhance the app/site's brand reputation for respecting user privacy 
+
+### Reduced Form Filling
+
+If the app/site needs attributes about a user, they request it directly from the agent. If the agent has received this same request from another app/site, it asks the user's consent to return the same value. 
+
+### Privacy-respecting personal data management
+
+Shifts control to the user. Allows the user to exercise their data rights promised in privacy regulations: the right to access, correction and deletion.
+
+### Zero-party data
+
+The app/site can query the agent for data and if the user consents to share it, they gain access to user-curated "zero-party" data.
+
+### Higher ad revenues
+
+The app/site can request the user's Customer Defined Audience data and use its to increase revenues from advertising.
+
+## Extrinsic - New apps/sites
+
+These are hypothetical use cases that could be developed by new Mee-compatible apps/sites.
 
 ### Auto-updating Contacts
 
