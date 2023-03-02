@@ -118,7 +118,7 @@ If the app/site needs attributes about a user, they request it directly from the
 
 ### Privacy-respecting personal data management
 
-Shifts control to the user. Allows the user to exercise their data rights promised in privacy regulations: the right to access, correction and deletion.
+Allows the user to exercise their data rights promised in privacy regulations: the right to access, correction and deletion. Note: further user data protections are provided by the HIL that the app/site provider must agree to.
 
 ### Zero-party data
 
