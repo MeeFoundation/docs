@@ -6,11 +6,11 @@ This page is a collection of potentially interesting agent use cases. They apply
 
 These use cases could be supported natively by the agent app and its associated browser extension. 
 
-### Login
+### Login & Account Creation
 
 We called this section "login" yet the use cases here support a one click interaction that simultaneously creates a new account (if it doesn't already exist) and logs the user in. So it should be called something like signin/up.
 
-#### OpenID
+#### OpenID SIOP
 
 ##### Use case #1: Connect-with-Mee (SIOPv2)
 
@@ -38,9 +38,11 @@ Allows the agent user to automatically signal their intent that websites should 
 
 Allows the user to choose to automatically delete third-party cookies from the user's browser. Requires Mee Browser Extension (MBX).
 
-### Browser Privacy Assistant
+### Privacy Assistant
 
 Looks at the user's browser settings (e.g. Google location tracking, history), makes recommendations on settings changes to enhance privacy, and applies these changes. 
+
+For some ideas: https://www.nytimes.com/2022/07/27/technology/personaltech/default-settings-turn-off.html?action=click&module=RelatedLinks&pgtype=Article
 
 ### Digital Wallet
 
@@ -108,7 +110,7 @@ Allows the user's search history (outside of Incognito mode) to be collected in 
 
 These use cases can be offered by apps/sites that integrate with the agent via Connect-with-Mee.
 
-### Login
+### Login & Account Creation
 
 User can login or create an account with one tap (after agent install). User is not tracked by identity provider (e.g. Google, Facebook, Apple, etc.). This can enhance the app/site's brand reputation for respecting user privacy 
 
