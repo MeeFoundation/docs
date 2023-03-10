@@ -2,7 +2,7 @@
 
 ## Agent
 
-The Mee architecture follows a decentralized, layered architecture shown below. We describe this archicture by considering a user, Alice, with her own device (e.g. a smart phone) as well as two other parties (OPs): a provider's website and a provider's local app:
+The Mee architecture follows a decentralized, layered architecture shown below. We describe this architecture by considering a user, Alice, with her own device (e.g. a smart phone) as well as three other parties (OPs): a provider's website, a provider's local app, and another user, Bob's, agent:
 
 ![architecture](./images/architecture.png)
 
