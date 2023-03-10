@@ -59,7 +59,7 @@ A kind of Subject that represents a natural person.
 
 #### Protocol
 
-A communication protocol used between the agent and an endpoint provided by a Other party
+A communication protocol used between the agent and an endpoint provided by an Other party
 
 #### Subject
 
