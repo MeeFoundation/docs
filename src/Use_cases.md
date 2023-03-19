@@ -2,6 +2,14 @@
 
 This page is a collection of potentially interesting agent use cases. They apply to the agent irrespective of the platform (e.g. mobile phone or desktop) it is running on. Please note that for brevity we write "user", rather than "agent  user".
 
+### Actors
+
+Alice: the agent user
+
+Bob: another agent user that Alice knows
+
+
+
 ## Intrinsic
 
 These use cases could be supported natively by the agent app and its associated browser extension. 
@@ -12,7 +20,7 @@ We called this section "login" yet the use cases here support a one click intera
 
 #### OpenID SIOP
 
-##### Use case #1: Connect-with-Mee (SIOPv2)
+##### #1: Connect-with-Mee (SIOPv2)
 
 Allows the user to signin/up to websites and apps that support the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol standard. The user can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.).
 
@@ -22,11 +30,16 @@ Allows the user to signin/up to websites and apps that support the OpenID Connec
 
 This use case is implemented in v1 of the agent.
 
-##### Use case #2: OpenID prompt for account creation
+##### #2: OpenID prompt for account creation
 
 There is a need, in some circumstances, for the client to explicitly signal to the OpenID Provider that the user desires to create a new account rather than authenticate an existing identity. See the [Initiating User Registration](https://openid.net/specs/openid-connect-prompt-create-1_0.html) specification.
 
-### P2P Messaging
+### Chat Service ###
+
+**Description**: Alice wishes to send and exchange text messages with Bob 
+**Stakeholders**: n/a
+**How it works**: test
+
 
 Allows the user to chat with other agent users peer-to-peer without having to trust or rely on centralized servers. 
 
