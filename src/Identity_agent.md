@@ -1,4 +1,4 @@
-# Identity Agent (Obsolete)
+# Identity Agent
 
 ## End-user perspective
 

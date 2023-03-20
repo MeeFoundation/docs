@@ -1,4 +1,4 @@
-# Architecture (Obsolete)
+# Architecture
 
 ## Agent
 
