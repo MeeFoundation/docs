@@ -34,14 +34,12 @@ This use case is implemented in v1 of the agent.
 
 There is a need, in some circumstances, for the client to explicitly signal to the OpenID Provider that the user desires to create a new account rather than authenticate an existing identity. See the [Initiating User Registration](https://openid.net/specs/openid-connect-prompt-create-1_0.html) specification.
 
-### Chat Service ###
-
-**Description**: Alice wishes to send and exchange text messages with Bob 
+### Chat Service
+**Description**: Alice wishes to chat with a friend Bob.
+**Precondition:** Both Alice and her friend Bob have chat client apps. Alice and Bob are also able to communicate out of band. Out of band Bob shares via a QR code with Alice of the DID of one of the contexts his agent manages. 
 **Stakeholders**: n/a
-**How it works**: test
-
-
-Allows the user to chat with other agent users peer-to-peer without having to trust or rely on centralized servers. 
+**How it works**: Alice opens her chat client app and scans the DID Bob shared ith her and adds Bob as a new contact in the chat app. Alice types "Hi Bob" into the chat client. This message data is stored in Alice's context store for this connection with Bob as well as transmitted to Bob's agent. This message appears in Bob's client and is stored in Bob's context storage associated with his connection with Alice.
+**Advantages**:  This respects Alice's and Bob's privacy by eliminating the need for them to trust a service, app or site provided by an intermediary entity. The message content is end-to-end encrypted and never stored by an intermediary  (e.g. a social networking site like Twitter, Facebook, etc.) and although it may pass through relay servers it does so only transiently.
 
 ### Global Privacy Control
 

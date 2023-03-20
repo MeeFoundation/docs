@@ -2,7 +2,7 @@
 
 This page describes our near term roadmap. Each release includes a set of interrelated components.
 
-## **v1: February 2023** 
+## **v1: March 2023** 
 
 ### Connect-with-Mee SDK
 

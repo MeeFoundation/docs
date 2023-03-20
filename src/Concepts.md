@@ -39,7 +39,7 @@ A Context is a container of data about a connection that is written to or read f
 
 #### Identity Agent
 
-A software app installed on the user's edge device (phone, tablet, laptop, etc.) that interacts with Mee-compatible Other parties's apps, websites and/or agents.
+A software app installed on the user's edge device (phone, tablet, laptop, etc.) that interacts with Mee-compatible other parties's apps, websites and/or agents.
 
 #### Mee-certified
 
@@ -47,7 +47,7 @@ An app or website offered by a service provider, the relying party, that is inte
 
 #### Mee-compatible
 
-An app, website or agent offered by an Other party that is interoperable with the Mee identity agent. That is, there is at least one protocol that both can speak. We make one exception: form filling (and password managers that rely on form filling) don't count as a procotol for the purpose of this definition.
+An app, website or agent offered by another party that is interoperable with the Mee identity agent. That is, there is at least one protocol that both can speak. We make one exception: form filling (and password managers that rely on form filling) don't count as a procotol for the purpose of this definition.
 
 #### Other
 
@@ -59,7 +59,7 @@ A kind of Subject that represents a natural person.
 
 #### Protocol
 
-A communication protocol used between the agent and an endpoint provided by an Other party
+A communication protocol used between the agent and an endpoint provided by another party
 
 #### Subject
 
