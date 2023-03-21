@@ -1,14 +1,12 @@
 # Use cases
 
-This page is a collection of potentially interesting agent use cases. They apply to the agent irrespective of the platform (e.g. mobile phone or desktop) it is running on. Please note that for brevity we write "user", rather than "agent  user".
+This page is a collection of potentially interesting use cases for using an identity agent irrespective of the platform (e.g. mobile phone or desktop) it is running on. Please note that for brevity we write "agent" rathern than "identity agent", and "user", rather than "identity agent user".
 
 ### Actors
 
 Alice: the agent user
 
 Bob: another agent user that Alice knows
-
-
 
 ## Intrinsic
 

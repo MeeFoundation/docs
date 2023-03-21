@@ -86,13 +86,13 @@
 
 | AS A/AN  | I WANT TO…                                                   | SO THAT…                                                     |
 | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **user** | be able to restore my Mee app data from backups in the case of a catastrophic disaster wherein I lose all of my devices (and I loose access to my device backups) | I don't lose all of the personal data that I've already collected and lose the investment I've made in assembling it |
+| **user** | be able to restore my Mee agent data from backups in the case of a catastrophic disaster wherein I lose all of my devices (and I loose access to my device backups) | I don't lose all of the personal data that I've already collected and lose the investment I've made in assembling it |
 
 ### Store
 
-| AS A/AN  | I WANT TO…                                                  | SO THAT…                                           |
-| -------- | ----------------------------------------------------------- | -------------------------------------------------- |
-| **user** | keep my personal information in a convenient and secure app | I can easily share it with apps (and other people) |
+| AS A/AN  | I WANT TO…                                                  | SO THAT…                                                 |
+| -------- | ----------------------------------------------------------- | -------------------------------------------------------- |
+| **user** | keep my personal information in a convenient and secure app | I can easily share it with apps/sites (and other people) |
 
 ### Recognize
 
@@ -100,18 +100,12 @@
 | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **user** | be able to authenticate myself to the agent (e.g. using facial recognition on a phone) | so that it recognizes me (and only me) and thus my agent cannot be accessed by others |
 
-### Secret Recovery Phrase
-
-| AS A/AN  | I WANT TO…                        | SO THAT…                         |
-| -------- | --------------------------------- | -------------------------------- |
-| **user** | be able to create a secret phrase | I can recover all my information |
-
 ### Form factor
 
-| AS A/AN  | I WANT TO…                                    | SO THAT…                               |
-| :------- | :-------------------------------------------- | :------------------------------------- |
-| **user** | install the Mee app                           | I can enjoy the benefits of the app    |
-| **user** | run the Mee app on mobile and desktop devices | I can access it from any of my devices |
+| AS A/AN  | I WANT TO…                                    | SO THAT…                                                     |
+| :------- | :-------------------------------------------- | :----------------------------------------------------------- |
+| **user** | install the Mee app                           | I can enjoy the benefits of the app                          |
+| **user** | run the Mee app on mobile and desktop devices | I can use it from any of my devices and whatever apps they are running and what websites I'm using |
 
 Note: the above this advice: https://www.mountaingoatsoftware.com/blog/advantages-of-the-as-a-user-i-want-user-story-template  
 
