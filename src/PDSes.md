@@ -1,6 +1,6 @@
 # Personal Data Stores (PDSes)
 
-A PDS is a service that lets you store your own personal data in a secure and structured manner. This page lists commercially and open-source PDSes that are under active development. Missing information is displayed in empty cells. Tables are in alphabetic order by the first column. See the Notes section at the bottom for info about column headings.
+A PDS is a service that lets you store your own personal data in a secure and structured manner. This page lists commercial and open-source PDSes that are under active development. Missing information is displayed in empty cells. Tables are in alphabetic order by the first column. See the Notes section at the bottom for info about column headings.
 
 ## Commercial
 
