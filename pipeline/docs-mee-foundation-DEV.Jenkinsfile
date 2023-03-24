@@ -14,8 +14,7 @@ pipeline {
         }
 
         stage('Build') {
-            steps {
-                sh "mdbook build . "
+            steps {                        
                 sh """
                     sleep 15s;
                     docker build -t $OCR/$NAME:$BUILD_NUMBER -t $OCR/$NAME:$TAG -t $OCR/$NAME:latest -f Dockerfile  .
