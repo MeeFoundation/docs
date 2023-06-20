@@ -33,3 +33,7 @@
 [data-theme='light'] ::backdrop {
   --sl-color-text-accent: var(--sl-mee-accent);
 }
+
+:root {
+  --sl-font: public-sans;
+}
