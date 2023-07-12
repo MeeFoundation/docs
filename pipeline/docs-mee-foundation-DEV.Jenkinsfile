@@ -22,6 +22,7 @@ pipeline {
                     pwd
                     ls -la
                     cd docs
+                    source /home/jenkins/.shrc                    
                     pnpm install
                     pnpm run build 
                     cd ..
