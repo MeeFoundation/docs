@@ -10,10 +10,27 @@ pipeline {
         stage('Prepare') {
             steps {
                 sh 'echo $OCR_PWS | docker login iad.ocir.io  --username $OCR_USER  --password-stdin '
+                sh """
+                    wget -qO- https://get.pnpm.io/install.sh | ENV="/home/jenkins/.shrc" SHELL="/bin/sh" sh -
+                """
             }
         }
 
-        stage('Build') {
+        stage('Build dist') {
+            steps {
+                sh """
+                    pwd
+                    ls -la
+                    cd docs
+                    pnpm install
+                    pnpm run build 
+                    cd ..
+                    pwd
+                """
+            }
+        }
+
+        stage('Build docker') {
             steps {                        
                 sh """
                     sleep 15s;
