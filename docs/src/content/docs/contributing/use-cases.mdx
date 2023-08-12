@@ -3,55 +3,55 @@ title: Use Cases
 description: Use cases
 ---
 
-This page is a collection of potentially interesting use cases for using an identity agent irrespective of the platform (e.g. mobile phone or desktop) it is running on. Please note that for brevity we write "agent" rathern than "identity agent", and "user", rather than "identity agent user".
+This page is a collection of potentially interesting use cases for using a smartwallet irrespective of the platform (e.g. mobile phone or desktop) it is running on. 
 
 ## Actors
 
-- Alice: the agent user
-- Bob: another agent user that Alice knows
+- Alice: the smartwallet holder
+- Bob: another smartwallet holder that Alice knows
 
 ## Intrinsic
 
-These use cases could be supported natively by the agent app and its associated browser extension. 
+These use cases could be supported natively by the smartwallet app and its associated browser extension. 
 
 ### Login & Account Creation
 
-We called this section "login" yet the use cases here support a one click interaction that simultaneously creates a new account (if it doesn't already exist) and logs the user in. So it should be called something like signin/up.
+We called this section "login" yet the use cases here support a one click interaction that simultaneously creates a new account (if it doesn't already exist) and logs the person in. So it should be called something like signin/up.
 
 ### OpenID SIOP
 
 #### #1: Connect-with-Mee (SIOPv2)
 
-Allows the user to signin/up to websites and apps that support the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol standard. The user can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.).
+Allows the person to signin/up to websites and apps that support the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol standard. The person can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.).
 
-**Single device scenario:** The user has an iOS device and is using a Mee-compatible app (or a Mee-compatible website within a mobile brower. The "Connect with Mee" button on the relying party site/app has a universal (deep) link to the agent app. If the user doesn't have an agent installed, they are automatically redirected to the App Store. 
+**Single device scenario:** The person has an iOS device and is using a Mee-compatible app (or a Mee-compatible website within a mobile brower. The "Connect with Mee" button on the relying party site/app has a universal (deep) link to the smartwallet app. If the person doesn't have a smartwallet installed, they are automatically redirected to the App Store. 
 
-**Cross-device scenario**: The user is using a desktop computer and in their browser clicks on a Mee-compatible website. When the user clicks on Connect-with-Mee they are brought to a QR code that they can scan. This code contains the same deep link mentioned above.
+**Cross-device scenario**: The person is using a desktop computer and in their browser clicks on a Mee-compatible website. When the person clicks on Connect-with-Mee they are brought to a QR code that they can scan. This code contains the same deep link mentioned above.
 
-This use case is implemented in v1 of the agent.
+This use case is implemented in v1 of the smartwallet.
 
 #### #2: OpenID prompt for account creation
 
-There is a need, in some circumstances, for the client to explicitly signal to the OpenID Provider that the user desires to create a new account rather than authenticate an existing identity. See the [Initiating User Registration](https://openid.net/specs/openid-connect-prompt-create-1_0.html) specification.
+There is a need, in some circumstances, for the client to explicitly signal to the OpenID Provider that the person desires to create a new account rather than authenticate an existing identity. See the [Initiating person Registration](https://openid.net/specs/openid-connect-prompt-create-1_0.html) specification.
 
 ### Chat Service
 **Description**: Alice wishes to chat with a friend Bob.
-**Precondition:** Both Alice and her friend Bob have chat client apps. Alice and Bob are also able to communicate out of band. Out of band Bob shares via a QR code with Alice of the DID of one of the contexts his agent manages. 
+**Precondition:** Both Alice and her friend Bob have chat client apps. Alice and Bob are also able to communicate out of band. Out of band Bob shares via a QR code with Alice of the DID of one of the contexts his smartwallet manages. 
 **Stakeholders**: n/a
-**How it works**: Alice opens her chat client app and scans the DID Bob shared ith her and adds Bob as a new contact in the chat app. Alice types "Hi Bob" into the chat client. This message data is stored in Alice's context store for this connection with Bob as well as transmitted to Bob's agent. This message appears in Bob's client and is stored in Bob's context storage associated with his connection with Alice.
+**How it works**: Alice opens her chat client app and scans the DID Bob shared ith her and adds Bob as a new contact in the chat app. Alice types "Hi Bob" into the chat client. This message data is stored in Alice's context store for this connection with Bob as well as transmitted to Bob's smartwallet. This message appears in Bob's client and is stored in Bob's context storage associated with his connection with Alice.
 **Advantages**:  This respects Alice's and Bob's privacy by eliminating the need for them to trust a service, app or site provided by an intermediary entity. The message content is end-to-end encrypted and never stored by an intermediary  (e.g. a social networking site like Twitter, Facebook, etc.) and although it may pass through relay servers it does so only transiently.
 
 ### Global Privacy Control
 
-Allows the agent user to automatically signal their intent that websites should not sell their data to third-parties using the [GPC](https://globalprivacycontrol.org) standard. 
+Allows the smartwallet holder to automatically signal their intent that websites should not sell their data to third-parties using the [GPC](https://globalprivacycontrol.org) standard. 
 
 ### Third-party Cookie Deletion
 
-Allows the user to choose to automatically delete third-party cookies from the user's browser. Requires Mee Browser Extension (MBX).
+Allows the person to choose to automatically delete third-party cookies from the person's browser. Requires Mee Browser Extension (MBX).
 
 ### Privacy Assistant
 
-Looks at the user's browser settings (e.g. Google location tracking, history), makes recommendations on settings changes to enhance privacy, and applies these changes. 
+Looks at the person's browser settings (e.g. Google location tracking, history), makes recommendations on settings changes to enhance privacy, and applies these changes. 
 
 For some ideas: https://www.nytimes.com/2022/07/27/technology/personaltech/default-settings-turn-off.html?action=click&module=RelatedLinks&pgtype=Article
 
@@ -77,7 +77,7 @@ Scenario:
 - The employer business entity (verifier) wants to allow the employee to login to enterprise systems using this VC
 - A newspaper entity (another verifier) wishes to rely on this same employee id VC to authorize access to certain pages of a newspaper site with news related to the employer entity OR if there is a corporate subscription, in which case all the pages will be available
 
-To implement this the agent could support:
+To implement this the smartwallet could support:
 
 - SD-JWT-based VC issuance, according to OpenID VC Issuance spec. 
 
@@ -91,55 +91,55 @@ To implement this the agent could support:
 
 ### Password Manager
 
-Allows the user to:
+Allows the person to:
 
 - Create and manage strong passwords
 - Autofill passwords on any browser
 - Sync passwords across their devices
-- Grant/delegate access to other agent users to some/all passwords
+- Grant/delegate access to other smartwallet holders to some/all passwords
 - Remembers and highlights the last login method used on a given site. 
 
 ### Form Filler
 
-Allows the user to automatically fill in forms in browsers using data managed by the agent across the user's devices. 
+Allows the person to automatically fill in forms in browsers using data managed by the smartwallet across the person's devices. 
 
 ### Customer Defined Audience (CDA) Generation
 
-Operating in the background, the agent collects data about the user from first-party apps/sites and uses it to continuously synthesize and update the user's Customer Defined Audience (CDA) advertising profile. The user can view it and delete fields not of interest. 
+Operating in the background, the smartwallet collects data about the person from first-party apps/sites and uses it to continuously synthesize and update the person's Customer Defined Audience (CDA) advertising profile. The person can view it and delete fields not of interest. 
 
-This CDA profile can be shared with compatible websites to enable them to earn revenues from advertising while increasing the user's privacy compared to existing solutions that rely on third-party cookies and other forms of tracking and that rely on massive databases of user advertising profiles assemble and managed by third-party adtech firms. 
+This CDA profile can be shared with compatible websites to enable them to earn revenues from advertising while increasing the person's privacy compared to existing solutions that rely on third-party cookies and other forms of tracking and that rely on massive databases of person advertising profiles assemble and managed by third-party adtech firms. 
 
 ### Browser History
 
-Allows the user's web browsing history (outside of Incognito mode) to be collected in the agent. Requires MBX.
+Allows the person's web browsing history (outside of Incognito mode) to be collected in the smartwallet. Requires MBX.
 
 ### Search History
 
-Allows the user's search history (outside of Incognito mode) to be collected in the agent. Requres MBX.
+Allows the person's search history (outside of Incognito mode) to be collected in the smartwallet. Requres MBX.
 
 ## Extrinsic - Existing apps/sites
 
-These use cases can be offered by apps/sites that integrate with the agent via Connect-with-Mee.
+These use cases can be offered by apps/sites that integrate with the smartwallet via Connect-with-Mee.
 
 ### Login & Account Creation
 
-User can login or create an account with one tap (after agent install). User is not tracked by identity provider (e.g. Google, Facebook, Apple, etc.). This can enhance the app/site's brand reputation for respecting user privacy 
+person can login or create an account with one tap (after smartwallet install). person is not tracked by identity provider (e.g. Google, Facebook, Apple, etc.). This can enhance the app/site's brand reputation for respecting person privacy 
 
 ### Reduced Form Filling
 
-If the app/site needs attributes about a user, they request it directly from the agent. If the agent has received this same request from another app/site, it asks the user's consent to return the same value. 
+If the app/site needs attributes about a person, they request it directly from the smartwallet. If the smartwallet has received this same request from another app/site, it asks the person's consent to return the same value. 
 
 ### Privacy-respecting personal data management
 
-Allows the user to exercise their data rights promised in privacy regulations: the right to access, correction and deletion. Note: further user data protections are provided by the HIL that the app/site provider must agree to.
+Allows the person to exercise their data rights promised in privacy regulations: the right to access, correction and deletion. Note: further person data protections are provided by the HIL that the app/site provider must agree to.
 
 ### Zero-party data
 
-The app/site can query the agent for data and if the user consents to share it, they gain access to user-curated "zero-party" data.
+The app/site can query the smartwallet for data and if the person consents to share it, they gain access to person-curated "zero-party" data.
 
 ### Higher ad revenues
 
-The app/site can request the user's Customer Defined Audience data and use its to increase revenues from advertising.
+The app/site can request the person's Customer Defined Audience data and use its to increase revenues from advertising.
 
 ### Extrinsic - New apps/sites
 
@@ -147,64 +147,64 @@ These are hypothetical use cases that could be developed by new Mee-compatible a
 
 ### Auto-updating Contacts
 
-Allows the user to stay in contact with friends, family and colleagues by everyone always having up-to-date contact information. Allows the user to:
+Allows the person to stay in contact with friends, family and colleagues by everyone always having up-to-date contact information. Allows the person to:
 
-- Populates their own contact info (either directly, or through integration with the user's existing contact management app/service (see below))
-- Publish their contact information as part of a connection to an other user's agent
-- Subscribe to the contact info of another user
-- Integrates with existing contact management apps and services, allowing the user to continue using them, with the syncing happending in the background. For example the user could continue to use Apple's Contacts app on their Macbook or iPhone - contact info of other's that the user is subscribing to are automatically updated and any change made to the user's contact information is automatically propagated to subscribers.
+- Populates their own contact info (either directly, or through integration with the person's existing contact management app/service (see below))
+- Publish their contact information as part of a connection to an other person's smartwallet
+- Subscribe to the contact info of another person
+- Integrates with existing contact management apps and services, allowing the person to continue using them, with the syncing happending in the background. For example the person could continue to use Apple's Contacts app on their Macbook or iPhone - contact info of other's that the person is subscribing to are automatically updated and any change made to the person's contact information is automatically propagated to subscribers.
 
 ### Delete My Data
 
-Allows the user to exercise their rights and request that their data be deleted by digital service providers. Implementation requires a third-party organization to contact sites on your behalf. Similar to [Permission Slip](https://www.permissionslipcr.com/) this app would store the results in the user's agent.
+Allows the person to exercise their rights and request that their data be deleted by digital service providers. Implementation requires a third-party organization to contact sites on your behalf. Similar to [Permission Slip](https://www.permissionslipcr.com/) this app would store the results in the person's smartwallet.
 
 ### Meta Identity Management
 
-These "meta" use cases manage the user's identity across two or more external apps, sites or systems using a variety of protocols.
+These "meta" use cases manage the person's identity across two or more external apps, sites or systems using a variety of protocols.
 
 ### Meta-Social Networking
 
-Allows the user to analyze how they are connected to others across social networks with a main goal of suggesting missing links. For example if noticed that the user has contact information for a person but isn't linked to them on LinkedIn, it suggests (and could automate) adding a LinkedIn connection.
+Allows the person to analyze how they are connected to others across social networks with a main goal of suggesting missing links. For example if noticed that the person has contact information for a person but isn't linked to them on LinkedIn, it suggests (and could automate) adding a LinkedIn connection.
 
 ### Meta-Account Management
 
-Allows the user to syncronize and update the information that sites/apps have about them. The agent UI would allow the user to create personas to group together connections with apps/sites/others to which the user wishes to expose a relatively consistent set of information. The agent would review what information was stored in the contexts of these connections and personas. It would allow the user to see inconsistencies and, if desired, to correct them. For example there could be a typo in the  user's email address at a particular site, or an old physical address that the user hadn't updated. 
+Allows the person to syncronize and update the information that sites/apps have about them. The smartwallet UI would allow the person to create personas to group together connections with apps/sites/others to which the person wishes to expose a relatively consistent set of information. The smartwallet would review what information was stored in the contexts of these connections and personas. It would allow the person to see inconsistencies and, if desired, to correct them. For example there could be a typo in the  person's email address at a particular site, or an old physical address that the person hadn't updated. 
 
 #### Use case #1
 
-Allows the user to syncronize information that sites/apps have about them using app/site-specific APIs:
+Allows the person to syncronize information that sites/apps have about them using app/site-specific APIs:
 
 - [Google Account](https://myaccount.google.com) - Google-specific API
 - [Facebook Graph API](https://developers.facebook.com/docs/graph-api) - Facebook-specific API
-- [Twitter Accounts and users](https://help.twitter.com/en/rules-and-policies/twitter-api#:~:text=Our%20API%20platform%20provides%20broad,have%20authorized%20to%20do%20so.) - Twitter-specific API to manage an account's profile and settings
+- [Twitter Accounts and persons](https://help.twitter.com/en/rules-and-policies/twitter-api#:~:text=Our%20API%20platform%20provides%20broad,have%20authorized%20to%20do%20so.) - Twitter-specific API to manage an account's profile and settings
 
 #### Use case #2
 
-Allows the user to syncronize information that sites/apps have about them using MeeTalk. 
+Allows the person to syncronize information that sites/apps have about them using MeeTalk. 
 
 ### Meta-Calendar Management
 
-Integrate the user's calendars on multiple systems. Allow others to create appointments according to your availability. Similar to [Calendly](https://calendly.com). 
+Integrate the person's calendars on multiple systems. Allow others to create appointments according to your availability. Similar to [Calendly](https://calendly.com). 
 
 ### Banking
 
-Leverage APIs like the [UK Open Banking API](https://standards.openbanking.org.uk/api-specifications/latest/) to manage the user's banking data.
+Leverage APIs like the [UK Open Banking API](https://standards.openbanking.org.uk/api-specifications/latest/) to manage the person's banking data.
 
 ## Data Collection
 
-Use cases involving (uni-directional) the user importing of their personal data into their agent.
+Use cases involving (uni-directional) the person importing of their personal data into their smartwallet.
 
 ### Amazon
 
-Allows the user to download their purchase history. 
+Allows the person to download their purchase history. 
 
 ### Facebook
 
-Allows the user to download their profile, posts, and images.
+Allows the person to download their profile, posts, and images.
 
 ### Google Takeout
 
-Allows the user to download various data sets. Examples include:
+Allows the person to download various data sets. Examples include:
 
 - Arts & Culture - Favorites and galleries you've created on Google Arts & Culture
 - Calendar
@@ -219,12 +219,12 @@ Download connections and personal profile.
 
 ### Twitter
 
-Allows the user to download their Twitter followers. Similar to [Rolodex](https://rolodex.shovel.company/) except the data would be imported directly into their agent.
+Allows the person to download their Twitter followers. Similar to [Rolodex](https://rolodex.shovel.company/) except the data would be imported directly into their smartwallet.
 
 ### Health
 
-Allows the user to download medical records. E.g. [BlueButton](https://bluebutton.cms.gov/)
+Allows the person to download medical records. E.g. [BlueButton](https://bluebutton.cms.gov/)
 
 ### GPS Location
 
-Allows the user to collect their GPS location over time.
+Allows the person to collect their GPS location over time.
