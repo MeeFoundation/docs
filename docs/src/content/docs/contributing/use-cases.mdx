@@ -14,19 +14,15 @@ This page is a collection of potentially interesting use cases for using a smart
 
 These use cases could be supported natively by the smartwallet app and its associated browser extension. 
 
-### Login & Account Creation
-
-We called this section "login" yet the use cases here support a one click interaction that simultaneously creates a new account (if it doesn't already exist) and logs the person in. So it should be called something like signin/up.
-
 ### OpenID SIOP
 
 #### #1: Connect-with-Mee (SIOPv2)
 
 Allows the person to signin/up to websites and apps that support the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol standard. The person can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.).
 
-**Single device scenario:** The person has an iOS device and is using a Mee-compatible app (or a Mee-compatible website within a mobile brower. The "Connect with Mee" button on the relying party site/app has a universal (deep) link to the smartwallet app. If the person doesn't have a smartwallet installed, they are automatically redirected to the App Store. 
+**Single device scenario:** The person has an iOS device and is using a Mee-compatible app (or a Mee-compatible website within a mobile brower. The "Continue with Mee smartwallet" button on the relying party site/app has a universal (deep) link to the smartwallet app. If the person doesn't have a smartwallet installed, they are automatically redirected to an app store. 
 
-**Cross-device scenario**: The person is using a desktop computer and in their browser clicks on a Mee-compatible website. When the person clicks on Connect-with-Mee they are brought to a QR code that they can scan. This code contains the same deep link mentioned above.
+**Cross-device scenario**: The person is using a desktop computer and in their browser clicks on a Mee-compatible website. When the person clicks on Continue-with-Mee-smartwallet they are brought to a QR code that they can scan. This code contains the same deep link mentioned above.
 
 This use case is implemented in v1 of the smartwallet.
 
@@ -36,14 +32,18 @@ There is a need, in some circumstances, for the client to explicitly signal to t
 
 ### Chat Service
 **Description**: Alice wishes to chat with a friend Bob.
-**Precondition:** Both Alice and her friend Bob have chat client apps. Alice and Bob are also able to communicate out of band. Out of band Bob shares via a QR code with Alice of the DID of one of the contexts his smartwallet manages. 
+
+**Precondition:** Both Alice and her friend Bob have chat client apps. Alice and Bob are also able to communicate out of band. Out of band Bob shares via a QR code with Alice the DID of one of the contexts his smartwallet manages. 
+
 **Stakeholders**: n/a
+
 **How it works**: Alice opens her chat client app and scans the DID Bob shared ith her and adds Bob as a new contact in the chat app. Alice types "Hi Bob" into the chat client. This message data is stored in Alice's context store for this connection with Bob as well as transmitted to Bob's smartwallet. This message appears in Bob's client and is stored in Bob's context storage associated with his connection with Alice.
+
 **Advantages**:  This respects Alice's and Bob's privacy by eliminating the need for them to trust a service, app or site provided by an intermediary entity. The message content is end-to-end encrypted and never stored by an intermediary  (e.g. a social networking site like Twitter, Facebook, etc.) and although it may pass through relay servers it does so only transiently.
 
 ### Global Privacy Control
 
-Allows the smartwallet holder to automatically signal their intent that websites should not sell their data to third-parties using the [GPC](https://globalprivacycontrol.org) standard. 
+Allows the person to automatically signal their intent that websites should not sell their data to third-parties using the [GPC](https://globalprivacycontrol.org) standard. 
 
 ### Third-party Cookie Deletion
 
@@ -55,19 +55,24 @@ Looks at the person's browser settings (e.g. Google location tracking, history),
 
 For some ideas: https://www.nytimes.com/2022/07/27/technology/personaltech/default-settings-turn-off.html?action=click&module=RelatedLinks&pgtype=Article
 
-### Digital Wallet
+### VC Wallet
 
-### Credit/Debit Card
+The person can add VCs issued by VC *issuers* to their smartwallet. The person can view and delete VCs in the smartwallet. The person can present VCs to VC *verifier*. 
 
-### Tickets/Boarding Passes
+These VCs may represent:
 
-### Travel/Loyalty Cards 
+- Credit/Debit Cards
 
-### Cryptocurrency/NFTs
+- Tickets/Boarding Passes
 
-### Driver's Licenses
+- Travel/Loyalty Cards 
 
-### Digital ID Cards
+- Cryptocurrency/NFTs
+
+- Driver's Licenses
+
+- Digital ID Cards
+
 
 #### Use case #1
 
@@ -85,9 +90,7 @@ To implement this the smartwallet could support:
 
 - Ability to store VCs and select etc. with a friendly UI
 
-### Digital Car and Room Keys
-
-### PassKeys
+### PassKey Manager
 
 ### Password Manager
 
@@ -107,7 +110,7 @@ Allows the person to automatically fill in forms in browsers using data managed 
 
 Operating in the background, the smartwallet collects data about the person from first-party apps/sites and uses it to continuously synthesize and update the person's Customer Defined Audience (CDA) advertising profile. The person can view it and delete fields not of interest. 
 
-This CDA profile can be shared with compatible websites to enable them to earn revenues from advertising while increasing the person's privacy compared to existing solutions that rely on third-party cookies and other forms of tracking and that rely on massive databases of person advertising profiles assemble and managed by third-party adtech firms. 
+This CDA profile can be shared with compatible websites to enable them to earn revenues from advertising while increasing the person's privacy compared to existing solutions that rely on third-party cookies and other forms of tracking and that rely on massive databases of personal advertising profiles assemble and managed by third-party adtech firms. 
 
 ### Browser History
 
@@ -119,31 +122,31 @@ Allows the person's search history (outside of Incognito mode) to be collected i
 
 ## Extrinsic - Existing apps/sites
 
-These use cases can be offered by apps/sites that integrate with the smartwallet via Connect-with-Mee.
+These use cases can be offered by apps/sites that integrate with the smartwallet via Continue-with-Mee-smartwallet.
 
 ### Login & Account Creation
 
-person can login or create an account with one tap (after smartwallet install). person is not tracked by identity provider (e.g. Google, Facebook, Apple, etc.). This can enhance the app/site's brand reputation for respecting person privacy 
+The person can login or create an account with one tap (after smartwallet install). person is not tracked by identity provider (e.g. Google, Facebook, Apple, etc.). This can enhance the app's brand reputation for respecting person privacy 
 
 ### Reduced Form Filling
 
-If the app/site needs attributes about a person, they request it directly from the smartwallet. If the smartwallet has received this same request from another app/site, it asks the person's consent to return the same value. 
+If the app/site needs attributes about the person, they request it directly from the smartwallet. If the smartwallet has received this same request from another app/site, it asks the person's consent to return the same value. 
 
 ### Privacy-respecting personal data management
 
-Allows the person to exercise their data rights promised in privacy regulations: the right to access, correction and deletion. Note: further person data protections are provided by the HIL that the app/site provider must agree to.
+Allows the person to exercise their data rights promised in privacy regulations: the right to access, correction and deletion. Note: further personal data protections are provided by the HIL that the app/site provider must agree to.
 
 ### Zero-party data
 
-The app/site can query the smartwallet for data and if the person consents to share it, they gain access to person-curated "zero-party" data.
+The app can query the smartwallet for data and if the person consents to share it, they gain access to person-curated "zero-party" data.
 
 ### Higher ad revenues
 
-The app/site can request the person's Customer Defined Audience data and use its to increase revenues from advertising.
+The app can request the person's Customer Defined Audience data and use its to increase revenues from programmatic advertising.
 
 ### Extrinsic - New apps/sites
 
-These are hypothetical use cases that could be developed by new Mee-compatible apps/sites.
+These are hypothetical use cases that could be developed by new Mee-compatible apps.
 
 ### Auto-updating Contacts
 
