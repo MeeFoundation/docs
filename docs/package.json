@@ -14,8 +14,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "workspace:*",
-    "astro": "^2.5.0"
+    "@astrojs/starlight": "*",
+    "astro": "^3.2.4"
   },
   "devDependencies": {
     "@size-limit/file": "^8.2.4",
