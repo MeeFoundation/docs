@@ -6,18 +6,18 @@ import Default from '@astrojs/starlight/components/Sidebar.astro';
 
 ---
 <a
-	href="/"
-	class="home-link"
+  href="/"
+  class="home-link"
 >
-	<span>Home</span>
+  <span>Home</span>
 </a>
 <Default {...Astro.props}>
   <slot />
 </Default>
 
 <style>
-	.home-link {
-		color: var(--sl-color-text-accent);
-		padding-left: 8px;
-	}
+  .home-link {
+    color: var(--sl-color-text-accent);
+    padding-left: 8px;
+  }
 </style>
