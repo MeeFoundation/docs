@@ -55,6 +55,10 @@ Looks at the person's browser settings (e.g. Google location tracking, history),
 
 For some ideas: https://www.nytimes.com/2022/07/27/technology/personaltech/default-settings-turn-off.html?action=click&module=RelatedLinks&pgtype=Article
 
+### GPS Location
+
+Allows the person to collect their GPS location over time.
+
 ### VC Wallet
 
 The person can add VCs issued by VC *issuers* to their smartwallet. The person can view and delete VCs in the smartwallet. The person can present VCs to VC *verifier*. 
@@ -120,33 +124,21 @@ Allows the person's web browsing history (outside of Incognito mode) to be colle
 
 Allows the person's search history (outside of Incognito mode) to be collected in the smartwallet. Requres MBX.
 
-## Extrinsic - Existing apps/sites
-
-These use cases can be offered by apps/sites that integrate with the smartwallet via Continue-with-Mee-smartwallet.
-
-### Login & Account Creation
-
-The person can login or create an account with one tap (after smartwallet install). person is not tracked by identity provider (e.g. Google, Facebook, Apple, etc.). This can enhance the app's brand reputation for respecting person privacy 
-
-### Reduced Form Filling
-
-If the app/site needs attributes about the person, they request it directly from the smartwallet. If the smartwallet has received this same request from another app/site, it asks the person's consent to return the same value. 
-
 ### Privacy-respecting personal data management
 
-Allows the person to exercise their data rights promised in privacy regulations: the right to access, correction and deletion. Note: further personal data protections are provided by the HIL that the app/site provider must agree to.
+Allows the person to exercise their data rights promised in privacy regulations: the right to access, correction and deletion. Note: further personal data protections are provided by the HIL that the app provider must agree to.
+
+## Extrinsic
+
+These use cases could be offered by apps that integrate with the smartwallet.
 
 ### Zero-party data
 
 The app can query the smartwallet for data and if the person consents to share it, they gain access to person-curated "zero-party" data.
 
-### Higher ad revenues
+### Mee Ad profile consumers
 
 The app can request the person's Customer Defined Audience data and use its to increase revenues from programmatic advertising.
-
-### Extrinsic - New apps/sites
-
-These are hypothetical use cases that could be developed by new Mee-compatible apps.
 
 ### Auto-updating Contacts
 
@@ -165,15 +157,15 @@ Allows the person to exercise their rights and request that their data be delete
 
 These "meta" use cases manage the person's identity across two or more external apps, sites or systems using a variety of protocols.
 
-### Meta-Social Networking
+#### Meta-Social Networking
 
 Allows the person to analyze how they are connected to others across social networks with a main goal of suggesting missing links. For example if noticed that the person has contact information for a person but isn't linked to them on LinkedIn, it suggests (and could automate) adding a LinkedIn connection.
 
-### Meta-Account Management
+#### Meta-Account Management
 
 Allows the person to syncronize and update the information that sites/apps have about them. The smartwallet UI would allow the person to create personas to group together connections with apps/sites/others to which the person wishes to expose a relatively consistent set of information. The smartwallet would review what information was stored in the contexts of these connections and personas. It would allow the person to see inconsistencies and, if desired, to correct them. For example there could be a typo in the  person's email address at a particular site, or an old physical address that the person hadn't updated. 
 
-#### Use case #1
+##### Use case #1
 
 Allows the person to syncronize information that sites/apps have about them using app/site-specific APIs:
 
@@ -181,11 +173,11 @@ Allows the person to syncronize information that sites/apps have about them usin
 - [Facebook Graph API](https://developers.facebook.com/docs/graph-api) - Facebook-specific API
 - [Twitter Accounts and persons](https://help.twitter.com/en/rules-and-policies/twitter-api#:~:text=Our%20API%20platform%20provides%20broad,have%20authorized%20to%20do%20so.) - Twitter-specific API to manage an account's profile and settings
 
-#### Use case #2
+##### Use case #2
 
 Allows the person to syncronize information that sites/apps have about them using MeeTalk. 
 
-### Meta-Calendar Management
+#### Meta-Calendar Management
 
 Integrate the person's calendars on multiple systems. Allow others to create appointments according to your availability. Similar to [Calendly](https://calendly.com). 
 
@@ -195,7 +187,7 @@ Leverage APIs like the [UK Open Banking API](https://standards.openbanking.org.u
 
 ## Data Collection
 
-Use cases involving (uni-directional) the person importing of their personal data into their smartwallet.
+Use cases involving the person importing of their personal data into their smartwallet.
 
 ### Amazon
 
@@ -228,6 +220,3 @@ Allows the person to download their Twitter followers. Similar to [Rolodex](http
 
 Allows the person to download medical records. E.g. [BlueButton](https://bluebutton.cms.gov/)
 
-### GPS Location
-
-Allows the person to collect their GPS location over time.
