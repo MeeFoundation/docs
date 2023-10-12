@@ -1,18 +1,22 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-const site = 'https://mee.foundation/';
+export const site = 'https://mee.foundation/';
+
+export const sharedConfig = {
+  title: 'Mee Foundation',
+  logo: {
+    light: '/src/assets/logo-light.svg',
+    dark: '/src/assets/logo-dark.svg',
+    replacesTitle: true,
+  }
+}
 
 export default defineConfig({
   site,
   integrations: [
     starlight({
-      title: 'Mee Foundation',
-      logo: {
-        light: '/src/assets/logo-light.svg',
-        dark: '/src/assets/logo-dark.svg',
-        replacesTitle: true,
-      },
+      ...sharedConfig,
       editLink: {
         baseUrl: 'https://github.com/meefoundation/docs/edit/develop/docs/',
       },
@@ -51,6 +55,10 @@ export default defineConfig({
           autogenerate: { directory: 'contributing' },
         }
       ],
+      components: {
+        SiteTitle: './src/components/SiteTitle.astro',
+        Sidebar: './src/components/Sidebar.astro',
+      },
     }),
   ],
 });
