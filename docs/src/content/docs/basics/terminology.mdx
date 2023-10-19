@@ -22,13 +22,17 @@ Code that implements one aspect of a *connection*. This code implements a Connec
 
 A container of data that holds the state for one aspect of a *connection*. The *container* contains a *person* entity that represents the *holder* along with a set of *claims* about them. It may also contain entities representing other *subjects* along with their *claims*.
 
+### Digital Wallet
+
+A *digital wallet* is a software program or web service that securely stores and conveniently organizes a person's payment methods, boarding passes, event tickets in one place. Recently the definition has expanded to include digital credentials like driver's licenses, passports, and certifications usually packaged as Verifiable Credentials that can be issued to the wallet by an issuer and presented from the wallet to a verifier. 
+
 #### Holder
 
 The *person* that has installed and uses the *smartwallet* on one or more of their devices (e.g. phone, tablet, laptop, home server, etc.).
 
 #### Human Information License
 
-A contract between the business providing the *app* and The Mee Foundation (or delegate), acting on the individual’s behalf. This contract licenses the *holder's* information under specific terms. The business (i) must not collect, use, retain, or share the *holder’s* information with any other party without consent, and (ii) must implement data rights APIs that enable the *holder's* *smartwallet* to remotely control their data.
+A data sharing contract between the business providing the *app* and The Mee Foundation (or delegate), acting on the *holder's* behalf. This contract licenses the *holder's* information under specific terms. The business or other kind of organization (i) must not collect, use, retain, or share the *holder’s* information with any other party without consent, and (ii) must implement APIs that enable the *holder's* *smartwallet* to remotely control their data.
 
 #### Mee-certified
 
@@ -44,7 +48,13 @@ A kind of *subject* that is the other party in a direct communication between th
 
 #### Smartwallet
 
-A software application installed on the person's device (phone, tablet, laptop, etc.) that interacts with Mee-compatible *apps*.
+A *smartwallet* extends the concept of a *digital wallet*: 
+- It adds dynamic data sharing *connections* to other parties wherein information can be updated over time. This information can flow periodically or continuously from an external party to the wallet, in the reverse direction, or in both directions
+- It allows the holder to license their information to relying parties (RP) (e.g. external apps/sites) under the terms of a data sharing agreement, thereby allowing the holder to retain significant control over their information after it has been shared with the RP
+- It provides privacy protection for the *holder* (e.g. implementing https://globalprivacycontrol.org)
+- It supports wallet-to-wallet messaging using very limited or no reliance on intermediary cloud-based services
+- The entire state of a *logical* wallet may be replicated (i.e. copied and synchronized) across multiple *physical* replicas. The allows the holder to use a single logical wallet on multiple devices they may have.
+- Part of the state of a logical wallet may be replicated across multiple, *partial* physical wallets. Each partial wallet may contain as few as one *context* (along with its own *Self* replica).
 
 #### Person
 
@@ -54,7 +64,18 @@ A *subject* that represents a natural person.
 
 A communication protocol used between the *smartwallet* and an *app*.
 
+#### Self
+
+A singleton data container holding a single *Person* entity that represents the *selfness* of the *person.*
+
+#### Selfness
+
+The sameness of a *person* or a thing at all times or in all circumstances. The condition of being a single individual. The fact that a *person* or thing is itself and not something else. Individuality, personality. 
+
 #### Subject
 
 A thing about which *claims* are made.
 
+#### Whoness
+
+Who or what a person or thing is. A distinct impression of a single person or thing presented to or perceived by others. A set of characteristics or a description that distinguishes a *person* or thing from others. 
