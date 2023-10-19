@@ -22,9 +22,24 @@ Code that implements one aspect of a *connection*. This code implements a Connec
 
 A container of data that holds the state for one aspect of a *connection*. The *container* contains a *person* entity that represents the *holder* along with a set of *claims* about them. It may also contain entities representing other *subjects* along with their *claims*.
 
+#### Cloud Wallet
+
+A *digital wallet* that runs and stores all the *holder's* information in the cloud. 
+
 #### Digital Wallet
 
 A *digital wallet* is a software program or web service that securely stores and conveniently organizes a person's payment methods, boarding passes, event tickets in one place. Recently the definition has expanded to include digital credentials like driver's licenses, passports, and certifications usually packaged as Verifiable Credentials that can be issued to the wallet by an issuer and presented from the wallet to a verifier. 
+
+#### Edge Smartwallet
+
+A *smartwallet* that runs on the *holder's* device (e.g. smartphone, tablet, or laptop). 
+
+- Has features that offer privacy protection (e.g. implementing https://globalprivacycontrol.org).
+- The state of a *edge smartwallet* may be replicated (i.e. copied and synchronized) across multiple *physical* replicas each within a different app. For example a *holder* could have an iOS *smartwallet* app whose state it replicated bidirectionally with their MacOS *smartwallet* app. This affords the *holder* the convenience of being able to pick up and use any of their *smartwallet* apps knowing that each has the same state (i.e. the same set of connections, etc.).
+
+#### Edge Wallet
+
+A *digital wallet* app that runs on the *holder's* device (e.g. smartphone, tablet, or laptop). 
 
 #### Holder
 
@@ -36,7 +51,7 @@ A data sharing contract between the business providing the *app* and The Mee Fou
 
 #### Mee-certified
 
-An *app* offered by an online service provider business (or other kind of organization) (aka the relying party), that is interoperable with the *smartwallet*. In addition, the Mee *holder's* information involved in a data sharing connection with this *app* is subject to the terms of a valid *human information license* agreement.
+An *app* offered by a business (or other kind of organization) (aka the relying party), that is interoperable with the *smartwallet*. In addition, the Mee *holder's* information involved in a data sharing connection with this *app* is subject to the terms of a valid *human information license* agreement.
 
 #### Mee-compatible
 
@@ -48,13 +63,10 @@ A kind of *subject* that is the other party in a direct communication between th
 
 #### Smartwallet
 
-A *smartwallet* extends the concept of a *digital wallet*: 
-- It adds dynamic data sharing *connections* to other parties wherein information can be updated over time. This information can flow periodically or continuously from an external party to the wallet, in the reverse direction, or in both directions
-- It allows the holder to license their information to relying parties (RP) (e.g. external apps/sites) under the terms of a data sharing agreement, thereby allowing the holder to retain significant control over their information after it has been shared with the RP
-- It provides privacy protection for the *holder* (e.g. implementing https://globalprivacycontrol.org)
-- It supports wallet-to-wallet messaging using very limited or no reliance on intermediary cloud-based services
-- The entire state of a *logical* wallet may be replicated (i.e. copied and synchronized) across multiple *physical* replicas. The allows the holder to use a single logical wallet on multiple devices they may have.
-- A portion of the state of a logical wallet may be replicated across multiple, *partial* physical wallets. Each *partial* wallet may contain as few as one *context* (along with its own *Self* replica) or all of the contexts of a logical wallet. Typically a partial wallet contains only one context.
+A *smartwallet* extends the concept of a *digital wallet:*
+- It adds dynamic data sharing *connections* to other parties wherein information can be updated over time. This information can flow periodically or continuously from an external party to the wallet, in the reverse direction, or in both directions.
+- It allows the holder to license their information to relying parties (RP) (e.g. external apps/sites) under the terms of a data sharing agreement, thereby allowing the holder to retain significant control over their information after it has been shared with the RP.
+- It supports wallet-to-wallet messaging using very limited or no reliance on intermediary cloud-based services.
 
 #### Person
 
