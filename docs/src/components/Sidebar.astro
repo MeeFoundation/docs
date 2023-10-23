@@ -1,0 +1,23 @@
+---
+
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/Sidebar.astro';
+
+
+---
+<a
+  href="/"
+  class="home-link"
+>
+  <span>Home</span>
+</a>
+<Default {...Astro.props}>
+  <slot />
+</Default>
+
+<style>
+  .home-link {
+    color: var(--sl-color-text-accent);
+    padding-left: 8px;
+  }
+</style>
