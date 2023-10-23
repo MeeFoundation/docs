@@ -1,6 +1,15 @@
 # Mee Foundation Docs
 
 This directory contains the Mee Foundation documentation website (built with Starlight)
+Source files for [docs-dev.mee.foundation](https://docs-dev.mee.foundation/)
+
+### related
+[main repo](https://github.com/MeeFoundation/mee-foundation-website)
+
+### Tech stack
+Framework - [astro](https://astro.build/)\
+Astro Base - [Astro starlight](https://github.com/withastro/starlight)
+
 
 ## 🧞 Commands
 
