@@ -26,16 +26,31 @@ A container of data that holds the state for one aspect of a *connection*. The *
 
 A *digital wallet* is a software program or web service that securely stores and conveniently organizes a person's payment methods, boarding passes, event tickets in one place. Recently the definition has expanded to include digital credentials like driver's licenses, passports, and certifications usually packaged as Verifiable Credentials that can be issued to the wallet by an issuer and presented from the wallet to a verifier. 
 
-#### Local Smartwallet
+![definitions](../images/definitions.png)
 
-A *smartwallet* that runs on the *holder's* device (e.g. smartphone, tablet, or laptop). 
-
-- Has features that offer privacy protection (e.g. implementing https://globalprivacycontrol.org).
-- The state of a *local smartwallet* may be replicated (i.e. copied and synchronized) across multiple *physical* replicas with each replica running as its own application. For example a *holder* could have an iOS *smartwallet* app whose state it replicated bidirectionally with their MacOS *smartwallet* app. This affords the *holder* the convenience of being able to pick up and use any of their *smartwallet* apps knowing that each has the same state (i.e. the same set of connections, etc.).
-
-#### Local Wallet
+##### Local Wallet
 
 A *digital wallet* app that runs on the *holder's* local devices (e.g. smartphone, tablet, or laptop). 
+
+The state of a *local wallet* may be replicated (i.e. copied and synchronized) across multiple *physical* replicas with each replica running as its own application. For example a *holder* could have an iOS *wallet* whose state it replicated bidirectionally with their MacOS *wallet* app. This affords the *holder* the convenience of being able to pick up and use any of their *wallet* apps knowing that each has the same state (i.e. the same set of connections, etc.).
+
+##### Virtual Wallet
+
+A *digital wallet* that is partially centralized on a webservice and partially embedded within *apps*. The holder's personal data that has been shared with (or generated within) each first-party app remains within that app and is not stored in the center which acts as a coordinator of the multiple fragments embedded within apps.
+
+##### Self-hosted wallet
+
+A *digital walle*t that runs on a computer that the person hosts themselves and that is always available on the internet. 
+
+##### Smartwallet
+
+A *smartwallet* extends the concept of a *digital wallet:*
+
+- It adds dynamic data sharing *connections* to other parties wherein information can be updated over time. This information can flow periodically or continuously from an external party to the wallet, in the reverse direction, or in both directions.
+- It allows the holder to license their information to an Other's app under the terms of a data sharing agreement, thereby allowing the holder to retain significant control over their information stored by the Other.
+- It supports wallet-to-wallet messaging using little or no reliance on intermediary cloud-based services.
+
+Smartwallets may be local wallets (called **Local Smartwallets**), virtual wallets (called **Virtual Smartwallets**) or self-hosted wallets (called **Self-hosted Virtual Wallets**)
 
 #### Holder
 
@@ -56,17 +71,6 @@ An *app* offered by an online service provider business (or other kind of organi
 #### Other
 
 A kind of *subject*. In a *connection* between the *holder's* *smartwallet* and an *app*, if the app a mobile app, local app or webapp, then the *other* is the legal entity (often called a relying party) that provides the app, else (i.e. when the *app* is another person's *smartwallet*) the person using this *smartwallet* is the *other*.
-
-#### Self-hosted Smartwallet
-
-A *local smartwallet* that runs on a local machine that is always available. 
-
-#### Smartwallet
-
-A *smartwallet* extends the concept of a *digital wallet:*
-- It adds dynamic data sharing *connections* to other parties wherein information can be updated over time. This information can flow periodically or continuously from an external party to the wallet, in the reverse direction, or in both directions.
-- It allows the holder to license their information to an Other's app under the terms of a data sharing agreement, thereby allowing the holder to retain significant control over their information stored by the Other.
-- It supports wallet-to-wallet messaging using little or no reliance on intermediary cloud-based services.
 
 #### Person
 
