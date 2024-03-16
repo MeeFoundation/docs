@@ -84,31 +84,31 @@ A deployment of a *personal data service* (under development) at https://itsmee.
 
 ##### Personal Data Service (PDS)
 
-A web service that manages the user's data in mulitple distributed Self-managed or Co-managed Personal Datastores.
+A web service that manages the user's data in mulitple distributed Self-managed or Co-managed Personal Datastores (CDSes).
 
-If the user is the holder of a Local smartwallet, the PDS will synchronize personal data state with it. 
+If the user is also the holder of a *local smartwallet,* the PDS will synchronize its personal data state with it. 
 
-The PDS co-manages the personal data in a app provider's Co-managed Personal Datastore. We say co-manages because on a fine-grained attribute by attribute level access rights may be controlled by the PDS user, the provider, or a combination of the two. 
+A PDS co-manages the personal data in a app provider's Co-managed Personal Datastore (CDS_. We say co-manages because on a fine-grained attribute by attribute level access rights may be controlled by the PDS user, the provider, or a combination of the two. 
 
 ##### Provider local app
 
-A single PDS may be linked to multiple provider's local apps. The personal data that has been shared with (or generated within) each provider's local *app* remains within that *app* and is not stored in the the web service. 
+A single *personal data store* may be linked to multiple provider's local *apps*. The personal data that has been shared with (or generated within) each provider's local *app* is stored and managed within that *app*.
 
 ##### Provider web app
 
-A single PDS may be linked to multiple provider's web apps. The personal data that has been shared with (or generated within) each provider's web *app* remains within that *app* and is not stored in the the web service. 
+A single PDS may be linked to multiple provider's web *apps*. The personal data that has been shared with (or generated within) the provider's web *app* is stored and managed within that *app*.
 
 ##### Co-managed Personal Datastore (CPD) SDK
 
-This is an SDK that is a helper library to lower implementation costs by providers to make their stores of personal data compatible with the *personal data service*.
+This is an SDK that an app provider can integrat into their own apps to allow it to interoperate with a *personal data service* or *smartwallet*.
 
 ##### Co-managed Personal Datastore (CPD) Service
 
-A multi-user cloud-based service component that a provider can choose to integrate into its own web app to allow it to interoperate with a *personal data service*.
+A multi-user, cloud-based service that a provider can integrate into its own web app to allow it to interoperate with a *personal data service* or *smartwallet*.
 
 #### Protocol
 
-A communication protocol used between the *smartwallet* and an *app*.
+A communication protocol used between a *smartwallet* or a *personal data service* and an *app*.
 
 #### Self
 
@@ -126,7 +126,7 @@ A thing about which *claims* are made.
 
 ##### Corporation
 
-A *subject that represents a for-profit or nonprofit legal entity.
+A *subject* that represents an incorporated legal entity.
 
 ##### Person
 
@@ -138,11 +138,13 @@ The *person* that has installed and uses the *smartwallet* on one or more of the
 
 ##### Provider
 
-The business entity (e.g. corporation) that provides an app for its users. 
+A *corporation* that provides an *app* for its users. 
 
 ##### Relying Party (RP)
 
-![def-relying-party](/Users/paul/Documents/GitHub/docs/docs/src/content/docs/images/def-relying-party.png)A *subject* with which the holder interacts. An *RP* may be another *holder* or a *provider*.
+A *subject* with which the holder interacts. An *RP* may be another *holder* or a *provider*.
+
+![def-relying-party](/Users/paul/Documents/GitHub/docs/docs/src/content/docs/images/def-relying-party.png)
 
 For example, in a *connection* between the *holder's* *smartwallet* and a typical *app*, the *relying party* is the *provider* that offers the *app*. If the *app* is another *holder's* *smartwallet*, the *relying party* is this other *holder*.
 
