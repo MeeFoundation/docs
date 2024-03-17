@@ -13,7 +13,7 @@ This page is new, updated content that we will eventually publish to here (repla
 
 #### App
 
-A website, web service, mobile, tablet, laptop or desktop app (or the *smartwallet* of another *holder*) that communicates with the *holder's* *smartwallet*.
+A website, web service, mobile, tablet, laptop or desktop app (or the *smartwallet* of another *user*) that communicates with the user's *smartwallet* or *personal data service* (or both).
 
 #### Claim
 
@@ -21,90 +21,94 @@ An assertion made about a *subject* in a *context*.
 
 #### Connection
 
-A relationship between a *smartwallet* (acting on behalf of its *holder*) and an *other* which is represented by an *app* or another *smartwallet*. A *connection*'s state is stored by one or more *contexts*. 
+A relationship between (a) a *smartwallet* or a *personal data service*, and (b) an *app*, *smartwallet* or *personal data service*. A *connection*'s state is stored by one or more *contexts*. 
 
 #### Connector
 
-Code that implements one aspect of a *connection*. This code implements a Connector interface/abstraction at the core of the smartwallet. It is associated with a single *context*. It may receive data from the *app* and store it in this *context*, and/or it may read data from the *context* and transmit it to the *app*.
+Code that implements one aspect of a *connection*. This code implements a *connector* interface/abstraction at the core of the *smartwallet* or *personal data service*. It is associated with a single *context*. It may receive data from the *app* and store it in this *context*, and/or it may read data from the *context* and transmit it to the *app*.
 
 #### Context
 
-A container of data that holds the state for one aspect of a *connection*. The *container* contains an entity that represents the *holder* along with a set of *claims* about them. It may also contain entities representing other *subjects* along with their *claims*.
+A container of data that holds the state for one aspect of a *connection*. The *container* contains an entity that represents the user along with a set of *claims* about them. It may also contain entities representing other *subjects* along with their *claims*.
 
 #### Digital Wallet
 
 A *digital wallet* is a software program or web service that securely stores and conveniently organizes a person's payment methods, boarding passes, event tickets in one place. Recently the definition has expanded to include digital credentials like driver's licenses, passports, and certifications usually packaged as Verifiable Credentials that can be issued to the wallet by an issuer and presented from the wallet to a verifier. 
 
-A *digital wallet* is comprised of two components an agent and an Self-Managed Personal Data Store (SMPD). The state of a *local wallet* is held in the SMPD. The agent is responsible for interacting with the outside world (e.g. data issuers and *relying parties*). The agent is an active component what works on behalf the holder and directly manages the contents of the SMPD. 
+A *digital wallet* is comprised of two components: an agent and an Self-managed Personal Datastore (SPD). The state of a *local wallet* is held in the SPD. The agent is responsible for interacting with the outside world (e.g. issuers and *relying parties*). The agent is an active component that works on behalf the user and manages the contents of the SPD. 
 
 ![def-digital-wallet](/Users/paul/Documents/GitHub/docs/docs/src/content/docs/images/def-digital-wallet.png)
 
 ##### Local Wallet
 
-A *digital wallet* app that runs on the *holder's* local devices (e.g. smartphone, tablet, or laptop) either as a standalone app, a browser extension, or a combination of both. 
+A *digital wallet* that runs on the user's local devices (e.g. smartphone, tablet, or laptop) either as a standalone app, a browser extension, or a combination of both. 
 
-This state may be replicated (i.e. copied and synchronized) across multiple physical replicas with each replica running as its own application. For example a *holder* could have an iOS *wallet* whose AMPD state it replicated bidirectionally with their MacOS *wallet* app. This affords the *holder* the convenience of being able to pick up and use any of their *wallet* apps knowing that each has the same state (i.e. the same set of connections, etc.).
+The state of the local wallet may be replicated (i.e. copied and synchronized) across multiple wallet replicas. For example, a user could have an iOS *wallet* whose SPD state is replicated bidirectionally with their MacOS *wallet* app. This gives the user the convenience of being able to use any of their *wallet* apps in the confidence that each has the same state (e.g. the same set of connections, etc.).
 
 ##### Cloud Wallet
 
-A *digital wallet* that runs in the cloud (or is self-hosted). The AMPD state of a *cloud wallet* is also stored in the cloud.
+A *digital wallet* that runs in the cloud or is self-hosted. Its SPD is also stored in the cloud.
 
 ##### Smartwallet
 
-A *smartwallet* is a kind of *digital wallet:* It extends the wallet concept as follows:
+A *smartwallet* is a kind of *digital wallet* that:
 
-- It adds dynamic data sharing *connections* to *relying parties* wherein information can be updated over time. This information can flow periodically or continuously from an external party to the wallet, in the reverse direction, or in both directions.
-- It allows the holder to license their information to a *relying party's* app under the terms of a data sharing agreement, thereby allowing the holder to retain significant control over their information stored by the *relying party*.
-- It supports smartwallet-to-smartwallet messaging using little or no reliance on intermediary cloud-based services.
+- May include dynamic data sharing *connections* to *relying parties* wherein information can be updated over time. This information can flow periodically or continuously from an external party to the wallet, in the reverse direction, or in both directions.
+- Allows the user to license their information to a *relying party's* app under the terms of a data sharing agreement, thereby allowing the user to retain significant control over their information stored by the *relying party*.
+- Supports smartwallet-to-smartwallet messaging with minimal reliance on intermediary cloud-based services.
 
-Smartwallets may be *local wallets* (called *local smartwallets*) or *cloud wallets* (called *cloud smartwallets*). The Mee Foundation is developing local *smartwallets*.
+Smartwallets may be *local wallets* (called *local smartwallets*) or *cloud wallets* (called *cloud smartwallets*). The Mee Foundation is actively developing local *smartwallets*.
 
 
 #### Human Information License
 
-A data sharing contract between the business providing the *app* and The Mee Foundation (or delegate), acting on the *holder's* behalf. This contract licenses the *holder's* information under specific terms. The business or other kind of organization (i) must not collect, use, retain, or share the *holder’s* information with any other party without consent, and (ii) must implement APIs that enable the *holder's* *smartwallet* to remotely control their data.
+A data sharing agreement between the business providing the *app* and The Mee Foundation (or its delegate), acting on the *smartwallet* or *personal data service* user's behalf. This contract licenses the user's information under specific terms. The business or other kind of organization (i) must not collect, use, retain, or share the user's information with any other party without consent, and (ii) must implement APIs that enable the user's *smartwallet* or *personal data service* to remotely control their data.
 
 #### Mee-certified
 
-A *Mee-compatible* app wherein the *holder's* information that is involved in a data sharing connection with this *app* is subject to the terms of a valid *human information license* agreement.
+A *Mee-compatible* app wherein the user's information that is involved in a data sharing connection with this *app* is subject to the terms of a valid *human information license* agreement.
 
 #### Mee-compatible
 
-An *app* offered by an online service provider business (or other kind of legal entity), the relying party, that is interoperable with the *smartwallet* using at least one protocol.
+An *app*  that is interoperable with a *smartwallet* or *personal data service* using at least one common protocol.
 
-#### Personal Data Service
+#### Mee components
 
-Shown below are various components with which a *personal data service*,  interacts. 
+Shown in the diagram below are four kinds of components that can be deployed. 
 
 ![def-components](/Users/paul/Documents/GitHub/docs/docs/src/content/docs/images/def-components.png)
 
-##### Mee Web App
+##### Provider web app (upper left)
 
-A deployment of a *personal data service* (under development) at https://itsmee.org. It is built using the Mee *personal data service.*
+A provider's web app may integrate a *Co-managed Personal Datastore (CPD) Service* to interoperate with *smartwallets* and *personal data stores.*
 
-##### Personal Data Service (PDS)
+###### Co-managed Personal Datastore (CPD) Service
 
-A web service that manages the user's data in mulitple distributed Self-managed or Co-managed Personal Datastores (CDSes).
+A multi-user, cloud-based service that a provider can integrate into its own web app to allow it to interoperate with a *personal data service* or *smartwallet*.
 
-If the user is also the holder of a *local smartwallet,* the PDS will synchronize its personal data state with it. 
+##### Mee Web App (upper right)
 
-A PDS co-manages the personal data in a app provider's Co-managed Personal Datastore (CDS_. We say co-manages because on a fine-grained attribute by attribute level access rights may be controlled by the PDS user, the provider, or a combination of the two. 
+The *Mee web app* is a *personal data service* (under development) at https://itsmee.org. 
 
-##### Provider local app
+###### Personal Data Service
+
+A web service that manages the user's data in mulitple Co-managed Personal Datastores (CPDes) embedded with provider's local or web *apps*. 
+
+It may also synchronize with the personal data in a smartwallet's Wallet SDK.
+
+A PDS co-manages the personal data in an app provider's Co-managed Personal Datastore (CPD). We say co-manages because on a per-attribute basis access may be controlled by the PDS, the provider, or a combination of the two. 
+
+##### Provider local app (lower left)
 
 A single *personal data store* may be linked to multiple provider's local *apps*. The personal data that has been shared with (or generated within) each provider's local *app* is stored and managed within that *app*.
 
-##### Provider web app
-
-A single PDS may be linked to multiple provider's web *apps*. The personal data that has been shared with (or generated within) the provider's web *app* is stored and managed within that *app*.
-
-##### Co-managed Personal Datastore (CPD) SDK
+###### Co-managed Personal Datastore (CPD) SDK
 
 This is an SDK that an app provider can integrat into their own apps to allow it to interoperate with a *personal data service* or *smartwallet*.
 
-##### Co-managed Personal Datastore (CPD) Service
+##### Local Smartwallet (lower right)
 
-A multi-user, cloud-based service that a provider can integrate into its own web app to allow it to interoperate with a *personal data service* or *smartwallet*.
+See the *digital wallet* definition--within it is a definition of a *local smartwallet*.
 
 #### Protocol
 
@@ -112,7 +116,7 @@ A communication protocol used between a *smartwallet* or a *personal data servic
 
 #### Self
 
-A singleton data container holding a single *person* entity that represents the *selfness* of the *person.*
+A singleton data container holding a single *person* entity that represents the *selfness* of the user.
 
 #### Selfness
 
@@ -132,21 +136,17 @@ A *subject* that represents an incorporated legal entity.
 
 A *subject* that represents a natural person.
 
-##### Holder
-
-The *person* that has installed and uses the *smartwallet* on one or more of their devices (e.g. phone, tablet, laptop, home server, etc.).
-
 ##### Provider
 
 A *corporation* that provides an *app* for its users. 
 
 ##### Relying Party (RP)
 
-A *subject* with which the holder interacts. An *RP* may be another *holder* or a *provider*.
+A *subject* with which the user interacts. An *RP* may be another user or a *provider*.
 
 ![def-relying-party](/Users/paul/Documents/GitHub/docs/docs/src/content/docs/images/def-relying-party.png)
 
-For example, in a *connection* between the *holder's* *smartwallet* and a typical *app*, the *relying party* is the *provider* that offers the *app*. If the *app* is another *holder's* *smartwallet*, the *relying party* is this other *holder*.
+For example, in a *connection* between the user's *smartwallet* and a typical *app*, the *relying party* is the *provider* that offers the *app*. If the *app* is another user's *smartwallet*, the *relying party* is this other user.
 
 
 #### Whoness
