@@ -65,6 +65,9 @@ A *smartwallet* is a kind of *digital wallet* that:
 
 Smartwallets may be *local wallets* (*local smartwallets*) or *cloud wallets* (*cloud smartwallets*). The Mee Foundation is developing local *smartwallets*.
 
+#### Directory Service
+
+This is the one point of centralization in the Mee architecture. This single, central service maps userids to the user's "home" *PDS*. This service does not perform authentication itself---this is the responsibility of the *PDS*. 
 
 #### Human Information License
 
@@ -80,7 +83,13 @@ A data sharing agreement between the business providing the *app* and The Mee Fo
 
 #### Personal Data Service (PDS)
 
-A web service that remotely manages the user's data that is stored in one or more Co-managed Personal Datastores (CPDs) embedded within provider's local *apps* or web *apps*. It may also synchronize with the personal data in the user's *smartwallet* (if they have one). We say *co-manages* because individual *claims* in a PDS may be controlled by the PDS, by the provider, by or a combination of the two. The Mee Foundation is implementing a *PDS* that it plans to host at https://itsmee.org
+A web service that authenticates the user and remotely manages their data that is stored in multiple distributed Co-managed Personal Datastores (CPDs) that are embedded within local *apps* and/or web *apps*. It relays requests for access from app A to data held by app B, but doesn't store any of the user's data itself. 
+
+A *PDS* may also synchronize with the personal data in the user's *smartwallet* (if they have one). We say *co-manages* because individual *claims* in a PDS may be controlled by the PDS, by the provider, by or a combination of the two. The Mee Foundation is implementing a *PDS* that it plans to host at https://itsmee.org
+
+#### Profile Server
+
+A service that queries data from the user's PDS(es), anonymizes it, and transforms it an advertising profile database. Profile data is never shared/sold with any other entity. The data can be queried by advertisers to return the number of (non-identified) users within a defined target audience. 
 
 #### Protocol
 
