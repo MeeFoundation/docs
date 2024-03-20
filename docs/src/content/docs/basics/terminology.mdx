@@ -41,7 +41,7 @@ A container of data that holds the state for one aspect of a *connection*. The *
 
 A *digital wallet* is a software program or web service that securely stores and conveniently organizes a person's payment methods, boarding passes, event tickets in one place. Recently the definition has expanded to include digital credentials like driver's licenses, passports, and certifications usually packaged as Verifiable Credentials that can be issued to the wallet by an issuer and presented from the wallet to a verifier. 
 
-A *digital wallet* is comprised of two components: an agent and a Self-managed Personal Datastore (SPD). The state of a *local wallet* is held in the SPD. The agent is responsible for interacting with the outside world (e.g. issuers and *relying parties*). The agent is an active component that works on behalf the user and manages the contents of the SPD. 
+A *digital wallet* is comprised of two components: an agent and a personal datastore. The state of a *local wallet* is held in the datastore and the agent is responsible for interacting with the outside world (e.g. issuers and *relying parties*). The agent is an active component that works on behalf the user and manages the contents of the datastore. 
 
 ![def-digital-wallet](../images/def-digital-wallet.png)
 
@@ -49,11 +49,11 @@ A *digital wallet* is comprised of two components: an agent and a Self-managed P
 
 A *digital wallet* that runs on the user's local devices (e.g. smartphone, tablet, or laptop) either as a standalone app, a browser extension, or a combination of both. 
 
-The state of the local wallet may be replicated (i.e. copied and synchronized) across multiple wallet replicas. For example, a user could have an iOS *wallet* whose SPD state is replicated bidirectionally with their MacOS *wallet* app. This gives the user the convenience of being able to use any of their *wallet* apps in the confidence that each has the same state (e.g. the same set of connections, etc.).
+The state of the local wallet may be replicated (i.e. copied and synchronized) across multiple wallet replicas. For example, a user could have an iOS *wallet* whose personal datastore state is replicated bidirectionally with their MacOS *wallet* app. This gives the user the convenience of being able to use any of their *wallet* apps in the confidence that each has the same state (e.g. the same set of connections, etc.).
 
 ##### Cloud Wallet
 
-A *digital wallet* that runs in the cloud or is self-hosted. Its SPD is stored in the cloud.
+A *digital wallet* that runs in the cloud or is self-hosted. Its personal datastore is stored in the cloud.
 
 ##### Smartwallet
 
@@ -87,7 +87,7 @@ A data sharing agreement between the business providing the *app* and The Mee Fo
 
 #### Mee Data Network
 
-The set of Mee-compatible apps, PDSes and smartwallets that exchange personal data under the user's control. 
+Mee-compatible apps, *PDSes* and *smartwallets* that exchange personal data under the user's control. 
 
 #### Personal Data Service (PDS)
 
