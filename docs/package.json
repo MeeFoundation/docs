@@ -26,7 +26,8 @@
     "rehype": "^12.0.1",
     "size-limit": "^8.2.4",
     "start-server-and-test": "^2.0.0",
-    "unist-util-visit": "^4.1.2"
+    "unist-util-visit": "^4.1.2",
+    "@rollup/rollup-linux-x64-gnu": "4.6.1"
   },
   "resolutions": {
     "rollup": "npm:@rollup/wasm-node"
