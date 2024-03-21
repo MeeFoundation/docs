@@ -19,7 +19,8 @@
     "@rollup/rollup-linux-x64-gnu": "^4.13.0",
     "astro": "^4.5.8",
     "fsevents": "^2.3.3",
-    "sharp": "^0.33.2"
+    "queue-tick": "^1.0.1",
+    "sharp": "^0.32"
   },
   "devDependencies": {
     "@size-limit/file": "^8.2.4",
