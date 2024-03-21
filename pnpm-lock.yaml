@@ -11,6 +11,9 @@ importers:
       '@rollup/rollup-darwin-arm64':
         specifier: ^4.13.0
         version: 4.13.0
+      '@rollup/rollup-linux-x64-gnu':
+        specifier: ^4.13.0
+        version: 4.13.0
       sharp:
         specifier: ^0.33.2
         version: 0.33.2
@@ -31,6 +34,9 @@ importers:
         specifier: workspace:*
         version: link:../packages/starlight
       '@rollup/rollup-darwin-arm64':
+        specifier: ^4.13.0
+        version: 4.13.0
+      '@rollup/rollup-linux-x64-gnu':
         specifier: ^4.13.0
         version: 4.13.0
       astro:
@@ -1481,7 +1487,6 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    optional: true
 
   /@rollup/rollup-linux-x64-musl@4.13.0:
     resolution: {integrity: sha512-9RyNqoFNdF0vu/qqX63fKotBh43fJQeYC98hCaf89DYQpv+xu0D8QFSOS0biA7cGuqJFOc1bJ+m2rhhsKcw1hw==}
