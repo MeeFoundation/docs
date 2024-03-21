@@ -7,6 +7,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "@rollup/rollup-darwin-arm64": "^4.13.0",
+    "@rollup/rollup-linux-x64-gnu": "^4.13.0",
     "sharp": "^0.33.2"
   },
   "devDependencies": {
