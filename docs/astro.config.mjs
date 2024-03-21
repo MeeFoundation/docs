@@ -6,8 +6,8 @@ export const site = 'https://mee.foundation/';
 export const sharedConfig = {
   title: 'Mee Foundation',
   logo: {
-    light: './docs/src/assets/logo-light.svg',
-    dark: './docs/src/assets/logo-dark.svg',
+    light: Astro.resolve('/src/assets/logo-light.svg'),
+    dark: Astro.resolve('/src/assets/logo-dark.svg'),
     replacesTitle: true,
   }
 }
