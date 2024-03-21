@@ -28,6 +28,9 @@
     "start-server-and-test": "^2.0.0",
     "unist-util-visit": "^4.1.2"
   },
+  "resolutions": {
+    "rollup": "npm:@rollup/wasm-node"
+  },
   "size-limit": [
     {
       "name": "/index.html",
