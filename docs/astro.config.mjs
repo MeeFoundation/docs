@@ -1,13 +1,15 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import logoLight from './src/assets/logo-light.svg';
+import logoDark from './src/assets/logo-dark.svg';
 
 export const site = 'https://mee.foundation/';
 
 export const sharedConfig = {
   title: 'Mee Foundation',
   logo: {
-    light: Astro.resolve('/src/assets/logo-light.svg'),
-    dark: Astro.resolve('/src/assets/logo-dark.svg'),
+    light: logoLight,
+    dark: logoDark,
     replacesTitle: true,
   }
 }
