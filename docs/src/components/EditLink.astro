@@ -1,0 +1,17 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/EditLink.astro';
+
+const isHomepage = Astro.props.slug === '';
+---
+
+
+{
+  isHomepage ? (
+    <></>
+  ) : (
+    <Default {...Astro.props}>
+      <slot />
+    </Default>
+  )
+}

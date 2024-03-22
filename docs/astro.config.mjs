@@ -62,6 +62,7 @@ export default defineConfig({
       ],
       components: {
         Sidebar: './src/components/Sidebar.astro',
+        EditLink: './src/components/EditLink.astro',
       },
     }),
   ],
