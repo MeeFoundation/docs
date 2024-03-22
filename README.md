@@ -15,5 +15,5 @@ This repo for The Mee Foundation Documentation
 [Contributor Manual](./CONTRIBUTING.md)
 
 
-Folder [`docs/`](./docs/) - Source files for [docs-dev.mee.foundation](https://docs-dev.mee.foundation/)
+Folder [`docs/`](./docs/) - Source files for [docs.mee.foundation](https://docs.mee.foundation/)
 

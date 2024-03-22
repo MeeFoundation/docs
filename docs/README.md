@@ -1,7 +1,7 @@
 # Mee Foundation Docs
 
 This directory contains the Mee Foundation documentation website (built with Starlight)
-Source files for [docs-dev.mee.foundation](https://docs-dev.mee.foundation/)
+Source files for [docs.mee.foundation](https://docs.mee.foundation/)
 
 ### related
 [main repo](https://github.com/MeeFoundation/mee-foundation-website)
