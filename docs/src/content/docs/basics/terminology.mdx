@@ -2,6 +2,11 @@
 title: Terminology
 description: Terms used in the Mee documentation.
 ---
+
+#### Ad Profile Service
+
+A service that queries data from the user's *PDS*(es), anonymizes it, and transforms it an advertising profile database. Profile data is never shared/sold with any other entity. The data can be queried by advertisers to return the number of (non-identified) users within a defined target audience. 
+
 #### App
 
 A website, web service, mobile, tablet, laptop or desktop app (or the *smartwallet* of another user) that communicates with the user's *smartwallet* or *PDS* (or both).
@@ -82,17 +87,12 @@ A data sharing agreement between the business providing the *app* and The Mee Fo
 
 Mee-compatible apps, *PDSes* and *smartwallets* that exchange personal data under the user's control. 
 
-![def-mee-data-network](../images/def-mee-data-network.png)
-
 #### Personal Data Service (PDS)
 
 A web service that authenticates the user and remotely manages their data that is stored in multiple distributed personal datastores on the *Mee data network*. These personal datastores are embedded within local *apps* (that integrate a *wallet SDK*) and/or web *apps* (that integrate a *wallet service*) or *smartwallets*. A *PDS* relays requests for access from *app* A to data held by *app* B, and if the user of *app* B grants the request, relays back the requested data. The Mee Foundation is implementing a *PDS* that it plans to host at https://itsmee.org
 
 ![def-personal-data-service](../images/def-personal-data-service.png)
 
-#### Ad Profile Server
-
-A service that queries data from the user's *PDS*(es), anonymizes it, and transforms it an advertising profile database. Profile data is never shared/sold with any other entity. The data can be queried by advertisers to return the number of (non-identified) users within a defined target audience. 
 
 #### Protocol
 
@@ -135,4 +135,4 @@ A *corporation* that provides an *app* for its users.
 
 #### Whoness
 
-A distinct impression of a single *person* or thing presented to or perceived by others. A set of characteristics or a description that distinguishes one *person* or thing from other people or things. 
+A distinct impression of a single *person* or thing presented to or perceived by others. A set of characteristics or a description that distinguishes one *person* or thing from other people or things.
