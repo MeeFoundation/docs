@@ -12,7 +12,11 @@ A service that retrieves data from the user's *virtual agent*, anonymizes it, an
 
 ## Agent SDK
 
-Platform-independent core logic integrated by an *app* that enables them to be compatible with the *Mee data network.*  
+A software development kit that (i) provides the core logic of an *identity agent* and (ii) enables a *local* *app* to become interoperable with the *Mee data network*. The *agent SDK* manages *personal information* that may be (i) created from the user's data entry into their *identity agent* (ii) created by an app (or co-created by an *app* during interactions with the user) or (iii) received over the *Mee data network* from another *identity* *agent*.
+
+## Agent Service
+
+A multi-user, web service that enables a *web app* to become interoperable with the *Mee data network*. The *agent service* manages *personal information* that may be (i) created from the user's data entry into their *identity agent* (ii) created by an app (or co-created by the app during interactions with the user) or (iii) received over the *Mee data network* from another *identity* *agent*.
 
 ## App
 
@@ -24,19 +28,11 @@ An assertion made about a *subject* in a *context*.
 
 ## Connection
 
-A data exchange relationship between (a) an *identity agent* and (b) an *app* or *agent*. A *connection*'s state is stored by one or more *contexts*. 
+A data exchange relationship between (a) an *identity agent* and (b) an *app*. A *connection*'s state is stored by one or more *contexts*.
 
 ## Connector
 
 A software component that implements one of potentially several aspects of a *connection*. A *connector* implements an interface (abstraction) exposed by the core of an *identity agent*. It is associated with a single *context*. It may receive data from an *app*, may store receieved data in a *context*, may read data from a *context* and may transmit data to an *app*.
-
-## Agent SDK
-
-A software development kit that (i) provides the core logic of an *identity agen*t and (ii) enables a *local* *app* to become interoperable with the *Mee data network*. The *agent SDK* manages *personal information* that may be (i) created from the user's data entry into their *identity agent* (ii) created by an app (or co-created by an *app* during interactions with the user) or (iii) received over the *Mee data network* from another *identity* *agent*.
-
-## Agent Service
-
-A multi-user, web service that enables a *web app* to become interoperable with the *Mee data network*. The *agent service* manages *personal information* that may be (i) created from the user's data entry into their *identity agent* (ii) created by an app (or co-created by the app during interactions with the user) or (iii) received over the *Mee data network* from another *identity* *agent*.
 
 ## Context
 
@@ -46,7 +42,7 @@ A container of data that holds the state for one aspect of a *connection*. The *
 
 An identity agent is an agent that represents the user on the internet. It manages the storage of personal information about the user. 
 
-Depending on the implementation variant (see *virtual identity agent* and *local identity agent*) this information may be stored on-device, and/or within an *app*, and/or by a third-party storage provider service. 
+Depending on the implementation variant (see *virtual identity agent* and *local identity agent*) this information may be stored within an *app*, and/or by a third-party storage provider service.
 
 - May include dynamic data sharing *connections* to *relying parties* wherein information can be updated over time. This information can flow periodically or continuously from an external party to the identity agent, in the reverse direction, or in both directions. The information may or may not be cached/copied by the identity agent.
 - Supports agent-to-agent messaging with minimal reliance on intermediary cloud-based services.
@@ -60,7 +56,7 @@ An *app* that runs on the user's local devices (e.g. smartphone, tablet, or lapt
 
 An *identity agent* that runs on the user's local devices (e.g. smartphone, tablet, or laptop) either as a standalone app, a browser extension, or a combination of both. 
 
-The state of a *local agent* may be replicated (i.e. copied and synchronized) across multiple *local agent* replicas. For example, a user could have an iOS *local agent* whose personal datastore state is replicated bidirectionally with their MacOS *local agent*. This gives the user the convenience of being able to use any of their lcoa agent applications in the confidence that each has the same state (e.g. the same set of connections, etc.).
+The state of a *local agent* may be replicated (i.e. copied and synchronized) across multiple *local agent* replicas. For example, a user could have an iOS *local agent* whose personal datastore state is replicated bidirectionally with their MacOS *local agent*. This gives the user the convenience of being able to use any of their local agent applications in the confidence that each has the same state (e.g. the same set of connections, etc.).
 
 ## Mee Browser Extension (MBX)
 
@@ -68,11 +64,11 @@ A browser extension that extends (to a limited extent) the Mee user experience t
 
 ## Mee Directory Service
 
-A central directory service  that maps *identity agent* user ids to the user's identity agent*. 
+A central directory service that maps *identity agent* user ids to the user's *identity agent*.
 
 ## Mee Data Network (MDN)
 
-Aa network of Mee-authorized apps, *identity agents,* and *Mee browser extensions* that exchange personal data under the user's control. A MDN has exactly one *Mee Directory Service* and may have one or more *Ad Profile Services.*
+A network of *Mee-authorized* apps, *identity agents*, and *Mee browser extensions* that exchange personal data under the user's control. A MDN has exactly one *Mee Directory Service* and may have one or more *Ad Profile Services.*
 
 ![def-mee-data-network](../images/def-mee-data-network.png)
 
@@ -80,7 +76,7 @@ Aa network of Mee-authorized apps, *identity agents,* and *Mee browser extension
 
 ## MDN License
 
-For apps and agents on the Mee data network, the MDN license is a data sharing agreement between the business providing the *app* (*provider*) and The Mee Foundation (or its delegate), acting on the *identity agent* user's behalf. This contract licenses the user's information under specific terms. In the MDN License, the business or other kind of organization (i) must not collect, use, retain, or share the user's information with any other party without consent, and (ii) must implement the Mee data network APIs that enable the user's *identity agent* to remotely control their data.
+For *apps* and *identity agents* on the Mee data network, the MDN license is a data sharing agreement between the business providing the *app* (*provider*) and The Mee Foundation (or its delegate), acting on the *identity agent* user's behalf. This contract licenses the user's information under specific terms. In the MDN License, the business or other kind of organization (i) must not collect, use, retain, or share the user's information with any other party without consent, and (ii) must implement the Mee data network APIs that enable the user's *identity agent* to remotely control their data.
 
 ## Mee-authorized
 
@@ -103,7 +99,7 @@ The interests and demographics of a Mee user as generated and managed by an *ad 
 
 ## Protocol
 
-A communication protocol used between an*idenitty agent* and an *app*.
+A communication protocol used between an *identity agent* and an *app*.
 
 ## Relying Party (RP)
 
