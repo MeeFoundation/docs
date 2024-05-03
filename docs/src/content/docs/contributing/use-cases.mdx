@@ -3,16 +3,16 @@ title: Use Cases
 description: Use cases
 ---
 
-This page is a collection of potentially interesting use cases for using a smartwallet irrespective of the platform (e.g. mobile phone or desktop) it is running on. 
+This page is a collection of potentially interesting use cases for using a local agent irrespective of the platform (e.g. mobile phone or desktop) it is running on. 
 
 ## Actors
 
-- Alice: the smartwallet holder
-- Bob: another smartwallet holder that Alice knows
+- Alice: the local agent user
+- Bob: another local agent user that Alice knows
 
 ## Intrinsic
 
-These use cases could be supported natively by the smartwallet app and its associated browser extension. 
+These use cases could be supported natively by the local agent app and its associated browser extension. 
 
 ### OpenID SIOP
 
@@ -20,11 +20,11 @@ These use cases could be supported natively by the smartwallet app and its assoc
 
 Allows the person to signin/up to websites and apps that support the OpenID Connect [SIOPv2](https://openid.net/specs/openid-connect-self-issued-v2-1_0.html) protocol standard. The person can signin/up without requiring a password, and without being tracked by third-parties (e.g. Google, Apple, Facebook, etc.).
 
-**Single device scenario:** The person has an iOS device and is using a Mee-compatible app (or a Mee-compatible website within a mobile brower. The "Continue with Mee smartwallet" button on the relying party site/app has a universal (deep) link to the smartwallet app. If the person doesn't have a smartwallet installed, they are automatically redirected to an app store. 
+**Single device scenario:** The person has an iOS device and is using a Mee-compatible app (or a Mee-compatible website within a mobile brower. The "Continue with Mee" button on the relying party site/app has a universal (deep) link to the local agent app. If the person doesn't have an local agent, they are automatically redirected to an app store. 
 
-**Cross-device scenario**: The person is using a desktop computer and in their browser clicks on a Mee-compatible website. When the person clicks on Continue-with-Mee-smartwallet they are brought to a QR code that they can scan. This code contains the same deep link mentioned above.
+**Cross-device scenario**: The person is using a desktop computer and in their browser clicks on a Mee-compatible website. When the person clicks on Continue-with-Mee they are brought to a QR code that they can scan. This code contains the same deep link mentioned above.
 
-This use case is implemented in v1 of the smartwallet.
+This use case is implemented in v1 of the local agent.
 
 #### #2: OpenID prompt for account creation
 
@@ -33,11 +33,11 @@ There is a need, in some circumstances, for the client to explicitly signal to t
 ### Chat Service
 **Description**: Alice wishes to chat with a friend Bob.
 
-**Precondition:** Both Alice and her friend Bob have chat client apps. Alice and Bob are also able to communicate out of band. Out of band Bob shares via a QR code with Alice the DID of one of the contexts his smartwallet manages. 
+**Precondition:** Both Alice and her friend Bob have chat client apps. Alice and Bob are also able to communicate out of band. Out of band Bob shares via a QR code with Alice the DID of one of the contexts his local agent manages. 
 
-**Stakeholders**: n/a
+**Stakeusers**: n/a
 
-**How it works**: Alice opens her chat client app and scans the DID Bob shared ith her and adds Bob as a new contact in the chat app. Alice types "Hi Bob" into the chat client. This message data is stored in Alice's context store for this connection with Bob as well as transmitted to Bob's smartwallet. This message appears in Bob's client and is stored in Bob's context storage associated with his connection with Alice.
+**How it works**: Alice opens her chat client app and scans the DID Bob shared ith her and adds Bob as a new contact in the chat app. Alice types "Hi Bob" into the chat client. This message data is stored in Alice's context store for this connection with Bob as well as transmitted to Bob's local agent. This message appears in Bob's client and is stored in Bob's context storage associated with his connection with Alice.
 
 **Advantages**:  This respects Alice's and Bob's privacy by eliminating the need for them to trust a service, app or site provided by an intermediary entity. The message content is end-to-end encrypted and never stored by an intermediary  (e.g. a social networking site like Twitter, Facebook, etc.) and although it may pass through relay servers it does so only transiently.
 
@@ -61,7 +61,7 @@ Allows the person to collect their GPS location over time.
 
 ### VC Wallet
 
-The person can add VCs issued by VC *issuers* to their smartwallet. The person can view and delete VCs in the smartwallet. The person can present VCs to VC *verifier*. 
+The person can add VCs issued by VC *issuers* to their local agent. The person can view and delete VCs in the local agent. The person can present VCs to VC *verifier*. 
 
 These VCs may represent:
 
@@ -86,7 +86,7 @@ Scenario:
 - The employer business entity (verifier) wants to allow the employee to login to enterprise systems using this VC
 - A newspaper entity (another verifier) wishes to rely on this same employee id VC to authorize access to certain pages of a newspaper site with news related to the employer entity OR if there is a corporate subscription, in which case all the pages will be available
 
-To implement this the smartwallet could support:
+To implement this the local agent could support:
 
 - SD-JWT-based VC issuance, according to OpenID VC Issuance spec. 
 
@@ -103,26 +103,26 @@ Allows the person to:
 - Create and manage strong passwords
 - Autofill passwords on any browser
 - Sync passwords across their devices
-- Grant/delegate access to other smartwallet holders to some/all passwords
+- Grant/delegate access to other local agent users to some/all passwords
 - Remembers and highlights the last login method used on a given site. 
 
 ### Form Filler
 
-Allows the person to automatically fill in forms in browsers using data managed by the smartwallet across the person's devices. 
+Allows the person to automatically fill in forms in browsers using data managed by the local agent across the person's devices. 
 
 ### Customer Defined Audience (CDA) Generation
 
-Operating in the background, the smartwallet collects data about the person from first-party apps/sites and uses it to continuously synthesize and update the person's Customer Defined Audience (CDA) advertising profile. The person can view it and delete fields not of interest. 
+Operating in the background, the local agent collects data about the person from first-party apps/sites and uses it to continuously synthesize and update the person's Customer Defined Audience (CDA) advertising profile. The person can view it and delete fields not of interest. 
 
 This CDA profile can be shared with compatible websites to enable them to earn revenues from advertising while increasing the person's privacy compared to existing solutions that rely on third-party cookies and other forms of tracking and that rely on massive databases of personal advertising profiles assemble and managed by third-party adtech firms. 
 
 ### Browser History
 
-Allows the person's web browsing history (outside of Incognito mode) to be collected in the smartwallet. Requires MBX.
+Allows the person's web browsing history (outside of Incognito mode) to be collected in the local agent. Requires MBX.
 
 ### Search History
 
-Allows the person's search history (outside of Incognito mode) to be collected in the smartwallet. Requres MBX.
+Allows the person's search history (outside of Incognito mode) to be collected in the local agent. Requres MBX.
 
 ### Privacy-respecting personal data management
 
@@ -130,11 +130,11 @@ Allows the person to exercise their data rights promised in privacy regulations:
 
 ## Extrinsic
 
-These use cases could be offered by apps that integrate with the smartwallet.
+These use cases could be offered by apps that integrate with the local agent.
 
 ### Zero-party data
 
-The app can query the smartwallet for data and if the person consents to share it, they gain access to person-curated "zero-party" data.
+The app can query the local agent for data and if the person consents to share it, they gain access to person-curated "zero-party" data.
 
 ### Mee Ad profile consumers
 
@@ -145,13 +145,13 @@ The app can request the person's Customer Defined Audience data and use its to i
 Allows the person to stay in contact with friends, family and colleagues by everyone always having up-to-date contact information. Allows the person to:
 
 - Populates their own contact info (either directly, or through integration with the person's existing contact management app/service (see below))
-- Publish their contact information as part of a connection to an other person's smartwallet
+- Publish their contact information as part of a connection to an other person's local agent
 - Subscribe to the contact info of another person
 - Integrates with existing contact management apps and services, allowing the person to continue using them, with the syncing happending in the background. For example the person could continue to use Apple's Contacts app on their Macbook or iPhone - contact info of other's that the person is subscribing to are automatically updated and any change made to the person's contact information is automatically propagated to subscribers.
 
 ### Delete My Data
 
-Allows the person to exercise their rights and request that their data be deleted by digital service providers. Implementation requires a third-party organization to contact sites on your behalf. Similar to [Permission Slip](https://www.permissionslipcr.com/) this app would store the results in the person's smartwallet.
+Allows the person to exercise their rights and request that their data be deleted by digital service providers. Implementation requires a third-party organization to contact sites on your behalf. Similar to [Permission Slip](https://www.permissionslipcr.com/) this app would store the results in the person's local agent.
 
 ### Meta Identity Management
 
@@ -163,7 +163,7 @@ Allows the person to analyze how they are connected to others across social netw
 
 #### Meta-Account Management
 
-Allows the person to syncronize and update the information that sites/apps have about them. The smartwallet UI would allow the person to create personas to group together connections with apps/sites/others to which the person wishes to expose a relatively consistent set of information. The smartwallet would review what information was stored in the contexts of these connections and personas. It would allow the person to see inconsistencies and, if desired, to correct them. For example there could be a typo in the  person's email address at a particular site, or an old physical address that the person hadn't updated. 
+Allows the person to syncronize and update the information that sites/apps have about them. The local agent UI would allow the person to create personas to group together connections with apps/sites/others to which the person wishes to expose a relatively consistent set of information. The local agent would review what information was stored in the contexts of these connections and personas. It would allow the person to see inconsistencies and, if desired, to correct them. For example there could be a typo in the  person's email address at a particular site, or an old physical address that the person hadn't updated. 
 
 ##### Use case #1
 
@@ -187,7 +187,7 @@ Leverage APIs like the [UK Open Banking API](https://standards.openbanking.org.u
 
 ## Data Collection
 
-Use cases involving the person importing of their personal data into their smartwallet.
+Use cases involving the person importing of their personal data into their local agent.
 
 ### Amazon
 
@@ -214,7 +214,7 @@ Download connections and personal profile.
 
 ### Twitter
 
-Allows the person to download their Twitter followers. Similar to [Rolodex](https://rolodex.shovel.company/) except the data would be imported directly into their smartwallet.
+Allows the person to download their Twitter followers. Similar to [Rolodex](https://rolodex.shovel.company/) except the data would be imported directly into their local agent.
 
 ### Health
 
