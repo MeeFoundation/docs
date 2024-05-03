@@ -40,13 +40,12 @@ A container that represents one aspect of a [connection](#connection). The [cont
 
 ## Identity Agent
 
-An  [identity-agent](#identity-agent) is an agent that represents the user on the internet. It manages the storage of [personal information](#personal-information) about the user. 
+An [identity-agent](#identity-agent) is an agent that represents the user on the internet. It manages [personal information](#personal-information) about the user in their interactions with [apps](#app).  Depending on the whether the agent is a [virtual identity agent](#virtual-identity-agent) or a  [local identity agent](#local-identity-agent)), this information may be stored within an [app](#app), and/or on-device, and/or by a third-party storage provider service.
 
-Depending on the implementation variant (see [virtual identity agent](#virtual-identity-agent) and [local identity agent](#local-identity-agent)) this information may be stored within an [app](#app), and/or by a third-party storage provider service.
-
-- May include dynamic data sharing [connections](#connection) to [relying parties](#relying-party) wherein information can be updated over time. This information can flow periodically or continuously from an external party to the [identity agent](#identity-agent), in the reverse direction, or in both directions. The information may or may not be cached/copied by the [identity agent](#identity-agent).
+An [identity agent](#identity-agent):
+- Supports dynamic data sharing [connections](#connection) with [relying parties](#relying-party) wherein information can be updated over time. This information can flow periodically or continuously from an external party to the [identity agent](#identity-agent), in the reverse direction, or in both directions. The information may or may not be cached/copied by the [identity agent](#identity-agent).
 - Supports [identity agent](#identity-agent)-to- [identity agent](#identity-agent) messaging with minimal reliance on intermediary cloud-based services.
-- The Mee  [identity agent](#identity-agent) includes support for the [Mee Data Network](#Mee-Data-Network). This network allows the user to license their [personal information](#personal-information) to a [relying party's](#relying-party) [app](#app) under the terms of the [MDN License](#MDN-License) data sharing agreement, thereby allowing the user to retain significant control over their information stored by the [relying party](#relying-party).
+- Is compatible with the [Mee Data Network](#Mee-Data-Network). This network allows the user to license their [personal information](#personal-information) to a [relying party's](#relying-party) [app](#app) under the terms of the [MDN License](#MDN-License) data sharing agreement, thereby allowing the user to retain significant control over their information stored by the [relying party](#relying-party).
 
 ## Local App
 
