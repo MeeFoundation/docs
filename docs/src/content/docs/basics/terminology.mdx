@@ -12,7 +12,7 @@ A service that retrieves data from the user's [virtual agent](#virtual-agent), a
 
 ## Agent SDK
 
-A software development kit that (i) provides the core logic of an [identity agent](#identity-agent) and (ii) enables a [local app](#local-app) to become interoperable with the [Mee Data Network](#mee-data-network). The [agent SDK](#agent-SDK) manages [personal information](#personal-information) that may be (i) created from the user's data entry into their [identity-agent](#identity-agent) (ii) created by an [app](#app) (or co-created by an [app](#app) during interactions with the user) or (iii) received over the [Mee Data Network](#mee-data-network) from another [identity agent](#identity-agent).
+A software development kit that (i) provides the core logic of an [identity agent](#identity-agent) and (ii) enables a [local app](#local-app) to become interoperable with the [Mee Data Network](#mee-data-network). The [agent SDK](#agent-sdk) manages [personal information](#personal-information) that may be (i) created from the user's data entry into their [identity-agent](#identity-agent) (ii) created by an [app](#app) (or co-created by an [app](#app) during interactions with the user) or (iii) received over the [Mee Data Network](#mee-data-network) from another [identity agent](#identity-agent).
 
 ## Agent Service
 
@@ -20,30 +20,40 @@ A multi-user, web service that enables a [web app](#web-app) to become interoper
 
 ## App
 
-A website, web service, mobile, tablet, laptop or desktop *app* (or an [identity-agent](#identity-agent) that communicates with the user's [identity-agent](#identity-agent).
+A website, web service, mobile, tablet, laptop or desktop [app](#app) (or an another user's [identity-agent](#identity-agent) that communicates with this user's [identity-agent](#identity-agent)).
 
 ## Claim
 
-An assertion made about a [subject](#subject) in a [context](#context).
+An assertion made about a [subject](#subject) in a [context](#context). [Claims](#claim) have types (e.g. given-name) and values (e.g. "Fred").
 
 ## Connection
 
-A data exchange relationship between (a) an [identity-agent](#identity-agent) and (b) an [app](#app). A [connection's](#connection) state is stored by one or more [contexts](#contexts).
+A representation of the user's relationship with an [app](#app). The user's [identity-agent](#identity-agent) shows a list of [connections](#connection) each one of which represents a data sharing communications channel with a different [app](#app). Information flows periodically or continuously. It flows from an [app](#app) to the [identity agent](#identity-agent), in the reverse direction, or in both directions. It flows using one or more data sharing protocols. 
+
+A [connection's](#connection) represented within an [identity agent](#identity-agent) by one or more [contexts](#contexts)--one for each data sharing protocol used by the [connection(#connection)]. Information (specifically, [claim](#claim) values) shared using a [context's](#context) protocol may or may not be stored (permanently or temporarily) by the [identity agent](#identity-agent) depending on the protocol used, and whether the context is [virtual contexts](#virtual-context) or [physical contexts](#physical-context).
 
 ## Connector
 
-A software component that implements one of potentially several aspects of a [connection](#connection). A [connector](#connector) implements an interface (abstraction) exposed by the core of an [identity-agent](#identity-agent). It is associated with a single [context](#context). It may receive data from an [app](#app), may store received data in a [context](#context), may read data from a [context](#context), and may transmit data to an [app](#app).
+A software component that implements one of potentially several aspects of a [connection](#connection). A [connector](#connector) is implemented as a plug-in that implements an interface exposed by the core of an [identity agent](#identity-agent). It is associated with a single [context](#context). It may receive data from an [app](#app), may store received data in a [context](#context), may read data from a [context](#context), and may transmit data to an [app](#app).
 
 ## Context
 
-A container that represents one aspect of a [connection](#connection). The [context](#context) contains entities that represent the user and other [subjects](#subject). These [subject](#subject) entities are identified by an identifier. In some [contexs](#context)  these [subjects](#subject), beyond just having an identifier, may also have a set of [claims](#claim).
+A container that represents a protocol-specific aspect of a [connection](#connection). The [context](#context) contains entities that represent the user [subject](#subject) and may, in social contexts, other [subjects](#subject). 
+
+### Physical Context
+
+A [context](#context) whose contained [subject](#subject) entities are identified by an identifier and a set of [claims](#claim) with values. 
+
+### Virtual Context
+
+A [context](#context) whose contained [subject](#subject) entities are identified by an identifier and a set of [claims](#claim) without values.  [Claim](#claim) values, when needed, may be fetched from the [app](#app) using the [context's](#context) protocol.
 
 ## Identity Agent
 
-An [identity-agent](#identity-agent) is an agent that represents the user on the internet. It manages [personal information](#personal-information) about the user in their interactions with [apps](#app).  Depending on the whether the agent is a [virtual agent](#virtual-agent) or a  [local agent](#local-agent)), this information may be stored within an [app](#app), and/or on-device, and/or by a third-party storage provider service.
+An [identity-agent](#identity-agent) is a software program that represents the user on the internet. It manages [personal information](#personal-information) about the user in their interactions with [apps](#app).  Depending on the whether the agent is a [virtual agent](#virtual-agent) or a  [local agent](#local-agent), this information may be stored within an [app](#app), and/or on-device, and/or by a third-party storage provider service.
 
 An [identity agent](#identity-agent):
-- Supports dynamic data sharing [connections](#connection) with [relying parties](#relying-party) wherein information can be updated over time. This information can flow periodically or continuously from an external party to the [identity agent](#identity-agent), in the reverse direction, or in both directions. The information may or may not be cached/copied by the [identity agent](#identity-agent).
+- Supports  [connections](#connection) with [relying parties](#relying-party) wherein information can be updated over time. 
 - Supports [identity agent](#identity-agent)-to- [identity agent](#identity-agent) messaging with minimal reliance on intermediary cloud-based services.
 - Is compatible with the [Mee Data Network](#mee-data-network). This network allows the user to license their [personal information](#personal-information) to a [relying party's](#relying-party) [app](#app) under the terms of the [MDN License](#mdn-license) data sharing agreement, thereby allowing the user to retain significant control over their information stored by the [relying party](#relying-party).
 
