@@ -8,13 +8,11 @@ head:
 
 ## Ad Profile Aggregator
 
-An independent entity that [relying parties](#relying-party) (service providers in that case) create or join and to which they provide information available for them in [Mee Data Network](#mee-data-network). It combines the information it receives from its members, and uses this data to respond to [Personal Ad Profile](#personal-ad-profile) matching requests from [Ad Profile Service](#ad-profile-service).
-
-[Ad Profile Agent](#ad-profile-agent) itself doesn't persist any actual users' data, but only combines profile scoring results, computed by its members. In performance critical scenarios it may holds users' data temporary, only while scoring profiles.
+A service used by one or more [service providers](#service-provider) on the [Mee Data Network](#mee-data-network). The [ad profile aggregator](#ad-profile-aggregator) combines raw user attribute data collected by these [service providers](#service-provider), anonymizes it, and uses it to infer a [Personal Ad Profile](#personal-ad-profile) that is transmitted to and stored in the [Ad Profile Service](#ad-profile-service). An [Ad Profile Aggregator](#ad-profile-aggregator) doesn't persist user data although in performance-critical scenarios it cache temporary.
 
 ## Ad Profile Service
 
-A service that manages [Personal Ad Profiles](#personal-ad-profile), requesting the matching (with [Target Audience Profile](#target-audience-profile)) ones from [Ad Profile Agent](#ad-profile-agent). These profiles are never shared/sold with any other entity. The [ad profile service's](#ad-profile-service) database of profiles can be queried by advertisers to return the number of matching (non-identified) profiles within a defined target audience. 
+A service that manages [personal ad profiles](#personal-ad-profile), requesting the matching (with [target audience profile](#target-audience-profile)) ones from [ad profile aggregator](#ad-profile-aggregator). These profiles are never shared/sold with any other entity. The [ad profile service's](#ad-profile-service) database of profiles can be queried by advertisers to return the number of matching (non-identified) profiles within a defined [target audience profile](target-audience-profile). 
 
 ## Agent SDK
 
@@ -149,7 +147,7 @@ A [subject](#subject) that represents an incorporated legal entity.
 
 A [subject](#subject) that represents a natural person.
 
-### Provider
+### Service Provider
 
 A [corporation](#corporation) that provides an [app](#app) for its users. 
 
