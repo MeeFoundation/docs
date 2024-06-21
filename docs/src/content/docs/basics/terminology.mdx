@@ -6,21 +6,13 @@ head:
     content: ":root { --sl-text-h2: var(--sl-text-2xl) !important; --sl-text-h3: var(--sl-text-lg) !important; }"
 ---
 
-## Ad Profile Aggregator
-
-A service used by one or more [service providers](#service-provider) on the [Mee Data Network](#mee-data-network). The [ad profile aggregator](#ad-profile-aggregator) combines raw user attribute data collected by these [service providers](#service-provider), anonymizes it, and uses it to infer a [Personal Ad Profile](#personal-ad-profile) that is transmitted to and stored in the [Ad Profile Service](#ad-profile-service). An [Ad Profile Aggregator](#ad-profile-aggregator) doesn't persist user data although in performance-critical scenarios it cache temporary.
-
-## Ad Profile Service
-
-A service that manages [personal ad profiles](#personal-ad-profile), requesting the matching (with [target audience profile](#target-audience-profile)) ones from [ad profile aggregator](#ad-profile-aggregator). These profiles are never shared/sold with any other entity. The [ad profile service's](#ad-profile-service) database of profiles can be queried by advertisers to return the number of matching (non-identified) profiles within a defined [target audience profile](target-audience-profile). 
-
 ## Agent SDK
 
-A software development kit that (i) provides the core logic of an [identity agent](#identity-agent) and (ii) enables a [local app](#local-app) to become interoperable with the [Mee Data Network](#mee-data-network). The [agent SDK](#agent-sdk) manages [personal information](#personal-information) that may be (i) created from the user's data entry into their [identity-agent](#identity-agent) (ii) created by an [app](#app) (or co-created by an [app](#app) during interactions with the user) or (iii) received over the [Mee Data Network](#mee-data-network) from another [identity agent](#identity-agent).
+A software development kit that (i) provides the core logic of an [identity agent](#identity-agent) and (ii) enables a [local app](#local-app) to become interoperable with the [Mee Data Network](#mee-data-network). The [agent SDK](#agent-sdk) manages [personal data](#personal-data) that may be (i) created from the user's data entry into their [identity-agent](#identity-agent) (ii) created by an [app](#app) (or co-created by an [app](#app) during interactions with the user) or (iii) received over the [Mee Data Network](#mee-data-network) from another [identity agent](#identity-agent).
 
 ## Agent Service
 
-A multi-user, web service that enables a [web app](#web-app) to become interoperable with the [Mee Data Network](#mee-data-network). The [agent service](#agent-service) manages [personal information](#personal-information) that may be (i) created from the user's data entry into their [identity-agent](#identity-agent) (ii) created by an app (or co-created by the app during interactions with the user) or (iii) received over the [Mee Data Network](#mee-data-network) from another [identity-agent](#identity-agent).
+A multi-user, web service that enables a [web app](#web-app) to become interoperable with the [Mee Data Network](#mee-data-network). The [agent service](#agent-service) manages [personal data](#personal-data) that may be (i) created by the user entering data into their [identity-agent](#identity-agent) (ii) created by an app (or co-created by the app during interactions with the user) or (iii) received over the [Mee Data Network](#mee-data-network) from another [identity-agent](#identity-agent).
 
 ## App
 
@@ -32,9 +24,9 @@ An assertion made about a [subject](#subject) in a [context](#context). [Claims]
 
 ## Connection
 
-A representation of the user's relationship with an [app](#app). The user's [identity-agent](#identity-agent) shows a list of [connections](#connection) each one of which represents a data sharing communications channel with a different [app](#app). Information flows periodically or continuously. It flows from an [app](#app) to the [identity agent](#identity-agent), in the reverse direction, or in both directions. It flows using one or more data sharing protocols. 
+A representation of the user's relationship with an [app](#app). The user's [identity-agent](#identity-agent) shows a list of [connections](#connection) each one of which represents a data sharing communications channel with a different [app](#app). Data may flow periodically or continuously. It may flow from an [app](#app) to the [identity agent](#identity-agent), in the reverse direction, or in both directions. It flows using one or more data sharing protocols. 
 
-A [connection's](#connection) represented within an [identity agent](#identity-agent) by one or more [contexts](#contexts)--one for each data sharing protocol used by the [connection(#connection)]. Information (specifically, [claim](#claim) values) shared using a [context's](#context) protocol may or may not be stored (permanently or temporarily) by the [identity agent](#identity-agent) depending on the protocol used, and whether the context is [virtual contexts](#virtual-context) or [physical contexts](#physical-context).
+A [connection's](#connection) represented within an [identity agent](#identity-agent) by one or more [contexts](#contexts)--one for each data sharing protocol used by the [connection](#connection). Information (specifically, [claim](#claim) values) shared using a [context's](#context) protocol may or may not be stored (permanently or temporarily) by the [identity agent](#identity-agent) depending on the protocol used, and whether the context is [virtual contexts](#virtual-context) or [physical contexts](#physical-context).
 
 ## Connector
 
@@ -54,12 +46,12 @@ A [context](#context) whose associated [subjects](#subject) have an identifier, 
 
 ## Identity Agent
 
-An [identity-agent](#identity-agent) is a software program that represents the user on the internet. It manages [personal information](#personal-information) about the user in their interactions with [apps](#app).  Depending on the whether the agent is a [virtual agent](#virtual-agent) or a  [local agent](#local-agent), this information may be stored within an [app](#app), and/or on-device, and/or by a third-party storage provider service.
+An [identity-agent](#identity-agent) is a software program that represents the user on the internet. It manages [personal data](#personal-data) about the user in their interactions with [apps](#app).  Depending on the whether the agent is a [virtual agent](#virtual-agent) or a  [local agent](#local-agent), this information may be stored within an [app](#app), and/or on-device, and/or by a third-party storage provider service.
 
 An [identity agent](#identity-agent):
 - Supports  [connections](#connection) with [relying parties](#relying-party) wherein information can be updated over time. 
 - Supports [identity agent](#identity-agent)-to- [identity agent](#identity-agent) messaging with minimal reliance on intermediary cloud-based services.
-- Is compatible with the [Mee Data Network](#mee-data-network). This network allows the user to license their [personal information](#personal-information) to a [relying party's](#relying-party) [app](#app) under the terms of the [MDN License](#mdn-license) data sharing agreement, thereby allowing the user to retain significant control over their information stored by the [relying party](#relying-party).
+- Is compatible with the [Mee Data Network](#mee-data-network). This network allows the user to license their  [personal data](#personal-data) to a [service provider's](#service-provider) [app](#app) under the terms of the [MDN License](#mdn-license) data sharing agreement.
 
 ## Local App
 
@@ -75,35 +67,31 @@ The state of a [local agent](#local-agent) may be replicated (i.e. copied and sy
 
 A browser extension that extends (to a limited extent) the Mee user experience to non-[Mee Data Network](#mee-data-network) websites. The browser extension, for example, may include functions such as password management, DoNotSell (see https://globalprivacycontrol.org), third-party cookie deletion, and web scraping and filling functions. The [MBX](#mee-browser-extension) could be thought of as a peripheral to an [identity agent](#identity-agent).
 
-## Mee Directory Service
-
-A central directory service that maps [identity agent](#identity-agent) user ids to the user's [identity agent](#identity-agent).
-
 ## Mee Data Network (MDN) <a name="mee-data-network"></a>
 
-A network of [Mee-authorized](#mee-authorized) [apps](#apps), [identity agents](#identity-agent), and [Mee browser extensions](#mee-browser-extension) that exchange [personal information](#personal-information) under the user's control. The [MDN](#mee-data-network) has exactly one [Mee Directory Service](#mee-directory-service) and may have one or more *Ad Profile Services.*
+A network of [Mee-authorized](#mee-authorized) [apps](#apps), [identity agents](#identity-agent), and [Mee browser extensions](#mee-browser-extension) that exchange [personal data](#personal-data) under the user's control. The [MDN](#mee-data-network) has exactly one [Mee Directory Service](#mee-directory-service) and may have one or more *Ad Profile Services.*
 
 ![def-mee-data-network](../images/def-mee-data-network.png)
 
 ## MDN License
 
-For [apps](#apps) and [identity agents](#identity-agent) on the [Mee Data Network](#mee-data-network), the [MDN License](#mdn-license) is a data sharing agreement between the business providing the [app](#app) and The Mee Foundation (or its delegate), acting on the [identity agent](#identity-agent) user's behalf. This contract licenses the user's [personal information](#personal-information) under specific terms. In the [MDN License](#mdn-license), the business or other kind of organization (i) must not collect, use, retain, or share the user's information with any other party without consent, and (ii) must implement the [Mee Data Network](mee-data-network) APIs that enable the user's [identity agent](#identity-agent) to remotely control their data.
+To operate on the [Mee Data Network](#mee-data-network) service providers must be authorized by the Mee Foundation and agree to the terms of the [MDN License](#mdn-license) agreement. This agreement licenses the user’s personal data to the service provider and states what service providers can and cannot do with it. For example, it requires apps to get opt-in consent from the user before sharing/selling their data to other entities. It also requires that the service provider’s apps implement MDN protocols so they can interoperate with the user’s[identity agent(s)](#identity-agent).
 
 ## Mee-authorized
 
-[Mee-authorized](#mee-authorized) is an adjective applied to an [app](#app) wherein the user's [personal information](#personal-information) involved in a data sharing connection with this [app](#app) is subject to the terms of the [MDN License](#mdn-license). To be [Mee-authorized](#mee-authorized) an app may also have to adhere to a set of specific UI guidelines.
+[Mee-authorized](#mee-authorized) is an adjective applied to an [app](#app) wherein the user's [personal data](#personal-data) involved in a data sharing connection with this [app](#app) is subject to the terms of the [MDN License](#mdn-license). To be [Mee-authorized](#mee-authorized) an app may also have to adhere to a set of specific UI guidelines.
 
 ## Mee-compatible
 
 [Mee-compatible](#mee-compatible) is an adjective applied to an [apps](#app) and [identity agents](#identity-agent) (which may or may not be on the [MDN](#mee-data-network).
 
-## Personal Information
+## Mee Directory Service
 
-Information that identifies, relates to, or could reasonably be linked with the user or the user's household. This personal information include names, addresses, contact information, payment information, lists of friends, preferences, interests, medical records, etc.
+A central directory service that maps [identity agent](#identity-agent) user ids to the user's [identity agent](#identity-agent).
 
-## Personal Ad Profile
+## Personal Data
 
-Data describing the interests and demographics of a Mee [identity agent](#identity-agent) user. This data is generated by an [ad profile agent](#ad-profile-agent) and managed by an [ad profile service](#ad-profile-service).
+Information that identifies, relates to, or could reasonably be linked with the user or the user's household. This data include names, addresses, contact information, payment information, lists of friends, preferences, interests, medical records, etc.
 
 ## Protocol
 
@@ -154,10 +142,6 @@ A [corporation](#corporation) that provides an [app](#app) for its users.
 ### User
 
 The user of an [identity agent](#identity-agent) or [app](#app).
-
-## Target Audience Profile
-
-A cohort of Mee users to which an advertiser would like to advertise.
 
 ## Virtual Agent
 
