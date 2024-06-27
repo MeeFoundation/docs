@@ -24,17 +24,15 @@ An assertion made about a [subject](#subject) in a [context](#context). [Claims]
 
 ## Connection
 
-A representation of the user's relationship with an [app](#app). The user's [identity-agent](#identity-agent) manages a list of [connections](#connection) each one of which represents a data sharing communications channel with a different [app](#app). Data may flow through this channel periodically or continuously. It may flow from an [app](#app) to the [identity agent](#identity-agent), in the reverse direction, or in both directions. It flows using one or more data sharing protocols. 
-
-A [connection](#connection) is represented within an [identity agent](#identity-agent) by one or more [contexts](#contexts)--one for each data sharing protocol used by the [connection](#connection). Information (specifically, [claim](#claim) values) shared using a [context's](#context) protocol may or may not be stored (permanently or temporarily) by the [identity agent](#identity-agent) depending on the protocol used, and whether the context is a [virtual context](#virtual-context) or a [physical context](#physical-context).
+A representation of the user's relationship with an [app](#app). The user's [identity-agent](#identity-agent) manages a list of [connections](#connection) each one of which represents a data sharing communications channel with a different [app](#app). Data may flow through this channel periodically or continuously. It may flow from an [app](#app) to the [identity agent](#identity-agent), in the reverse direction, or in both directions. It flows using one or more data sharing protocols. [Claims](#claim) involved in a connection is stored within an [identity agent](#identity-agent) in a [context](#context). 
 
 ## Connector
 
-A software component that implements one of potentially several aspects of a [connection](#connection). A [connector](#connector) is implemented as a plug-in to an [identity agent](#identity-agent). It is associated with a single [context](#context). It may receive data from an [app](#app), may store received data in a [context](#context), may read data from a [context](#context), and may transmit data to an [app](#app).
+A software plug-in to an [identity agent](#identity-agent) that that implements a communications protocol used by a [connection](#connection). A connector may receive data from an [app](#app), may store received data in a [context](#context), may read data from a [context](#context), and may transmit data to an [app](#app).
 
 ## Context
 
-A container that represents a protocol-specific aspect of a [connection](#connection). The [context](#context) contains entities that represent the user [subject](#subject) and may, in social contexts, other [subjects](#subject). 
+A data container associated with a [connection](#connection). A [context](#context) contains entities that represent the user [subject](#subject) and may, in social contexts, contain other [subjects](#subject). 
 
 ### Local Context
 
