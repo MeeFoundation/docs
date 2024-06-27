@@ -24,7 +24,11 @@ An assertion made about a [subject](#subject) in a [context](#context). [Claims]
 
 ## Connection
 
-A representation of the user's relationship with an [app](#app). The user's [identity-agent](#identity-agent) manages a list of [connections](#connection) each one of which represents a data sharing communications channel with a different [app](#app). Data may flow through this channel periodically or continuously. It may flow from an [app](#app) to the [identity agent](#identity-agent), in the reverse direction, or in both directions. It flows using one or more data sharing protocols. [Claims](#claim) involved in a connection is stored within an [identity agent](#identity-agent) in a [context](#context). 
+A data sharing relationship between the user (represented by their [identity agent](#identity-agent)) and some other entity (represented by their [app](#app)). 
+
+The user's [identity-agent](#identity-agent) manages a list of [connections](#connection) each one of which represents a data sharing communications channel with a different [app](#app). Data may flow through this channel periodically or continuously. It may flow from an [app](#app) to the [identity agent](#identity-agent), in the reverse direction, or in both directions. It flows using one or more data sharing [protocols](#protocol). 
+
+Each connection is associated with exactly one [context](#context).
 
 ## Connector
 
@@ -32,7 +36,9 @@ A software plug-in to an [identity agent](#identity-agent) that that implements 
 
 ## Context
 
-A data container associated with a [connection](#connection). A [context](#context) contains entities that represent the user [subject](#subject) and may, in social contexts, contain other [subjects](#subject). 
+Each [context](#context) is associated with exactly one connection for which it acts as a data container. A [context](#context) contains entities that represent the user [subject](#subject) and may, in social contexts, contain other [subjects](#subject). 
+
+If the [self](#self) represents a holistic representation of the user, a context represents the single context-dependent subset of that [self](#self) that involved in a [connection](#connection) with another entity (or more precisely the [app](#app) representing that entity).
 
 ### Local Context
 
@@ -105,7 +111,7 @@ For example, in a [connection](#connection) between the user's [identity agent](
 
 ## Self
 
-A singleton data container holding a single person entity that represents the [selfness](#selfness) of the user.
+A singleton data container holding a single person entity that represents the holistic, [selfness](#selfness) of the user.
 
 ## Self-hosted
 
