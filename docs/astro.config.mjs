@@ -34,34 +34,71 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: 'Start Here',
+          label: 'For User',
           items: [
             {
-              label: 'Getting Started',
-              link: 'getting-started',
+              label: 'Start Here',
+              items: [
+                {
+                  label: 'Getting Started',
+                  link: 'user/getting-started',
+                },
+                {
+                  label: 'Releases',
+                  link: 'user/releases',
+                }
+              ],          
             },
             {
-              label: 'Releases',
-              link: 'releases',
+              label: 'Core Concepts',
+              autogenerate: { directory: 'user/basics' },
+            },
+            {
+              label: 'Contribution Guide',
+              autogenerate: { directory: 'user/contributing' },
             }
-          ],          
+          ]
         },
         {
-          label: 'Core Concepts',
-          autogenerate: { directory: 'basics' },
+          label: 'For Developers',
+          items: [
+            {
+              label: 'Start Here',
+              items: [
+                {
+                  label: 'Getting Started',
+                  link: 'developers/getting-started',
+                },
+              ],          
+            },
+            {
+              label: 'Integration Guide',
+              autogenerate: { directory: 'developers/integration' },
+    
+            }
+          ]
         },
         {
-          label: 'Integration Guide',
-          autogenerate: { directory: 'integration' },
-
-        },
-        {
-          label: 'Contribution Guide',
-          autogenerate: { directory: 'contributing' },
+          label: "Ad Tech",
+          items: [
+            {
+              label: 'Start Here',
+              items: [
+                {
+                  label: 'Getting Started',
+                  link: 'advertising/getting-started',
+                },
+              ],          
+            },
+            {
+              label: 'Core Concepts',
+              autogenerate: { directory: 'advertising/basics' },
+            },
+          ]
         }
       ],
       components: {
-        Sidebar: './src/components/Sidebar.astro',
+        Sidebar: './src/components/MultiSidebar.astro',
         EditLink: './src/components/EditLink.astro',
       },
     }),

@@ -8,12 +8,12 @@
   "dependencies": {
     "@rollup/rollup-darwin-arm64": "^4.13.0",
     "@rollup/rollup-linux-x64-gnu": "^4.13.0",
-    "sharp": "^0.32"
+    "sharp": "^0.33.4"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.1",
-    "astro": "^4.5.8"
+    "astro": "^4.11.5"
   },
   "packageManager": "pnpm@8.15.5"
 }
