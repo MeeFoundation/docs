@@ -1,7 +1,7 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-export const site = 'https://mee.foundation/';
+export const site = 'https://docs.mee.foundation/';
 
 export const sharedConfig = {
   title: 'Mee Foundation',
