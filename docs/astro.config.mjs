@@ -1,4 +1,4 @@
-import { defineConfig, passthroughImageService } from 'astro/config';
+import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export const site = 'https://mee.foundation/';
@@ -34,28 +34,28 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: 'For User',
+          label: 'For Users',
           items: [
             {
               label: 'Start Here',
               items: [
                 {
                   label: 'Getting Started',
-                  link: 'user/getting-started',
+                  link: 'users/getting-started',
                 },
                 {
                   label: 'Releases',
-                  link: 'user/releases',
+                  link: 'users/releases',
                 }
               ],          
             },
             {
               label: 'Core Concepts',
-              autogenerate: { directory: 'user/basics' },
+              autogenerate: { directory: 'users/basics' },
             },
             {
               label: 'Contribution Guide',
-              autogenerate: { directory: 'user/contributing' },
+              autogenerate: { directory: 'users/contributing' },
             }
           ]
         },
@@ -86,13 +86,13 @@ export default defineConfig({
               items: [
                 {
                   label: 'Getting Started',
-                  link: 'advertising/getting-started',
+                  link: 'adtech/getting-started',
                 },
               ],          
             },
             {
               label: 'Core Concepts',
-              autogenerate: { directory: 'advertising/basics' },
+              autogenerate: { directory: 'adtech/basics' },
             },
           ]
         }
