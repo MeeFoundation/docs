@@ -24,9 +24,15 @@ importers:
       '@changesets/cli':
         specifier: ^2.26.1
         version: 2.27.1
+      '@pagefind/linux-x64':
+        specifier: ^1.1.0
+        version: 1.1.0
       astro:
         specifier: ^4.11.5
         version: 4.11.5(@types/node@18.19.26)
+      pagefind:
+        specifier: ^1.1.0
+        version: 1.1.0
 
   docs:
     dependencies:
@@ -1252,7 +1258,6 @@ packages:
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@pagefind/darwin-x64@1.1.0:
@@ -1260,7 +1265,6 @@ packages:
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@pagefind/default-ui@1.1.0:
@@ -1272,7 +1276,6 @@ packages:
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@pagefind/linux-x64@1.1.0:
@@ -1280,15 +1283,12 @@ packages:
     cpu: [x64]
     os: [linux]
     requiresBuild: true
-    dev: false
-    optional: true
 
   /@pagefind/windows-x64@1.1.0:
     resolution: {integrity: sha512-OboCM76BcMKT9IoSfZuFhiqMRgTde8x4qDDvKulFmycgiJrlL5WnIqBHJLQxZq+o2KyZpoHF97iwsGAm8c32sQ==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
-    dev: false
     optional: true
 
   /@pkgjs/parseargs@0.11.0:
@@ -4962,7 +4962,6 @@ packages:
       '@pagefind/linux-arm64': 1.1.0
       '@pagefind/linux-x64': 1.1.0
       '@pagefind/windows-x64': 1.1.0
-    dev: false
 
   /parse-entities@4.0.1:
     resolution: {integrity: sha512-SWzvYcSJh4d/SGLIOQfZ/CoNv6BTlI6YEQ7Nj82oDVnRpwe/Z/F1EMx42x3JAOwGBlCjeCH0BRJQbQ/opHL17w==}
