@@ -79,20 +79,20 @@ export default defineConfig({
           ]
         },
         {
-          label: "Ad Tech",
+          label: "Private Advertising",
           items: [
             {
               label: 'Start Here',
               items: [
                 {
                   label: 'Getting Started',
-                  link: 'adtech/getting-started',
+                  link: 'private-advertising/getting-started',
                 },
               ],          
             },
             {
               label: 'Core Concepts',
-              autogenerate: { directory: 'adtech/basics' },
+              autogenerate: { directory: 'private-advertising/basics' },
             },
           ]
         }
