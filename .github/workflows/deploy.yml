@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy to Prod
 
 on:
   # Trigger the workflow every time you push to the `main` branch
@@ -32,10 +32,15 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: configure gcp credentials
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: "projects/1043231896197/locations/global/workloadIdentityPools/github-actions-pool/providers/github"
+          service_account: "github-actions@the-mee-foundation.iam.gserviceaccount.com"
+
+      - name: deploy to bucket
+        run: |
+          gcloud storage rsync --recursive ./docs/dist gs://docs-mee-foundation-bucket
+          gcloud storage objects update --content-type="text/html" --cache-control="public, max-age=60" --content-disposition="" gs://docs-mee-foundation-bucket/*.html
+          gcloud compute url-maps invalidate-cdn-cache prod-url-map --project the-mee-foundation --path "/index.html" --host "docs.mee.foundation" --async 
