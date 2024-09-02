@@ -41,6 +41,8 @@ jobs:
 
       - name: deploy to bucket
         run: |
+          ls
+          ls ./docs
           ls ./docs/dist
           gcloud storage rsync --recursive ./docs/dist gs://docs-mee-foundation-bucket
           gcloud storage objects update --content-type="text/html" --cache-control="public, max-age=60" --content-disposition="" gs://docs-mee-foundation-bucket/*.html
